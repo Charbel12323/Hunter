@@ -1,0 +1,50 @@
+name: Poll job sources
+
+on:
+  schedule:
+    # Best-effort: "*/20" means roughly every 20-35 minutes on GitHub's side.
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+
+# Never let two polls run at once: an overlapping run would race the state
+# commit. Queue the newer one instead of cancelling (never-miss rule).
+concurrency:
+  group: poll
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Poll sources and notify
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m scraper.main
+
+      - name: Commit updated state
+        run: |
+          if git diff --quiet seen_jobs.json; then
+            echo "No state changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add seen_jobs.json
+          git commit -m "Update seen jobs state"
+          # A human may have pushed while we ran; rebase our state commit on top.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push

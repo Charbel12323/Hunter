@@ -1,11 +1,13 @@
 # JobPoll watchlist. User-editable; contains no secrets, so the repo can be
 # public. Adding a company of an existing type = one entry under `sources:`.
 
-sources: []
+sources:
+  - type: ashby
+    company: wealthsimple
 
 # --- Example source entries (uncomment and edit) -----------------------------
 # sources:
-#   - type: ashby          # one of: ashby, greenhouse, lever, github (Stage 2+)
+#   - type: ashby          # one of: ashby (more types arrive in Stage 2)
 #     company: wealthsimple  # the company slug in the ATS job-board URL
 #
 #   - type: greenhouse

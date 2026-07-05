@@ -12,6 +12,7 @@ import sys
 
 import yaml
 
+from scraper import notify as telegram
 from scraper.adapters import get_adapter
 from scraper.models import Job
 from scraper.store import SeenStore
@@ -63,14 +64,25 @@ def apply_filters(jobs: list[Job], filters_config: dict) -> list[Job]:
 
 
 def notify(jobs: list[Job], store: SeenStore, dry_run: bool) -> int:
-    if not dry_run and jobs:
-        log.warning("Telegram sending arrives in Stage 1; printing to stdout instead.")
     for job in jobs:
-        print(f"NEW: {job.title} @ {job.company} ({job.location}) -> {job.url}")
+        if dry_run:
+            print(f"NEW: {job.title} @ {job.company} ({job.location}) -> {job.url}")
+        else:
+            telegram.send(job)
         # Record only after the message is out: a crash in between re-sends a
         # harmless duplicate, while the reverse order would miss a job.
         store.add(job)
     return len(jobs)
+
+
+def seed(jobs: list[Job], store: SeenStore) -> None:
+    """Silent first-run seeding: an empty store means this is the first run
+    ever, so record everything currently posted without notifying. Without
+    this, run one would fire a message for every existing posting."""
+    for job in jobs:
+        store.add(job)
+    store.save()
+    log.info("First run: seeded %d current postings without notifying.", len(jobs))
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -99,6 +111,11 @@ def main(argv: list[str] | None = None) -> int:
 
     fetched = fetch_all(sources)
     normalized = normalize(fetched)
+
+    if normalized and len(store) == 0:
+        seed(normalized, store)
+        return 0
+
     fresh = dedup(normalized, store)
     matched = apply_filters(fresh, config.get("filters") or {})
     notified = notify(matched, store, args.dry_run)
