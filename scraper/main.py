@@ -12,6 +12,7 @@ import sys
 
 import yaml
 
+from scraper import filters
 from scraper import notify as telegram
 from scraper.adapters import get_adapter
 from scraper.models import Job
@@ -37,7 +38,8 @@ def fetch_all(sources: list[dict]) -> list[Job]:
     one broken source must never sink the run."""
     jobs: list[Job] = []
     for source in sources:
-        label = f"{source.get('type', '?')}/{source.get('company', source.get('name', '?'))}"
+        name = source.get("company") or source.get("repo") or source.get("name") or "?"
+        label = f"{source.get('type', '?')}/{name}"
         try:
             fetch = get_adapter(source["type"])
             fetched = fetch(source)
@@ -59,11 +61,28 @@ def dedup(jobs: list[Job], store: SeenStore) -> list[Job]:
 
 
 def apply_filters(jobs: list[Job], filters_config: dict) -> list[Job]:
-    # Composable predicate filters arrive in Stage 2.
-    return jobs
+    predicates = filters.build_predicates(filters_config)
+    if not predicates:
+        return jobs
+    kept = [job for job in jobs if filters.keep(job, predicates)]
+    if len(kept) != len(jobs):
+        log.info("Filters dropped %d of %d new jobs.", len(jobs) - len(kept), len(jobs))
+    return kept
 
 
-def notify(jobs: list[Job], store: SeenStore, dry_run: bool) -> int:
+def notify(jobs: list[Job], store: SeenStore, dry_run: bool, digest_threshold: int) -> int:
+    if len(jobs) > digest_threshold:
+        # Digest mode: one summary message instead of flooding the chat.
+        if dry_run:
+            print(f"DIGEST of {len(jobs)} new jobs:")
+            for job in jobs:
+                print(f"  - {job.title} @ {job.company} ({job.location})")
+        else:
+            telegram.send_digest(jobs)
+        for job in jobs:
+            store.add(job)
+        return len(jobs)
+
     for job in jobs:
         if dry_run:
             print(f"NEW: {job.title} @ {job.company} ({job.location}) -> {job.url}")
@@ -116,9 +135,18 @@ def main(argv: list[str] | None = None) -> int:
         seed(normalized, store)
         return 0
 
+    filters_config = config.get("filters") or {}
     fresh = dedup(normalized, store)
-    matched = apply_filters(fresh, config.get("filters") or {})
-    notified = notify(matched, store, args.dry_run)
+    matched = apply_filters(fresh, filters_config)
+    notified = notify(
+        matched, store, args.dry_run, digest_threshold=filters_config.get("digest_threshold", 10)
+    )
+    # Record filtered-out jobs as seen too (after notify, so a crash can't
+    # mark a matched job seen before its message went out). Otherwise every
+    # filtered job re-enters the diff as "new" on every run forever.
+    for job in fresh:
+        if not store.has(job.id):
+            store.add(job)
     store.save()
 
     log.info(

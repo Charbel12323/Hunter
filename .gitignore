@@ -19,3 +19,6 @@ Thumbs.db
 
 # Local secrets (never commit; real runs get these from GitHub Secrets)
 .env
+
+# Local ETag cache for the github adapter (absent on CI; safe to delete)
+.etag_cache.json
