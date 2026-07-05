@@ -150,6 +150,28 @@ def notify(jobs: list[Job], store: SeenStore, dry_run: bool, digest_threshold: i
     return sent
 
 
+def seed_new_sources(
+    fresh: list[Job], normalized: list[Job], store: SeenStore
+) -> list[Job]:
+    """Silently seed sources that are new to the watchlist, returning the
+    remaining genuinely-new jobs.
+
+    A source with no previously-seen jobs at all was just added (or fetched
+    successfully for the first time); alerting would replay its entire
+    backlog. Recognizing sources by "has at least one seen job" (rather than
+    by health history) keeps the never-miss rule intact for existing sources
+    recovering from an outage."""
+    seen_sources = {job.source for job in normalized if store.has(job.id)}
+    backlog = [job for job in fresh if job.source not in seen_sources]
+    if not backlog:
+        return fresh
+    for job in backlog:
+        store.add(job)
+    for label, count in sorted(Counter(job.source for job in backlog).items()):
+        log.info("%s: new source; seeded %d existing postings silently.", label, count)
+    return [job for job in fresh if job.source in seen_sources]
+
+
 def seed(jobs: list[Job], store: SeenStore) -> None:
     """Silent first-run seeding: an empty store means this is the first run
     ever, so record everything currently posted without notifying. Without
@@ -194,6 +216,7 @@ def main(argv: list[str] | None = None) -> int:
 
     filters_config = config.get("filters") or {}
     fresh = dedup(normalized, store)
+    fresh = seed_new_sources(fresh, normalized, store)
     matched = apply_filters(fresh, filters_config)
     sent = notify(
         matched, store, args.dry_run, digest_threshold=filters_config.get("digest_threshold", 10)

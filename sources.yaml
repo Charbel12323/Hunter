@@ -3,34 +3,91 @@
 #
 # Migration trap: before adding a company, confirm its Apply links actually
 # point at that ATS. A board a company migrated away from returns 200 with
-# zero jobs forever (e.g. kraken and plaid still have empty Lever boards).
+# zero jobs forever (e.g. deel, mercury, kraken, and plaid all have empty
+# abandoned boards). Probe first:
+#   ashby:      https://api.ashbyhq.com/posting-api/job-board/{company}
+#   greenhouse: https://boards-api.greenhouse.io/v1/boards/{company}/jobs
+#   lever:      https://api.lever.co/v0/postings/{company}?mode=json
+#
+# FAANG (Meta/Apple/Amazon/Netflix/Google) run custom career sites with no
+# public board API - their new-grad roles arrive via the SimplifyJobs feed
+# below instead.
 
 sources:
+  # --- fintech ---
   - type: ashby
     company: wealthsimple
   - type: ashby
     company: ramp
   - type: ashby
-    company: linear
+    company: column
   - type: greenhouse
     company: stripe
+  - type: greenhouse
+    company: coinbase
+  - type: greenhouse
+    company: robinhood
+  - type: greenhouse
+    company: affirm
+  - type: greenhouse
+    company: chime
+  - type: greenhouse
+    company: brex
+  - type: greenhouse
+    company: adyen
+  - type: greenhouse
+    company: block
+
+  # --- tech ---
+  - type: ashby
+    company: openai
+  - type: ashby
+    company: linear
+  - type: ashby
+    company: cursor
+  - type: greenhouse
+    company: anthropic
+  - type: greenhouse
+    company: databricks
+  - type: greenhouse
+    company: figma
+  - type: greenhouse
+    company: vercel
   - type: greenhouse
     company: duolingo
   - type: lever
     company: palantir
+
+  # --- cross-company aggregators (cover FAANG and hundreds more) ---
   - type: github
     repo: SimplifyJobs/New-Grad-Positions
     path: .github/scripts/listings.json
     branch: dev
+  - type: github
+    repo: SimplifyJobs/Summer2026-Internships
+    path: .github/scripts/listings.json
+    branch: dev
 
+# Filters target graduate / junior software roles (SWE, full stack, backend,
+# platform, SRE, forward deployed) plus internships. Matching is
+# case-insensitive SUBSTRING on the title - keywords like "sr " use spacing
+# on purpose so they don't swallow "SRE".
 filters:
-  # Keep a job only if its title contains at least one of these
-  # (case-insensitive). Remove the key to keep everything.
-  include_keywords: [engineer, developer, software]
-  # Drop a job if its title contains any of these.
-  exclude_keywords: [staff, principal, director]
+  include_keywords: [engineer, developer, software, sre]
+  exclude_keywords:
+    - senior
+    - "sr."
+    - "sr "
+    - staff
+    - principal
+    - distinguished
+    - architect
+    - lead
+    - manager
+    - director
+    - "head of"
+    - "vp "
   # Uncomment to keep only jobs whose location mentions one of these.
   # locations: [remote, toronto, new york]
-  # More than this many new matches in one run -> one digest message
-  # instead of individual pings.
+  # More than this many new matches in one run -> one digest message.
   digest_threshold: 10
