@@ -1,25 +1,36 @@
 # JobPoll watchlist. User-editable; contains no secrets, so the repo can be
 # public. Adding a company of an existing type = one entry under `sources:`.
+#
+# Migration trap: before adding a company, confirm its Apply links actually
+# point at that ATS. A board a company migrated away from returns 200 with
+# zero jobs forever (e.g. kraken and plaid still have empty Lever boards).
 
 sources:
   - type: ashby
     company: wealthsimple
+  - type: ashby
+    company: ramp
+  - type: ashby
+    company: linear
+  - type: greenhouse
+    company: stripe
+  - type: greenhouse
+    company: duolingo
+  - type: lever
+    company: palantir
+  - type: github
+    repo: SimplifyJobs/New-Grad-Positions
+    path: .github/scripts/listings.json
+    branch: dev
 
-# --- Example source entries (uncomment and edit) -----------------------------
-# sources:
-#   - type: ashby          # one of: ashby (more types arrive in Stage 2)
-#     company: wealthsimple  # the company slug in the ATS job-board URL
-#
-#   - type: greenhouse
-#     company: stripe
-#
-#   - type: github
-#     repo: SimplifyJobs/New-Grad-Positions
-#     path: listings.json
-
-# --- Example filter block (uncomment and edit; applied in Stage 2) -----------
-# filters:
-#   include_keywords: [engineer, developer, backend]
-#   exclude_keywords: [staff, principal, director]
-#   locations: [remote, toronto, new york]
-#   digest_threshold: 10   # >N new matches in one run -> one digest message
+filters:
+  # Keep a job only if its title contains at least one of these
+  # (case-insensitive). Remove the key to keep everything.
+  include_keywords: [engineer, developer, software]
+  # Drop a job if its title contains any of these.
+  exclude_keywords: [staff, principal, director]
+  # Uncomment to keep only jobs whose location mentions one of these.
+  # locations: [remote, toronto, new york]
+  # More than this many new matches in one run -> one digest message
+  # instead of individual pings.
+  digest_threshold: 10

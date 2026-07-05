@@ -7,11 +7,14 @@ REGISTRY; the orchestrator dispatches purely by type string.
 
 from collections.abc import Callable
 
-from scraper.adapters import ashby
+from scraper.adapters import ashby, github_repo, greenhouse, lever
 from scraper.models import Job
 
 REGISTRY: dict[str, Callable[[dict], list[Job]]] = {
     "ashby": ashby.fetch,
+    "greenhouse": greenhouse.fetch,
+    "lever": lever.fetch,
+    "github": github_repo.fetch,
 }
 
 
