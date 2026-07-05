@@ -40,8 +40,10 @@ def send_text(text: str) -> None:
 
 
 def _post(text: str) -> None:
-    token = os.environ["TELEGRAM_BOT_TOKEN"]
-    chat_id = os.environ["TELEGRAM_CHAT_ID"]
+    # Strip whitespace: a token pasted into GitHub Secrets with a trailing
+    # newline becomes %0A in the URL and Telegram answers 404.
+    token = os.environ["TELEGRAM_BOT_TOKEN"].strip()
+    chat_id = os.environ["TELEGRAM_CHAT_ID"].strip()
     response = requests.post(
         API_URL.format(token=token),
         json={
