@@ -1,0 +1,23 @@
+# JobPoll watchlist. User-editable; contains no secrets, so the repo can be
+# public. Adding a company of an existing type = one entry under `sources:`.
+
+sources: []
+
+# --- Example source entries (uncomment and edit) -----------------------------
+# sources:
+#   - type: ashby          # one of: ashby, greenhouse, lever, github (Stage 2+)
+#     company: wealthsimple  # the company slug in the ATS job-board URL
+#
+#   - type: greenhouse
+#     company: stripe
+#
+#   - type: github
+#     repo: SimplifyJobs/New-Grad-Positions
+#     path: listings.json
+
+# --- Example filter block (uncomment and edit; applied in Stage 2) -----------
+# filters:
+#   include_keywords: [engineer, developer, backend]
+#   exclude_keywords: [staff, principal, director]
+#   locations: [remote, toronto, new york]
+#   digest_threshold: 10   # >N new matches in one run -> one digest message

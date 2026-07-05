@@ -1,0 +1,21 @@
+# Local planning docs (kept out of the public repo)
+plan.md
+/stages
+design.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Local secrets (never commit; real runs get these from GitHub Secrets)
+.env
