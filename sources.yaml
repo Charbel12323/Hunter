@@ -73,7 +73,7 @@ sources:
 # case-insensitive SUBSTRING on the title - keywords like "sr " use spacing
 # on purpose so they don't swallow "SRE".
 filters:
-  include_keywords: [engineer, developer, software, sre]
+  include_keywords: [engineer, developer, software, sre, intern, internship, co-op, coop]
   exclude_keywords:
     - senior
     - "sr."
