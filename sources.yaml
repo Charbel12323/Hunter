@@ -67,6 +67,14 @@ sources:
     repo: SimplifyJobs/Summer2026-Internships
     path: .github/scripts/listings.json
     branch: dev
+  - type: github
+    repo: Summer2026-Internships
+    path: .github/scripts/listings.json
+    branch: dev
+  - type: github
+    repo: Summer2027-Internships
+    path: .github/scripts/listings.json
+    branch: dev
 
 # Filters target graduate / junior software roles (SWE, full stack, backend,
 # platform, SRE, forward deployed) plus internships. Matching is
