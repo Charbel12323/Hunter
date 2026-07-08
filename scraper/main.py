@@ -12,6 +12,7 @@ import sys
 import time
 from collections import Counter
 from collections.abc import Callable
+from datetime import UTC, datetime, timedelta
 
 import requests
 import yaml
@@ -151,25 +152,59 @@ def notify(jobs: list[Job], store: SeenStore, dry_run: bool, digest_threshold: i
 
 
 def seed_new_sources(
-    fresh: list[Job], normalized: list[Job], store: SeenStore
+    fresh: list[Job], normalized: list[Job], store: SeenStore, max_age_days: int | None = None
 ) -> list[Job]:
-    """Silently seed sources that are new to the watchlist, returning the
-    remaining genuinely-new jobs.
+    """Seed sources that are new to the watchlist, returning the jobs still
+    eligible for notification.
 
     A source with no previously-seen jobs at all was just added (or fetched
     successfully for the first time); alerting would replay its entire
-    backlog. Recognizing sources by "has at least one seen job" (rather than
-    by health history) keeps the never-miss rule intact for existing sources
-    recovering from an outage."""
+    backlog. But a backlog posting dated within the max_age_days window is
+    exactly what the watchlist exists to surface - swallowing it means never
+    hearing about a days-old opening that is still live - so those stay in
+    the pipeline (digest mode caps a burst) and only older or undated backlog
+    is seeded silently. Recognizing sources by "has at least one seen job"
+    (rather than by health history) keeps the never-miss rule intact for
+    existing sources recovering from an outage."""
     seen_sources = {job.source for job in normalized if store.has(job.id)}
-    backlog = [job for job in fresh if job.source not in seen_sources]
-    if not backlog:
+    cutoff = datetime.now(UTC) - timedelta(days=max_age_days) if max_age_days else None
+    backlog_ids: set[str] = set()
+    kept: Counter[str] = Counter()
+    for job in fresh:
+        if job.source in seen_sources:
+            continue
+        if _posted_since(job.posted_at, cutoff):
+            kept[job.source] += 1
+        else:
+            backlog_ids.add(job.id)
+            store.add(job)
+    if not backlog_ids:
         return fresh
-    for job in backlog:
-        store.add(job)
-    for label, count in sorted(Counter(job.source for job in backlog).items()):
-        log.info("%s: new source; seeded %d existing postings silently.", label, count)
-    return [job for job in fresh if job.source in seen_sources]
+    seeded = Counter(job.source for job in fresh if job.id in backlog_ids)
+    for label, count in sorted(seeded.items()):
+        log.info(
+            "%s: new source; seeded %d existing postings silently, kept %d recent.",
+            label,
+            count,
+            kept[label],
+        )
+    return [job for job in fresh if job.id not in backlog_ids]
+
+
+def _posted_since(posted_at: str | None, cutoff: datetime | None) -> bool:
+    """True only for a parseable date inside the window. Unlike the age
+    filter, an undated posting does NOT count as recent here: "keep when the
+    date is missing" would replay entire boards whose adapters carry no
+    dates, defeating the silent seed."""
+    if cutoff is None or not posted_at:
+        return False
+    try:
+        posted = datetime.fromisoformat(posted_at)
+    except ValueError:
+        return False
+    if posted.tzinfo is None:
+        posted = posted.replace(tzinfo=UTC)
+    return posted >= cutoff
 
 
 def seed(jobs: list[Job], store: SeenStore) -> None:
@@ -216,7 +251,7 @@ def main(argv: list[str] | None = None) -> int:
 
     filters_config = config.get("filters") or {}
     fresh = dedup(normalized, store)
-    fresh = seed_new_sources(fresh, normalized, store)
+    fresh = seed_new_sources(fresh, normalized, store, filters_config.get("max_age_days"))
     matched = apply_filters(fresh, filters_config)
     sent = notify(
         matched, store, args.dry_run, digest_threshold=filters_config.get("digest_threshold", 10)

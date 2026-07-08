@@ -46,16 +46,44 @@ jobs:
           # State is committed after every iteration, not once at the end:
           # if a later iteration dies, jobs already notified must stay
           # recorded or the next run would re-send them.
+          #
+          # Pushes race: despite the concurrency group, GitHub has started a
+          # queued run up to a minute before the previous one finished (and a
+          # manual dispatch alongside a scheduled run), and a textual rebase
+          # of the JSON state then conflicts and used to kill the whole loop.
+          # Instead, union-merge our state with whatever the other run pushed
+          # (a job seen by either side must stay seen) and try again.
+          push_state() {
+            for attempt in 1 2 3; do
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                return 0
+              fi
+              git fetch origin "${GITHUB_REF_NAME}"
+              git show "origin/${GITHUB_REF_NAME}:seen_jobs.json" > /tmp/theirs_seen.json
+              python -m scraper.merge_seen seen_jobs.json /tmp/theirs_seen.json
+              git reset --soft "origin/${GITHUB_REF_NAME}"
+              git add seen_jobs.json
+              git commit -m "Update seen jobs state" || echo "State already on remote."
+            done
+            # Give up but keep looping: the state is committed locally, so at
+            # worst the next run re-sends a few duplicates (never-miss rule).
+            echo "::warning::Push failed 3 times; continuing with local state."
+            return 0
+          }
           for i in 1 2 3 4 5; do
+            # Pick up state an overlapping run may have pushed while we
+            # slept, so we don't re-notify jobs it already sent. --ff-only
+            # cannot conflict; with unpushed local commits it just refuses,
+            # and push_state reconciles later.
+            git fetch origin "${GITHUB_REF_NAME}"
+            git merge --ff-only FETCH_HEAD || echo "Local commits pending; skipping sync."
             python -m scraper.main
             if git diff --quiet seen_jobs.json; then
               echo "Iteration $i: no state changes."
             else
               git add seen_jobs.json
               git commit -m "Update seen jobs state"
-              # A human may have pushed while we ran; rebase our state commit on top.
-              git pull --rebase origin "${GITHUB_REF_NAME}"
-              git push
+              push_state
             fi
             if [ "$i" -lt 5 ]; then sleep 300; fi
           done
