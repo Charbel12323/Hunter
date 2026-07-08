@@ -9,6 +9,11 @@
 #   greenhouse: https://boards-api.greenhouse.io/v1/boards/{company}/jobs
 #   lever:      https://api.lever.co/v0/postings/{company}?mode=json
 #
+# Slug collision trap: a live board can belong to a different company than
+# the name suggests (ashby "runway" is Runway Financial, not Runway ML;
+# "warp" is Warp the payroll startup, not warp.dev). After probing, read a
+# couple of job titles to confirm it is the company you meant.
+#
 # FAANG (Meta/Apple/Amazon/Netflix/Google) run custom career sites with no
 # public board API - their new-grad roles arrive via the SimplifyJobs feed
 # below instead.
@@ -45,6 +50,40 @@ sources:
     company: linear
   - type: ashby
     company: cursor
+  - type: ashby
+    company: notion
+  - type: ashby
+    company: perplexity
+  - type: ashby
+    company: cohere
+  - type: ashby
+    company: sierra
+  - type: ashby
+    company: elevenlabs
+  - type: ashby
+    company: harvey
+  - type: ashby
+    company: cognition
+  - type: ashby
+    company: decagon
+  - type: ashby
+    company: replit
+  - type: ashby
+    company: supabase
+  - type: ashby
+    company: posthog
+  - type: ashby
+    company: vanta
+  - type: ashby
+    company: modal
+  - type: ashby
+    company: temporal
+  - type: ashby
+    company: docker
+  - type: ashby
+    company: render
+  - type: ashby
+    company: lambda
   - type: greenhouse
     company: anthropic
   - type: greenhouse
