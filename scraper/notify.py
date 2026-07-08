@@ -20,6 +20,8 @@ log = logging.getLogger(__name__)
 API_URL = "https://api.telegram.org/bot{token}/sendMessage"
 SEND_PAUSE_SECONDS = 0.5  # stay well under Telegram's rate limits
 TIMEOUT_SECONDS = 30
+PAGE_BUDGET = 3800  # headroom under Telegram's hard 4096-char message cap
+MAX_TITLE_CHARS = 200  # a title longer than this is noise; keep lines bounded
 
 
 def send(job: Job) -> None:
@@ -29,8 +31,11 @@ def send(job: Job) -> None:
 
 
 def send_digest(jobs: list[Job]) -> None:
-    _post(format_digest(jobs))
-    log.info("Notified: digest of %d jobs", len(jobs))
+    pages = format_digest(jobs)
+    for page in pages:
+        _post(page)
+        time.sleep(SEND_PAUSE_SECONDS)
+    log.info("Notified: digest of %d jobs in %d messages", len(jobs), len(pages))
 
 
 def send_text(text: str) -> None:
@@ -72,22 +77,36 @@ def format_message(job: Job) -> str:
     return "\n".join(lines)
 
 
-def format_digest(jobs: list[Job]) -> str:
-    # One summary message; stay safely under Telegram's 4096-char cap.
-    e = html.escape
-    lines = [f"<b>{len(jobs)} new matching jobs this run</b>", ""]
-    budget = 3800 - sum(len(line) + 1 for line in lines)
-    shown = 0
+def format_digest(jobs: list[Job]) -> list[str]:
+    # Telegram hard-caps a message at 4096 chars, so a big run must be split
+    # across as many messages as it takes: every job gets sent, none are
+    # silently dropped (a dropped job is marked seen and lost forever).
+    chunks: list[list[str]] = [[]]
+    used = 0
     for job in jobs:
-        line = f'- <a href="{e(job.url, quote=True)}">{e(job.title)}</a> - {e(job.company)}'
-        if len(line) + 1 > budget:
-            break
-        lines.append(line)
-        budget -= len(line) + 1
-        shown += 1
-    if shown < len(jobs):
-        lines.append(f"...and {len(jobs) - shown} more")
-    return "\n".join(lines)
+        line = _digest_line(job)
+        if chunks[-1] and used + len(line) + 1 > PAGE_BUDGET:
+            chunks.append([])
+            used = 0
+        chunks[-1].append(line)
+        used += len(line) + 1
+
+    pages = []
+    for i, chunk in enumerate(chunks):
+        head = f"{len(jobs)} new matching jobs this run"
+        if len(chunks) > 1:
+            head += f" ({i + 1}/{len(chunks)})"
+        pages.append("\n".join([f"<b>{head}</b>", "", *chunk]))
+    return pages
+
+
+def _digest_line(job: Job) -> str:
+    e = html.escape
+    title = job.title
+    if len(title) > MAX_TITLE_CHARS:
+        # Truncate before escaping so we can't cut an entity like &amp; in half.
+        title = title[: MAX_TITLE_CHARS - 3] + "..."
+    return f'- <a href="{e(job.url, quote=True)}">{e(title)}</a> - {e(job.company)}'
 
 
 def _date_only(posted_at: str) -> str:

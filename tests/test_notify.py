@@ -26,14 +26,25 @@ def test_message_escapes_html_and_trims_date():
 
 def test_digest_lists_jobs_and_counts():
     jobs = [make_job(n) for n in range(1, 4)]
-    text = format_digest(jobs)
-    assert text.startswith("<b>3 new matching jobs this run</b>")
-    assert text.count("<a href=") == 3
-    assert "more" not in text
+    pages = format_digest(jobs)
+    assert len(pages) == 1
+    assert pages[0].startswith("<b>3 new matching jobs this run</b>")
+    assert pages[0].count("<a href=") == 3
 
 
-def test_digest_truncates_to_stay_under_telegram_cap():
-    jobs = [make_job(n, title="X" * 200) for n in range(100)]
-    text = format_digest(jobs)
-    assert len(text) <= 4000
-    assert "more" in text.splitlines()[-1]
+def test_digest_splits_into_pages_without_dropping_jobs():
+    jobs = [make_job(n, title="X" * 150) for n in range(100)]
+    pages = format_digest(jobs)
+    assert len(pages) > 1
+    assert all(len(page) <= 4096 for page in pages)
+    # Every single job must appear somewhere; none silently dropped.
+    assert sum(page.count("<a href=") for page in pages) == 100
+    assert pages[0].splitlines()[0].endswith(f"(1/{len(pages)})</b>")
+    assert pages[-1].splitlines()[0].endswith(f"({len(pages)}/{len(pages)})</b>")
+
+
+def test_digest_truncates_absurdly_long_titles():
+    pages = format_digest([make_job(1, title="Y" * 1000)])
+    assert len(pages) == 1
+    assert "Y" * 1000 not in pages[0]
+    assert "..." in pages[0]
