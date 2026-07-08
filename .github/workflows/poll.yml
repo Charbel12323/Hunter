@@ -22,7 +22,9 @@ permissions:
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    # ~3 min per iteration (the Workday sources add ~120 sequential
+    # requests) + 4 sleeps of 5 min = ~35 min of loop, plus setup.
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
 

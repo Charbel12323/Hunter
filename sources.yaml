@@ -8,6 +8,14 @@
 #   ashby:      https://api.ashbyhq.com/posting-api/job-board/{company}
 #   greenhouse: https://boards-api.greenhouse.io/v1/boards/{company}/jobs
 #   lever:      https://api.lever.co/v0/postings/{company}?mode=json
+#   workday:    POST https://{company}.{instance}.myworkdayjobs.com/wday/cxs/{company}/{site}/jobs
+#               body {"appliedFacets":{},"limit":20,"offset":0,"searchText":""}
+#
+# Workday needs three values, all readable off the board URL: for
+# https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite the entry is
+# company: nvidia / instance: wd5 / site: NVIDIAExternalCareerSite. The
+# adapter fetches only the newest ~60 postings per poll (boards hold
+# thousands), which the 5-minute cadence makes lossless.
 #
 # Slug collision trap: a live board can belong to a different company than
 # the name suggests (ashby "runway" is Runway Financial, not Runway ML;
@@ -96,6 +104,49 @@ sources:
     company: duolingo
   - type: lever
     company: palantir
+
+  # --- fintech & banks on Workday ---
+  - {type: workday, company: paypal, instance: wd1, site: jobs}
+  - {type: workday, company: mastercard, instance: wd1, site: CorporateCareers}
+  - {type: workday, company: visa, instance: wd5, site: Visa}
+  - {type: workday, company: capitalone, instance: wd12, site: Capital_One}
+  - {type: workday, company: blackrock, instance: wd1, site: BlackRock_Professional}
+  - {type: workday, company: fmr, instance: wd1, site: fidelitycareers}  # Fidelity
+  - {type: workday, company: ms, instance: wd5, site: External}  # Morgan Stanley
+  - {type: workday, company: citi, instance: wd5, site: "2"}
+  - {type: workday, company: statestreet, instance: wd1, site: Global}
+  - {type: workday, company: nasdaq, instance: wd1, site: Global_External_Site}
+  - {type: workday, company: fis, instance: wd5, site: searchjobs}
+  - {type: workday, company: fiserv, instance: wd5, site: ext}
+  - {type: workday, company: tsys, instance: wd1, site: TSYS}  # Global Payments
+  - {type: workday, company: spgi, instance: wd5, site: SPGI_Careers}  # S&P Global
+  - {type: workday, company: interac, instance: wd3, site: Interac}
+  - {type: workday, company: rbc, instance: wd3, site: rbcglobal1}
+  - {type: workday, company: td, instance: wd3, site: TD_Bank_Careers}
+  - {type: workday, company: bmo, instance: wd3, site: External}
+  - {type: workday, company: cibc, instance: wd3, site: search}
+
+  # --- big tech on Workday ---
+  - {type: workday, company: nvidia, instance: wd5, site: NVIDIAExternalCareerSite}
+  - {type: workday, company: salesforce, instance: wd12, site: External_Career_Site}
+  - {type: workday, company: adobe, instance: wd5, site: external_experienced}
+  - {type: workday, company: intel, instance: wd1, site: external}
+  - {type: workday, company: hp, instance: wd5, site: ExternalCareerSite}
+  - {type: workday, company: hpe, instance: wd5, site: Jobsathpe}
+  - {type: workday, company: ebay, instance: wd5, site: apply}
+  - {type: workday, company: broadcom, instance: wd1, site: external_career}
+  - {type: workday, company: micron, instance: wd1, site: External}
+  - {type: workday, company: analogdevices, instance: wd1, site: External}
+  - {type: workday, company: cadence, instance: wd1, site: Univ_Careers}
+  - {type: workday, company: autodesk, instance: wd1, site: Ext}
+  - {type: workday, company: workday, instance: wd5, site: Workday}
+  - {type: workday, company: zoom, instance: wd5, site: Zoom}
+  - {type: workday, company: redhat, instance: wd5, site: jobs}
+  - {type: workday, company: paloaltonetworks, instance: wd5, site: panwexternalcareers}
+  - {type: workday, company: crowdstrike, instance: wd5, site: crowdstrikecareers}
+  - {type: workday, company: sonyglobal, instance: wd1, site: SonyGlobalCareers}
+  - {type: workday, company: motorolasolutions, instance: wd5, site: Careers}
+  - {type: workday, company: sec, instance: wd3, site: Samsung_Careers}  # Samsung
 
   # --- cross-company aggregators (cover FAANG and hundreds more) ---
   - type: github
