@@ -177,8 +177,62 @@ filters:
     - director
     - "head of"
     - "vp "
-  # Uncomment to keep only jobs whose location mentions one of these.
-  # locations: [remote, toronto, new york]
+  # Keep only Canada postings. Matching is case-insensitive SUBSTRING on the
+  # location, so every term below was checked against real location strings
+  # from the current sources before being added. Almost every Canadian
+  # posting says "... Canada" or uses a ", XX" province code; city names
+  # cover the SimplifyJobs shorthands ("Toronto", "NYC, Toronto, Remote in
+  # Canada"). Substring traps to keep in mind when editing:
+  #   - never add bare "us" (matches Australia), "markham" (Markham, IL),
+  #     "surrey" or "halifax" or "victoria" (Surrey/Halifax UK, Victoria
+  #     AUS), or ", ns" (matches "Sydney, NSW") - those cities' postings
+  #     all carry ", ON" / ", BC" / ", Canada" markers anyway.
+  #   - bare "remote" is deliberately absent: it would match "Remote US",
+  #     "Remote - India" and every other foreign remote. Canadian remote
+  #     postings say "Remote Canada", "Remote (Canada)", "Remote in
+  #     Canada" or "CA-Remote", which "canada" / "ca-remote" catch.
+  # Known gap: a bare countryless "Remote" is dropped; re-add "remote" here
+  # if those turn out to matter. Accepted false positives: "Waterloo, IA"
+  # and "Vancouver, WA" (one posting each in current data) ride in on the
+  # city names, which are worth keeping for the shorthand-only postings.
+  locations:
+    - canada
+    - ca-remote
+    - can-remote
+    # cities (unambiguous names only, see traps above)
+    - toronto
+    - vancouver
+    - montreal
+    - "montréal"
+    - ottawa
+    - waterloo
+    - kitchener
+    - mississauga
+    - brampton
+    - burnaby
+    - calgary
+    - edmonton
+    - winnipeg
+    - saskatoon
+    # provinces
+    - ontario
+    - quebec
+    - "québec"
+    - alberta
+    - british columbia
+    - saskatchewan
+    - manitoba
+    - nova scotia
+    - new brunswick
+    - newfoundland
+    # province codes, ", xx" comma forms
+    - ", on"
+    - ", bc"
+    - ", ab"
+    - ", qc"
+    - ", mb"
+    - ", sk"
+    - ", nb"
   # Drop jobs whose posted date is older than this. Aggregator repos backfill
   # month-old postings that would otherwise alert as "new"; undated jobs pass.
   max_age_days: 14
