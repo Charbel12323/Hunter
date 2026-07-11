@@ -29,6 +29,24 @@ def test_message_links_people_searches():
     assert "People:" in text
     assert "linkedin.com/search/results/people/?keywords=Acme%20recruiter" in text
     assert "linkedin.com/search/results/people/?keywords=Acme%20manager" in text
+    assert "geoUrn" not in text  # no people_location configured -> worldwide
+
+
+def test_message_people_searches_pinned_to_region():
+    text = format_message(make_job(), people_location="canada")
+    # %5B%22...%22%5D is the URL-encoded ["101174742"] LinkedIn expects.
+    assert text.count("&amp;geoUrn=%5B%22101174742%22%5D") == 2
+
+
+def test_message_unknown_people_location_falls_back_to_worldwide(caplog):
+    text = format_message(make_job(), people_location="narnia")
+    assert "geoUrn" not in text
+    assert "narnia" in caplog.text
+
+
+def test_digest_people_searches_pinned_to_region():
+    page = format_digest([make_job(1), make_job(2, company="Globex")], "canada")[0]
+    assert page.count("&amp;geoUrn=%5B%22101174742%22%5D") == 4  # 2 companies x 2 roles
 
 
 def test_digest_lists_jobs_and_counts():

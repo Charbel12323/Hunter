@@ -242,3 +242,7 @@ filters:
   max_age_days: 3
   # More than this many new matches in one run -> one digest message.
   digest_threshold: 10
+  # Pin the LinkedIn recruiter/manager search links to this region, so a
+  # Canada-only watchlist doesn't surface US recruiters. Supported values
+  # are the keys of GEO_URNS in scraper/notify.py; unset = worldwide.
+  people_location: canada
