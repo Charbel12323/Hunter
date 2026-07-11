@@ -30,15 +30,24 @@ MAX_TITLE_CHARS = 200  # a title longer than this is noise; keep lines bounded
 LINKEDIN_PEOPLE_URL = "https://www.linkedin.com/search/results/people/?keywords={query}"
 PEOPLE_SEARCHES = (("Recruiters", "recruiter"), ("Managers", "manager"))
 
+# LinkedIn's stable region ids for the people-search geoUrn facet, keyed by
+# the values `filters.people_location` accepts in sources.yaml. Without the
+# facet a "{company} recruiter" search ranks recruiters worldwide, so a US
+# recruiter shows up for a Canada-only watchlist.
+GEO_URNS = {
+    "canada": "101174742",
+    "united states": "103644278",
+}
 
-def send(job: Job) -> None:
-    _post(format_message(job))
+
+def send(job: Job, people_location: str | None = None) -> None:
+    _post(format_message(job, people_location))
     log.info("Notified: %s", job.id)
     time.sleep(SEND_PAUSE_SECONDS)
 
 
-def send_digest(jobs: list[Job]) -> None:
-    pages = format_digest(jobs)
+def send_digest(jobs: list[Job], people_location: str | None = None) -> None:
+    pages = format_digest(jobs, people_location)
     for page in pages:
         _post(page)
         time.sleep(SEND_PAUSE_SECONDS)
@@ -69,7 +78,7 @@ def _post(text: str) -> None:
     response.raise_for_status()
 
 
-def format_message(job: Job) -> str:
+def format_message(job: Job, people_location: str | None = None) -> str:
     # Telegram HTML mode breaks on unescaped <, >, & - escape everything
     # that originates from the source.
     e = html.escape
@@ -81,11 +90,11 @@ def format_message(job: Job) -> str:
         lines.append(e(job.description))
     lines.append("")
     lines.append(f'<a href="{e(job.url, quote=True)}">Apply</a> ({e(job.source)})')
-    lines.append(_people_links(job.company))
+    lines.append(_people_links(job.company, _geo_urn(people_location)))
     return "\n".join(lines)
 
 
-def format_digest(jobs: list[Job]) -> list[str]:
+def format_digest(jobs: list[Job], people_location: str | None = None) -> list[str]:
     # Telegram hard-caps a message at 4096 chars, so a big run must be split
     # across as many messages as it takes: every job gets sent, none are
     # silently dropped (a dropped job is marked seen and lost forever).
@@ -94,9 +103,10 @@ def format_digest(jobs: list[Job]) -> list[str]:
     for job in jobs:
         groups.setdefault(job.company, []).append(job)
 
+    geo_urn = _geo_urn(people_location)
     pages_lines: list[list[str]] = [[]]
     for company, group in groups.items():
-        for block in _company_blocks(company, group):
+        for block in _company_blocks(company, group, geo_urn):
             _place_block(pages_lines, block)
 
     pages = []
@@ -108,12 +118,12 @@ def format_digest(jobs: list[Job]) -> list[str]:
     return pages
 
 
-def _company_blocks(company: str, jobs: list[Job]) -> list[list[str]]:
+def _company_blocks(company: str, jobs: list[Job], geo_urn: str | None = None) -> list[list[str]]:
     """One header/jobs/people-links block per company, split into several
     blocks only when the company alone exceeds a page. Every split carries
     the header and people links so no page shows jobs orphaned from them."""
     header = f"<b>{html.escape(company)}</b>"
-    people = _people_links(company)
+    people = _people_links(company, geo_urn)
     frame = len(header) + len(people) + 2  # the two newlines around the jobs
     blocks: list[list[str]] = []
     lines: list[str] = []
@@ -141,11 +151,26 @@ def _place_block(pages_lines: list[list[str]], block: list[str]) -> None:
     page.extend(block)
 
 
-def _people_links(company: str) -> str:
+def _geo_urn(people_location: str | None) -> str | None:
+    if not people_location:
+        return None
+    urn = GEO_URNS.get(people_location.strip().lower())
+    if urn is None:
+        log.warning(
+            "Unknown people_location %r (known: %s); people links stay unfiltered.",
+            people_location,
+            ", ".join(sorted(GEO_URNS)),
+        )
+    return urn
+
+
+def _people_links(company: str, geo_urn: str | None = None) -> str:
     e = html.escape
     links = []
     for label, role in PEOPLE_SEARCHES:
         url = LINKEDIN_PEOPLE_URL.format(query=quote(f"{company} {role}"))
+        if geo_urn:
+            url += "&geoUrn=" + quote(f'["{geo_urn}"]')
         links.append(f'<a href="{e(url, quote=True)}">{label}</a>')
     return "People: " + " | ".join(links)
 
