@@ -277,8 +277,8 @@
       "zero_since": null
     },
     "workday/capitalone": {
-      "consecutive_failures": 4,
-      "warned_failures": false,
+      "consecutive_failures": 5,
+      "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
     },
@@ -409,8 +409,8 @@
       "zero_since": null
     },
     "workday/salesforce": {
-      "consecutive_failures": 4,
-      "warned_failures": false,
+      "consecutive_failures": 5,
+      "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
     },
@@ -74353,6 +74353,9 @@
     },
     "workday:td:R_1500801": {
       "seen_at": "2026-07-17T22:19:42+00:00"
+    },
+    "workday:td:R_1500810": {
+      "seen_at": "2026-07-18T04:48:22+00:00"
     },
     "workday:tsys:R0066298": {
       "seen_at": "2026-07-10T10:51:30+00:00"
