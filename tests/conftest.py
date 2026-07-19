@@ -9,7 +9,8 @@ FIXTURES = Path(__file__).parent / "fixtures"
 @pytest.fixture
 def fixture():
     def load(name: str):
-        with open(FIXTURES / name, encoding="utf-8") as f:
-            return json.load(f)
+        path = FIXTURES / name
+        with open(path, encoding="utf-8") as f:
+            return json.load(f) if path.suffix == ".json" else f.read()
 
     return load

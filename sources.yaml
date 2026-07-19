@@ -22,9 +22,12 @@
 # "warp" is Warp the payroll startup, not warp.dev). After probing, read a
 # couple of job titles to confirm it is the company you meant.
 #
-# FAANG (Meta/Apple/Amazon/Netflix/Google) run custom career sites with no
-# public board API - their new-grad roles arrive via the SimplifyJobs feed
-# below instead.
+# FAANG run custom career sites with no public board API. Amazon and Google
+# have dedicated adapters that scrape the JSON behind their own search pages
+# (see the custom career sites section). Meta blocks every non-browser
+# client (its GraphQL, sitemap, and even robots.txt reject plain HTTP
+# clients, and its robots.txt prohibits automated collection), so
+# Meta/Apple/Netflix roles arrive via the SimplifyJobs feeds below instead.
 
 sources:
   # --- fintech ---
@@ -147,6 +150,13 @@ sources:
   - {type: workday, company: sonyglobal, instance: wd1, site: SonyGlobalCareers}
   - {type: workday, company: motorolasolutions, instance: wd5, site: Careers}
   - {type: workday, company: sec, instance: wd3, site: Samsung_Careers}  # Samsung
+
+  # --- custom career sites (scraped via the JSON behind their search UI) ---
+  # Both are sorted newest-first and fetch enough per poll that the 5-minute
+  # cadence is lossless. The `name` key labels the source; the country /
+  # location keys filter server-side to match the Canada-only watchlist.
+  - {type: amazon, name: canada, country: CAN}
+  - {type: google, name: canada, location: Canada}
 
   # --- cross-company aggregators (cover FAANG and hundreds more) ---
   - type: github
