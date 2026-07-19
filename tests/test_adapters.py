@@ -17,12 +17,14 @@ from scraper.adapters import (
     google_careers,
     greenhouse,
     lever,
+    microsoft,
     workday,
 )
 
 
-def test_registry_dispatches_all_seven_types():
-    for type_str in ["ashby", "greenhouse", "lever", "github", "workday", "amazon", "google"]:
+def test_registry_dispatches_all_types():
+    types = ["ashby", "greenhouse", "lever", "github", "workday", "amazon", "google", "microsoft"]
+    for type_str in types:
         assert callable(get_adapter(type_str))
 
 
@@ -44,6 +46,7 @@ def test_registry_has_no_stale_entries():
         "workday",
         "amazon",
         "google",
+        "microsoft",
     }
 
 
@@ -345,3 +348,63 @@ def test_google_raises_when_data_blob_missing():
         raise AssertionError("expected ValueError")
     except ValueError as exc:
         assert "ds:1" in str(exc)  # a layout change must alarm, not report 0 jobs
+
+
+MICROSOFT_URL = "https://apply.careers.microsoft.com/api/pcsx/search"
+
+
+@responses.activate
+def test_microsoft_maps_jobs(fixture):
+    responses.get(MICROSOFT_URL, json=fixture("microsoft_search.json"))
+    jobs = microsoft.fetch({"type": "microsoft", "name": "canada", "location": "Canada"})
+
+    assert len(jobs) == 2
+    job = jobs[0]
+    assert job.id == "microsoft:microsoft:200041999"  # displayJobId, not internal id
+    assert job.title == "Software Engineer II - Full Stack"
+    assert job.company == "microsoft"
+    assert job.source == "microsoft/canada"
+    # multiple locations are joined
+    assert job.location == "Canada, British Columbia, Vancouver; Canada, Ontario, Toronto"
+    assert job.url == "https://apply.careers.microsoft.com/careers/job/1970393556914401"
+    assert job.posted_at and job.posted_at.startswith("20")  # epoch -> ISO
+    # missing postedTs stays undated (never-miss); missing positionUrl falls
+    # back to the id-derived path
+    assert jobs[1].posted_at is None
+    assert jobs[1].url == "https://apply.careers.microsoft.com/careers/job/1970393556862981"
+
+    request = responses.calls[0].request
+    assert "sort_by=timestamp" in request.url  # newest-first
+    assert "location=Canada" in request.url
+    assert "domain=microsoft.com" in request.url
+    assert "Mozilla" in request.headers["User-Agent"]
+
+
+@responses.activate
+def test_microsoft_paginates_and_dedupes_shifted_entries():
+    def position(i):
+        return {
+            "id": 1000 + i,
+            "displayJobId": str(i),
+            "name": f"Engineer {i}",
+            "locations": ["Canada, Ontario, Toronto"],
+            "postedTs": 1784234857,
+            "positionUrl": f"/careers/job/{1000 + i}",
+        }
+
+    pages = {
+        0: [position(i) for i in range(10)],
+        10: [position(i) for i in range(9, 19)],  # entry 9 slid onto page 2
+        20: [position(i) for i in range(19, 24)],  # short page ends pagination
+    }
+
+    def callback(request):
+        start = int(dict(parse_qsl(urlsplit(request.url).query)).get("start", "0"))
+        return (200, {}, json.dumps({"data": {"positions": pages[start]}}))
+
+    responses.add_callback(responses.GET, MICROSOFT_URL, callback=callback)
+    jobs = microsoft.fetch({"type": "microsoft"})
+
+    assert len(responses.calls) == 3  # DEFAULT_PAGES, last page short
+    assert len(jobs) == 24  # 0..23, the shared entry 9 counted once
+    assert len({job.id for job in jobs}) == 24

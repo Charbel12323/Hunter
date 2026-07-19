@@ -14,6 +14,7 @@ from scraper.adapters import (
     google_careers,
     greenhouse,
     lever,
+    microsoft,
     workday,
 )
 from scraper.models import Job
@@ -26,6 +27,7 @@ REGISTRY: dict[str, Callable[[dict], list[Job]]] = {
     "workday": workday.fetch,
     "amazon": amazon.fetch,
     "google": google_careers.fetch,
+    "microsoft": microsoft.fetch,
 }
 
 
