@@ -10,6 +10,16 @@
 #   lever:      https://api.lever.co/v0/postings/{company}?mode=json
 #   workday:    POST https://{company}.{instance}.myworkdayjobs.com/wday/cxs/{company}/{site}/jobs
 #               body {"appliedFacets":{},"limit":20,"offset":0,"searchText":""}
+#   ultipro:    POST https://{host}/{tenant}/JobBoard/{board}/JobBoardView/LoadSearchResults
+#               body {"opportunitySearch":{"Top":10,"Skip":0,"QueryString":"","OrderBy":
+#               [{"Value":"postedDateDesc","PropertyName":"PostedDate","Ascending":false}],
+#               "Filters":[]},"matchCriteria":{"PreferredJobs":[],"Educations":[],
+#               "LicenseAndCertifications":[],"Skills":[],"hasNoLicenses":false,"SkippedSkills":[]}}
+#
+# UltiPro (UKG Pro Recruiting) needs three values, all readable off the board
+# URL: for https://recruiting.ultipro.ca/PAS5000PASON/JobBoard/736c1025-.../
+# the entry is host: recruiting.ultipro.ca / tenant: PAS5000PASON /
+# board: 736c1025-... (the GUID). host defaults to recruiting.ultipro.com.
 #
 # Workday needs three values, all readable off the board URL: for
 # https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite the entry is
@@ -150,6 +160,10 @@ sources:
   - {type: workday, company: sonyglobal, instance: wd1, site: SonyGlobalCareers}
   - {type: workday, company: motorolasolutions, instance: wd5, site: Careers}
   - {type: workday, company: sec, instance: wd3, site: Samsung_Careers}  # Samsung
+
+  # --- energy tech on UltiPro ---
+  - {type: ultipro, company: pason, host: recruiting.ultipro.ca,
+     tenant: PAS5000PASON, board: 736c1025-c469-4ece-a487-4884545272a7}
 
   # --- custom career sites (scraped via the JSON behind their search UI) ---
   # Both are sorted newest-first and fetch enough per poll that the 5-minute

@@ -18,12 +18,23 @@ from scraper.adapters import (
     greenhouse,
     lever,
     microsoft,
+    ultipro,
     workday,
 )
 
 
 def test_registry_dispatches_all_types():
-    types = ["ashby", "greenhouse", "lever", "github", "workday", "amazon", "google", "microsoft"]
+    types = [
+        "ashby",
+        "greenhouse",
+        "lever",
+        "github",
+        "workday",
+        "amazon",
+        "google",
+        "microsoft",
+        "ultipro",
+    ]
     for type_str in types:
         assert callable(get_adapter(type_str))
 
@@ -47,6 +58,7 @@ def test_registry_has_no_stale_entries():
         "amazon",
         "google",
         "microsoft",
+        "ultipro",
     }
 
 
@@ -408,3 +420,77 @@ def test_microsoft_paginates_and_dedupes_shifted_entries():
     assert len(responses.calls) == 3  # DEFAULT_PAGES, last page short
     assert len(jobs) == 24  # 0..23, the shared entry 9 counted once
     assert len({job.id for job in jobs}) == 24
+
+
+ULTIPRO_URL = (
+    "https://recruiting.ultipro.ca/PAS5000PASON/JobBoard"
+    "/736c1025-c469-4ece-a487-4884545272a7/JobBoardView/LoadSearchResults"
+)
+ULTIPRO_CONFIG = {
+    "type": "ultipro",
+    "company": "pason",
+    "host": "recruiting.ultipro.ca",
+    "tenant": "PAS5000PASON",
+    "board": "736c1025-c469-4ece-a487-4884545272a7",
+}
+
+
+@responses.activate
+def test_ultipro_maps_jobs(fixture):
+    responses.post(ULTIPRO_URL, json=fixture("ultipro_pason.json"))
+    jobs = ultipro.fetch(ULTIPRO_CONFIG)
+
+    assert len(jobs) == 3
+    job = jobs[0]
+    assert job.id == "ultipro:pason:FIELD001983"  # RequisitionNumber, not the GUID
+    assert job.title == "Field Service Technician - Peace River"
+    assert job.company == "pason"
+    assert job.source == "ultipro/pason"
+    assert job.location == "Remote Alberta"
+    assert job.url == (
+        "https://recruiting.ultipro.ca/PAS5000PASON/JobBoard"
+        "/736c1025-c469-4ece-a487-4884545272a7/OpportunityDetail"
+        "?opportunityId=173a7329-3e04-4b96-ba18-bf372d2d7671"
+    )
+    assert job.posted_at == "2026-07-23T19:47:22.998Z"  # real ISO timestamp
+    assert len(job.description) <= 500
+
+    # BriefDescription newlines are collapsed to plain single-spaced text
+    assert "\n" not in jobs[1].description
+    # null LocalizedName falls back to the structured Address; missing
+    # PostedDate stays undated (never-miss)
+    assert jobs[2].location == "Athabasca, AB, CAN"
+    assert jobs[2].posted_at is None
+
+    body = json.loads(responses.calls[0].request.body)
+    assert body["opportunitySearch"]["OrderBy"][0]["Value"] == "postedDateDesc"  # newest-first
+    assert len(responses.calls) == 1  # totalCount=3 fits in one page
+
+
+@responses.activate
+def test_ultipro_paginates_and_dedupes_shifted_entries():
+    def opportunity(i):
+        return {
+            "Id": f"guid-{i}",
+            "Title": f"Engineer {i}",
+            "RequisitionNumber": f"REQ{i:06d}",
+            "Locations": [{"LocalizedName": "Calgary"}],
+            "PostedDate": "2026-07-23T00:00:00.000Z",
+            "BriefDescription": "desc",
+        }
+
+    pages = {
+        0: [opportunity(i) for i in range(50)],
+        50: [opportunity(i) for i in range(49, 70)],  # entry 49 slid onto page 2
+    }
+
+    def callback(request):
+        skip = json.loads(request.body)["opportunitySearch"]["Skip"]
+        return (200, {}, json.dumps({"totalCount": 70, "opportunities": pages[skip]}))
+
+    responses.add_callback(responses.POST, ULTIPRO_URL, callback=callback)
+    jobs = ultipro.fetch(ULTIPRO_CONFIG)
+
+    assert len(responses.calls) == 2  # 70 postings fit in two pages of 50
+    assert len(jobs) == 70  # the shared entry 49 counted once
+    assert len({job.id for job in jobs}) == 70
