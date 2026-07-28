@@ -3,8 +3,9 @@
 #
 # Migration trap: before adding a company, confirm its Apply links actually
 # point at that ATS. A board a company migrated away from returns 200 with
-# zero jobs forever (e.g. deel, mercury, kraken, and plaid all have empty
-# abandoned boards). Probe first:
+# zero jobs forever (e.g. deel and kraken have empty abandoned boards;
+# mercury and plaid moved ATSes, so their OLD boards are empty - the live
+# greenhouse/ashby ones are what's on the list below). Probe first:
 #   ashby:      https://api.ashbyhq.com/posting-api/job-board/{company}
 #   greenhouse: https://boards-api.greenhouse.io/v1/boards/{company}/jobs
 #   lever:      https://api.lever.co/v0/postings/{company}?mode=json
@@ -63,6 +64,17 @@ sources:
     company: adyen
   - type: greenhouse
     company: block
+  - {type: greenhouse, company: mercury}  # live board; the abandoned one was ashby
+  - {type: ashby, company: plaid}  # live board; the abandoned one was lever
+  - {type: greenhouse, company: gusto}
+  - {type: greenhouse, company: tripactions}  # Navan, still on its legacy slug
+  - {type: ashby, company: airwallex}
+  - {type: greenhouse, company: marqeta}
+  - {type: ashby, company: moderntreasury}
+  - {type: greenhouse, company: lithic}
+  - {type: ashby, company: koho}
+  - {type: ashby, company: neofinancial}
+  - {type: ashby, company: float}  # Float Financial (Canadian corporate cards)
 
   # --- tech ---
   - type: ashby
@@ -118,6 +130,107 @@ sources:
   - type: lever
     company: palantir
 
+  # --- AI ---
+  - {type: greenhouse, company: xai}
+  - {type: greenhouse, company: scaleai}
+  - {type: ashby, company: mistral.ai}  # Montreal office; old lever "mistral" is abandoned
+  - {type: greenhouse, company: togetherai}
+  - {type: ashby, company: cerebras}
+  - {type: ashby, company: anyscale}
+  - {type: ashby, company: langchain}
+  - {type: ashby, company: pinecone}
+  - {type: greenhouse, company: gleanwork}
+  - {type: greenhouse, company: sourcegraph91}
+  - {type: ashby, company: character}
+  - {type: ashby, company: writer}
+  - {type: ashby, company: abridge}
+  - {type: ashby, company: openevidence}
+  - {type: ashby, company: ideogram}  # all-Toronto
+  - {type: ashby, company: runway-ml}  # the AI video co; ashby "runway" is Runway Financial
+  - {type: greenhouse, company: coreweave}  # Weights & Biases hiring folded in here
+  - {type: ashby, company: fireworks}
+  - {type: ashby, company: baseten}
+
+  # --- dev tools & infra ---
+  - {type: greenhouse, company: gitlab}
+  - {type: greenhouse, company: grafanalabs}
+  - {type: ashby, company: railway}
+  - {type: greenhouse, company: planetscale}
+  - {type: ashby, company: workos}
+  - {type: ashby, company: airbyte}
+  - {type: ashby, company: astronomer}
+  - {type: ashby, company: zed}
+  - {type: greenhouse, company: postman}
+  - {type: greenhouse, company: wizinc}
+  - {type: greenhouse, company: chainguard}
+  - {type: greenhouse, company: tailscale}  # Toronto HQ
+  - {type: ashby, company: 1password}
+  - {type: ashby, company: sentry}
+  - {type: greenhouse, company: launchdarkly}
+  - {type: greenhouse, company: circleci}
+  - {type: greenhouse, company: buildkite}
+  - {type: greenhouse, company: warp}  # warp.dev the terminal; ashby "warp" is a payroll startup
+  - {type: ashby, company: zapier}
+  - {type: greenhouse, company: fivetran}  # dbt Labs merged in; old dbtlabsinc board is dead
+  - {type: greenhouse, company: cockroachlabs}
+  - {type: ashby, company: confluent}
+  - {type: ashby, company: snowflake}
+  - {type: ashby, company: benchling}
+  - {type: greenhouse, company: jetbrains}
+  - {type: greenhouse, company: verkada}
+  - {type: greenhouse, company: samsara}
+
+  # --- consumer & SaaS ---
+  - {type: greenhouse, company: airtable}
+  - {type: greenhouse, company: asana}
+  - {type: greenhouse, company: discord}
+  - {type: greenhouse, company: reddit}
+  - {type: greenhouse, company: pinterest}
+  - {type: greenhouse, company: instacart}
+  - {type: greenhouse, company: doordashusa}
+  - {type: greenhouse, company: lyft}
+  - {type: greenhouse, company: airbnb}
+  - {type: greenhouse, company: dropbox}
+  - {type: greenhouse, company: twitch}
+  - {type: greenhouse, company: roblox}
+  - {type: lever, company: spotify}
+  - {type: greenhouse, company: mongodb}
+  - {type: greenhouse, company: elastic}
+  - {type: greenhouse, company: cloudflare}
+  - {type: greenhouse, company: datadog}
+  - {type: greenhouse, company: twilio}
+  - {type: greenhouse, company: okta}
+  - {type: greenhouse, company: flexport}
+  - {type: greenhouse, company: amplitude}
+  - {type: greenhouse, company: mixpanel}
+  - {type: greenhouse, company: webflow}
+  - {type: greenhouse, company: squarespace}
+  - {type: greenhouse, company: intercom}
+  - {type: ashby, company: miro}
+  - {type: ashby, company: "Superhuman Platform Inc"}  # Grammarly's rebrand; slug really has spaces
+
+  # --- Canadian tech ---
+  - {type: greenhouse, company: faire}
+  - {type: ashby, company: jobber}
+  - {type: greenhouse, company: thinkific}
+  - {type: greenhouse, company: d2l}  # lever "d2l" is a different SF company
+  - {type: greenhouse, company: hootsuite}
+  - {type: ashby, company: klue}
+  - {type: lever, company: waveapps}
+  - {type: greenhouse, company: leagueinc}
+  - {type: greenhouse, company: tenstorrent}
+  - {type: lever, company: waabi}
+  - {type: greenhouse, company: alayacare}
+  - {type: ashby, company: benevity}
+  - {type: greenhouse, company: ada18}  # Ada (ada.cx)
+  - {type: ashby, company: top-hat}
+  - {type: ashby, company: lightspeedhq}  # ashby "lightspeed" is an Illinois robotics co
+  - {type: greenhouse, company: coveoen}
+  - {type: greenhouse, company: 7shifts}
+  - {type: ashby, company: trulioo}
+  - {type: greenhouse, company: tucows}
+  - {type: ashby, company: hopper}  # Montreal/Toronto/Vancouver
+
   # --- fintech & banks on Workday ---
   - {type: workday, company: paypal, instance: wd1, site: jobs}
   - {type: workday, company: mastercard, instance: wd1, site: CorporateCareers}
@@ -161,9 +274,36 @@ sources:
   - {type: workday, company: motorolasolutions, instance: wd5, site: Careers}
   - {type: workday, company: sec, instance: wd3, site: Samsung_Careers}  # Samsung
 
+  # --- more tech & Canadian enterprises on Workday ---
+  - {type: workday, company: snapchat, instance: wd1, site: snap}  # Snap, Toronto eng
+  - {type: workday, company: snyk, instance: wd103, site: External}
+  - {type: workday, company: clio, instance: wd3, site: ClioCareerSite}  # Vancouver/Toronto/Calgary
+  - {type: workday, company: applyboard, instance: wd3, site: ApplyBoardNH}  # Kitchener
+  - {type: workday, company: trendmicro, instance: wd3, site: External}  # big Ottawa office
+  - {type: workday, company: ciena, instance: wd5, site: Careers}  # Ottawa
+  - {type: workday, company: bb, instance: wd3, site: BlackBerry}  # BlackBerry/QNX, Waterloo+Ottawa
+  - {type: workday, company: mitel, instance: wd3, site: mitelcareers}  # Ottawa
+  - {type: workday, company: cae, instance: wd3, site: career}  # Montreal
+  - {type: workday, company: thomsonreuters, instance: wd5, site: External_Career_Site}  # Toronto
+  - {type: workday, company: sunlife, instance: wd3, site: Experienced-Jobs}
+  - {type: workday, company: manulife, instance: wd3, site: MFCJH_Jobs}
+  - {type: workday, company: ssctech, instance: wd1, site: SSCTechnologies}  # SS&C, Toronto
+  - {type: workday, company: broadridge, instance: wd5, site: Careers}
+  - {type: workday, company: intactfc, instance: wd3, site: intactfc}
+  - {type: workday, company: canadiantirecorporation, instance: wd3, site: Enterprise_External_Careers_Site}
+  - {type: workday, company: telusinternational, instance: wd3, site: External}  # Telus Digital
+  - {type: workday, company: marvell, instance: wd1, site: MarvellCareers2}
+  - {type: workday, company: workiva, instance: wd503, site: careers}  # nonstandard wd503 instance
+
   # --- energy tech on UltiPro ---
   - {type: ultipro, company: pason, host: recruiting.ultipro.ca,
      tenant: PAS5000PASON, board: 736c1025-c469-4ece-a487-4884545272a7}
+  # MDA Space (Brampton/Montreal/Richmond BC) splits postings across boards
+  # under one tenant; the students board carries the co-op/intern roles.
+  - {type: ultipro, company: mda, host: recruiting.ultipro.ca,
+     tenant: MAC5000MCDW, board: 4f9bafdd-9002-4e06-975a-bcaae5edaf84}
+  - {type: ultipro, company: mda-students, host: recruiting.ultipro.ca,
+     tenant: MAC5000MCDW, board: 7667adcc-47ae-477a-9183-0d8ef8bc0748}
 
   # --- custom career sites (scraped via the JSON behind their search UI) ---
   # Both are sorted newest-first and fetch enough per poll that the 5-minute
