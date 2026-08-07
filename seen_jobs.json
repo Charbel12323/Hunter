@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-08-07"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 1513,
+      "consecutive_failures": 1514,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -137171,6 +137171,9 @@
     "workday:hpe:1209213": {
       "seen_at": "2026-07-20T23:20:55+00:00"
     },
+    "workday:hpe:1209215": {
+      "seen_at": "2026-08-07T19:45:21+00:00"
+    },
     "workday:hpe:1209218": {
       "seen_at": "2026-07-16T19:05:28+00:00"
     },
@@ -137554,6 +137557,12 @@
     },
     "workday:hpe:1209951": {
       "seen_at": "2026-07-15T01:03:34+00:00"
+    },
+    "workday:hpe:1209952": {
+      "seen_at": "2026-08-07T19:45:21+00:00"
+    },
+    "workday:hpe:1209953": {
+      "seen_at": "2026-08-07T19:45:21+00:00"
     },
     "workday:hpe:1209955": {
       "seen_at": "2026-08-05T18:32:31+00:00"
@@ -189230,6 +189239,9 @@
     "workday:thomsonreuters:Greenville; Frisco; Columbia, South Carolina; Charlotte": {
       "seen_at": "2026-08-04T21:25:37+00:00"
     },
+    "workday:thomsonreuters:Hartford, Connecticut; Los Angeles; Washington, DC, District of Columbia; New York; Ann Arbor; Frisco; Eagan; Denver, Colorado; Las Vegas; Seattle": {
+      "seen_at": "2026-08-07T19:45:21+00:00"
+    },
     "workday:thomsonreuters:Hong Kong": {
       "seen_at": "2026-08-04T01:36:12+00:00"
     },
@@ -194722,6 +194734,9 @@
     },
     "workday:zoom:R19516": {
       "seen_at": "2026-08-07T18:05:46+00:00"
+    },
+    "workday:zoom:R19520": {
+      "seen_at": "2026-08-07T19:45:21+00:00"
     },
     "workday:zoom:R19521": {
       "seen_at": "2026-08-07T16:56:04+00:00"
