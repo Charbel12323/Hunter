@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-08-12"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 2463,
+      "consecutive_failures": 2464,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -6715,6 +6715,9 @@
     },
     "ashby:confluent:69b37f70-0978-472e-86a9-2d19ba70820f": {
       "seen_at": "2026-07-28T05:06:02+00:00"
+    },
+    "ashby:confluent:70c593c1-96db-4f99-8e72-39d454ffec6c": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
     },
     "ashby:confluent:7ea0f7ad-2445-4fac-a33c-fbfc164d5181": {
       "seen_at": "2026-07-28T05:06:02+00:00"
@@ -110168,6 +110171,9 @@
     "workday:canadiantirecorporation:JR157423": {
       "seen_at": "2026-07-28T05:06:03+00:00"
     },
+    "workday:canadiantirecorporation:JR157659": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
+    },
     "workday:canadiantirecorporation:JR157696": {
       "seen_at": "2026-07-28T05:06:03+00:00"
     },
@@ -147461,6 +147467,9 @@
     "workday:intactfc:R153343": {
       "seen_at": "2026-07-28T05:06:03+00:00"
     },
+    "workday:intactfc:R153366": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
+    },
     "workday:intactfc:R153391": {
       "seen_at": "2026-08-07T12:44:30+00:00"
     },
@@ -147559,6 +147568,9 @@
     },
     "workday:intactfc:R154511": {
       "seen_at": "2026-08-10T16:07:44+00:00"
+    },
+    "workday:intactfc:R154564": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
     },
     "workday:intactfc:R154570": {
       "seen_at": "2026-08-12T14:32:33+00:00"
@@ -174485,6 +174497,9 @@
     "workday:rbc:R-0000177147": {
       "seen_at": "2026-07-10T16:20:18+00:00"
     },
+    "workday:rbc:R-0000177152": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
+    },
     "workday:rbc:R-0000177165": {
       "seen_at": "2026-07-23T17:51:36+00:00"
     },
@@ -178283,6 +178298,9 @@
     "workday:rbc:R-0000182669": {
       "seen_at": "2026-07-30T18:59:07+00:00"
     },
+    "workday:rbc:R-0000182670": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
+    },
     "workday:rbc:R-0000182674": {
       "seen_at": "2026-07-30T20:34:09+00:00"
     },
@@ -179192,6 +179210,9 @@
     "workday:rbc:R-0000183957": {
       "seen_at": "2026-08-12T14:32:33+00:00"
     },
+    "workday:rbc:R-0000183961": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
+    },
     "workday:rbc:R-0000183964": {
       "seen_at": "2026-08-12T14:41:28+00:00"
     },
@@ -180001,6 +180022,9 @@
     },
     "workday:redhat:R-058819": {
       "seen_at": "2026-08-12T14:41:28+00:00"
+    },
+    "workday:redhat:R-058820": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
     },
     "workday:salesforce:JR243174": {
       "seen_at": "2026-08-11T07:15:45+00:00"
@@ -206222,6 +206246,9 @@
     "workday:visa:REF080868W": {
       "seen_at": "2026-07-23T10:31:50+00:00"
     },
+    "workday:visa:REF080953W": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
+    },
     "workday:visa:REF080993W": {
       "seen_at": "2026-08-04T06:45:25+00:00"
     },
@@ -207826,6 +207853,9 @@
     },
     "workday:visa:REF087281W": {
       "seen_at": "2026-08-11T22:23:15+00:00"
+    },
+    "workday:visa:REF087290W": {
+      "seen_at": "2026-08-12T14:45:45+00:00"
     },
     "workday:visa:REF087297W": {
       "seen_at": "2026-08-11T13:24:59+00:00"
