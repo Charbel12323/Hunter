@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 4055,
+      "consecutive_failures": 4056,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -12019,6 +12019,9 @@
     },
     "ashby:lambda:2a8716e7-27e2-4585-8676-48055071ea34": {
       "seen_at": "2026-07-16T23:01:06+00:00"
+    },
+    "ashby:lambda:2b7fbb56-fc5b-4d9d-91a6-fdfb81a135e8": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
     },
     "ashby:lambda:2c19c63d-5dd6-4b0a-a2af-5713da13d9c8": {
       "seen_at": "2026-07-10T23:58:16+00:00"
@@ -76910,6 +76913,9 @@
     "greenhouse:discord:8703614002": {
       "seen_at": "2026-08-14T03:33:13+00:00"
     },
+    "greenhouse:discord:8722538002": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
+    },
     "greenhouse:discord:8730666002": {
       "seen_at": "2026-08-20T17:07:45+00:00"
     },
@@ -83576,6 +83582,9 @@
     "greenhouse:gitlab:8709925002": {
       "seen_at": "2026-08-20T17:36:19+00:00"
     },
+    "greenhouse:gitlab:8709928002": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
+    },
     "greenhouse:gitlab:8710061002": {
       "seen_at": "2026-08-19T19:57:24+00:00"
     },
@@ -88018,6 +88027,15 @@
     },
     "greenhouse:mixpanel:8143102": {
       "seen_at": "2026-08-19T23:11:00+00:00"
+    },
+    "greenhouse:mixpanel:8143229": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
+    },
+    "greenhouse:mixpanel:8144760": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
+    },
+    "greenhouse:mixpanel:8144765": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
     },
     "greenhouse:mongodb:5050863": {
       "seen_at": "2026-08-06T23:24:06+00:00"
@@ -134714,6 +134732,9 @@
     "workday:cibc:2617052": {
       "seen_at": "2026-08-17T14:56:45+00:00"
     },
+    "workday:cibc:2617061": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
+    },
     "workday:cibc:2617066": {
       "seen_at": "2026-08-17T20:19:53+00:00"
     },
@@ -134876,6 +134897,9 @@
     "workday:cibc:2617285": {
       "seen_at": "2026-08-19T19:57:24+00:00"
     },
+    "workday:cibc:2617291": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
+    },
     "workday:cibc:2617298": {
       "seen_at": "2026-08-20T17:27:58+00:00"
     },
@@ -134893,6 +134917,9 @@
     },
     "workday:cibc:2617326": {
       "seen_at": "2026-08-20T17:27:58+00:00"
+    },
+    "workday:cibc:2617342": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
     },
     "workday:cibc:2617368": {
       "seen_at": "2026-08-20T15:15:53+00:00"
@@ -135928,6 +135955,9 @@
     },
     "workday:citi:26947773": {
       "seen_at": "2026-08-18T22:33:58+00:00"
+    },
+    "workday:citi:26947787": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
     },
     "workday:citi:26947855": {
       "seen_at": "2026-07-14T12:42:18+00:00"
@@ -151249,6 +151279,9 @@
     },
     "workday:clio:REQ-1505": {
       "seen_at": "2026-07-28T05:06:03+00:00"
+    },
+    "workday:clio:REQ-4291": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
     },
     "workday:clio:REQ-4307": {
       "seen_at": "2026-08-06T23:24:06+00:00"
@@ -199589,6 +199622,9 @@
     "workday:rbc:R-0000169731": {
       "seen_at": "2026-07-08T19:49:36+00:00"
     },
+    "workday:rbc:R-0000169754": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
+    },
     "workday:rbc:R-0000169796": {
       "seen_at": "2026-08-05T13:53:21+00:00"
     },
@@ -206806,6 +206842,9 @@
     },
     "workday:rbc:R-0000185120": {
       "seen_at": "2026-08-20T15:36:17+00:00"
+    },
+    "workday:rbc:R-0000185161": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
     },
     "workday:rbc:R-0000185169": {
       "seen_at": "2026-08-20T17:44:33+00:00"
@@ -236504,6 +236543,9 @@
     "workday:td:R_1506655": {
       "seen_at": "2026-08-20T15:15:53+00:00"
     },
+    "workday:td:R_1506701": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
+    },
     "workday:telusinternational:Req_00024003": {
       "seen_at": "2026-07-28T05:06:03+00:00"
     },
@@ -242722,6 +242764,9 @@
     },
     "workday:workday:JR-0109305": {
       "seen_at": "2026-08-12T21:08:40+00:00"
+    },
+    "workday:workday:JR-0109307": {
+      "seen_at": "2026-08-20T17:53:06+00:00"
     },
     "workday:workday:JR-0109309": {
       "seen_at": "2026-08-20T17:44:33+00:00"
