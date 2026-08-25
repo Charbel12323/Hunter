@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-08-25"
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 5033,
+      "consecutive_failures": 5034,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -19693,6 +19693,9 @@
     },
     "ashby:perplexity:7ae341c4-411e-468c-bc26-bbdd8e55d388": {
       "seen_at": "2026-07-08T16:14:43+00:00"
+    },
+    "ashby:perplexity:7dedcdea-42be-4bb0-b603-791146ff73f0": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
     },
     "ashby:perplexity:7f2b3619-5ffa-467b-be6f-7a6b7d487892": {
       "seen_at": "2026-07-08T16:14:43+00:00"
@@ -63224,6 +63227,9 @@
     "greenhouse:adyen:8138725": {
       "seen_at": "2026-08-19T15:23:21+00:00"
     },
+    "greenhouse:adyen:8138805": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
+    },
     "greenhouse:adyen:8140008": {
       "seen_at": "2026-08-18T19:40:45+00:00"
     },
@@ -91424,6 +91430,9 @@
     "greenhouse:lyft:8743438002": {
       "seen_at": "2026-08-25T00:37:38+00:00"
     },
+    "greenhouse:lyft:8746134002": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
+    },
     "greenhouse:marqeta:6908099": {
       "seen_at": "2026-07-28T05:06:02+00:00"
     },
@@ -93715,6 +93724,9 @@
     },
     "greenhouse:mongodb:8119843": {
       "seen_at": "2026-08-21T05:33:58+00:00"
+    },
+    "greenhouse:mongodb:8120181": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
     },
     "greenhouse:mongodb:8121324": {
       "seen_at": "2026-08-17T13:13:15+00:00"
@@ -114464,6 +114476,9 @@
     "workday:analogdevices:R264299": {
       "seen_at": "2026-08-14T18:07:42+00:00"
     },
+    "workday:analogdevices:R264300": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
+    },
     "workday:analogdevices:R264301": {
       "seen_at": "2026-07-29T10:48:13+00:00"
     },
@@ -118909,6 +118924,9 @@
     },
     "workday:blackrock:R265369": {
       "seen_at": "2026-07-30T04:28:03+00:00"
+    },
+    "workday:blackrock:R265370": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
     },
     "workday:blackrock:R265371": {
       "seen_at": "2026-07-17T10:35:50+00:00"
@@ -136552,6 +136570,9 @@
     },
     "workday:capitalone:R249831": {
       "seen_at": "2026-08-21T13:41:40+00:00"
+    },
+    "workday:capitalone:R249832": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
     },
     "workday:capitalone:R249835": {
       "seen_at": "2026-08-24T16:23:21+00:00"
@@ -158861,6 +158882,9 @@
     "workday:citi:26988760": {
       "seen_at": "2026-08-25T14:34:49+00:00"
     },
+    "workday:citi:26988762": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
+    },
     "workday:citi:26988791": {
       "seen_at": "2026-08-21T07:53:20+00:00"
     },
@@ -159022,6 +159046,9 @@
     },
     "workday:citi:26989200": {
       "seen_at": "2026-08-24T18:04:37+00:00"
+    },
+    "workday:citi:26989212": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
     },
     "workday:citi:26989213": {
       "seen_at": "2026-08-21T12:43:07+00:00"
@@ -159925,6 +159952,9 @@
     },
     "workday:crowdstrike:R28096": {
       "seen_at": "2026-08-20T19:05:45+00:00"
+    },
+    "workday:crowdstrike:R28110": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
     },
     "workday:crowdstrike:R28115": {
       "seen_at": "2026-07-08T16:14:43+00:00"
@@ -164924,6 +164954,9 @@
     "workday:fis:JR0308692": {
       "seen_at": "2026-08-13T17:41:47+00:00"
     },
+    "workday:fis:JR0308693": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
+    },
     "workday:fis:JR0308694": {
       "seen_at": "2026-08-12T19:21:11+00:00"
     },
@@ -168496,6 +168529,9 @@
     },
     "workday:fiserv:R-10401696": {
       "seen_at": "2026-08-24T21:04:33+00:00"
+    },
+    "workday:fiserv:R-10401762": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
     },
     "workday:fmr:2055104": {
       "seen_at": "2026-08-19T15:06:59+00:00"
@@ -210398,6 +210434,9 @@
     "workday:rbc:R-0000153234": {
       "seen_at": "2026-07-17T18:25:05+00:00"
     },
+    "workday:rbc:R-0000153258": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
+    },
     "workday:rbc:R-0000153999": {
       "seen_at": "2026-08-10T07:39:22+00:00"
     },
@@ -218845,6 +218884,9 @@
     },
     "workday:rbc:R-0000185732": {
       "seen_at": "2026-08-25T14:43:26+00:00"
+    },
+    "workday:rbc:R-0000185734": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
     },
     "workday:redhat:R-043519": {
       "seen_at": "2026-07-28T03:11:29+00:00"
@@ -250858,6 +250900,9 @@
     },
     "workday:td:R_1507325": {
       "seen_at": "2026-08-25T08:08:20+00:00"
+    },
+    "workday:td:R_1507343": {
+      "seen_at": "2026-08-25T14:51:47+00:00"
     },
     "workday:telusinternational:Req_00024003": {
       "seen_at": "2026-07-28T05:06:03+00:00"
