@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-08-26"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -583,7 +583,7 @@
       "zero_since": null
     },
     "greenhouse/fivetran": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 5201,
+      "consecutive_failures": 5202,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -88670,6 +88670,12 @@
     "greenhouse:gitlab:8749946002": {
       "seen_at": "2026-08-26T11:10:55+00:00"
     },
+    "greenhouse:gitlab:8749950002": {
+      "seen_at": "2026-08-26T11:14:35+00:00"
+    },
+    "greenhouse:gitlab:8749951002": {
+      "seen_at": "2026-08-26T11:14:35+00:00"
+    },
     "greenhouse:gleanwork:4006731005": {
       "seen_at": "2026-07-28T05:06:02+00:00"
     },
@@ -130961,6 +130967,9 @@
     "workday:cae:122382": {
       "seen_at": "2026-07-28T05:06:03+00:00"
     },
+    "workday:cae:122404": {
+      "seen_at": "2026-08-26T11:14:35+00:00"
+    },
     "workday:cae:122414": {
       "seen_at": "2026-08-07T20:29:38+00:00"
     },
@@ -138592,6 +138601,9 @@
     },
     "workday:capitalone:R999119": {
       "seen_at": "2026-08-25T17:45:54+00:00"
+    },
+    "workday:capitalone:R999124": {
+      "seen_at": "2026-08-26T11:14:35+00:00"
     },
     "workday:capitalone:R999127": {
       "seen_at": "2026-08-25T18:26:15+00:00"
@@ -161422,6 +161434,9 @@
     },
     "workday:citi:26990295": {
       "seen_at": "2026-08-26T10:37:03+00:00"
+    },
+    "workday:citi:26990319": {
+      "seen_at": "2026-08-26T11:14:35+00:00"
     },
     "workday:clio:BF-REQ-2068": {
       "seen_at": "2026-07-30T15:57:50+00:00"
