@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-08-30"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -979,7 +979,7 @@
       "zero_since": null
     },
     "workday/ciena": {
-      "consecutive_failures": 399,
+      "consecutive_failures": 400,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 5753,
+      "consecutive_failures": 5754,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -168869,6 +168869,9 @@
     "workday:clio:REQ-5088": {
       "seen_at": "2026-08-18T18:52:14+00:00"
     },
+    "workday:clio:REQ-5090": {
+      "seen_at": "2026-08-30T22:37:55+00:00"
+    },
     "workday:clio:REQ-5093": {
       "seen_at": "2026-07-28T05:06:03+00:00"
     },
@@ -218890,6 +218893,9 @@
     },
     "workday:nvidia:JR2023538": {
       "seen_at": "2026-08-26T09:08:41+00:00"
+    },
+    "workday:nvidia:JR2023539": {
+      "seen_at": "2026-08-30T22:37:55+00:00"
     },
     "workday:nvidia:JR2023540": {
       "seen_at": "2026-08-18T16:39:18+00:00"
