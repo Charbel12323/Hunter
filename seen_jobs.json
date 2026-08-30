@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-08-30"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -979,7 +979,7 @@
       "zero_since": null
     },
     "workday/ciena": {
-      "consecutive_failures": 330,
+      "consecutive_failures": 331,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 5684,
+      "consecutive_failures": 5685,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -257965,6 +257965,9 @@
     },
     "workday:td:R_1493986": {
       "seen_at": "2026-07-09T19:00:18+00:00"
+    },
+    "workday:td:R_1494006": {
+      "seen_at": "2026-08-30T14:07:59+00:00"
     },
     "workday:td:R_1494014": {
       "seen_at": "2026-07-20T13:42:16+00:00"
