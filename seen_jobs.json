@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-08-31"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -979,7 +979,7 @@
       "zero_since": null
     },
     "workday/ciena": {
-      "consecutive_failures": 425,
+      "consecutive_failures": 426,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 5779,
+      "consecutive_failures": 5780,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -168467,6 +168467,9 @@
     "workday:citi:26990599": {
       "seen_at": "2026-08-27T02:07:47+00:00"
     },
+    "workday:citi:26990601": {
+      "seen_at": "2026-08-31T02:09:27+00:00"
+    },
     "workday:citi:26990682": {
       "seen_at": "2026-08-28T19:40:14+00:00"
     },
@@ -184873,6 +184876,9 @@
     },
     "workday:hp:UNI4821": {
       "seen_at": "2026-08-26T18:25:21+00:00"
+    },
+    "workday:hp:UNI4911": {
+      "seen_at": "2026-08-31T02:09:27+00:00"
     },
     "workday:hpe:1183232": {
       "seen_at": "2026-08-24T06:17:05+00:00"
@@ -268357,6 +268363,9 @@
     },
     "workday:thomsonreuters:Joinville": {
       "seen_at": "2026-08-19T18:28:40+00:00"
+    },
+    "workday:thomsonreuters:Kuala Lumpur": {
+      "seen_at": "2026-08-31T02:09:27+00:00"
     },
     "workday:thomsonreuters:Langenfeld": {
       "seen_at": "2026-07-28T05:06:08+00:00"
