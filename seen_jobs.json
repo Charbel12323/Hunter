@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-08-31"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 5881,
+      "consecutive_failures": 5882,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -150089,6 +150089,9 @@
     "workday:cibc:2617326": {
       "seen_at": "2026-08-20T17:27:58+00:00"
     },
+    "workday:cibc:2617329": {
+      "seen_at": "2026-08-31T15:15:58+00:00"
+    },
     "workday:cibc:2617331": {
       "seen_at": "2026-08-31T15:04:18+00:00"
     },
@@ -150235,6 +150238,9 @@
     },
     "workday:cibc:2617465": {
       "seen_at": "2026-08-21T15:22:53+00:00"
+    },
+    "workday:cibc:2617467": {
+      "seen_at": "2026-08-31T15:15:58+00:00"
     },
     "workday:cibc:2617481": {
       "seen_at": "2026-08-26T14:40:19+00:00"
@@ -191656,6 +191662,9 @@
     },
     "workday:intel:JR0285567": {
       "seen_at": "2026-07-16T23:01:06+00:00"
+    },
+    "workday:intel:JR0285568": {
+      "seen_at": "2026-08-31T15:15:58+00:00"
     },
     "workday:intel:JR0285569": {
       "seen_at": "2026-07-14T21:59:38+00:00"
@@ -256169,6 +256178,12 @@
     "workday:statestreet:R-796819": {
       "seen_at": "2026-08-27T13:05:00+00:00"
     },
+    "workday:statestreet:R-796821": {
+      "seen_at": "2026-08-31T15:15:58+00:00"
+    },
+    "workday:statestreet:R-796822": {
+      "seen_at": "2026-08-31T15:15:58+00:00"
+    },
     "workday:statestreet:R-796824": {
       "seen_at": "2026-08-27T13:05:00+00:00"
     },
@@ -272329,6 +272344,9 @@
     },
     "workday:tsys:R0073782": {
       "seen_at": "2026-07-27T17:24:30+00:00"
+    },
+    "workday:tsys:R0073795": {
+      "seen_at": "2026-08-31T15:15:58+00:00"
     },
     "workday:tsys:R0073797": {
       "seen_at": "2026-07-28T13:16:14+00:00"
