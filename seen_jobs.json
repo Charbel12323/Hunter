@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-01"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 5993,
+      "consecutive_failures": 5994,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -74612,6 +74612,9 @@
     "greenhouse:block:5400170008": {
       "seen_at": "2026-08-25T21:39:48+00:00"
     },
+    "greenhouse:block:5404790008": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
+    },
     "greenhouse:block:5404930008": {
       "seen_at": "2026-08-25T20:56:13+00:00"
     },
@@ -78094,6 +78097,9 @@
     },
     "greenhouse:cloudflare:8157770": {
       "seen_at": "2026-08-26T15:00:33+00:00"
+    },
+    "greenhouse:cloudflare:8158527": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
     },
     "greenhouse:cloudflare:8158609": {
       "seen_at": "2026-09-01T03:35:41+00:00"
@@ -173879,11 +173885,20 @@
     "workday:crowdstrike:R29926": {
       "seen_at": "2026-08-26T07:22:09+00:00"
     },
+    "workday:crowdstrike:R29927": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
+    },
     "workday:crowdstrike:R29929": {
       "seen_at": "2026-08-26T07:22:09+00:00"
     },
+    "workday:crowdstrike:R29930": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
+    },
     "workday:crowdstrike:R29931": {
       "seen_at": "2026-08-25T20:08:44+00:00"
+    },
+    "workday:crowdstrike:R29932": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
     },
     "workday:crowdstrike:R29934": {
       "seen_at": "2026-08-26T07:22:09+00:00"
@@ -173947,6 +173962,9 @@
     },
     "workday:crowdstrike:R30009": {
       "seen_at": "2026-08-31T02:47:46+00:00"
+    },
+    "workday:crowdstrike:R30011": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
     },
     "workday:ebay:R0060042": {
       "seen_at": "2026-08-12T14:53:48+00:00"
@@ -174253,6 +174271,9 @@
     },
     "workday:ebay:R0073620": {
       "seen_at": "2026-08-13T09:24:55+00:00"
+    },
+    "workday:ebay:R0073654": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
     },
     "workday:ebay:R0073672": {
       "seen_at": "2026-07-24T15:37:38+00:00"
@@ -185165,6 +185186,9 @@
     "workday:hp:3162260": {
       "seen_at": "2026-08-20T14:29:35+00:00"
     },
+    "workday:hp:3162274": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
+    },
     "workday:hp:3162278": {
       "seen_at": "2026-07-10T15:58:43+00:00"
     },
@@ -191557,6 +191581,9 @@
     },
     "workday:hpe:1210890": {
       "seen_at": "2026-09-01T01:36:36+00:00"
+    },
+    "workday:hpe:1210891": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
     },
     "workday:hpe:1210899": {
       "seen_at": "2026-08-13T12:12:34+00:00"
@@ -246980,6 +247007,9 @@
     "workday:sec:R119459": {
       "seen_at": "2026-08-14T15:00:01+00:00"
     },
+    "workday:sec:R119460": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
+    },
     "workday:sec:R119462": {
       "seen_at": "2026-08-14T15:09:30+00:00"
     },
@@ -248563,6 +248593,9 @@
     },
     "workday:sonyglobal:JR-119545": {
       "seen_at": "2026-09-01T04:02:28+00:00"
+    },
+    "workday:sonyglobal:JR-119546": {
+      "seen_at": "2026-09-01T05:04:44+00:00"
     },
     "workday:spgi:309805": {
       "seen_at": "2026-08-27T06:52:10+00:00"
