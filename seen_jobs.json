@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-02"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -667,7 +667,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 204,
+      "consecutive_failures": 205,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 6206,
+      "consecutive_failures": 6207,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -100865,6 +100865,21 @@
     "greenhouse:lyft:8771177002": {
       "seen_at": "2026-09-01T23:59:57+00:00"
     },
+    "greenhouse:lyft:8772571002": {
+      "seen_at": "2026-09-02T07:17:30+00:00"
+    },
+    "greenhouse:lyft:8772592002": {
+      "seen_at": "2026-09-02T07:17:30+00:00"
+    },
+    "greenhouse:lyft:8772594002": {
+      "seen_at": "2026-09-02T07:17:30+00:00"
+    },
+    "greenhouse:lyft:8772602002": {
+      "seen_at": "2026-09-02T07:17:30+00:00"
+    },
+    "greenhouse:lyft:8772604002": {
+      "seen_at": "2026-09-02T07:17:30+00:00"
+    },
     "greenhouse:marqeta:6908099": {
       "seen_at": "2026-07-28T05:06:02+00:00"
     },
@@ -174424,6 +174439,9 @@
     },
     "workday:citi:26989264": {
       "seen_at": "2026-08-21T15:31:02+00:00"
+    },
+    "workday:citi:26989266": {
+      "seen_at": "2026-09-02T07:17:30+00:00"
     },
     "workday:citi:26989268": {
       "seen_at": "2026-08-21T15:31:02+00:00"
