@@ -388,7 +388,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-05"
+      "zero_since": null
     },
     "google/canada": {
       "consecutive_failures": 0,
@@ -667,7 +667,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 752,
+      "consecutive_failures": 753,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 6754,
+      "consecutive_failures": 6755,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -284803,6 +284803,9 @@
     },
     "workday:td:R_1509057": {
       "seen_at": "2026-09-02T19:38:07+00:00"
+    },
+    "workday:td:R_1509059": {
+      "seen_at": "2026-09-05T05:12:11+00:00"
     },
     "workday:td:R_1509063": {
       "seen_at": "2026-09-02T19:46:38+00:00"
