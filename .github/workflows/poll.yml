@@ -61,7 +61,13 @@ jobs:
               git fetch origin "${GITHUB_REF_NAME}"
               git show "origin/${GITHUB_REF_NAME}:seen_jobs.json" > /tmp/theirs_seen.json
               python -m scraper.merge_seen seen_jobs.json /tmp/theirs_seen.json
-              git reset --soft "origin/${GITHUB_REF_NAME}"
+              cp seen_jobs.json /tmp/merged_seen.json
+              # Hard reset, not soft: a soft reset keeps this runner's stale
+              # index, so the retry commit snapshotted the old tree over main
+              # and silently reverted anything merged while the run was live.
+              # Rebuild from main's tree and re-apply only the merged state.
+              git reset --hard "origin/${GITHUB_REF_NAME}"
+              cp /tmp/merged_seen.json seen_jobs.json
               git add seen_jobs.json
               git commit -m "Update seen jobs state" || echo "State already on remote."
             done

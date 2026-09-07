@@ -4,22 +4,38 @@ canonical Job shape, including the skip rules."""
 
 import json
 from datetime import UTC, datetime, timedelta
+from urllib.parse import parse_qsl, urlsplit
 
 import responses
 
 from scraper.adapters import (
     REGISTRY,
+    amazon,
     ashby,
     get_adapter,
     github_repo,
+    google_careers,
     greenhouse,
     lever,
+    microsoft,
+    ultipro,
     workday,
 )
 
 
-def test_registry_dispatches_all_five_types():
-    for type_str in ["ashby", "greenhouse", "lever", "github", "workday"]:
+def test_registry_dispatches_all_types():
+    types = [
+        "ashby",
+        "greenhouse",
+        "lever",
+        "github",
+        "workday",
+        "amazon",
+        "google",
+        "microsoft",
+        "ultipro",
+    ]
+    for type_str in types:
         assert callable(get_adapter(type_str))
 
 
@@ -33,7 +49,17 @@ def test_registry_rejects_unknown_type():
 
 
 def test_registry_has_no_stale_entries():
-    assert set(REGISTRY) == {"ashby", "greenhouse", "lever", "github", "workday"}
+    assert set(REGISTRY) == {
+        "ashby",
+        "greenhouse",
+        "lever",
+        "github",
+        "workday",
+        "amazon",
+        "google",
+        "microsoft",
+        "ultipro",
+    }
 
 
 @responses.activate
@@ -225,3 +251,246 @@ def test_workday_trusts_only_first_page_total():
 
     assert len(responses.calls) == 3  # all DEFAULT_PAGES fetched despite total=0
     assert len(jobs) == 60
+
+
+AMAZON_URL = "https://www.amazon.jobs/en/search.json"
+
+
+@responses.activate
+def test_amazon_maps_jobs(fixture):
+    responses.get(AMAZON_URL, json=fixture("amazon_search.json"))
+    jobs = amazon.fetch({"type": "amazon", "name": "canada", "country": "CAN"})
+
+    assert len(jobs) == 2
+    job = jobs[0]
+    assert job.id == "amazon:amazon:3059609"
+    assert job.title.startswith("Software Development Engineer")
+    assert job.company == "amazon"
+    assert job.source == "amazon/canada"
+    assert job.location == "Toronto, Ontario, CAN"
+    assert job.url == (
+        "https://www.amazon.jobs/en/jobs/3059609"
+        "/software-development-engineer-amazon-fulfillment-technologies"
+    )
+    assert job.posted_at == "2026-07-14"  # "July 14, 2026" -> ISO
+    assert "<" not in job.description and "&amp;" not in job.description
+    # missing normalized_location falls back to the raw one; missing
+    # posted_date stays undated (never-miss: the age filter keeps it)
+    assert jobs[1].location == "CA, BC, Vancouver"
+    assert jobs[1].posted_at is None
+
+    request = responses.calls[0].request
+    assert "sort=recent" in request.url  # newest-first, so one page is lossless
+    assert "country=CAN" in request.url
+    assert "Mozilla" in request.headers["User-Agent"]  # default UA gets a 403
+
+
+GOOGLE_URL = "https://www.google.com/about/careers/applications/jobs/results"
+
+
+def _google_page(entries: list, total: int) -> str:
+    blob = json.dumps([entries, None, total, 20])
+    return (
+        "<html><body><script>AF_initDataCallback({key: 'ds:1', hash: '2', "
+        f"data:{blob}, sideChannel: {{}}}});</script></body></html>"
+    )
+
+
+def _google_entry(job_id: str, title: str = "Software Engineer") -> list:
+    entry: list = [None] * 21
+    entry[0] = job_id
+    entry[1] = title
+    entry[7] = "Google"
+    entry[9] = [["Toronto, ON, Canada", [], "Toronto"]]
+    entry[10] = [None, "<p>desc</p>"]
+    entry[12] = [1783000000, 0]
+    return entry
+
+
+@responses.activate
+def test_google_maps_jobs_and_skips_malformed(fixture):
+    responses.get(GOOGLE_URL, body=fixture("google_careers.html"))
+    jobs = google_careers.fetch({"type": "google", "name": "canada", "location": "Canada"})
+
+    assert len(jobs) == 2  # the fixture's truncated third entry is skipped
+    job = jobs[0]
+    assert job.id == "google:google:142342334078427846"
+    assert job.title == "Software Developer III, Google Cloud"
+    assert job.company == "Google"
+    assert job.source == "google/canada"
+    assert job.location == "Toronto, ON, Canada; Waterloo, ON, Canada"
+    assert job.url == GOOGLE_URL + "/142342334078427846"
+    assert job.posted_at and job.posted_at.startswith("20")  # epoch -> ISO
+    assert "<" not in job.description and "&#39;" not in job.description
+    # entry with null company/timestamps still maps (never-miss)
+    assert jobs[1].company == "Google"
+    assert jobs[1].posted_at is None
+
+    request = responses.calls[0].request
+    assert "sort_by=date" in request.url
+    assert "location=Canada" in request.url
+    assert len(responses.calls) == 1  # 2 entries < page size: pagination stops
+
+
+@responses.activate
+def test_google_paginates_and_dedupes_shifted_entries():
+    pages = {
+        "1": _google_page([_google_entry(str(i)) for i in range(20)], total=26),
+        "2": _google_page([_google_entry(str(i)) for i in range(19, 26)], total=26),
+    }
+
+    def callback(request):
+        page = dict(parse_qsl(urlsplit(request.url).query)).get("page", "1")
+        return (200, {}, pages[page])
+
+    responses.add_callback(responses.GET, GOOGLE_URL, callback=callback)
+    jobs = google_careers.fetch({"type": "google"})
+
+    assert len(responses.calls) == 2  # DEFAULT_PAGES
+    # entry 19 slid onto page 2 between requests; it must not alert twice
+    assert len(jobs) == 26
+    assert len({job.id for job in jobs}) == 26
+
+
+@responses.activate
+def test_google_raises_when_data_blob_missing():
+    responses.get(GOOGLE_URL, body="<html><body>redesigned page</body></html>")
+    try:
+        google_careers.fetch({"type": "google"})
+        raise AssertionError("expected ValueError")
+    except ValueError as exc:
+        assert "ds:1" in str(exc)  # a layout change must alarm, not report 0 jobs
+
+
+MICROSOFT_URL = "https://apply.careers.microsoft.com/api/pcsx/search"
+
+
+@responses.activate
+def test_microsoft_maps_jobs(fixture):
+    responses.get(MICROSOFT_URL, json=fixture("microsoft_search.json"))
+    jobs = microsoft.fetch({"type": "microsoft", "name": "canada", "location": "Canada"})
+
+    assert len(jobs) == 2
+    job = jobs[0]
+    assert job.id == "microsoft:microsoft:200041999"  # displayJobId, not internal id
+    assert job.title == "Software Engineer II - Full Stack"
+    assert job.company == "microsoft"
+    assert job.source == "microsoft/canada"
+    # multiple locations are joined
+    assert job.location == "Canada, British Columbia, Vancouver; Canada, Ontario, Toronto"
+    assert job.url == "https://apply.careers.microsoft.com/careers/job/1970393556914401"
+    assert job.posted_at and job.posted_at.startswith("20")  # epoch -> ISO
+    # missing postedTs stays undated (never-miss); missing positionUrl falls
+    # back to the id-derived path
+    assert jobs[1].posted_at is None
+    assert jobs[1].url == "https://apply.careers.microsoft.com/careers/job/1970393556862981"
+
+    request = responses.calls[0].request
+    assert "sort_by=timestamp" in request.url  # newest-first
+    assert "location=Canada" in request.url
+    assert "domain=microsoft.com" in request.url
+    assert "Mozilla" in request.headers["User-Agent"]
+
+
+@responses.activate
+def test_microsoft_paginates_and_dedupes_shifted_entries():
+    def position(i):
+        return {
+            "id": 1000 + i,
+            "displayJobId": str(i),
+            "name": f"Engineer {i}",
+            "locations": ["Canada, Ontario, Toronto"],
+            "postedTs": 1784234857,
+            "positionUrl": f"/careers/job/{1000 + i}",
+        }
+
+    pages = {
+        0: [position(i) for i in range(10)],
+        10: [position(i) for i in range(9, 19)],  # entry 9 slid onto page 2
+        20: [position(i) for i in range(19, 24)],  # short page ends pagination
+    }
+
+    def callback(request):
+        start = int(dict(parse_qsl(urlsplit(request.url).query)).get("start", "0"))
+        return (200, {}, json.dumps({"data": {"positions": pages[start]}}))
+
+    responses.add_callback(responses.GET, MICROSOFT_URL, callback=callback)
+    jobs = microsoft.fetch({"type": "microsoft"})
+
+    assert len(responses.calls) == 3  # DEFAULT_PAGES, last page short
+    assert len(jobs) == 24  # 0..23, the shared entry 9 counted once
+    assert len({job.id for job in jobs}) == 24
+
+
+ULTIPRO_URL = (
+    "https://recruiting.ultipro.ca/PAS5000PASON/JobBoard"
+    "/736c1025-c469-4ece-a487-4884545272a7/JobBoardView/LoadSearchResults"
+)
+ULTIPRO_CONFIG = {
+    "type": "ultipro",
+    "company": "pason",
+    "host": "recruiting.ultipro.ca",
+    "tenant": "PAS5000PASON",
+    "board": "736c1025-c469-4ece-a487-4884545272a7",
+}
+
+
+@responses.activate
+def test_ultipro_maps_jobs(fixture):
+    responses.post(ULTIPRO_URL, json=fixture("ultipro_pason.json"))
+    jobs = ultipro.fetch(ULTIPRO_CONFIG)
+
+    assert len(jobs) == 3
+    job = jobs[0]
+    assert job.id == "ultipro:pason:FIELD001983"  # RequisitionNumber, not the GUID
+    assert job.title == "Field Service Technician - Peace River"
+    assert job.company == "pason"
+    assert job.source == "ultipro/pason"
+    assert job.location == "Remote Alberta"
+    assert job.url == (
+        "https://recruiting.ultipro.ca/PAS5000PASON/JobBoard"
+        "/736c1025-c469-4ece-a487-4884545272a7/OpportunityDetail"
+        "?opportunityId=173a7329-3e04-4b96-ba18-bf372d2d7671"
+    )
+    assert job.posted_at == "2026-07-23T19:47:22.998Z"  # real ISO timestamp
+    assert len(job.description) <= 500
+
+    # BriefDescription newlines are collapsed to plain single-spaced text
+    assert "\n" not in jobs[1].description
+    # null LocalizedName falls back to the structured Address; missing
+    # PostedDate stays undated (never-miss)
+    assert jobs[2].location == "Athabasca, AB, CAN"
+    assert jobs[2].posted_at is None
+
+    body = json.loads(responses.calls[0].request.body)
+    assert body["opportunitySearch"]["OrderBy"][0]["Value"] == "postedDateDesc"  # newest-first
+    assert len(responses.calls) == 1  # totalCount=3 fits in one page
+
+
+@responses.activate
+def test_ultipro_paginates_and_dedupes_shifted_entries():
+    def opportunity(i):
+        return {
+            "Id": f"guid-{i}",
+            "Title": f"Engineer {i}",
+            "RequisitionNumber": f"REQ{i:06d}",
+            "Locations": [{"LocalizedName": "Calgary"}],
+            "PostedDate": "2026-07-23T00:00:00.000Z",
+            "BriefDescription": "desc",
+        }
+
+    pages = {
+        0: [opportunity(i) for i in range(50)],
+        50: [opportunity(i) for i in range(49, 70)],  # entry 49 slid onto page 2
+    }
+
+    def callback(request):
+        skip = json.loads(request.body)["opportunitySearch"]["Skip"]
+        return (200, {}, json.dumps({"totalCount": 70, "opportunities": pages[skip]}))
+
+    responses.add_callback(responses.POST, ULTIPRO_URL, callback=callback)
+    jobs = ultipro.fetch(ULTIPRO_CONFIG)
+
+    assert len(responses.calls) == 2  # 70 postings fit in two pages of 50
+    assert len(jobs) == 70  # the shared entry 49 counted once
+    assert len({job.id for job in jobs}) == 70

@@ -111,7 +111,13 @@ def apply_filters(jobs: list[Job], filters_config: dict) -> list[Job]:
     return kept
 
 
-def notify(jobs: list[Job], store: SeenStore, dry_run: bool, digest_threshold: int) -> list[Job]:
+def notify(
+    jobs: list[Job],
+    store: SeenStore,
+    dry_run: bool,
+    digest_threshold: int,
+    people_location: str | None = None,
+) -> list[Job]:
     """Send each job (or one digest), returning the jobs actually sent.
     A job whose send failed is NOT recorded as seen, so it retries next
     run - never-miss beats never-duplicate."""
@@ -126,7 +132,7 @@ def notify(jobs: list[Job], store: SeenStore, dry_run: bool, digest_threshold: i
                 print(f"  - {job.title} @ {job.company} ({job.location})")
         else:
             try:
-                telegram.send_digest(jobs)
+                telegram.send_digest(jobs, people_location)
             except Exception:
                 log.exception("Digest send failed; jobs stay unseen and retry next run.")
                 return []
@@ -140,7 +146,7 @@ def notify(jobs: list[Job], store: SeenStore, dry_run: bool, digest_threshold: i
             if dry_run:
                 print(f"NEW: {job.title} @ {job.company} ({job.location}) -> {job.url}")
             else:
-                telegram.send(job)
+                telegram.send(job, people_location)
         except Exception:
             log.exception("Send failed for %s; it stays unseen and retries next run.", job.id)
             continue
@@ -254,7 +260,11 @@ def main(argv: list[str] | None = None) -> int:
     fresh = seed_new_sources(fresh, normalized, store, filters_config.get("max_age_days"))
     matched = apply_filters(fresh, filters_config)
     sent = notify(
-        matched, store, args.dry_run, digest_threshold=filters_config.get("digest_threshold", 10)
+        matched,
+        store,
+        args.dry_run,
+        digest_threshold=filters_config.get("digest_threshold", 10),
+        people_location=filters_config.get("people_location"),
     )
     # Record filtered-out jobs as seen too (after notify, so a crash can't
     # mark a matched job seen before its message went out). Otherwise every
