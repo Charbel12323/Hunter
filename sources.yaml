@@ -149,14 +149,14 @@ sources:
   - {type: workday, company: sec, instance: wd3, site: Samsung_Careers}  # Samsung
 
   # --- cross-company aggregators (cover FAANG and hundreds more) ---
-  - type: github
-    repo: SimplifyJobs/New-Grad-Positions
-    path: .github/scripts/listings.json
-    branch: dev
-  - type: github
-    repo: SimplifyJobs/Summer2026-Internships
-    path: .github/scripts/listings.json
-    branch: dev
+  # - type: github
+  #   repo: SimplifyJobs/New-Grad-Positions
+  #   path: .github/scripts/listings.json
+  #   branch: dev
+  # - type: github
+  #   repo: SimplifyJobs/Summer2026-Internships
+  #   path: .github/scripts/listings.json
+  #   branch: dev
 
 # Filters target graduate / junior software roles (SWE, full stack, backend,
 # platform, SRE, forward deployed) plus internships. Matching is
@@ -167,7 +167,7 @@ filters:
   # non-engineering "Internal ..." / "International ..." titles that survive
   # the exclusion list (e.g. "Internal Auditor"). "co-op" and "coop" are both
   # needed because boards spell it either way.
-  include_keywords: [engineer, developer, software, sre, intern, co-op, coop]
+  include_keywords: [engineer, developer, software, intern, co-op, coop, ML, FDE, Forward Deployed Engineer, AI]
   exclude_keywords:
     - senior
     - "sr."
