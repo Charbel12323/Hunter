@@ -382,7 +382,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-07"
+      "zero_since": null
     },
     "github/SimplifyJobs/Summer2026-Internships": {
       "consecutive_failures": 0,
@@ -667,7 +667,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 1282,
+      "consecutive_failures": 1283,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1195,7 +1195,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 7284,
+      "consecutive_failures": 7285,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -9290,6 +9290,9 @@
     "ashby:elevenlabs:1f668ed5-49e9-4726-881f-7818733103b1": {
       "seen_at": "2026-09-06T16:29:05+00:00"
     },
+    "ashby:elevenlabs:2007f7af-84b5-4e37-bff9-84b8b0831dc9": {
+      "seen_at": "2026-09-07T19:36:58+00:00"
+    },
     "ashby:elevenlabs:20a29846-f8f5-483c-a3cb-52f14c525366": {
       "seen_at": "2026-07-16T11:13:34+00:00"
     },
@@ -9703,9 +9706,6 @@
     },
     "ashby:elevenlabs:9aca205e-b2bc-405b-85d6-3d2aadbe49b1": {
       "seen_at": "2026-09-06T16:29:05+00:00"
-    },
-    "ashby:elevenlabs:9ce2cd02-c7f2-4705-8b70-accab2f863e1": {
-      "seen_at": "2026-07-09T19:35:15+00:00"
     },
     "ashby:elevenlabs:9dc3f256-3c42-4368-8d7e-ba9a3b3505e7": {
       "seen_at": "2026-07-20T01:49:17+00:00"
@@ -81484,6 +81484,9 @@
     },
     "greenhouse:doordashusa:7248556": {
       "seen_at": "2026-07-28T05:06:02+00:00"
+    },
+    "greenhouse:doordashusa:7248777": {
+      "seen_at": "2026-09-07T19:36:58+00:00"
     },
     "greenhouse:doordashusa:7259738": {
       "seen_at": "2026-07-28T05:06:02+00:00"
@@ -171002,9 +171005,6 @@
     "workday:ebay:R0075712": {
       "seen_at": "2026-07-22T11:42:35+00:00"
     },
-    "workday:ebay:R0075722": {
-      "seen_at": "2026-07-09T19:35:15+00:00"
-    },
     "workday:ebay:R0075723": {
       "seen_at": "2026-07-16T22:47:16+00:00"
     },
@@ -174877,6 +174877,9 @@
     },
     "workday:fiserv:R-10396206": {
       "seen_at": "2026-09-06T16:29:05+00:00"
+    },
+    "workday:fiserv:R-10396207": {
+      "seen_at": "2026-09-07T19:36:58+00:00"
     },
     "workday:fiserv:R-10396292": {
       "seen_at": "2026-09-06T16:29:05+00:00"
@@ -186289,9 +186292,6 @@
     },
     "workday:hpe:1208855": {
       "seen_at": "2026-08-05T20:07:42+00:00"
-    },
-    "workday:hpe:1208867": {
-      "seen_at": "2026-07-09T19:35:15+00:00"
     },
     "workday:hpe:1208870": {
       "seen_at": "2026-08-07T08:41:22+00:00"
@@ -210458,9 +210458,6 @@
     "workday:ms:JR040347": {
       "seen_at": "2026-07-14T11:04:07+00:00"
     },
-    "workday:ms:JR040361": {
-      "seen_at": "2026-07-09T19:35:15+00:00"
-    },
     "workday:ms:JR040376": {
       "seen_at": "2026-07-13T14:51:11+00:00"
     },
@@ -210481,9 +210478,6 @@
     },
     "workday:ms:JR040405": {
       "seen_at": "2026-07-10T20:13:48+00:00"
-    },
-    "workday:ms:JR040406": {
-      "seen_at": "2026-07-09T19:35:15+00:00"
     },
     "workday:ms:JR040419": {
       "seen_at": "2026-07-10T15:11:56+00:00"
@@ -260783,9 +260777,6 @@
     "workday:td:R_1490178": {
       "seen_at": "2026-07-13T15:50:47+00:00"
     },
-    "workday:td:R_1490195": {
-      "seen_at": "2026-07-09T19:35:15+00:00"
-    },
     "workday:td:R_1490196": {
       "seen_at": "2026-08-10T18:37:43+00:00"
     },
@@ -263689,9 +263680,6 @@
     },
     "workday:td:R_1499145": {
       "seen_at": "2026-07-09T20:59:09+00:00"
-    },
-    "workday:td:R_1499146": {
-      "seen_at": "2026-07-09T19:35:15+00:00"
     },
     "workday:td:R_1499147": {
       "seen_at": "2026-07-13T04:05:38+00:00"
