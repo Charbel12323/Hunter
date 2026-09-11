@@ -21,6 +21,7 @@ from scraper.adapters import (
     microsoft,
     netflix,
     rivian,
+    shopify,
     uber,
     ultipro,
     workday,
@@ -42,6 +43,7 @@ def test_registry_dispatches_all_types():
         "netflix",
         "rivian",
         "uber",
+        "shopify",
     ]
     for type_str in types:
         assert callable(get_adapter(type_str))
@@ -71,6 +73,7 @@ def test_registry_has_no_stale_entries():
         "netflix",
         "rivian",
         "uber",
+        "shopify",
     }
 
 
@@ -739,3 +742,33 @@ def test_uber_stops_at_total_pages():
 
     assert len(responses.calls) == 2
     assert len(jobs) == 14
+
+
+SHOPIFY_URL = "https://www.shopify.com/careers.data"
+
+
+@responses.activate
+def test_shopify_decodes_object_graph_and_skips_unlisted(fixture):
+    # Real content-type carries no charset, so the body must be served as
+    # raw UTF-8 bytes here too - exercising the same mismatch the adapter
+    # works around, not sidestepping it via responses' `json=` kwarg (which
+    # would just ASCII-escape the accented title and hide the bug).
+    raw = json.dumps(fixture("shopify_careers.json"), ensure_ascii=False).encode("utf-8")
+    responses.get(SHOPIFY_URL, body=raw, content_type="text/x-script")
+    jobs = shopify.fetch({"type": "shopify", "name": "canada"})
+
+    assert len(jobs) == 2  # the fixture's third posting is unlisted
+    job = jobs[0]
+    assert job.id == "shopify:shopify:uuid-1"
+    assert job.title == "Senior Software Engineer, Checkout"
+    assert job.company == "shopify"
+    assert job.source == "shopify/canada"
+    assert job.location == "Toronto"
+    assert job.url == "https://www.shopify.com/careers?ashby_jid=uuid-1"
+    assert job.posted_at == "2026-09-08"
+    assert all(j.title != "Unlisted Draft Role" for j in jobs)
+    # accented text survives the no-charset response (real bug: requests
+    # defaults to Latin-1 here and mangles it without the explicit decode)
+    assert jobs[1].title == "Spécialiste, Support technique"
+    # missing applyLink falls back to externalLink
+    assert jobs[1].url == "https://www.shopify.com/careers?ashby_jid=uuid-2"

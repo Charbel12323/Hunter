@@ -18,6 +18,7 @@ from scraper.adapters import (
     microsoft,
     netflix,
     rivian,
+    shopify,
     uber,
     ultipro,
     workday,
@@ -38,6 +39,7 @@ REGISTRY: dict[str, Callable[[dict], list[Job]]] = {
     "netflix": netflix.fetch,
     "rivian": rivian.fetch,
     "uber": uber.fetch,
+    "shopify": shopify.fetch,
 }
 
 
