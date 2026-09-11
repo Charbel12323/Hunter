@@ -33,12 +33,25 @@
 # "warp" is Warp the payroll startup, not warp.dev). After probing, read a
 # couple of job titles to confirm it is the company you meant.
 #
-# FAANG run custom career sites with no public board API. Amazon, Google,
-# and Microsoft have dedicated adapters that scrape the JSON behind their own
-# search pages (see the custom career sites section). Meta blocks every non-browser
-# client (its GraphQL, sitemap, and even robots.txt reject plain HTTP
-# clients, and its robots.txt prohibits automated collection), so
-# Meta/Apple/Netflix roles arrive via the SimplifyJobs feeds below instead.
+# FAANG+ run custom career sites with no public board API. Amazon, Google,
+# Microsoft, Apple, and Netflix have dedicated adapters that scrape the JSON
+# (or, for Apple, the server-rendered HTML) behind their own search pages
+# (see the custom career sites section). Meta is not covered by anything:
+# it blocks every non-browser client (its GraphQL, sitemap, and even
+# robots.txt reject plain HTTP clients), and its robots.txt explicitly
+# prohibits automated collection ("Collection of data on Facebook through
+# automated means is prohibited unless you have express written
+# permission") - so this isn't just a technical wall, don't route around it
+# via a proxy/headless-browser trick. Tesla is similarly out: its careers
+# site sits behind bot-mitigation (obfuscated endpoints, outright 403s to
+# plain HTTP clients) that would require solving a JS challenge to get past.
+# Shopify's board *is* technically reachable (careers.shopify.com renders
+# server-side) but the job data is embedded as a proprietary, undocumented
+# object-graph serialization with no stable schema to parse against - not a
+# good adapter candidate. Rivian and Uber, despite also being custom sites,
+# each expose a plain unauthenticated JSON search API (iCIMS/Jibe for
+# Rivian, an in-house Cloudflare-fronted one for Uber) and have adapters
+# below like Amazon/Google/Microsoft/Apple/Netflix.
 
 sources:
   # --- fintech ---
@@ -305,13 +318,21 @@ sources:
   - {type: ultipro, company: mda-students, host: recruiting.ultipro.ca,
      tenant: MAC5000MCDW, board: 7667adcc-47ae-477a-9183-0d8ef8bc0748}
 
-  # --- custom career sites (scraped via the JSON behind their search UI) ---
-  # Both are sorted newest-first and fetch enough per poll that the 5-minute
-  # cadence is lossless. The `name` key labels the source; the country /
-  # location keys filter server-side to match the Canada-only watchlist.
+  # --- custom career sites (scraped via the JSON, or for Apple the SSR
+  # HTML, behind their own search UI) ---
+  # All fetch enough per poll that the 5-minute cadence is lossless. The
+  # `name` key labels the source; the country / location keys filter
+  # server-side to match the Canada-only watchlist. Rivian and Uber aren't
+  # sorted newest-first server-side (relevance ranking instead), but their
+  # Canada job volume is low enough that fetching every page each poll is
+  # cheap and never-miss regardless of order.
   - {type: amazon, name: canada, country: CAN}
   - {type: google, name: canada, location: Canada}
   - {type: microsoft, name: canada, location: Canada}
+  - {type: apple, name: canada, location: canada-CANC}
+  - {type: netflix, name: canada, location: Canada}
+  - {type: rivian, name: canada, location: Canada}
+  - {type: uber, name: canada, country: Canada}
 
   # --- cross-company aggregators (cover FAANG and hundreds more) ---
   # - type: github

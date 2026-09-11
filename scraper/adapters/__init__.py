@@ -9,12 +9,16 @@ from collections.abc import Callable
 
 from scraper.adapters import (
     amazon,
+    apple,
     ashby,
     github_repo,
     google_careers,
     greenhouse,
     lever,
     microsoft,
+    netflix,
+    rivian,
+    uber,
     ultipro,
     workday,
 )
@@ -30,6 +34,10 @@ REGISTRY: dict[str, Callable[[dict], list[Job]]] = {
     "google": google_careers.fetch,
     "microsoft": microsoft.fetch,
     "ultipro": ultipro.fetch,
+    "apple": apple.fetch,
+    "netflix": netflix.fetch,
+    "rivian": rivian.fetch,
+    "uber": uber.fetch,
 }
 
 

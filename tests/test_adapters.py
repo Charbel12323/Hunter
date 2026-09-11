@@ -11,6 +11,7 @@ import responses
 from scraper.adapters import (
     REGISTRY,
     amazon,
+    apple,
     ashby,
     get_adapter,
     github_repo,
@@ -18,6 +19,9 @@ from scraper.adapters import (
     greenhouse,
     lever,
     microsoft,
+    netflix,
+    rivian,
+    uber,
     ultipro,
     workday,
 )
@@ -34,6 +38,10 @@ def test_registry_dispatches_all_types():
         "google",
         "microsoft",
         "ultipro",
+        "apple",
+        "netflix",
+        "rivian",
+        "uber",
     ]
     for type_str in types:
         assert callable(get_adapter(type_str))
@@ -59,6 +67,10 @@ def test_registry_has_no_stale_entries():
         "google",
         "microsoft",
         "ultipro",
+        "apple",
+        "netflix",
+        "rivian",
+        "uber",
     }
 
 
@@ -494,3 +506,236 @@ def test_ultipro_paginates_and_dedupes_shifted_entries():
     assert len(responses.calls) == 2  # 70 postings fit in two pages of 50
     assert len(jobs) == 70  # the shared entry 49 counted once
     assert len({job.id for job in jobs}) == 70
+
+
+APPLE_URL = "https://jobs.apple.com/en-us/search"
+
+
+def _apple_page(entries: list[tuple[str, str]], total: int) -> str:
+    # entries: list of (job_id, title) pairs.
+    blocks = "".join(
+        f'<div><h3><a class="link-inline" aria-label="{title} {job_id}" '
+        f'href="/en-us/details/{job_id}/{title.lower().replace(" ", "-")}?team=SFTWR" '
+        f'data-discover="true">{title}</a></h3>'
+        f'<span class="team-name mt-0">Software and Services</span>'
+        f'<span class="job-posted-date">Sep 11, 2026</span></div>'
+        f'<div class="job-title-location"><span class="a11y">Location</span>'
+        f'<span id="search-store-name-container-1">Vancouver</span></div>'
+        for job_id, title in entries
+    )
+    return f"<html><body><div>{total} Result(s)</div>{blocks}</body></html>"
+
+
+@responses.activate
+def test_apple_maps_jobs_and_unescapes_html(fixture):
+    responses.get(APPLE_URL, body=fixture("apple_search.html"))
+    jobs = apple.fetch({"type": "apple", "name": "canada"})
+
+    assert len(jobs) == 2
+    job = jobs[0]
+    assert job.id == "apple:apple:200680206-3350"
+    assert job.title == "R&D Software Engineer"  # &amp; unescaped
+    assert job.company == "apple"
+    assert job.source == "apple/canada"
+    assert job.location == "Vancouver"
+    assert job.url == (
+        "https://jobs.apple.com/en-us/details/200680206-3350/rd-software-engineer"
+    )
+    assert job.posted_at == "2026-09-11"  # "Sep 11, 2026" -> ISO
+    # the multi-location variant (store-name, no "-container") still maps
+    assert jobs[1].location == "Various Locations within Canada"
+
+    request = responses.calls[0].request
+    assert "location=canada-CANC" in request.url  # default geo code
+
+
+@responses.activate
+def test_apple_stops_at_total_result_count():
+    pages = {
+        1: _apple_page([(str(i), f"Engineer {i}") for i in range(20)], total=22),
+        2: _apple_page([(str(i), f"Engineer {i}") for i in range(20, 22)], total=22),
+    }
+
+    def callback(request):
+        page = int(dict(parse_qsl(urlsplit(request.url).query)).get("page", "1"))
+        return (200, {}, pages[page])
+
+    responses.add_callback(responses.GET, APPLE_URL, callback=callback)
+    jobs = apple.fetch({"type": "apple"})
+
+    assert len(responses.calls) == 2  # 22 results fit in two pages of 20
+    assert len(jobs) == 22
+
+
+NETFLIX_URL = "https://explore.jobs.netflix.net/api/apply/v2/jobs"
+
+
+@responses.activate
+def test_netflix_maps_jobs_and_falls_back_ids(fixture):
+    responses.get(NETFLIX_URL, json=fixture("netflix_jobs.json"))
+    jobs = netflix.fetch({"type": "netflix", "name": "canada", "location": "Canada"})
+
+    assert len(jobs) == 2
+    job = jobs[0]
+    assert job.id == "netflix:netflix:JR42454"  # display_job_id
+    assert job.title == "Front-End Developer - Netflix Animation Studios"
+    assert job.company == "netflix"
+    assert job.source == "netflix/canada"
+    assert job.location == "Vancouver,Canada"
+    assert job.url == "https://explore.jobs.netflix.net/careers/job/790318358916"
+    assert job.posted_at and job.posted_at.startswith("2026")
+    assert job.description == ""  # Eightfold search payload carries none
+    # empty display_job_id falls back to the internal id; null
+    # canonicalPositionUrl falls back to the constructed job-detail URL
+    assert jobs[1].id == "netflix:netflix:790316470001"
+    assert jobs[1].url == "https://explore.jobs.netflix.net/careers/job/790316470001"
+
+    request = responses.calls[0].request
+    assert "sort_by=timestamp" in request.url  # newest-first
+    assert "location=Canada" in request.url
+
+
+@responses.activate
+def test_netflix_paginates_and_dedupes_shifted_entries():
+    def position(i):
+        return {
+            "id": 1000 + i,
+            "name": f"Engineer {i}",
+            "locations": ["Toronto,Canada"],
+            "t_create": 1784234857,
+            "display_job_id": str(i),
+            "canonicalPositionUrl": f"https://explore.jobs.netflix.net/careers/job/{1000 + i}",
+        }
+
+    pages = {
+        0: [position(i) for i in range(10)],
+        10: [position(i) for i in range(9, 19)],  # entry 9 slid onto page 2
+        20: [position(i) for i in range(19, 24)],  # short page ends pagination
+    }
+
+    def callback(request):
+        start = int(dict(parse_qsl(urlsplit(request.url).query)).get("start", "0"))
+        return (200, {}, json.dumps({"positions": pages[start]}))
+
+    responses.add_callback(responses.GET, NETFLIX_URL, callback=callback)
+    jobs = netflix.fetch({"type": "netflix"})
+
+    assert len(responses.calls) == 3  # DEFAULT_PAGES, last page short
+    assert len(jobs) == 24  # 0..23, the shared entry 9 counted once
+    assert len({job.id for job in jobs}) == 24
+
+
+RIVIAN_URL = "https://careers.rivian.com/api/jobs"
+
+
+@responses.activate
+def test_rivian_maps_jobs_and_falls_back_fields(fixture):
+    responses.get(RIVIAN_URL, json=fixture("rivian_jobs.json"))
+    jobs = rivian.fetch({"type": "rivian", "name": "canada", "location": "Canada"})
+
+    assert len(jobs) == 2
+    job = jobs[0]
+    assert job.id == "rivian:rivian:31222"
+    assert job.title == "Staff Platform Engineer"
+    assert job.company == "rivian"
+    assert job.source == "rivian/canada"
+    assert job.location == "Palo Alto, California; Vancouver, Canada"
+    assert job.url == "https://careers.rivian.com/jobs/31222?lang=en-us"
+    assert job.posted_at == "2026-05-27T21:45:00+00:00"
+    assert "Internal Developer Platform" in job.description
+    assert "<" not in job.description
+    # null req_id falls back to slug; missing canonical_url falls back to
+    # apply_url; null posted_date/description stay undated/empty (never-miss)
+    assert jobs[1].id == "rivian:rivian:31500"
+    assert jobs[1].url == "https://us-careers-rivian.icims.com/jobs/31500/login"
+    assert jobs[1].posted_at is None
+    assert jobs[1].description == ""
+
+    request = responses.calls[0].request
+    assert "location=Canada" in request.url
+    assert len(responses.calls) == 1  # totalCount=2 fits in one page
+
+
+@responses.activate
+def test_rivian_stops_at_total_count():
+    def posting(i):
+        return {
+            "data": {
+                "slug": str(i),
+                "req_id": str(i),
+                "title": f"Engineer {i}",
+                "full_location": "Vancouver, Canada",
+                "posted_date": "2026-05-27T21:45:00+0000",
+                "meta_data": {"canonical_url": f"https://careers.rivian.com/jobs/{i}"},
+            }
+        }
+
+    pages = {
+        1: [posting(i) for i in range(10)],
+        2: [posting(i) for i in range(10, 13)],
+    }
+
+    def callback(request):
+        page = int(dict(parse_qsl(urlsplit(request.url).query)).get("page", "1"))
+        return (200, {}, json.dumps({"totalCount": 13, "jobs": pages[page]}))
+
+    responses.add_callback(responses.GET, RIVIAN_URL, callback=callback)
+    jobs = rivian.fetch({"type": "rivian"})
+
+    assert len(responses.calls) == 2  # 13 postings fit in two pages of 10
+    assert len(jobs) == 13
+
+
+UBER_URL = "https://jobs.uber.com/api/jobs/search/"
+
+
+@responses.activate
+def test_uber_maps_jobs_and_falls_back_url(fixture):
+    responses.get(UBER_URL, json=fixture("uber_jobs.json"))
+    jobs = uber.fetch({"type": "uber", "name": "canada", "country": "Canada"})
+
+    assert len(jobs) == 2
+    job = jobs[0]
+    assert job.id == "uber:uber:300286"
+    assert job.title == "Specialist Account Executive, Ad Sales"
+    assert job.company == "uber"
+    assert job.source == "uber/canada"
+    assert job.location == "Toronto, ON, Canada"
+    assert job.url == "https://jobs.uber.com/en/jobs/300286/"
+    assert job.posted_at == "2026-09-10T19:38:01Z"  # passed through as-is
+    assert "Ad Sales" in job.description
+    assert "<" not in job.description
+    # missing Urls falls back to an id-derived path; null Description/
+    # DisplayDate stay empty/undated (never-miss)
+    assert jobs[1].url == "https://jobs.uber.com/en/jobs/301905/"
+    assert jobs[1].description == ""
+    assert jobs[1].posted_at is None
+
+    request = responses.calls[0].request
+    assert "countries=Canada" in request.url
+
+
+@responses.activate
+def test_uber_stops_at_total_pages():
+    def posting(i):
+        return {
+            "Id": str(i),
+            "Title": f"Engineer {i}",
+            "Locations": [{"Address": "Toronto, ON, Canada"}],
+            "Urls": [{"Url": f"/en/jobs/{i}/", "IsDefault": True}],
+        }
+
+    pages = {
+        1: [posting(i) for i in range(10)],
+        2: [posting(i) for i in range(10, 14)],
+    }
+
+    def callback(request):
+        page = int(dict(parse_qsl(urlsplit(request.url).query)).get("page", "1"))
+        return (200, {}, json.dumps({"totalPages": 2, "jobs": pages[page]}))
+
+    responses.add_callback(responses.GET, UBER_URL, callback=callback)
+    jobs = uber.fetch({"type": "uber"})
+
+    assert len(responses.calls) == 2
+    assert len(jobs) == 14
