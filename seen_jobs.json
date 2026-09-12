@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 2153,
+      "consecutive_failures": 2154,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -937,8 +937,8 @@
       "zero_since": null
     },
     "workday/blackrock": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -961,8 +961,8 @@
       "zero_since": null
     },
     "workday/cadence": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1033,13 +1033,13 @@
       "zero_since": null
     },
     "workday/fmr": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "workday/hp": {
-      "consecutive_failures": 17,
+      "consecutive_failures": 18,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1057,8 +1057,8 @@
       "zero_since": null
     },
     "workday/intel": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1081,8 +1081,8 @@
       "zero_since": null
     },
     "workday/mastercard": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1111,8 +1111,8 @@
       "zero_since": null
     },
     "workday/nasdaq": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1129,8 +1129,8 @@
       "zero_since": null
     },
     "workday/paypal": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1141,8 +1141,8 @@
       "zero_since": null
     },
     "workday/redhat": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1159,8 +1159,8 @@
       "zero_since": null
     },
     "workday/snapchat": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1171,8 +1171,8 @@
       "zero_since": null
     },
     "workday/sonyglobal": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1183,14 +1183,14 @@
       "zero_since": null
     },
     "workday/ssctech": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "workday/statestreet": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1207,7 +1207,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 8155,
+      "consecutive_failures": 8156,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1225,19 +1225,19 @@
       "zero_since": null
     },
     "workday/tsys": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "workday/visa": {
-      "consecutive_failures": 17,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "workday/workday": {
-      "consecutive_failures": 17,
+      "consecutive_failures": 18,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -280159,6 +280159,9 @@
     },
     "workday:tsys:R0072423": {
       "seen_at": "2026-09-08T13:58:02+00:00"
+    },
+    "workday:tsys:R0072433": {
+      "seen_at": "2026-09-12T07:41:53+00:00"
     },
     "workday:tsys:R0072441": {
       "seen_at": "2026-07-21T14:19:09+00:00"
