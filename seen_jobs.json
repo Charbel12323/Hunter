@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 2720,
+      "consecutive_failures": 2721,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 2,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1207,7 +1207,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 8722,
+      "consecutive_failures": 8723,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -78236,6 +78236,9 @@
     "greenhouse:databricks:8717004002": {
       "seen_at": "2026-08-31T19:10:02+00:00"
     },
+    "greenhouse:databricks:8717331002": {
+      "seen_at": "2026-09-15T03:59:43+00:00"
+    },
     "greenhouse:databricks:8720202002": {
       "seen_at": "2026-08-24T21:04:33+00:00"
     },
@@ -116801,6 +116804,9 @@
     "microsoft:microsoft:200053864": {
       "seen_at": "2026-09-10T17:31:28+00:00"
     },
+    "microsoft:microsoft:200054843": {
+      "seen_at": "2026-09-15T03:59:43+00:00"
+    },
     "microsoft:microsoft:200054844": {
       "seen_at": "2026-09-15T03:23:34+00:00"
     },
@@ -150344,9 +150350,6 @@
     "workday:citi:26966456": {
       "seen_at": "2026-08-19T00:14:35+00:00"
     },
-    "workday:citi:26966474": {
-      "seen_at": "2026-07-17T03:52:20+00:00"
-    },
     "workday:citi:26966510": {
       "seen_at": "2026-08-18T15:29:51+00:00"
     },
@@ -152924,9 +152927,6 @@
     "workday:citi:26977858": {
       "seen_at": "2026-07-21T04:48:42+00:00"
     },
-    "workday:citi:26977860": {
-      "seen_at": "2026-07-17T03:52:20+00:00"
-    },
     "workday:citi:26977875": {
       "seen_at": "2026-07-30T05:28:58+00:00"
     },
@@ -152989,9 +152989,6 @@
     },
     "workday:citi:26977971": {
       "seen_at": "2026-07-20T05:44:17+00:00"
-    },
-    "workday:citi:26977981": {
-      "seen_at": "2026-07-17T03:52:20+00:00"
     },
     "workday:citi:26977992": {
       "seen_at": "2026-07-20T10:54:28+00:00"
@@ -154576,9 +154573,6 @@
     },
     "workday:citi:26980168": {
       "seen_at": "2026-07-21T04:48:42+00:00"
-    },
-    "workday:citi:26980170": {
-      "seen_at": "2026-07-17T03:52:20+00:00"
     },
     "workday:citi:26980171": {
       "seen_at": "2026-08-20T06:54:06+00:00"
@@ -164146,6 +164140,9 @@
     },
     "workday:citi:26989654": {
       "seen_at": "2026-08-28T19:40:14+00:00"
+    },
+    "workday:citi:26989656": {
+      "seen_at": "2026-09-15T03:59:43+00:00"
     },
     "workday:citi:26989662": {
       "seen_at": "2026-09-09T19:30:05+00:00"
@@ -195194,6 +195191,9 @@
     "workday:manulife:JR26090313": {
       "seen_at": "2026-09-07T08:46:18+00:00"
     },
+    "workday:manulife:JR26090314": {
+      "seen_at": "2026-09-15T03:59:43+00:00"
+    },
     "workday:manulife:JR26090315": {
       "seen_at": "2026-09-07T08:54:50+00:00"
     },
@@ -201175,6 +201175,9 @@
     },
     "workday:mastercard:R-290898": {
       "seen_at": "2026-09-14T07:32:58+00:00"
+    },
+    "workday:mastercard:R-290987": {
+      "seen_at": "2026-09-15T03:59:43+00:00"
     },
     "workday:micron:/job/Fab-10NX-Singapore/Intern---F10-CVD-PEE_JR97726": {
       "seen_at": "2026-08-02T16:07:47+00:00"
@@ -243479,6 +243482,9 @@
     "workday:sec:R120343": {
       "seen_at": "2026-09-08T09:43:32+00:00"
     },
+    "workday:sec:R120344": {
+      "seen_at": "2026-09-15T03:59:43+00:00"
+    },
     "workday:sec:R120346": {
       "seen_at": "2026-09-08T23:08:51+00:00"
     },
@@ -249803,12 +249809,6 @@
     "workday:statestreet:R-790337": {
       "seen_at": "2026-07-24T08:37:04+00:00"
     },
-    "workday:statestreet:R-790338": {
-      "seen_at": "2026-07-17T03:59:20+00:00"
-    },
-    "workday:statestreet:R-790349": {
-      "seen_at": "2026-07-17T03:59:20+00:00"
-    },
     "workday:statestreet:R-790350": {
       "seen_at": "2026-07-27T10:32:24+00:00"
     },
@@ -249901,9 +249901,6 @@
     },
     "workday:statestreet:R-790691": {
       "seen_at": "2026-08-31T19:35:08+00:00"
-    },
-    "workday:statestreet:R-790702": {
-      "seen_at": "2026-07-17T03:59:20+00:00"
     },
     "workday:statestreet:R-790706": {
       "seen_at": "2026-07-27T13:10:02+00:00"
@@ -251254,9 +251251,6 @@
     },
     "workday:statestreet:R-794454": {
       "seen_at": "2026-08-07T02:47:55+00:00"
-    },
-    "workday:statestreet:R-794460": {
-      "seen_at": "2026-07-17T03:59:20+00:00"
     },
     "workday:statestreet:R-794464": {
       "seen_at": "2026-08-04T08:12:42+00:00"
