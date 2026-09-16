@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 3064,
+      "consecutive_failures": 3065,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 29,
+      "consecutive_failures": 30,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -897,8 +897,8 @@
     "ultipro/mda-students": {
       "consecutive_failures": 0,
       "warned_failures": false,
-      "warned_zero": true,
-      "zero_since": "2026-09-03"
+      "warned_zero": false,
+      "zero_since": null
     },
     "ultipro/pason": {
       "consecutive_failures": 0,
@@ -1207,7 +1207,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 9066,
+      "consecutive_failures": 9067,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -79040,6 +79040,9 @@
     "greenhouse:databricks:8815165002": {
       "seen_at": "2026-09-16T19:07:08+00:00"
     },
+    "greenhouse:databricks:8815669002": {
+      "seen_at": "2026-09-16T22:56:35+00:00"
+    },
     "greenhouse:datadog:1497543": {
       "seen_at": "2026-07-28T05:06:03+00:00"
     },
@@ -102458,6 +102461,12 @@
     "greenhouse:robinhood:8207970": {
       "seen_at": "2026-09-16T15:12:04+00:00"
     },
+    "greenhouse:robinhood:8209838": {
+      "seen_at": "2026-09-16T22:56:35+00:00"
+    },
+    "greenhouse:robinhood:8209840": {
+      "seen_at": "2026-09-16T22:56:35+00:00"
+    },
     "greenhouse:roblox:7100730": {
       "seen_at": "2026-07-28T05:06:03+00:00"
     },
@@ -118328,8 +118337,14 @@
     "ultipro:mda-students:CAMPU012001": {
       "seen_at": "2026-07-28T05:06:03+00:00"
     },
+    "ultipro:mda-students:ENGIN012531": {
+      "seen_at": "2026-09-16T22:56:35+00:00"
+    },
     "ultipro:mda-students:STAGI011636": {
       "seen_at": "2026-07-28T05:06:03+00:00"
+    },
+    "ultipro:mda-students:STUDE011726": {
+      "seen_at": "2026-09-16T22:56:35+00:00"
     },
     "ultipro:mda-students:STUDE012303": {
       "seen_at": "2026-08-10T15:29:34+00:00"
@@ -134492,6 +134507,9 @@
     "workday:broadcom:R027116": {
       "seen_at": "2026-09-16T17:48:20+00:00"
     },
+    "workday:broadcom:R027126": {
+      "seen_at": "2026-09-16T22:56:35+00:00"
+    },
     "workday:broadridge:JR1075208": {
       "seen_at": "2026-09-07T20:50:59+00:00"
     },
@@ -150346,6 +150364,9 @@
     },
     "workday:ciena:R031667": {
       "seen_at": "2026-09-16T18:54:56+00:00"
+    },
+    "workday:ciena:R031669": {
+      "seen_at": "2026-09-16T22:56:35+00:00"
     },
     "workday:ciena:R031675": {
       "seen_at": "2026-09-16T19:33:23+00:00"
@@ -186175,6 +186196,9 @@
     },
     "workday:hp:JET0299": {
       "seen_at": "2026-09-16T22:18:58+00:00"
+    },
+    "workday:hp:JET0306": {
+      "seen_at": "2026-09-16T22:56:35+00:00"
     },
     "workday:hp:UNI2514": {
       "seen_at": "2026-08-13T18:12:07+00:00"
