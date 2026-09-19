@@ -12,6 +12,7 @@ import sys
 import time
 from collections import Counter
 from collections.abc import Callable
+from concurrent.futures import ThreadPoolExecutor
 from datetime import UTC, datetime, timedelta
 
 import requests
@@ -29,6 +30,10 @@ log = logging.getLogger("scraper")
 # the whole run still finishes quickly even with a flaky source.
 RETRY_WAITS = (1, 4, 16)
 PRUNE_MAX_AGE_DAYS = 60
+# Sources are fetched concurrently (I/O-bound). Capped so a poll doesn't
+# fire 75+ simultaneous requests at the two heaviest shared hosts (Greenhouse
+# and Ashby each back dozens of sources on one domain).
+MAX_FETCH_WORKERS = 20
 
 
 def load_config(path: str) -> dict:
@@ -44,25 +49,40 @@ def load_config(path: str) -> dict:
 
 
 def fetch_all(sources: list[dict]) -> tuple[list[Job], dict[str, dict]]:
-    """Fetch every source, each inside its own try/except (bulkhead):
-    one broken source must never sink the run. Returns the jobs plus
-    per-source stats for the run summary and health tracking."""
+    """Fetch every source concurrently, each inside its own try/except
+    (bulkhead): one broken source must never sink the run. Returns the jobs
+    plus per-source stats for the run summary and health tracking.
+
+    Uses executor.map rather than as_completed so results come back in
+    `sources` order despite running concurrently - fetch_all's output order
+    (and therefore dedup/filter/notify order) stays identical to a
+    sequential run."""
     jobs: list[Job] = []
     stats: dict[str, dict] = {}
-    for source in sources:
-        name = source.get("company") or source.get("repo") or source.get("name") or "?"
-        label = f"{source.get('type', '?')}/{name}"
-        stat = stats.setdefault(label, {"fetched": 0, "errors": 0})
-        try:
-            fetch = get_adapter(source["type"])
-            fetched = fetch_with_retry(fetch, source, label)
-            stat["fetched"] += len(fetched)
-            log.info("%s: fetched %d jobs", label, len(fetched))
-            jobs.extend(fetched)
-        except Exception:
-            stat["errors"] += 1
-            log.exception("%s: fetch failed; continuing with remaining sources", label)
+    with ThreadPoolExecutor(max_workers=MAX_FETCH_WORKERS) as executor:
+        for label, fetched, errored in executor.map(_fetch_one, sources):
+            stat = stats.setdefault(label, {"fetched": 0, "errors": 0})
+            if errored:
+                stat["errors"] += 1
+            else:
+                stat["fetched"] += len(fetched)
+                log.info("%s: fetched %d jobs", label, len(fetched))
+                jobs.extend(fetched)
     return jobs, stats
+
+
+def _fetch_one(source: dict) -> tuple[str, list[Job], bool]:
+    """Runs in a worker thread. Never raises: errors are caught here so one
+    broken source can't sink the run, and the label always comes back so
+    fetch_all can still count the failure."""
+    name = source.get("company") or source.get("repo") or source.get("name") or "?"
+    label = f"{source.get('type', '?')}/{name}"
+    try:
+        fetch = get_adapter(source["type"])
+        return label, fetch_with_retry(fetch, source, label), False
+    except Exception:
+        log.exception("%s: fetch failed; continuing with remaining sources", label)
+        return label, [], True
 
 
 def fetch_with_retry(fetch: Callable, config: dict, label: str) -> list[Job]:

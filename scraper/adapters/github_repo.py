@@ -17,6 +17,7 @@ Config:
 import hashlib
 import json
 import logging
+import threading
 from datetime import UTC, datetime
 
 import requests
@@ -28,6 +29,10 @@ log = logging.getLogger(__name__)
 RAW_URL = "https://raw.githubusercontent.com/{repo}/{branch}/{path}"
 ETAG_CACHE_PATH = ".etag_cache.json"
 TIMEOUT_SECONDS = 60
+# Sources fetch concurrently now; guards the non-atomic read-modify-write of
+# the shared cache file so two github sources can't clobber each other's
+# ETag update.
+_CACHE_LOCK = threading.Lock()
 
 
 def fetch(config: dict) -> list[Job]:
@@ -35,7 +40,8 @@ def fetch(config: dict) -> list[Job]:
     url = RAW_URL.format(repo=repo, branch=config.get("branch", "main"), path=config["path"])
     cache_path = config.get("etag_cache_path", ETAG_CACHE_PATH)
 
-    cache = _load_cache(cache_path)
+    with _CACHE_LOCK:
+        cache = _load_cache(cache_path)
     headers = {"If-None-Match": cache[url]} if url in cache else {}
 
     response = requests.get(url, headers=headers, timeout=TIMEOUT_SECONDS)
@@ -44,7 +50,8 @@ def fetch(config: dict) -> list[Job]:
         return []
     response.raise_for_status()
     if etag := response.headers.get("ETag"):
-        _save_cache(cache_path, cache | {url: etag})
+        with _CACHE_LOCK:
+            _save_cache(cache_path, _load_cache(cache_path) | {url: etag})
 
     jobs = []
     for listing in response.json():

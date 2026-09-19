@@ -1,6 +1,7 @@
 """Stage 3 tests: retry with backoff, the bulkhead, and health thresholds.
 All offline - HTTP mocked, dates injected."""
 
+import time
 from datetime import date, timedelta
 
 import pytest
@@ -94,6 +95,21 @@ def test_one_broken_source_does_not_sink_the_run(monkeypatch):
     assert [job.source for job in jobs] == ["ok/good"]
     assert stats["boom/bad"] == {"fetched": 0, "errors": 1}
     assert stats["ok/good"] == {"fetched": 1, "errors": 0}
+
+
+def test_sources_are_fetched_concurrently(monkeypatch):
+    def slow(config):
+        time.sleep(0.2)
+        return []
+
+    monkeypatch.setitem(REGISTRY, "slow", slow)
+
+    start = time.perf_counter()
+    main.fetch_all([{"type": "slow", "name": "a"}, {"type": "slow", "name": "b"}])
+    elapsed = time.perf_counter() - start
+
+    # Sequential would take >= 0.4s; concurrent should land close to 0.2s.
+    assert elapsed < 0.35
 
 
 # --- health ------------------------------------------------------------------

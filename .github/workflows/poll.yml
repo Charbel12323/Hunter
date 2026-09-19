@@ -4,7 +4,7 @@ on:
   schedule:
     # GitHub fires scheduled workflows late (5-15+ min gaps even on a */5
     # cron), so the cron is only a trigger: each run then polls in a
-    # 5-minute loop for ~25 minutes (see the poll step), and the concurrency
+    # 5-minute loop for ~20 minutes (see the poll step), and the concurrency
     # queue chains the next scheduled run behind it. Net effect: one poll
     # roughly every 5 minutes. Free on a public repo.
     - cron: "*/5 * * * *"
@@ -22,8 +22,10 @@ permissions:
 jobs:
   poll:
     runs-on: ubuntu-latest
-    # ~3 min per iteration (the Workday sources add ~120 sequential
-    # requests) + 4 sleeps of 5 min = ~35 min of loop, plus setup.
+    # Sources fetch concurrently now, so an iteration takes seconds even
+    # with 200+ sources across Greenhouse/Ashby/Workday/etc. The 4 sleeps of
+    # 5 min dominate: ~20-21 min of loop, plus setup. Timeout kept generous
+    # for a slow/retry-heavy cycle.
     timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
@@ -37,6 +39,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Poll every 5 minutes and notify
+        # Sources fetch concurrently (scraper/main.py:fetch_all), so an
+        # iteration now takes seconds rather than minutes - the 4 sleeps of
+        # 5 min dominate, giving ~20-21 min of loop per run, plus setup.
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
