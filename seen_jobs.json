@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 3527,
+      "consecutive_failures": 3528,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 492,
+      "consecutive_failures": 493,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -913,8 +913,8 @@
       "zero_since": null
     },
     "workday/analogdevices": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -937,8 +937,8 @@
       "zero_since": null
     },
     "workday/blackrock": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -961,8 +961,8 @@
       "zero_since": null
     },
     "workday/cadence": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1033,8 +1033,8 @@
       "zero_since": null
     },
     "workday/fmr": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1057,8 +1057,8 @@
       "zero_since": null
     },
     "workday/intel": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1075,20 +1075,20 @@
       "zero_since": null
     },
     "workday/marvell": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "workday/mastercard": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "workday/micron": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1129,8 +1129,8 @@
       "zero_since": null
     },
     "workday/paypal": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1171,8 +1171,8 @@
       "zero_since": null
     },
     "workday/sonyglobal": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1189,8 +1189,8 @@
       "zero_since": null
     },
     "workday/statestreet": {
-      "consecutive_failures": 21,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1207,7 +1207,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 9529,
+      "consecutive_failures": 9530,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -189911,9 +189911,6 @@
     "workday:hpe:1210465": {
       "seen_at": "2026-08-18T19:20:37+00:00"
     },
-    "workday:hpe:1210565": {
-      "seen_at": "2026-07-21T08:09:16+00:00"
-    },
     "workday:hpe:1210577": {
       "seen_at": "2026-08-05T20:16:00+00:00"
     },
@@ -200797,9 +200794,6 @@
     },
     "workday:mastercard:R-279186": {
       "seen_at": "2026-09-02T06:57:51+00:00"
-    },
-    "workday:mastercard:R-279213": {
-      "seen_at": "2026-07-21T08:09:16+00:00"
     },
     "workday:mastercard:R-279224": {
       "seen_at": "2026-08-31T09:15:00+00:00"
@@ -213499,9 +213493,6 @@
     },
     "workday:motorolasolutions:R65468": {
       "seen_at": "2026-09-14T16:14:34+00:00"
-    },
-    "workday:motorolasolutions:R65666": {
-      "seen_at": "2026-07-21T08:09:16+00:00"
     },
     "workday:motorolasolutions:R65901": {
       "seen_at": "2026-07-31T01:40:51+00:00"
@@ -243005,9 +242996,6 @@
     "workday:salesforce:JR352442": {
       "seen_at": "2026-07-21T21:22:00+00:00"
     },
-    "workday:salesforce:JR352443": {
-      "seen_at": "2026-07-21T08:09:16+00:00"
-    },
     "workday:salesforce:JR352466": {
       "seen_at": "2026-07-21T16:41:54+00:00"
     },
@@ -257330,14 +257318,8 @@
     "workday:statestreet:R-794716": {
       "seen_at": "2026-09-08T16:24:22+00:00"
     },
-    "workday:statestreet:R-794717": {
-      "seen_at": "2026-07-21T08:09:16+00:00"
-    },
     "workday:statestreet:R-794718": {
       "seen_at": "2026-08-03T18:39:58+00:00"
-    },
-    "workday:statestreet:R-794719": {
-      "seen_at": "2026-07-21T08:09:16+00:00"
     },
     "workday:statestreet:R-794723": {
       "seen_at": "2026-07-21T09:33:25+00:00"
