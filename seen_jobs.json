@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 4293,
+      "consecutive_failures": 4294,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 1258,
+      "consecutive_failures": 1259,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 10295,
+      "consecutive_failures": 10296,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1262,9 +1262,6 @@
     }
   },
   "jobs": {
-    "amazon:amazon:10483011": {
-      "seen_at": "2026-07-23T22:53:20+00:00"
-    },
     "amazon:amazon:10483143": {
       "seen_at": "2026-07-24T04:49:03+00:00"
     },
@@ -20617,6 +20614,9 @@
     },
     "ashby:plaid:6f7935d0-8aa4-4416-9c39-e34eb731b5b2": {
       "seen_at": "2026-08-07T18:14:40+00:00"
+    },
+    "ashby:plaid:7072d96d-5e81-434b-8dcb-28d78e714a11": {
+      "seen_at": "2026-09-21T22:54:51+00:00"
     },
     "ashby:plaid:71c4fdf3-966a-4ec5-9560-801c5ebcecba": {
       "seen_at": "2026-09-17T20:23:45+00:00"
@@ -68918,6 +68918,9 @@
     "greenhouse:cloudflare:8214726": {
       "seen_at": "2026-09-18T21:32:11+00:00"
     },
+    "greenhouse:cloudflare:8221187": {
+      "seen_at": "2026-09-21T22:54:51+00:00"
+    },
     "greenhouse:cockroachlabs:2578081": {
       "seen_at": "2026-07-28T05:06:02+00:00"
     },
@@ -78814,6 +78817,9 @@
     },
     "greenhouse:doordashusa:8090114": {
       "seen_at": "2026-07-28T15:32:50+00:00"
+    },
+    "greenhouse:doordashusa:8090117": {
+      "seen_at": "2026-09-21T22:54:51+00:00"
     },
     "greenhouse:doordashusa:8090130": {
       "seen_at": "2026-08-26T17:55:37+00:00"
@@ -146341,6 +146347,9 @@
     },
     "workday:cibc:2619249": {
       "seen_at": "2026-09-18T21:15:11+00:00"
+    },
+    "workday:cibc:2619256": {
+      "seen_at": "2026-09-21T22:54:51+00:00"
     },
     "workday:cibc:2619258": {
       "seen_at": "2026-09-18T21:52:42+00:00"
@@ -231806,6 +231815,9 @@
     "workday:rbc:R-0000187509": {
       "seen_at": "2026-09-11T15:36:16+00:00"
     },
+    "workday:rbc:R-0000187517": {
+      "seen_at": "2026-09-21T22:54:51+00:00"
+    },
     "workday:rbc:R-0000187520": {
       "seen_at": "2026-09-15T12:09:40+00:00"
     },
@@ -256291,9 +256303,6 @@
     },
     "workday:td:R_1495480": {
       "seen_at": "2026-07-27T12:55:36+00:00"
-    },
-    "workday:td:R_1495488": {
-      "seen_at": "2026-07-23T22:53:20+00:00"
     },
     "workday:td:R_1495518": {
       "seen_at": "2026-08-05T11:53:29+00:00"
