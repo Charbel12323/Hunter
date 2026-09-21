@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 4288,
+      "consecutive_failures": 4289,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 1253,
+      "consecutive_failures": 1254,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 10290,
+      "consecutive_failures": 10291,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -20050,6 +20050,9 @@
     },
     "ashby:perplexity:4fba58de-a168-4948-9d82-a7d4b38f45f2": {
       "seen_at": "2026-08-26T23:14:46+00:00"
+    },
+    "ashby:perplexity:5080dab5-7eb7-4cb2-9e2c-c61531fd3ad1": {
+      "seen_at": "2026-09-21T22:32:27+00:00"
     },
     "ashby:perplexity:50a2def5-adeb-4f13-99c1-88c32482b772": {
       "seen_at": "2026-08-26T19:52:25+00:00"
@@ -84026,6 +84029,9 @@
     "greenhouse:fivetran:7990752003": {
       "seen_at": "2026-09-11T21:47:20+00:00"
     },
+    "greenhouse:fivetran:7990835003": {
+      "seen_at": "2026-09-21T22:32:27+00:00"
+    },
     "greenhouse:fivetran:7990897003": {
       "seen_at": "2026-09-15T14:02:36+00:00"
     },
@@ -87901,6 +87907,9 @@
     },
     "greenhouse:gusto:8208119": {
       "seen_at": "2026-09-21T15:56:33+00:00"
+    },
+    "greenhouse:gusto:8212338": {
+      "seen_at": "2026-09-21T22:32:27+00:00"
     },
     "greenhouse:hootsuite:7776672": {
       "seen_at": "2026-08-25T15:50:45+00:00"
@@ -96086,6 +96095,9 @@
     "greenhouse:okta:8220192": {
       "seen_at": "2026-09-21T15:11:06+00:00"
     },
+    "greenhouse:okta:8220584": {
+      "seen_at": "2026-09-21T22:32:27+00:00"
+    },
     "greenhouse:okta:8220634": {
       "seen_at": "2026-09-21T16:24:34+00:00"
     },
@@ -99199,6 +99211,9 @@
     },
     "greenhouse:robinhood:8202858": {
       "seen_at": "2026-09-16T14:49:56+00:00"
+    },
+    "greenhouse:robinhood:8202863": {
+      "seen_at": "2026-09-21T22:32:27+00:00"
     },
     "greenhouse:robinhood:8202874": {
       "seen_at": "2026-09-14T21:59:34+00:00"
@@ -167084,9 +167099,6 @@
     "workday:crowdstrike:R29486": {
       "seen_at": "2026-07-28T07:05:06+00:00"
     },
-    "workday:crowdstrike:R29487": {
-      "seen_at": "2026-07-23T22:28:39+00:00"
-    },
     "workday:crowdstrike:R29490": {
       "seen_at": "2026-07-27T09:14:18+00:00"
     },
@@ -167197,9 +167209,6 @@
     },
     "workday:crowdstrike:R29559": {
       "seen_at": "2026-07-29T05:07:06+00:00"
-    },
-    "workday:crowdstrike:R29562": {
-      "seen_at": "2026-07-23T22:28:39+00:00"
     },
     "workday:crowdstrike:R29565": {
       "seen_at": "2026-08-04T20:56:13+00:00"
@@ -213443,9 +213452,6 @@
     "workday:nvidia:JR2017737": {
       "seen_at": "2026-08-10T20:28:16+00:00"
     },
-    "workday:nvidia:JR2017742": {
-      "seen_at": "2026-07-23T22:28:39+00:00"
-    },
     "workday:nvidia:JR2017756": {
       "seen_at": "2026-08-18T02:52:59+00:00"
     },
@@ -214313,9 +214319,6 @@
     "workday:nvidia:JR2021255": {
       "seen_at": "2026-08-03T21:47:05+00:00"
     },
-    "workday:nvidia:JR2021259": {
-      "seen_at": "2026-07-23T22:28:39+00:00"
-    },
     "workday:nvidia:JR2021271": {
       "seen_at": "2026-09-15T16:37:32+00:00"
     },
@@ -214454,9 +214457,6 @@
     "workday:nvidia:JR2021608": {
       "seen_at": "2026-09-08T19:09:05+00:00"
     },
-    "workday:nvidia:JR2021616": {
-      "seen_at": "2026-07-23T22:28:39+00:00"
-    },
     "workday:nvidia:JR2021626": {
       "seen_at": "2026-07-29T09:14:55+00:00"
     },
@@ -214471,9 +214471,6 @@
     },
     "workday:nvidia:JR2021637": {
       "seen_at": "2026-08-26T09:08:41+00:00"
-    },
-    "workday:nvidia:JR2021639": {
-      "seen_at": "2026-07-23T22:28:39+00:00"
     },
     "workday:nvidia:JR2021643": {
       "seen_at": "2026-07-29T03:47:58+00:00"
@@ -214540,9 +214537,6 @@
     },
     "workday:nvidia:JR2021715": {
       "seen_at": "2026-07-23T23:00:26+00:00"
-    },
-    "workday:nvidia:JR2021719": {
-      "seen_at": "2026-07-23T22:28:39+00:00"
     },
     "workday:nvidia:JR2021730": {
       "seen_at": "2026-07-27T13:45:45+00:00"
@@ -218809,6 +218803,9 @@
     },
     "workday:nvidia:JR2026111": {
       "seen_at": "2026-09-21T22:21:33+00:00"
+    },
+    "workday:nvidia:JR2026125": {
+      "seen_at": "2026-09-21T22:32:27+00:00"
     },
     "workday:nvidia:JR2026131": {
       "seen_at": "2026-09-21T19:31:40+00:00"
@@ -225034,9 +225031,6 @@
     },
     "workday:rbc:R-0000175717": {
       "seen_at": "2026-08-14T23:14:22+00:00"
-    },
-    "workday:rbc:R-0000175720": {
-      "seen_at": "2026-07-23T22:28:39+00:00"
     },
     "workday:rbc:R-0000175731": {
       "seen_at": "2026-09-15T18:43:30+00:00"
@@ -235069,9 +235063,6 @@
     },
     "workday:salesforce:JR353395": {
       "seen_at": "2026-08-17T15:05:47+00:00"
-    },
-    "workday:salesforce:JR353396": {
-      "seen_at": "2026-07-23T22:28:39+00:00"
     },
     "workday:salesforce:JR353398": {
       "seen_at": "2026-07-23T22:38:13+00:00"
