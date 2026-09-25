@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-25"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 5264,
+      "consecutive_failures": 5265,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 2229,
+      "consecutive_failures": 2230,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 11266,
+      "consecutive_failures": 11267,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -121526,6 +121526,9 @@
     "workday:analogdevices:R265982": {
       "seen_at": "2026-09-15T20:47:54+00:00"
     },
+    "workday:analogdevices:R265985": {
+      "seen_at": "2026-09-25T01:25:39+00:00"
+    },
     "workday:analogdevices:R265992": {
       "seen_at": "2026-09-17T06:27:45+00:00"
     },
@@ -152885,9 +152888,6 @@
     "workday:citi:26967943": {
       "seen_at": "2026-08-12T08:38:10+00:00"
     },
-    "workday:citi:26967952": {
-      "seen_at": "2026-07-27T01:23:08+00:00"
-    },
     "workday:citi:26968009": {
       "seen_at": "2026-08-25T12:07:26+00:00"
     },
@@ -170338,6 +170338,9 @@
     },
     "workday:citi:26996533": {
       "seen_at": "2026-09-21T23:56:56+00:00"
+    },
+    "workday:citi:26996536": {
+      "seen_at": "2026-09-25T01:25:39+00:00"
     },
     "workday:citi:26996543": {
       "seen_at": "2026-09-22T08:56:16+00:00"
@@ -189424,9 +189427,6 @@
     },
     "workday:hpe:1209596": {
       "seen_at": "2026-09-10T00:00:25+00:00"
-    },
-    "workday:hpe:1209601": {
-      "seen_at": "2026-07-27T01:23:08+00:00"
     },
     "workday:hpe:1209604": {
       "seen_at": "2026-08-05T20:07:42+00:00"
@@ -233755,9 +233755,6 @@
     },
     "workday:rbc:R-0000180627": {
       "seen_at": "2026-09-16T19:15:59+00:00"
-    },
-    "workday:rbc:R-0000180672": {
-      "seen_at": "2026-07-27T01:23:08+00:00"
     },
     "workday:rbc:R-0000180674": {
       "seen_at": "2026-09-09T19:30:05+00:00"
