@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-26"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 5759,
+      "consecutive_failures": 5760,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 2724,
+      "consecutive_failures": 2725,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 11761,
+      "consecutive_failures": 11762,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -69544,6 +69544,9 @@
     },
     "greenhouse:datadog:8090275": {
       "seen_at": "2026-08-24T03:01:21+00:00"
+    },
+    "greenhouse:datadog:8091868": {
+      "seen_at": "2026-09-26T14:55:59+00:00"
     },
     "greenhouse:datadog:8091967": {
       "seen_at": "2026-07-30T11:34:28+00:00"
