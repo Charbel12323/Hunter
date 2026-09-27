@@ -253,6 +253,22 @@ filters:
     - director
     - "head of"
     - "vp "
+    # "developer" also matches non-engineering roles.
+    - curriculum
+    - "business developer"
+    - "sales engineer"
+  # Case-insensitive regexes on the title, for what substrings can't express:
+  # mid-level suffixes (II/III/IV; "I" stays - it's the junior level),
+  # senior "member of technical staff" grades, and security-clearance roles.
+  exclude_patterns:
+    - '\b(ii|iii|iv)\b'
+    - '\b[slp]mts\b'
+    - '\bts\s*/?\s*sci\b'
+    - '\bclearance\b'
+    - '\bpolygraph\b'
+  # Keep only jobs in these regions (canada, us, other). A bare "Remote" or
+  # empty location passes, since neither rules the job out.
+  regions: [canada, us]
   # Uncomment to keep only jobs whose location mentions one of these.
   # locations: [remote, toronto, new york]
   # Drop jobs whose posted date is older than this. Aggregator repos backfill

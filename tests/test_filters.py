@@ -81,3 +81,30 @@ def test_rules_compose_and_do_not_leak_into_each_other():
     assert not keep(make_job("Product Designer"), predicates)  # not included
     # regression: include must not accidentally use the exclude word list
     assert not keep(make_job("Staff Accountant"), predicates)
+
+
+def test_exclude_patterns_are_case_insensitive_regexes_on_the_title():
+    predicates = build_predicates(
+        {"exclude_patterns": [r"\b(ii|iii|iv)\b", r"\b[slp]mts\b", r"\bts\s*/?\s*sci\b"]}
+    )
+    assert not keep(make_job("Quality Engineer II"), predicates)
+    assert not keep(make_job("Software Engineer III, Backend"), predicates)
+    assert not keep(make_job("Salesforce Technical Engineer - Integration SMTS"), predicates)
+    assert not keep(make_job("Test Engineer TS SCI"), predicates)
+    assert not keep(make_job("Test Engineer (TS/SCI)"), predicates)
+    assert keep(make_job("Software Engineer I"), predicates)
+    assert keep(make_job("IIoT Software Engineer"), predicates)  # not a level suffix
+    assert keep(make_job("Member of Technical Staff"), predicates)
+
+
+def test_regions_keep_allowed_countries_and_unplaced_jobs():
+    predicates = build_predicates({"regions": ["canada", "US"]})
+    assert keep(make_job(location="Toronto, Ontario"), predicates)
+    assert keep(make_job(location="US, CA, Santa Clara"), predicates)
+    assert keep(make_job(location="United States-Virginia-Stafford"), predicates)
+    assert keep(make_job(location="San Francisco"), predicates)  # city, no state
+    assert keep(make_job(location="Remote"), predicates)
+    assert keep(make_job(location=""), predicates)  # never-miss
+    assert not keep(make_job(location="Bengaluru, Karnātaka, India"), predicates)
+    assert not keep(make_job(location="Mexico - Mexico City"), predicates)
+    assert not keep(make_job(location="Remote - India"), predicates)

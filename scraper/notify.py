@@ -1,8 +1,9 @@
 """Telegram sender.
 
-Posts one message per job via the Bot API sendMessage endpoint (HTML parse
-mode). Credentials come only from environment variables, injected by GitHub
-Actions Secrets - never from config files.
+Posts one message per job - or per group of identical-looking postings -
+via the Bot API sendMessage endpoint (HTML parse mode). Credentials come
+only from environment variables, injected by GitHub Actions Secrets - never
+from config files.
 """
 
 import html
@@ -10,11 +11,12 @@ import logging
 import os
 import re
 import time
-from datetime import datetime
+from datetime import UTC, datetime
 
 import requests
 
 from scraper.models import Job
+from scraper.regions import region
 
 log = logging.getLogger(__name__)
 
@@ -37,7 +39,10 @@ REGIONS = (
     ("other", "🌐", "Other"),
 )
 
-_INTERN_RE = re.compile(r"\bintern(ship)?\b|\bco[-\s]?op\b", re.IGNORECASE)
+_INTERN_RE = re.compile(r"\bintern(ship)?\b|\bco[-\s]?op\b|\bstudent\b", re.IGNORECASE)
+# Internship feeds list student roles whose titles say nothing about it
+# ("Student Web Developer"), so the feed itself is the stronger signal.
+_INTERN_FEED_RE = re.compile(r"intern", re.IGNORECASE)
 # "Engineer I" / "Engineer 1" style level suffixes count as junior; II+ do not.
 _NEW_GRAD_RE = re.compile(
     r"\bnew\s+grad(uate)?\b|\bgraduate\b|\bentry[-\s]level\b|\bearly\s+career\b"
@@ -49,6 +54,9 @@ _NEW_GRAD_RE = re.compile(
 
 def categorize(job: Job) -> str:
     if _INTERN_RE.search(job.title):
+        return "internship"
+    repo = _github_repo(job.source)
+    if repo and _INTERN_FEED_RE.search(repo):
         return "internship"
     if _NEW_GRAD_RE.search(job.title):
         return "new_grad"
@@ -95,8 +103,24 @@ def _github_repo(source: str) -> str | None:
     return None
 
 
-def send(job: Job) -> None:
-    _post(format_message(job))
+def group_duplicates(jobs: list[Job]) -> list[list[Job]]:
+    """Collapse postings that look identical to a reader - same company,
+    title and location under different ATS ids (one role opened as several
+    reqs). Order is preserved. Display-only: every job keeps its own id and
+    is still recorded as seen individually."""
+    groups: dict[tuple[str, str, str], list[Job]] = {}
+    for job in jobs:
+        key = (
+            display_company(job.company).casefold(),
+            " ".join(job.title.split()).casefold(),
+            " ".join(job.location.split()).casefold(),
+        )
+        groups.setdefault(key, []).append(job)
+    return list(groups.values())
+
+
+def send(job: Job, copies: int = 1) -> None:
+    _post(format_message(job, copies))
     log.info("Notified: %s", job.id)
     time.sleep(SEND_PAUSE_SECONDS)
 
@@ -133,11 +157,11 @@ def _post(text: str) -> None:
     response.raise_for_status()
 
 
-def format_message(job: Job) -> str:
+def format_message(job: Job, copies: int = 1) -> str:
     # Telegram HTML mode breaks on unescaped <, >, & - escape everything
     # that originates from the source.
     e = html.escape
-    lines = [f"<b>{_EMOJI[categorize(job)]} {e(job.title)}</b>"]
+    lines = [f"<b>{_EMOJI[categorize(job)]} {e(job.title)}</b>{_copies(copies)}"]
 
     company_line = e(display_company(job.company))
     if job.location:
@@ -145,7 +169,9 @@ def format_message(job: Job) -> str:
     lines.append(company_line)
 
     if job.posted_at:
-        lines.append(f"Posted: {e(_date_only(job.posted_at))}")
+        posted = _date_only(job.posted_at)
+        age = _age(job.posted_at)
+        lines.append(f"Posted: {e(posted)} ({age})" if age else f"Posted: {e(posted)}")
 
     # No dedicated pay/keyword fields exist, so mine them from the
     # description; both are omitted when nothing recognisable is found.
@@ -157,16 +183,23 @@ def format_message(job: Job) -> str:
         lines.append(f"Keywords: {e(', '.join(keywords))}")
 
     lines.append("")
-    lines.append(f'<a href="{e(job.url, quote=True)}">Apply</a> ({e(job.source)})')
+    apply = f'<a href="{e(job.url, quote=True)}">Apply</a>'
+    repo = _github_repo(job.source)
+    if repo:
+        url = e(GITHUB_REPO_URL.format(repo=repo), quote=True)
+        apply += f' · via <a href="{url}">{e(repo)}</a>'
+    lines.append(apply)
     return "\n".join(lines)
 
 
 def format_digest(jobs: list[Job]) -> list[str]:
     # One message (or more, if long) per seniority bucket, so internships,
-    # new-grad roles, and full-time roles never share a message.
+    # new-grad roles, and full-time roles never share a message. Counts in
+    # the headers are entries, i.e. duplicates collapsed.
     messages: list[str] = []
+    entries = group_duplicates(jobs)
     for key, emoji, name in CATEGORIES:
-        group = [job for job in jobs if categorize(job) == key]
+        group = [dupes for dupes in entries if categorize(dupes[0]) == key]
         if group:
             messages.extend(_format_group(f"{emoji} {name}", group))
     return messages
@@ -175,19 +208,24 @@ def format_digest(jobs: list[Job]) -> list[str]:
 CAP = 3800  # stay safely under Telegram's 4096-char message cap
 
 
-def _format_entry(job: Job) -> str:
-    """One digest entry: company first and bold, then location, then feed.
+def _format_entry(dupes: list[Job]) -> str:
+    """One digest entry: company first and bold, then location and age, then
+    feed. Duplicates share one entry, linked to the first posting.
 
     Returned as a single multi-line string so the message splitter treats the
     entry as one indivisible unit and never orphans a job's location line.
     """
     e = html.escape
+    job = dupes[0]
     lines = [
         f'- <b>{e(display_company(job.company))}</b> — '
-        f'<a href="{e(job.url, quote=True)}">{e(job.title)}</a>'
+        f'<a href="{e(job.url, quote=True)}">{e(job.title)}</a>{_copies(len(dupes))}'
     ]
-    if job.location:
-        lines.append(f"  {e(job.location)}")
+    details = [e(job.location)] if job.location else []
+    if job.posted_at and (age := _age(job.posted_at)):
+        details.append(age)
+    if details:
+        lines.append(f"  {' · '.join(details)}")
     # Aggregator feeds pull from hundreds of companies, so naming the repo is
     # the only way to tell where a listing actually came from. Per-company ATS
     # sources are already identified by the company name above.
@@ -198,7 +236,7 @@ def _format_entry(job: Job) -> str:
     return "\n".join(lines)
 
 
-def _format_group(label: str, jobs: list[Job]) -> list[str]:
+def _format_group(label: str, jobs: list[list[Job]]) -> list[str]:
     # Within the seniority group, split further by region (Canada / US /
     # Other), each under its own flagged subheader. Long groups spill across
     # as many messages as needed - each stays under the Telegram cap and the
@@ -207,11 +245,11 @@ def _format_group(label: str, jobs: list[Job]) -> list[str]:
 
     sections: list[tuple[str, list[str]]] = []
     for key, flag, name in REGIONS:
-        group = [job for job in jobs if _region(job.location) == key]
+        group = [dupes for dupes in jobs if region(dupes[0].location) == key]
         if not group:
             continue
         subheader = f"<b>{flag} {name} ({len(group)})</b>"
-        sections.append((subheader, [_format_entry(job) for job in group]))
+        sections.append((subheader, [_format_entry(dupes) for dupes in group]))
 
     messages: list[str] = []
     lines = [header, ""]
@@ -244,45 +282,24 @@ def _format_group(label: str, jobs: list[Job]) -> list[str]:
     return messages
 
 
-# Full country names are matched case-insensitively. The bare "US"/"U.S."
-# abbreviation and the two-letter province/state codes are matched
-# case-sensitively (uppercase) so English words like "us", "or", "in", "me"
-# or "hi" inside a location string can't be mistaken for a country or state.
-_CANADA_KW = re.compile(r"\bcanada\b", re.IGNORECASE)
-_US_KW = re.compile(r"\bunited states\b|\bu\.?s\.?a\.?\b", re.IGNORECASE)
-_US_ABBR = re.compile(r"\bU\.?S\.?\b")
-_CA_CODE = re.compile(r"\b(?:AB|BC|MB|NB|NL|NS|NT|NU|ON|PE|QC|SK|YT)\b")
-_US_CODE = re.compile(
-    r"\b(?:AL|AK|AZ|AR|CA|CO|CT|DE|DC|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA"
-    r"|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT"
-    r"|VT|VA|WA|WV|WI|WY)\b"
-)
-_CA_CITY = re.compile(
-    r"\b(?:Toronto|Vancouver|Montr[eé]al|Ottawa|Calgary|Edmonton|Winnipeg"
-    r"|Halifax|Mississauga|Kitchener|Waterloo|Qu[eé]bec)\b",
-    re.IGNORECASE,
-)
+def _copies(count: int) -> str:
+    return f" ×{count}" if count > 1 else ""
 
 
-def _region(location: str) -> str:
-    """Bucket a free-text location into 'canada', 'us' or 'other'.
-
-    Explicit country names win first, then province/state codes, then a
-    Canadian-city fallback for strings that name a city but no country/code.
-    """
-    if not location:
-        return "other"
-    if _CANADA_KW.search(location):
-        return "canada"
-    if _US_KW.search(location) or _US_ABBR.search(location):
-        return "us"
-    if _CA_CODE.search(location):
-        return "canada"
-    if _US_CODE.search(location):
-        return "us"
-    if _CA_CITY.search(location):
-        return "canada"
-    return "other"
+def _age(posted_at: str, now: datetime | None = None) -> str | None:
+    """How long ago a job was posted, in whole days - what actually matters
+    when deciding whether to apply now. None if the date can't be parsed."""
+    try:
+        posted = datetime.fromisoformat(posted_at)
+    except ValueError:
+        return None
+    if posted.tzinfo is None:
+        posted = posted.replace(tzinfo=UTC)
+    now = now or datetime.now(UTC)
+    days = (now.date() - posted.astimezone(UTC).date()).days
+    if days <= 0:
+        return "🔥 today"
+    return f"{days}d ago"
 
 
 def _date_only(posted_at: str) -> str:

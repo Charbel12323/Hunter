@@ -117,12 +117,17 @@ def notify(jobs: list[Job], store: SeenStore, dry_run: bool, digest_threshold: i
     if not jobs:
         return []
 
-    if len(jobs) > digest_threshold:
+    # Identical-looking postings (one role opened as several reqs) share one
+    # entry, so the digest threshold counts what the reader will actually see.
+    groups = telegram.group_duplicates(jobs)
+
+    if len(groups) > digest_threshold:
         # Digest mode: one summary message instead of flooding the chat.
         if dry_run:
             print(f"DIGEST of {len(jobs)} new jobs:")
-            for job in jobs:
-                print(f"  - {job.title} @ {job.company} ({job.location})")
+            for dupes in groups:
+                job = dupes[0]
+                print(f"  - {job.title} @ {job.company} ({job.location}){_times(dupes)}")
         else:
             try:
                 telegram.send_digest(jobs)
@@ -134,20 +139,30 @@ def notify(jobs: list[Job], store: SeenStore, dry_run: bool, digest_threshold: i
         return jobs
 
     sent = []
-    for job in jobs:
+    for dupes in groups:
+        job = dupes[0]
         try:
             if dry_run:
-                print(f"NEW: {job.title} @ {job.company} ({job.location}) -> {job.url}")
+                print(
+                    f"NEW: {job.title} @ {job.company} ({job.location}){_times(dupes)}"
+                    f" -> {job.url}"
+                )
             else:
-                telegram.send(job)
+                telegram.send(job, copies=len(dupes))
         except Exception:
             log.exception("Send failed for %s; it stays unseen and retries next run.", job.id)
             continue
         # Record only after the message is out: a crash in between re-sends a
-        # harmless duplicate, while the reverse order would miss a job.
-        store.add(job)
-        sent.append(job)
+        # harmless duplicate, while the reverse order would miss a job. Every
+        # collapsed duplicate was covered by this one message.
+        for dupe in dupes:
+            store.add(dupe)
+            sent.append(dupe)
     return sent
+
+
+def _times(dupes: list[Job]) -> str:
+    return f" x{len(dupes)}" if len(dupes) > 1 else ""
 
 
 def seed_new_sources(

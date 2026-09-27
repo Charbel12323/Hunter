@@ -6,10 +6,12 @@ A new rule type (max posting age, salary floor, ...) is one new block here -
 existing predicates are never edited.
 """
 
+import re
 from collections.abc import Callable
 from datetime import UTC, datetime, timedelta
 
 from scraper.models import Job
+from scraper.regions import region
 
 Predicate = Callable[[Job], bool]
 
@@ -30,11 +32,24 @@ def build_predicates(config: dict) -> list[Predicate]:
             lambda job, words=words: not any(w in job.title.lower() for w in words)
         )
 
+    # Regexes for what substrings can't express safely: level suffixes like
+    # "II" (a bare "ii" substring would hit "IIoT") and "TS/SCI" spellings.
+    if patterns := config.get("exclude_patterns"):
+        pattern = re.compile("|".join(f"(?:{p})" for p in patterns), re.IGNORECASE)
+        predicates.append(lambda job, pattern=pattern: not pattern.search(job.title))
+
     if locations := config.get("locations"):
         places = [place.lower() for place in locations]
         predicates.append(
             lambda job, places=places: any(place in job.location.lower() for place in places)
         )
+
+    # Coarse country allowlist via the same classifier notify groups by.
+    # "Remote" with no country and an empty location both pass: neither
+    # rules the job out, and never-miss beats never-duplicate.
+    if regions := config.get("regions"):
+        allowed = {r.lower() for r in regions}
+        predicates.append(lambda job, allowed=allowed: _in_regions(job.location, allowed))
 
     # Aggregator feeds backfill and reactivate old postings, which enter the
     # diff as "new" despite being posted long ago. This drops anything whose
@@ -44,6 +59,12 @@ def build_predicates(config: dict) -> list[Predicate]:
         predicates.append(lambda job, cutoff=cutoff: _posted_within(job.posted_at, cutoff))
 
     return predicates
+
+
+def _in_regions(location: str, allowed: set[str]) -> bool:
+    if region(location) in allowed:
+        return True
+    return not location.strip() or location.strip().lower() == "remote"
 
 
 def _posted_within(posted_at: str | None, cutoff: datetime) -> bool:
