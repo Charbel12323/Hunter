@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-27"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 6056,
+      "consecutive_failures": 6057,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 3021,
+      "consecutive_failures": 3022,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 12058,
+      "consecutive_failures": 12059,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -74530,6 +74530,9 @@
     },
     "greenhouse:fivetran:7820221003": {
       "seen_at": "2026-07-30T16:24:01+00:00"
+    },
+    "greenhouse:fivetran:7820250003": {
+      "seen_at": "2026-09-27T13:42:52+00:00"
     },
     "greenhouse:fivetran:7822402003": {
       "seen_at": "2026-08-10T10:58:49+00:00"
