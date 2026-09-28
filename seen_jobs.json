@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-28"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 6324,
+      "consecutive_failures": 6325,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 3289,
+      "consecutive_failures": 3290,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 12326,
+      "consecutive_failures": 12327,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -164222,9 +164222,6 @@
     "workday:hpe:1207604": {
       "seen_at": "2026-08-05T06:38:34+00:00"
     },
-    "workday:hpe:1207623": {
-      "seen_at": "2026-07-30T11:24:46+00:00"
-    },
     "workday:hpe:1207644": {
       "seen_at": "2026-08-05T20:16:00+00:00"
     },
@@ -172507,6 +172504,9 @@
     },
     "workday:manulife:JR26061046": {
       "seen_at": "2026-08-20T02:07:09+00:00"
+    },
+    "workday:manulife:JR26061049": {
+      "seen_at": "2026-09-28T11:26:44+00:00"
     },
     "workday:manulife:JR26061055": {
       "seen_at": "2026-09-03T03:03:24+00:00"
@@ -225905,9 +225905,6 @@
     "workday:ssctech:R45355": {
       "seen_at": "2026-07-31T00:11:06+00:00"
     },
-    "workday:ssctech:R45364": {
-      "seen_at": "2026-07-30T11:24:46+00:00"
-    },
     "workday:ssctech:R45370": {
       "seen_at": "2026-08-05T11:33:58+00:00"
     },
@@ -225940,9 +225937,6 @@
     },
     "workday:ssctech:R45413": {
       "seen_at": "2026-08-17T13:04:50+00:00"
-    },
-    "workday:ssctech:R45417": {
-      "seen_at": "2026-07-30T11:24:46+00:00"
     },
     "workday:ssctech:R45419": {
       "seen_at": "2026-08-05T16:53:02+00:00"
@@ -247030,9 +247024,6 @@
     },
     "workday:visa:REF087046W": {
       "seen_at": "2026-08-05T15:42:39+00:00"
-    },
-    "workday:visa:REF087049W": {
-      "seen_at": "2026-07-30T11:24:46+00:00"
     },
     "workday:visa:REF087053W": {
       "seen_at": "2026-08-12T09:29:32+00:00"
