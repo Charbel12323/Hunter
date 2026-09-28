@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-28"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 67,
+      "consecutive_failures": 68,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 6488,
+      "consecutive_failures": 6489,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 3453,
+      "consecutive_failures": 3454,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 12490,
+      "consecutive_failures": 12491,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -22216,6 +22216,9 @@
     },
     "ashby:temporal:db6c81bf-1af3-4792-9473-1a8ee4518a06": {
       "seen_at": "2026-09-11T16:56:06+00:00"
+    },
+    "ashby:temporal:dc4021c5-b1d0-49a8-8342-6c68969192b5": {
+      "seen_at": "2026-09-28T23:49:26+00:00"
     },
     "ashby:temporal:ddbc1916-39a0-47ff-b868-c9e8b90569f1": {
       "seen_at": "2026-09-04T23:32:44+00:00"
@@ -187319,6 +187322,9 @@
     "workday:micron:JR113623": {
       "seen_at": "2026-09-28T17:51:06+00:00"
     },
+    "workday:micron:JR113637": {
+      "seen_at": "2026-09-28T23:49:26+00:00"
+    },
     "workday:micron:JR43741": {
       "seen_at": "2026-09-24T21:49:54+00:00"
     },
@@ -199924,6 +199930,9 @@
     },
     "workday:nvidia:JR2026548": {
       "seen_at": "2026-09-28T07:29:47+00:00"
+    },
+    "workday:nvidia:JR2026577": {
+      "seen_at": "2026-09-28T23:49:26+00:00"
     },
     "workday:nvidia:JR2026616": {
       "seen_at": "2026-09-23T20:54:58+00:00"
