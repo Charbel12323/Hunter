@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 149,
+      "consecutive_failures": 150,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 6570,
+      "consecutive_failures": 6571,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 3535,
+      "consecutive_failures": 3536,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 12572,
+      "consecutive_failures": 12573,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -66929,6 +66929,9 @@
     "greenhouse:databricks:8792458002": {
       "seen_at": "2026-09-14T18:33:47+00:00"
     },
+    "greenhouse:databricks:8792853002": {
+      "seen_at": "2026-09-29T06:33:32+00:00"
+    },
     "greenhouse:databricks:8793863002": {
       "seen_at": "2026-09-16T13:24:31+00:00"
     },
@@ -129476,9 +129479,6 @@
     "workday:citi:26950732": {
       "seen_at": "2026-09-11T11:14:46+00:00"
     },
-    "workday:citi:26950842": {
-      "seen_at": "2026-07-31T06:31:24+00:00"
-    },
     "workday:citi:26951020": {
       "seen_at": "2026-09-01T19:31:23+00:00"
     },
@@ -151598,9 +151598,6 @@
     "workday:fis:JR0308555": {
       "seen_at": "2026-09-03T13:23:14+00:00"
     },
-    "workday:fis:JR0308564": {
-      "seen_at": "2026-07-31T06:31:24+00:00"
-    },
     "workday:fis:JR0308566": {
       "seen_at": "2026-08-06T06:04:10+00:00"
     },
@@ -171332,6 +171329,9 @@
     "workday:intel:JR0287373": {
       "seen_at": "2026-09-24T18:49:16+00:00"
     },
+    "workday:intel:JR0287375": {
+      "seen_at": "2026-09-29T06:33:32+00:00"
+    },
     "workday:intel:JR0287376": {
       "seen_at": "2026-09-23T17:14:20+00:00"
     },
@@ -177388,12 +177388,6 @@
     },
     "workday:mastercard:R-286657": {
       "seen_at": "2026-07-31T15:54:14+00:00"
-    },
-    "workday:mastercard:R-286666": {
-      "seen_at": "2026-07-31T06:31:24+00:00"
-    },
-    "workday:mastercard:R-286667": {
-      "seen_at": "2026-07-31T06:31:24+00:00"
     },
     "workday:mastercard:R-286674": {
       "seen_at": "2026-09-18T06:07:58+00:00"
@@ -193384,6 +193378,9 @@
     },
     "workday:nasdaq:R0026947": {
       "seen_at": "2026-09-21T18:34:56+00:00"
+    },
+    "workday:nasdaq:R0026948": {
+      "seen_at": "2026-09-29T06:33:32+00:00"
     },
     "workday:nasdaq:R0026949": {
       "seen_at": "2026-09-16T03:08:30+00:00"
@@ -244144,9 +244141,6 @@
     },
     "workday:trendmicro:R0009991": {
       "seen_at": "2026-09-26T05:14:22+00:00"
-    },
-    "workday:trendmicro:R0010034": {
-      "seen_at": "2026-07-31T06:31:24+00:00"
     },
     "workday:trendmicro:R0010037": {
       "seen_at": "2026-07-31T16:19:56+00:00"
