@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-09-30"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 649,
+      "consecutive_failures": 650,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 7070,
+      "consecutive_failures": 7071,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 4035,
+      "consecutive_failures": 4036,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 13072,
+      "consecutive_failures": 13073,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -8428,6 +8428,9 @@
     },
     "ashby:docker:5119e349-09a6-43fd-91de-db7decfa5ff9": {
       "seen_at": "2026-09-10T13:43:27+00:00"
+    },
+    "ashby:docker:516126e7-74c8-4942-ab72-83a1549470f3": {
+      "seen_at": "2026-09-30T21:14:02+00:00"
     },
     "ashby:docker:5671557b-d590-48dc-a1a8-c41eb1a3bc9b": {
       "seen_at": "2026-09-06T16:29:05+00:00"
@@ -42653,9 +42656,6 @@
     "github:SimplifyJobs/Summer2026-Internships:58fdeabf-9ff6-41e6-a7df-dcfa4ca997ae": {
       "seen_at": "2026-09-04T13:37:49+00:00"
     },
-    "github:SimplifyJobs/Summer2026-Internships:59019bfb-787a-487f-aeb9-969b9fd0223c": {
-      "seen_at": "2026-08-01T21:13:15+00:00"
-    },
     "github:SimplifyJobs/Summer2026-Internships:59023951-9789-4da2-b485-241751672517": {
       "seen_at": "2026-09-03T22:12:55+00:00"
     },
@@ -49873,9 +49873,6 @@
     },
     "github:SimplifyJobs/Summer2026-Internships:f39ef049-309c-48e5-9169-f9eb0d44b087": {
       "seen_at": "2026-09-03T17:06:50+00:00"
-    },
-    "github:SimplifyJobs/Summer2026-Internships:f3a572bd-6402-4a23-9a65-ff29f1dd08cb": {
-      "seen_at": "2026-08-01T21:13:15+00:00"
     },
     "github:SimplifyJobs/Summer2026-Internships:f3cb1e27-85ef-4529-9ba5-6fb9462c60e9": {
       "seen_at": "2026-09-04T03:07:53+00:00"
@@ -117086,6 +117083,9 @@
     "workday:capitalone:R1000963": {
       "seen_at": "2026-09-18T21:15:11+00:00"
     },
+    "workday:capitalone:R1000964": {
+      "seen_at": "2026-09-30T21:14:02+00:00"
+    },
     "workday:capitalone:R1000965": {
       "seen_at": "2026-09-18T20:37:16+00:00"
     },
@@ -119539,6 +119539,9 @@
     },
     "workday:capitalone:R1002627": {
       "seen_at": "2026-09-30T16:13:36+00:00"
+    },
+    "workday:capitalone:R1002632": {
+      "seen_at": "2026-09-30T21:14:02+00:00"
     },
     "workday:capitalone:R1002654": {
       "seen_at": "2026-09-30T17:44:29+00:00"
@@ -148241,6 +148244,9 @@
     "workday:citi:26998541": {
       "seen_at": "2026-09-29T13:15:57+00:00"
     },
+    "workday:citi:26998543": {
+      "seen_at": "2026-09-30T21:14:02+00:00"
+    },
     "workday:citi:26998548": {
       "seen_at": "2026-09-28T22:42:08+00:00"
     },
@@ -148354,6 +148360,12 @@
     },
     "workday:citi:26999298": {
       "seen_at": "2026-09-30T21:03:12+00:00"
+    },
+    "workday:citi:26999307": {
+      "seen_at": "2026-09-30T21:14:02+00:00"
+    },
+    "workday:citi:26999309": {
+      "seen_at": "2026-09-30T21:14:02+00:00"
     },
     "workday:clio:BF-REQ-2455": {
       "seen_at": "2026-09-26T16:08:21+00:00"
