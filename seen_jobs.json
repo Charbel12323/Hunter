@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-01"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 750,
+      "consecutive_failures": 751,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 7171,
+      "consecutive_failures": 7172,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 4136,
+      "consecutive_failures": 4137,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,13 +865,13 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "netflix/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 13173,
+      "consecutive_failures": 13174,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -60784,6 +60784,9 @@
     },
     "greenhouse:cloudflare:8238758": {
       "seen_at": "2026-10-01T01:54:59+00:00"
+    },
+    "greenhouse:cloudflare:8239175": {
+      "seen_at": "2026-10-01T06:07:14+00:00"
     },
     "greenhouse:cloudflare:8239834": {
       "seen_at": "2026-09-30T21:03:12+00:00"
@@ -147842,6 +147845,9 @@
     "workday:citi:26997175": {
       "seen_at": "2026-09-30T07:47:13+00:00"
     },
+    "workday:citi:26997183": {
+      "seen_at": "2026-10-01T06:07:14+00:00"
+    },
     "workday:citi:26997187": {
       "seen_at": "2026-09-28T13:35:52+00:00"
     },
@@ -221680,6 +221686,12 @@
     },
     "workday:salesforce:JR360681": {
       "seen_at": "2026-09-23T16:00:11+00:00"
+    },
+    "workday:salesforce:JR360687": {
+      "seen_at": "2026-10-01T06:07:14+00:00"
+    },
+    "workday:salesforce:JR360688": {
+      "seen_at": "2026-10-01T06:07:14+00:00"
     },
     "workday:salesforce:JR360689": {
       "seen_at": "2026-09-22T19:53:27+00:00"
