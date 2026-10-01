@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-01"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 694,
+      "consecutive_failures": 695,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 7115,
+      "consecutive_failures": 7116,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 4080,
+      "consecutive_failures": 4081,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 13117,
+      "consecutive_failures": 13118,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -164687,6 +164687,9 @@
     "workday:hpe:1201187": {
       "seen_at": "2026-08-24T01:16:58+00:00"
     },
+    "workday:hpe:1201286": {
+      "seen_at": "2026-10-01T01:11:26+00:00"
+    },
     "workday:hpe:1201290": {
       "seen_at": "2026-09-09T01:27:00+00:00"
     },
@@ -193441,6 +193444,9 @@
     },
     "workday:ms:JR044962": {
       "seen_at": "2026-09-30T21:03:12+00:00"
+    },
+    "workday:ms:JR044970": {
+      "seen_at": "2026-10-01T01:11:26+00:00"
     },
     "workday:ms:JR044975": {
       "seen_at": "2026-09-30T04:53:20+00:00"
@@ -230911,9 +230917,6 @@
     },
     "workday:statestreet:R-793636": {
       "seen_at": "2026-09-17T16:07:27+00:00"
-    },
-    "workday:statestreet:R-793638": {
-      "seen_at": "2026-08-02T01:10:20+00:00"
     },
     "workday:statestreet:R-793737": {
       "seen_at": "2026-08-14T12:01:35+00:00"
