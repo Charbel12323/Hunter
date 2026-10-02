@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-02"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 1287,
+      "consecutive_failures": 1288,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 7708,
+      "consecutive_failures": 7709,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 4673,
+      "consecutive_failures": 4674,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 13710,
+      "consecutive_failures": 13711,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -11482,6 +11482,9 @@
     },
     "ashby:jobber:5c3b8b59-1b62-4981-b7b6-4d49298840b4": {
       "seen_at": "2026-08-31T14:34:20+00:00"
+    },
+    "ashby:jobber:62a5728b-07dd-4877-b175-a87fea5944b1": {
+      "seen_at": "2026-10-02T23:17:50+00:00"
     },
     "ashby:jobber:69f260d9-a2e6-4a0d-8c1d-4f9ec636bbdd": {
       "seen_at": "2026-09-01T20:44:23+00:00"
@@ -120563,9 +120566,6 @@
     "workday:capitalone:R235650": {
       "seen_at": "2026-09-24T13:59:37+00:00"
     },
-    "workday:capitalone:R235895": {
-      "seen_at": "2026-08-03T23:15:39+00:00"
-    },
     "workday:capitalone:R235916": {
       "seen_at": "2026-08-27T17:30:54+00:00"
     },
@@ -134299,9 +134299,6 @@
     },
     "workday:citi:26981861": {
       "seen_at": "2026-10-01T11:52:54+00:00"
-    },
-    "workday:citi:26981874": {
-      "seen_at": "2026-08-03T23:15:39+00:00"
     },
     "workday:citi:26981880": {
       "seen_at": "2026-08-04T18:44:22+00:00"
