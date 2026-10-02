@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-02"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 1295,
+      "consecutive_failures": 1296,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 7716,
+      "consecutive_failures": 7717,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 4681,
+      "consecutive_failures": 4682,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 3,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 13718,
+      "consecutive_failures": 13719,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -6466,6 +6466,9 @@
     },
     "ashby:cerebras:c4faac59-3dbb-4ab7-9f74-d1fcbcddc7c6": {
       "seen_at": "2026-09-14T21:51:02+00:00"
+    },
+    "ashby:cerebras:cb57dac6-84cc-4860-9732-39c60514a2ab": {
+      "seen_at": "2026-10-02T23:56:03+00:00"
     },
     "ashby:cerebras:ce441c5a-5c03-465a-8447-2bf1fdabf370": {
       "seen_at": "2026-09-21T09:27:11+00:00"
@@ -18316,6 +18319,9 @@
     },
     "ashby:perplexity:4c0ac8bb-55bf-4fb0-b7d7-36d69f55e6c8": {
       "seen_at": "2026-09-06T16:29:05+00:00"
+    },
+    "ashby:perplexity:4d8f7e23-8c80-4bd8-ad27-3f40cf17197b": {
+      "seen_at": "2026-10-02T23:56:03+00:00"
     },
     "ashby:perplexity:4fba58de-a168-4948-9d82-a7d4b38f45f2": {
       "seen_at": "2026-08-26T23:14:46+00:00"
@@ -67439,6 +67445,12 @@
     "greenhouse:datadog:8246307": {
       "seen_at": "2026-10-01T16:16:50+00:00"
     },
+    "greenhouse:datadog:8247329": {
+      "seen_at": "2026-10-02T23:56:03+00:00"
+    },
+    "greenhouse:datadog:8247346": {
+      "seen_at": "2026-10-02T23:56:03+00:00"
+    },
     "greenhouse:datadog:8247566": {
       "seen_at": "2026-10-01T19:29:27+00:00"
     },
@@ -84614,9 +84626,6 @@
     "greenhouse:roblox:8067424": {
       "seen_at": "2026-08-10T17:43:59+00:00"
     },
-    "greenhouse:roblox:8068678": {
-      "seen_at": "2026-08-03T23:51:47+00:00"
-    },
     "greenhouse:roblox:8069987": {
       "seen_at": "2026-08-04T09:48:45+00:00"
     },
@@ -84682,9 +84691,6 @@
     },
     "greenhouse:roblox:8084095": {
       "seen_at": "2026-09-28T23:15:22+00:00"
-    },
-    "greenhouse:roblox:8089039": {
-      "seen_at": "2026-08-03T23:51:47+00:00"
     },
     "greenhouse:roblox:8090079": {
       "seen_at": "2026-09-26T19:12:12+00:00"
@@ -87835,9 +87841,6 @@
     },
     "greenhouse:stripe:8036235": {
       "seen_at": "2026-09-03T21:19:50+00:00"
-    },
-    "greenhouse:stripe:8036761": {
-      "seen_at": "2026-08-03T23:51:47+00:00"
     },
     "greenhouse:stripe:8038771": {
       "seen_at": "2026-09-11T21:01:42+00:00"
@@ -93403,9 +93406,6 @@
     },
     "greenhouse:verkada:5201944007": {
       "seen_at": "2026-09-01T12:44:17+00:00"
-    },
-    "greenhouse:verkada:5202382007": {
-      "seen_at": "2026-08-03T23:51:47+00:00"
     },
     "greenhouse:verkada:5202907007": {
       "seen_at": "2026-08-05T08:21:16+00:00"
@@ -149600,6 +149600,9 @@
     "workday:citi:26999256": {
       "seen_at": "2026-09-30T17:55:18+00:00"
     },
+    "workday:citi:26999280": {
+      "seen_at": "2026-10-02T23:56:03+00:00"
+    },
     "workday:citi:26999288": {
       "seen_at": "2026-10-01T23:36:33+00:00"
     },
@@ -163648,9 +163651,6 @@
     },
     "workday:hp:3166759": {
       "seen_at": "2026-08-06T23:24:06+00:00"
-    },
-    "workday:hp:3166765": {
-      "seen_at": "2026-08-03T23:51:47+00:00"
     },
     "workday:hp:3166766": {
       "seen_at": "2026-08-19T14:46:02+00:00"
@@ -192614,9 +192614,6 @@
     "workday:motorolasolutions:Minnesota, US Offsite (MN999)": {
       "seen_at": "2026-08-19T20:42:30+00:00"
     },
-    "workday:motorolasolutions:Mississippi Remote Work": {
-      "seen_at": "2026-08-03T23:51:47+00:00"
-    },
     "workday:motorolasolutions:Missouri Remote Work": {
       "seen_at": "2026-09-24T15:13:15+00:00"
     },
@@ -219857,9 +219854,6 @@
     "workday:salesforce:JR353713": {
       "seen_at": "2026-09-08T00:39:37+00:00"
     },
-    "workday:salesforce:JR353716": {
-      "seen_at": "2026-08-03T23:51:47+00:00"
-    },
     "workday:salesforce:JR353734": {
       "seen_at": "2026-08-04T01:19:33+00:00"
     },
@@ -235216,6 +235210,12 @@
     },
     "workday:statestreet:R-796406": {
       "seen_at": "2026-09-17T17:07:38+00:00"
+    },
+    "workday:statestreet:R-796407": {
+      "seen_at": "2026-10-02T23:56:03+00:00"
+    },
+    "workday:statestreet:R-796408": {
+      "seen_at": "2026-10-02T23:56:03+00:00"
     },
     "workday:statestreet:R-796410": {
       "seen_at": "2026-08-21T15:02:23+00:00"
