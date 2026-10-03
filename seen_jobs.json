@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-03"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 1429,
+      "consecutive_failures": 1430,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 7850,
+      "consecutive_failures": 7851,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 4815,
+      "consecutive_failures": 4816,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 13852,
+      "consecutive_failures": 13853,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -29626,9 +29626,6 @@
     },
     "github:SimplifyJobs/New-Grad-Positions:66cb9e6f-2e5e-4fab-be1b-bf612ad91a02": {
       "seen_at": "2026-09-05T15:27:28+00:00"
-    },
-    "github:SimplifyJobs/New-Grad-Positions:66d15412-44a8-40fa-884e-3555d616a336": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
     },
     "github:SimplifyJobs/New-Grad-Positions:66d25140-7a83-4645-b330-c68e2a6d1fd3": {
       "seen_at": "2026-09-03T10:39:43+00:00"
@@ -66419,17 +66416,11 @@
     "greenhouse:datadog:8096105": {
       "seen_at": "2026-08-04T13:24:04+00:00"
     },
-    "greenhouse:datadog:8096181": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
-    },
     "greenhouse:datadog:8096323": {
       "seen_at": "2026-09-29T20:38:45+00:00"
     },
     "greenhouse:datadog:8096400": {
       "seen_at": "2026-08-13T14:13:26+00:00"
-    },
-    "greenhouse:datadog:8097533": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
     },
     "greenhouse:datadog:8097690": {
       "seen_at": "2026-08-05T17:14:19+00:00"
@@ -130625,9 +130616,6 @@
     "workday:citi:26952775": {
       "seen_at": "2026-08-06T07:26:04+00:00"
     },
-    "workday:citi:26952797": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
-    },
     "workday:citi:26952812": {
       "seen_at": "2026-08-30T23:14:55+00:00"
     },
@@ -180140,9 +180128,6 @@
     "workday:mastercard:R-286859": {
       "seen_at": "2026-08-06T23:24:06+00:00"
     },
-    "workday:mastercard:R-286870": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
-    },
     "workday:mastercard:R-286876": {
       "seen_at": "2026-08-05T17:44:17+00:00"
     },
@@ -180188,9 +180173,6 @@
     "workday:mastercard:R-287012": {
       "seen_at": "2026-08-05T09:22:28+00:00"
     },
-    "workday:mastercard:R-287013": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
-    },
     "workday:mastercard:R-287015": {
       "seen_at": "2026-08-07T20:38:10+00:00"
     },
@@ -180214,9 +180196,6 @@
     },
     "workday:mastercard:R-287050": {
       "seen_at": "2026-08-17T09:55:05+00:00"
-    },
-    "workday:mastercard:R-287052": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
     },
     "workday:mastercard:R-287078": {
       "seen_at": "2026-08-17T17:37:56+00:00"
@@ -184382,9 +184361,6 @@
     "workday:micron:JR103759": {
       "seen_at": "2026-08-12T01:14:56+00:00"
     },
-    "workday:micron:JR103790": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
-    },
     "workday:micron:JR103802": {
       "seen_at": "2026-08-13T18:57:39+00:00"
     },
@@ -185449,9 +185425,6 @@
     },
     "workday:micron:JR107411": {
       "seen_at": "2026-08-13T11:18:53+00:00"
-    },
-    "workday:micron:JR107413": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
     },
     "workday:micron:JR107418": {
       "seen_at": "2026-08-06T07:34:10+00:00"
@@ -218777,9 +218750,6 @@
     "workday:salesforce:JR354542": {
       "seen_at": "2026-08-18T15:51:31+00:00"
     },
-    "workday:salesforce:JR354563": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
-    },
     "workday:salesforce:JR354574": {
       "seen_at": "2026-09-24T17:30:04+00:00"
     },
@@ -249089,9 +249059,6 @@
     "workday:tsys:R0074103": {
       "seen_at": "2026-08-31T07:26:09+00:00"
     },
-    "workday:tsys:R0074104": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
-    },
     "workday:tsys:R0074106": {
       "seen_at": "2026-08-21T10:52:32+00:00"
     },
@@ -250234,9 +250201,6 @@
     },
     "workday:visa:REF082060W": {
       "seen_at": "2026-08-06T13:46:13+00:00"
-    },
-    "workday:visa:REF082090W": {
-      "seen_at": "2026-08-04T10:40:23+00:00"
     },
     "workday:visa:REF082091W": {
       "seen_at": "2026-09-21T10:11:37+00:00"
