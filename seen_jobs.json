@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-10-04"
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 1507,
+      "consecutive_failures": 1508,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 7928,
+      "consecutive_failures": 7929,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 4893,
+      "consecutive_failures": 4894,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 13930,
+      "consecutive_failures": 13931,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -16237,6 +16237,9 @@
     },
     "ashby:openai:71f97dd6-63bc-4f86-8c34-dcb71577069a": {
       "seen_at": "2026-09-03T22:12:55+00:00"
+    },
+    "ashby:openai:7243bdb7-7f75-4dff-a10f-18bd7296f632": {
+      "seen_at": "2026-10-04T02:33:27+00:00"
     },
     "ashby:openai:72a58872-70e2-4340-a259-e9bea3596883": {
       "seen_at": "2026-09-03T22:12:55+00:00"
@@ -53251,9 +53254,6 @@
     },
     "greenhouse:anthropic:5380327008": {
       "seen_at": "2026-08-05T21:19:30+00:00"
-    },
-    "greenhouse:anthropic:5380359008": {
-      "seen_at": "2026-08-05T02:30:35+00:00"
     },
     "greenhouse:anthropic:5380377008": {
       "seen_at": "2026-08-06T23:24:06+00:00"
@@ -105818,9 +105818,6 @@
     "workday:bmo:R260022952": {
       "seen_at": "2026-08-13T21:18:13+00:00"
     },
-    "workday:bmo:R260022954": {
-      "seen_at": "2026-08-05T02:30:35+00:00"
-    },
     "workday:bmo:R260022955": {
       "seen_at": "2026-08-05T02:38:58+00:00"
     },
@@ -118721,9 +118718,6 @@
     "workday:capitalone:R230552": {
       "seen_at": "2026-08-05T17:22:48+00:00"
     },
-    "workday:capitalone:R230638": {
-      "seen_at": "2026-08-05T02:30:35+00:00"
-    },
     "workday:capitalone:R231624": {
       "seen_at": "2026-08-20T19:05:45+00:00"
     },
@@ -130837,9 +130831,6 @@
     },
     "workday:citi:26975851": {
       "seen_at": "2026-09-08T11:06:49+00:00"
-    },
-    "workday:citi:26975890": {
-      "seen_at": "2026-08-05T02:30:35+00:00"
     },
     "workday:citi:26975937": {
       "seen_at": "2026-09-04T16:29:42+00:00"
