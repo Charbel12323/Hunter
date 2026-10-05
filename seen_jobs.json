@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-05"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 1649,
+      "consecutive_failures": 1650,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 8070,
+      "consecutive_failures": 8071,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 5035,
+      "consecutive_failures": 5036,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 14072,
+      "consecutive_failures": 14073,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -184235,6 +184235,9 @@
     "workday:micron:JR113288": {
       "seen_at": "2026-09-29T15:54:23+00:00"
     },
+    "workday:micron:JR113291": {
+      "seen_at": "2026-10-05T03:50:51+00:00"
+    },
     "workday:micron:JR113293": {
       "seen_at": "2026-09-29T16:11:01+00:00"
     },
@@ -232589,9 +232592,6 @@
     "workday:td:R_1503472": {
       "seen_at": "2026-08-26T19:52:25+00:00"
     },
-    "workday:td:R_1503473": {
-      "seen_at": "2026-08-06T03:48:57+00:00"
-    },
     "workday:td:R_1503477": {
       "seen_at": "2026-08-20T19:43:02+00:00"
     },
@@ -243571,6 +243571,9 @@
     },
     "workday:visa:REF088330W": {
       "seen_at": "2026-09-09T15:32:15+00:00"
+    },
+    "workday:visa:REF088333W": {
+      "seen_at": "2026-10-05T03:50:51+00:00"
     },
     "workday:visa:REF088334W": {
       "seen_at": "2026-09-09T16:21:11+00:00"
