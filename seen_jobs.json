@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-10-05"
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 1648,
+      "consecutive_failures": 1649,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 8069,
+      "consecutive_failures": 8070,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 5034,
+      "consecutive_failures": 5035,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 14071,
+      "consecutive_failures": 14072,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -3628,6 +3628,9 @@
     },
     "ashby:airwallex:27626ec4-7aad-4cee-b514-3813daf5b027": {
       "seen_at": "2026-09-23T02:10:03+00:00"
+    },
+    "ashby:airwallex:276e75cd-f5cf-4acf-a48d-f71e76bd875b": {
+      "seen_at": "2026-10-05T03:45:29+00:00"
     },
     "ashby:airwallex:281e3717-87dc-4036-ab1c-5d35bb83b319": {
       "seen_at": "2026-09-26T05:14:22+00:00"
@@ -77813,9 +77816,6 @@
     "greenhouse:mongodb:8097302": {
       "seen_at": "2026-08-14T20:42:02+00:00"
     },
-    "greenhouse:mongodb:8097615": {
-      "seen_at": "2026-08-06T03:40:46+00:00"
-    },
     "greenhouse:mongodb:8100224": {
       "seen_at": "2026-08-26T14:40:19+00:00"
     },
@@ -131696,9 +131696,6 @@
     "workday:citi:26985073": {
       "seen_at": "2026-08-11T04:45:10+00:00"
     },
-    "workday:citi:26985076": {
-      "seen_at": "2026-08-06T03:40:46+00:00"
-    },
     "workday:citi:26985083": {
       "seen_at": "2026-08-06T04:35:02+00:00"
     },
@@ -137960,6 +137957,9 @@
     "workday:citi:26991286": {
       "seen_at": "2026-09-03T13:52:26+00:00"
     },
+    "workday:citi:26991287": {
+      "seen_at": "2026-10-05T03:45:29+00:00"
+    },
     "workday:citi:26991288": {
       "seen_at": "2026-09-01T13:30:56+00:00"
     },
@@ -142445,6 +142445,9 @@
     "workday:citi:26995659": {
       "seen_at": "2026-09-21T08:14:47+00:00"
     },
+    "workday:citi:26995664": {
+      "seen_at": "2026-10-05T03:45:29+00:00"
+    },
     "workday:citi:26995665": {
       "seen_at": "2026-09-30T10:24:16+00:00"
     },
@@ -143224,6 +143227,9 @@
     },
     "workday:citi:26996584": {
       "seen_at": "2026-10-01T17:53:43+00:00"
+    },
+    "workday:citi:26996585": {
+      "seen_at": "2026-10-05T03:45:29+00:00"
     },
     "workday:citi:26996586": {
       "seen_at": "2026-09-29T04:02:39+00:00"
@@ -173630,9 +173636,6 @@
     "workday:mastercard:R-278735": {
       "seen_at": "2026-09-07T08:43:03+00:00"
     },
-    "workday:mastercard:R-278754": {
-      "seen_at": "2026-08-06T03:40:46+00:00"
-    },
     "workday:mastercard:R-278786": {
       "seen_at": "2026-08-20T09:18:01+00:00"
     },
@@ -175111,9 +175114,6 @@
     },
     "workday:mastercard:R-287860": {
       "seen_at": "2026-08-06T23:24:06+00:00"
-    },
-    "workday:mastercard:R-287861": {
-      "seen_at": "2026-08-06T03:40:46+00:00"
     },
     "workday:mastercard:R-287887": {
       "seen_at": "2026-08-07T13:24:12+00:00"
@@ -178354,9 +178354,6 @@
     },
     "workday:micron:JR100470": {
       "seen_at": "2026-09-16T02:52:37+00:00"
-    },
-    "workday:micron:JR100531": {
-      "seen_at": "2026-08-06T03:40:46+00:00"
     },
     "workday:micron:JR100581": {
       "seen_at": "2026-08-11T03:28:22+00:00"
@@ -184579,6 +184576,9 @@
     },
     "workday:micron:JR114250": {
       "seen_at": "2026-10-05T03:19:41+00:00"
+    },
+    "workday:micron:JR114252": {
+      "seen_at": "2026-10-05T03:45:29+00:00"
     },
     "workday:micron:JR43741": {
       "seen_at": "2026-09-24T21:49:54+00:00"
@@ -229645,9 +229645,6 @@
     },
     "workday:sunlife:JR00126664": {
       "seen_at": "2026-08-12T13:36:45+00:00"
-    },
-    "workday:sunlife:JR00126665": {
-      "seen_at": "2026-08-06T03:40:46+00:00"
     },
     "workday:sunlife:JR00126671": {
       "seen_at": "2026-08-10T18:21:22+00:00"
