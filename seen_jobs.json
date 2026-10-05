@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-05"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 1720,
+      "consecutive_failures": 1721,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 8141,
+      "consecutive_failures": 8142,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 5106,
+      "consecutive_failures": 5107,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 14143,
+      "consecutive_failures": 14144,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -14275,9 +14275,6 @@
     },
     "ashby:notion:06e1d3a8-2706-4ed9-9fe6-8b69607de18e": {
       "seen_at": "2026-09-06T16:29:05+00:00"
-    },
-    "ashby:notion:0737c717-1882-421e-88dc-100c74a1a54a": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
     },
     "ashby:notion:076371b1-e9b0-4ad7-b67b-ae9e4572f65a": {
       "seen_at": "2026-09-06T16:29:05+00:00"
@@ -28768,9 +28765,6 @@
     },
     "github:SimplifyJobs/New-Grad-Positions:61b8359d-6611-4e4e-af7f-469b630f576e": {
       "seen_at": "2026-08-12T20:43:23+00:00"
-    },
-    "github:SimplifyJobs/New-Grad-Positions:61b9c823-c168-4748-9d94-8ae5a407a3da": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
     },
     "github:SimplifyJobs/New-Grad-Positions:61c4ab4f-d4d9-4028-bd6b-e45e731dcfb2": {
       "seen_at": "2026-09-03T10:39:43+00:00"
@@ -94286,9 +94280,6 @@
     "lever:spotify:5b6b17ce-a676-49b1-b9a7-62362a75f9d8": {
       "seen_at": "2026-08-07T18:24:13+00:00"
     },
-    "lever:spotify:5e91f92c-7487-40c5-92d8-b335b3b52ae9": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
-    },
     "lever:spotify:600a4ac7-6ffa-4ced-8d34-253d00147aa9": {
       "seen_at": "2026-08-06T14:05:37+00:00"
     },
@@ -99512,6 +99503,9 @@
     "workday:analogdevices:R266791": {
       "seen_at": "2026-10-02T16:33:44+00:00"
     },
+    "workday:analogdevices:R266798": {
+      "seen_at": "2026-10-05T10:45:15+00:00"
+    },
     "workday:analogdevices:R266801": {
       "seen_at": "2026-10-04T19:47:57+00:00"
     },
@@ -99520,6 +99514,9 @@
     },
     "workday:analogdevices:R266808": {
       "seen_at": "2026-10-04T20:28:46+00:00"
+    },
+    "workday:analogdevices:R266824": {
+      "seen_at": "2026-10-05T10:45:15+00:00"
     },
     "workday:analogdevices:R266828": {
       "seen_at": "2026-10-02T14:12:33+00:00"
@@ -102103,9 +102100,6 @@
     },
     "workday:blackrock:R265929": {
       "seen_at": "2026-08-24T10:39:45+00:00"
-    },
-    "workday:blackrock:R265930": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
     },
     "workday:blackrock:R265932": {
       "seen_at": "2026-08-13T07:18:54+00:00"
@@ -129188,9 +129182,6 @@
     "workday:citi:26979569": {
       "seen_at": "2026-08-25T12:32:32+00:00"
     },
-    "workday:citi:26979571": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
-    },
     "workday:citi:26979572": {
       "seen_at": "2026-09-11T09:50:57+00:00"
     },
@@ -130946,9 +130937,6 @@
     "workday:citi:26984371": {
       "seen_at": "2026-08-21T03:56:05+00:00"
     },
-    "workday:citi:26984372": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
-    },
     "workday:citi:26984376": {
       "seen_at": "2026-08-21T03:56:05+00:00"
     },
@@ -131593,9 +131581,6 @@
     },
     "workday:citi:26985143": {
       "seen_at": "2026-08-13T06:51:46+00:00"
-    },
-    "workday:citi:26985152": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
     },
     "workday:citi:26985154": {
       "seen_at": "2026-08-07T15:17:39+00:00"
@@ -143486,6 +143471,9 @@
     "workday:citi:26997110": {
       "seen_at": "2026-09-29T02:07:10+00:00"
     },
+    "workday:citi:26997113": {
+      "seen_at": "2026-10-05T10:45:15+00:00"
+    },
     "workday:citi:26997117": {
       "seen_at": "2026-10-01T07:56:12+00:00"
     },
@@ -144676,6 +144664,9 @@
     },
     "workday:citi:26999778": {
       "seen_at": "2026-10-02T13:56:08+00:00"
+    },
+    "workday:citi:26999787": {
+      "seen_at": "2026-10-05T10:45:15+00:00"
     },
     "workday:citi:26999789": {
       "seen_at": "2026-10-02T15:14:42+00:00"
@@ -160454,6 +160445,9 @@
     "workday:hpe:1195557": {
       "seen_at": "2026-08-14T15:00:01+00:00"
     },
+    "workday:hpe:1195799": {
+      "seen_at": "2026-10-05T10:45:15+00:00"
+    },
     "workday:hpe:1195895": {
       "seen_at": "2026-08-26T14:11:42+00:00"
     },
@@ -173555,9 +173549,6 @@
     "workday:mastercard:R-278568": {
       "seen_at": "2026-08-24T14:27:53+00:00"
     },
-    "workday:mastercard:R-278695": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
-    },
     "workday:mastercard:R-278697": {
       "seen_at": "2026-08-10T14:12:32+00:00"
     },
@@ -174304,9 +174295,6 @@
     },
     "workday:mastercard:R-286291": {
       "seen_at": "2026-08-24T11:49:16+00:00"
-    },
-    "workday:mastercard:R-286320": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
     },
     "workday:mastercard:R-286325": {
       "seen_at": "2026-10-01T15:26:04+00:00"
@@ -224837,14 +224825,8 @@
     "workday:statestreet:R-795724": {
       "seen_at": "2026-08-06T11:34:24+00:00"
     },
-    "workday:statestreet:R-795726": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
-    },
     "workday:statestreet:R-795727": {
       "seen_at": "2026-08-24T10:58:52+00:00"
-    },
-    "workday:statestreet:R-795728": {
-      "seen_at": "2026-08-06T10:41:29+00:00"
     },
     "workday:statestreet:R-795729": {
       "seen_at": "2026-08-20T15:27:58+00:00"
