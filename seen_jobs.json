@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 2150,
+      "consecutive_failures": 2151,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 8571,
+      "consecutive_failures": 8572,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 5536,
+      "consecutive_failures": 5537,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 14573,
+      "consecutive_failures": 14574,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -7781,9 +7781,6 @@
     "ashby:cursor:7e1d8e07-c87b-4388-892a-6b138bebf665": {
       "seen_at": "2026-09-10T19:28:18+00:00"
     },
-    "ashby:cursor:84efa570-3123-45bb-bab8-9ae2c75554a9": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
-    },
     "ashby:cursor:85c98417-583b-412e-b31a-e4052195b703": {
       "seen_at": "2026-09-03T22:12:55+00:00"
     },
@@ -7942,9 +7939,6 @@
     },
     "ashby:cursor:d4308a8f-81b7-4f67-b3ae-111bb0d87197": {
       "seen_at": "2026-09-11T19:31:46+00:00"
-    },
-    "ashby:cursor:d7f1bf1f-b684-4994-9b70-9ce7c78bacd2": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
     },
     "ashby:cursor:d90eb6d1-b1cd-44cd-8115-16e466286c9f": {
       "seen_at": "2026-09-03T22:12:55+00:00"
@@ -53336,6 +53330,9 @@
     "greenhouse:anthropic:5443900008": {
       "seen_at": "2026-10-05T20:31:28+00:00"
     },
+    "greenhouse:anthropic:5443902008": {
+      "seen_at": "2026-10-06T20:33:24+00:00"
+    },
     "greenhouse:anthropic:5444583008": {
       "seen_at": "2026-10-06T17:32:18+00:00"
     },
@@ -56506,6 +56503,9 @@
     },
     "greenhouse:circleci:8790033002": {
       "seen_at": "2026-09-15T05:30:02+00:00"
+    },
+    "greenhouse:circleci:8801094002": {
+      "seen_at": "2026-10-06T20:33:24+00:00"
     },
     "greenhouse:circleci:8801099002": {
       "seen_at": "2026-09-15T16:37:32+00:00"
@@ -72818,9 +72818,6 @@
     "greenhouse:gleanwork:4612849005": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
-    "greenhouse:gleanwork:4614349005": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
-    },
     "greenhouse:gleanwork:4614706005": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
@@ -73027,9 +73024,6 @@
     },
     "greenhouse:gleanwork:4721644005": {
       "seen_at": "2026-10-05T23:29:59+00:00"
-    },
-    "greenhouse:gleanwork:4722386005": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
     },
     "greenhouse:gleanwork:4723226005": {
       "seen_at": "2026-08-13T18:12:07+00:00"
@@ -84529,6 +84523,9 @@
     },
     "greenhouse:scaleai:4740043005": {
       "seen_at": "2026-10-02T17:01:46+00:00"
+    },
+    "greenhouse:scaleai:4741059005": {
+      "seen_at": "2026-10-06T20:33:24+00:00"
     },
     "greenhouse:sourcegraph91:4621149004": {
       "seen_at": "2026-09-26T05:14:22+00:00"
@@ -110888,6 +110885,9 @@
     "workday:broadridge:JR1085322": {
       "seen_at": "2026-08-25T16:30:46+00:00"
     },
+    "workday:broadridge:JR1085323": {
+      "seen_at": "2026-10-06T20:33:24+00:00"
+    },
     "workday:broadridge:JR1085325": {
       "seen_at": "2026-08-26T19:12:25+00:00"
     },
@@ -111628,9 +111628,6 @@
     },
     "workday:cae:122404": {
       "seen_at": "2026-08-26T11:14:35+00:00"
-    },
-    "workday:cae:122414": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
     },
     "workday:cae:122453": {
       "seen_at": "2026-08-21T20:02:39+00:00"
@@ -117434,6 +117431,9 @@
     "workday:capitalone:R1003030": {
       "seen_at": "2026-10-06T19:31:18+00:00"
     },
+    "workday:capitalone:R1003032": {
+      "seen_at": "2026-10-06T20:33:24+00:00"
+    },
     "workday:capitalone:R1003033": {
       "seen_at": "2026-10-06T19:25:52+00:00"
     },
@@ -117454,6 +117454,12 @@
     },
     "workday:capitalone:R1003044": {
       "seen_at": "2026-10-05T20:26:03+00:00"
+    },
+    "workday:capitalone:R1003046": {
+      "seen_at": "2026-10-06T20:33:24+00:00"
+    },
+    "workday:capitalone:R1003048": {
+      "seen_at": "2026-10-06T20:33:23+00:00"
     },
     "workday:capitalone:R1003052": {
       "seen_at": "2026-10-05T20:31:28+00:00"
@@ -122305,9 +122311,6 @@
     },
     "workday:cibc:2616332": {
       "seen_at": "2026-08-10T15:50:29+00:00"
-    },
-    "workday:cibc:2616342": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
     },
     "workday:cibc:2616347": {
       "seen_at": "2026-08-15T01:45:02+00:00"
@@ -131155,9 +131158,6 @@
     },
     "workday:citi:26984593": {
       "seen_at": "2026-08-11T21:29:50+00:00"
-    },
-    "workday:citi:26984597": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
     },
     "workday:citi:26984602": {
       "seen_at": "2026-09-04T19:30:04+00:00"
@@ -162932,9 +162932,6 @@
     "workday:hpe:1210846": {
       "seen_at": "2026-08-27T09:30:11+00:00"
     },
-    "workday:hpe:1210858": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
-    },
     "workday:hpe:1210859": {
       "seen_at": "2026-09-17T19:35:15+00:00"
     },
@@ -167236,9 +167233,6 @@
     },
     "workday:intel:JR0286238": {
       "seen_at": "2026-08-14T16:53:25+00:00"
-    },
-    "workday:intel:JR0286239": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
     },
     "workday:intel:JR0286244": {
       "seen_at": "2026-08-31T17:51:26+00:00"
@@ -178985,6 +178979,9 @@
     "workday:mastercard:R-292758": {
       "seen_at": "2026-10-06T17:49:19+00:00"
     },
+    "workday:mastercard:R-292772": {
+      "seen_at": "2026-10-06T20:33:24+00:00"
+    },
     "workday:mastercard:R-292794": {
       "seen_at": "2026-10-06T18:23:40+00:00"
     },
@@ -187270,9 +187267,6 @@
     },
     "workday:ms:JR038029": {
       "seen_at": "2026-08-12T18:24:26+00:00"
-    },
-    "workday:ms:JR038033": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
     },
     "workday:ms:JR038171": {
       "seen_at": "2026-09-25T07:20:04+00:00"
@@ -211882,9 +211876,6 @@
     },
     "workday:salesforce:JR353112": {
       "seen_at": "2026-10-02T15:48:47+00:00"
-    },
-    "workday:salesforce:JR353160": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
     },
     "workday:salesforce:JR353163": {
       "seen_at": "2026-08-14T20:14:12+00:00"
@@ -247226,9 +247217,6 @@
     "workday:zoom:R19522": {
       "seen_at": "2026-10-06T17:54:48+00:00"
     },
-    "workday:zoom:R19523": {
-      "seen_at": "2026-08-07T20:29:38+00:00"
-    },
     "workday:zoom:R19524": {
       "seen_at": "2026-08-08T16:04:51+00:00"
     },
@@ -247588,6 +247576,9 @@
     },
     "workday:zoom:R19737": {
       "seen_at": "2026-10-06T14:31:11+00:00"
+    },
+    "workday:zoom:R19739": {
+      "seen_at": "2026-10-06T20:33:24+00:00"
     }
   }
 }
