@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-06"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 1910,
+      "consecutive_failures": 1911,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 8331,
+      "consecutive_failures": 8332,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 5296,
+      "consecutive_failures": 5297,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 14333,
+      "consecutive_failures": 14334,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -16009,9 +16009,6 @@
     },
     "ashby:openai:621bb104-9daa-4c9e-949a-03d5730334e8": {
       "seen_at": "2026-09-03T22:12:55+00:00"
-    },
-    "ashby:openai:6245809c-5646-4226-9f20-7bc88a4135aa": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
     },
     "ashby:openai:625d8018-a39e-4fec-913d-8bd319537e5c": {
       "seen_at": "2026-08-31T16:01:19+00:00"
@@ -58445,9 +58442,6 @@
     "greenhouse:coinbase:8064692": {
       "seen_at": "2026-09-12T17:46:52+00:00"
     },
-    "greenhouse:coinbase:8064788": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
-    },
     "greenhouse:coinbase:8067033": {
       "seen_at": "2026-09-13T14:47:40+00:00"
     },
@@ -92086,6 +92080,9 @@
     },
     "greenhouse:wizinc:4718512006": {
       "seen_at": "2026-10-02T04:32:16+00:00"
+    },
+    "greenhouse:wizinc:4718860006": {
+      "seen_at": "2026-10-06T02:24:25+00:00"
     },
     "greenhouse:xai:4533894007": {
       "seen_at": "2026-09-26T05:14:22+00:00"
@@ -128318,9 +128315,6 @@
     "workday:citi:26972327": {
       "seen_at": "2026-08-13T14:52:20+00:00"
     },
-    "workday:citi:26972411": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
-    },
     "workday:citi:26972421": {
       "seen_at": "2026-09-25T17:57:11+00:00"
     },
@@ -130967,18 +130961,6 @@
     "workday:citi:26984499": {
       "seen_at": "2026-09-02T11:50:14+00:00"
     },
-    "workday:citi:26984501": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
-    },
-    "workday:citi:26984502": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
-    },
-    "workday:citi:26984503": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
-    },
-    "workday:citi:26984505": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
-    },
     "workday:citi:26984506": {
       "seen_at": "2026-08-13T08:20:24+00:00"
     },
@@ -131059,9 +131041,6 @@
     },
     "workday:citi:26984602": {
       "seen_at": "2026-09-04T19:30:04+00:00"
-    },
-    "workday:citi:26984604": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
     },
     "workday:citi:26984605": {
       "seen_at": "2026-08-11T20:33:47+00:00"
@@ -145630,9 +145609,6 @@
     },
     "workday:crowdstrike:R29654": {
       "seen_at": "2026-08-14T19:29:35+00:00"
-    },
-    "workday:crowdstrike:R29666": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
     },
     "workday:crowdstrike:R29685": {
       "seen_at": "2026-08-26T07:14:10+00:00"
@@ -161288,9 +161264,6 @@
     "workday:hpe:1208000": {
       "seen_at": "2026-08-18T19:20:37+00:00"
     },
-    "workday:hpe:1208011": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
-    },
     "workday:hpe:1208014": {
       "seen_at": "2026-09-25T01:42:35+00:00"
     },
@@ -161698,9 +161671,6 @@
     },
     "workday:hpe:1209567": {
       "seen_at": "2026-08-18T19:12:33+00:00"
-    },
-    "workday:hpe:1209583": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
     },
     "workday:hpe:1209589": {
       "seen_at": "2026-08-13T01:46:27+00:00"
@@ -162124,9 +162094,6 @@
     },
     "workday:hpe:1210326": {
       "seen_at": "2026-08-12T02:00:14+00:00"
-    },
-    "workday:hpe:1210331": {
-      "seen_at": "2026-08-07T02:22:02+00:00"
     },
     "workday:hpe:1210334": {
       "seen_at": "2026-08-09T17:17:23+00:00"
@@ -184255,6 +184222,9 @@
     },
     "workday:micron:JR113315": {
       "seen_at": "2026-09-25T10:09:53+00:00"
+    },
+    "workday:micron:JR113321": {
+      "seen_at": "2026-10-06T02:24:25+00:00"
     },
     "workday:micron:JR113326": {
       "seen_at": "2026-10-01T02:07:18+00:00"
