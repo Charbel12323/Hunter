@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-07"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 2432,
+      "consecutive_failures": 2433,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 8853,
+      "consecutive_failures": 8854,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 5818,
+      "consecutive_failures": 5819,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 14855,
+      "consecutive_failures": 14856,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -57878,6 +57878,9 @@
     "greenhouse:cloudflare:8256449": {
       "seen_at": "2026-10-06T22:48:03+00:00"
     },
+    "greenhouse:cloudflare:8257165": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
+    },
     "greenhouse:cloudflare:8257533": {
       "seen_at": "2026-10-06T15:22:24+00:00"
     },
@@ -59986,6 +59989,9 @@
     },
     "greenhouse:coreweave:4718789006": {
       "seen_at": "2026-10-05T02:30:39+00:00"
+    },
+    "greenhouse:coreweave:4718797006": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
     },
     "greenhouse:coreweave:4719120006": {
       "seen_at": "2026-10-07T14:14:27+00:00"
@@ -72661,6 +72667,9 @@
     },
     "greenhouse:gitlab:8838202002": {
       "seen_at": "2026-09-23T20:21:31+00:00"
+    },
+    "greenhouse:gitlab:8838331002": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
     },
     "greenhouse:gitlab:8842171002": {
       "seen_at": "2026-09-28T04:07:52+00:00"
@@ -99947,6 +99956,9 @@
     "workday:analogdevices:R266631": {
       "seen_at": "2026-09-25T13:04:23+00:00"
     },
+    "workday:analogdevices:R266660": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
+    },
     "workday:analogdevices:R266662": {
       "seen_at": "2026-09-29T17:30:08+00:00"
     },
@@ -100045,6 +100057,9 @@
     },
     "workday:analogdevices:R266808": {
       "seen_at": "2026-10-04T20:28:46+00:00"
+    },
+    "workday:analogdevices:R266814": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
     },
     "workday:analogdevices:R266816": {
       "seen_at": "2026-10-07T17:55:15+00:00"
@@ -152204,6 +152219,9 @@
     "workday:fiserv:R-10398795": {
       "seen_at": "2026-10-05T14:51:58+00:00"
     },
+    "workday:fiserv:R-10398797": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
+    },
     "workday:fiserv:R-10398798": {
       "seen_at": "2026-08-26T16:12:41+00:00"
     },
@@ -154795,6 +154813,9 @@
     },
     "workday:fmr:2130308": {
       "seen_at": "2026-09-24T15:24:57+00:00"
+    },
+    "workday:fmr:2130351": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
     },
     "workday:fmr:2130354": {
       "seen_at": "2026-09-11T19:40:33+00:00"
@@ -190955,6 +190976,9 @@
     "workday:ms:JR044997": {
       "seen_at": "2026-09-29T20:38:45+00:00"
     },
+    "workday:ms:JR045003": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
+    },
     "workday:ms:JR045018": {
       "seen_at": "2026-09-29T21:06:37+00:00"
     },
@@ -200114,6 +200138,9 @@
     "workday:paloaltonetworks:JR-018344": {
       "seen_at": "2026-09-23T18:05:22+00:00"
     },
+    "workday:paloaltonetworks:JR-018361": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
+    },
     "workday:paloaltonetworks:JR-018379": {
       "seen_at": "2026-09-22T16:46:29+00:00"
     },
@@ -202861,6 +202888,9 @@
     },
     "workday:paloaltonetworks:JR-023134": {
       "seen_at": "2026-10-05T02:36:03+00:00"
+    },
+    "workday:paloaltonetworks:JR-023140": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
     },
     "workday:paloaltonetworks:JR-023143": {
       "seen_at": "2026-09-30T16:08:00+00:00"
@@ -225203,6 +225233,9 @@
     "workday:ssctech:R45568": {
       "seen_at": "2026-09-30T15:10:53+00:00"
     },
+    "workday:ssctech:R45569": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
+    },
     "workday:ssctech:R45572": {
       "seen_at": "2026-09-14T14:57:04+00:00"
     },
@@ -244198,6 +244231,9 @@
     },
     "workday:tsys:R0075528": {
       "seen_at": "2026-09-30T21:48:14+00:00"
+    },
+    "workday:tsys:R0075531": {
+      "seen_at": "2026-10-07T18:57:18+00:00"
     },
     "workday:tsys:R0075553": {
       "seen_at": "2026-10-03T16:28:20+00:00"
