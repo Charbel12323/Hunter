@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-07"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 2376,
+      "consecutive_failures": 2377,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 8797,
+      "consecutive_failures": 8798,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 5762,
+      "consecutive_failures": 5763,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 14799,
+      "consecutive_failures": 14800,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -192467,6 +192467,9 @@
     "workday:nasdaq:R0026992": {
       "seen_at": "2026-10-06T09:02:37+00:00"
     },
+    "workday:nasdaq:R0027002": {
+      "seen_at": "2026-10-07T14:31:43+00:00"
+    },
     "workday:nasdaq:R0027004": {
       "seen_at": "2026-09-28T17:11:21+00:00"
     },
@@ -243263,6 +243266,9 @@
     "workday:tsys:R0076001": {
       "seen_at": "2026-10-07T12:10:27+00:00"
     },
+    "workday:tsys:R0076002": {
+      "seen_at": "2026-10-07T14:31:43+00:00"
+    },
     "workday:tsys:R0076010": {
       "seen_at": "2026-10-07T06:44:42+00:00"
     },
@@ -246235,6 +246241,9 @@
     },
     "workday:visa:REF089001W": {
       "seen_at": "2026-10-02T11:28:04+00:00"
+    },
+    "workday:visa:REF089004W": {
+      "seen_at": "2026-10-07T14:31:43+00:00"
     },
     "workday:visa:REF089008W": {
       "seen_at": "2026-10-01T12:15:02+00:00"
