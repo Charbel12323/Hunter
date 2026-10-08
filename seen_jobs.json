@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-08"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 2688,
+      "consecutive_failures": 2689,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 9109,
+      "consecutive_failures": 9110,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 6074,
+      "consecutive_failures": 6075,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "netflix/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 15111,
+      "consecutive_failures": 15112,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -80414,6 +80414,9 @@
     "greenhouse:okta:8248960": {
       "seen_at": "2026-10-02T17:46:51+00:00"
     },
+    "greenhouse:okta:8249918": {
+      "seen_at": "2026-10-08T15:01:05+00:00"
+    },
     "greenhouse:okta:8255902": {
       "seen_at": "2026-10-06T10:09:38+00:00"
     },
@@ -105022,6 +105025,9 @@
     },
     "workday:bmo:R260020154": {
       "seen_at": "2026-09-09T15:14:34+00:00"
+    },
+    "workday:bmo:R260020213": {
+      "seen_at": "2026-10-08T15:01:05+00:00"
     },
     "workday:bmo:R260020316": {
       "seen_at": "2026-10-02T18:03:48+00:00"
@@ -155957,6 +155963,9 @@
     "workday:fiserv:R-10404092": {
       "seen_at": "2026-10-08T03:55:42+00:00"
     },
+    "workday:fiserv:R-10404140": {
+      "seen_at": "2026-10-08T15:01:05+00:00"
+    },
     "workday:fiserv:R-10404176": {
       "seen_at": "2026-10-06T20:27:55+00:00"
     },
@@ -182168,6 +182177,9 @@
     "workday:mastercard:R-291737": {
       "seen_at": "2026-09-24T15:42:40+00:00"
     },
+    "workday:mastercard:R-291757": {
+      "seen_at": "2026-10-08T15:01:05+00:00"
+    },
     "workday:mastercard:R-291758": {
       "seen_at": "2026-10-01T07:45:20+00:00"
     },
@@ -190801,6 +190813,9 @@
     },
     "workday:motorolasolutions:R69165": {
       "seen_at": "2026-09-25T11:11:13+00:00"
+    },
+    "workday:motorolasolutions:R69178": {
+      "seen_at": "2026-10-08T15:01:05+00:00"
     },
     "workday:motorolasolutions:R69426": {
       "seen_at": "2026-10-05T13:56:09+00:00"
@@ -213271,6 +213286,9 @@
     },
     "workday:rbc:R-0000188050": {
       "seen_at": "2026-09-18T17:32:52+00:00"
+    },
+    "workday:rbc:R-0000188051": {
+      "seen_at": "2026-10-08T15:01:05+00:00"
     },
     "workday:rbc:R-0000188066": {
       "seen_at": "2026-09-23T17:19:46+00:00"
@@ -252124,6 +252142,9 @@
     },
     "workday:workday:JR-0110543": {
       "seen_at": "2026-10-07T17:09:47+00:00"
+    },
+    "workday:workday:JR-0110545": {
+      "seen_at": "2026-10-08T15:01:05+00:00"
     },
     "workday:workday:JR-0110554": {
       "seen_at": "2026-10-02T16:44:37+00:00"
