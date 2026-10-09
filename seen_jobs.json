@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-10-09"
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 2888,
+      "consecutive_failures": 2889,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 9309,
+      "consecutive_failures": 9310,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 6274,
+      "consecutive_failures": 6275,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 2,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 15311,
+      "consecutive_failures": 15312,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -64775,6 +64775,9 @@
     "greenhouse:datadog:7650367": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
+    "greenhouse:datadog:7650688": {
+      "seen_at": "2026-10-09T06:59:56+00:00"
+    },
     "greenhouse:datadog:7658810": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
@@ -97292,6 +97295,9 @@
     "shopify:shopify:457042ce-a4b6-4769-a932-3c181f46470f": {
       "seen_at": "2026-09-30T18:24:19+00:00"
     },
+    "shopify:shopify:470d99b6-2f8a-4d31-a47b-0d9d934e6be5": {
+      "seen_at": "2026-10-09T06:59:56+00:00"
+    },
     "shopify:shopify:4931fbca-d2b7-47a8-b87a-287c344153f6": {
       "seen_at": "2026-09-22T15:54:57+00:00"
     },
@@ -103492,6 +103498,9 @@
     },
     "workday:autodesk:26WD99908": {
       "seen_at": "2026-09-22T13:14:56+00:00"
+    },
+    "workday:autodesk:26WD99920": {
+      "seen_at": "2026-10-09T06:59:56+00:00"
     },
     "workday:autodesk:26WD99981": {
       "seen_at": "2026-08-21T13:58:24+00:00"
@@ -165836,9 +165845,6 @@
     "workday:hpe:1204975": {
       "seen_at": "2026-08-18T09:09:09+00:00"
     },
-    "workday:hpe:1204981": {
-      "seen_at": "2026-08-10T06:56:08+00:00"
-    },
     "workday:hpe:1204988": {
       "seen_at": "2026-08-19T13:37:10+00:00"
     },
@@ -179942,9 +179948,6 @@
     "workday:mastercard:R-281825": {
       "seen_at": "2026-09-03T06:10:31+00:00"
     },
-    "workday:mastercard:R-281852": {
-      "seen_at": "2026-08-10T06:56:08+00:00"
-    },
     "workday:mastercard:R-281888": {
       "seen_at": "2026-08-13T16:55:27+00:00"
     },
@@ -180205,9 +180208,6 @@
     },
     "workday:mastercard:R-286281": {
       "seen_at": "2026-09-08T11:55:35+00:00"
-    },
-    "workday:mastercard:R-286286": {
-      "seen_at": "2026-08-10T06:56:08+00:00"
     },
     "workday:mastercard:R-286291": {
       "seen_at": "2026-08-24T11:49:16+00:00"
@@ -184922,6 +184922,9 @@
     "workday:micron:JR103995": {
       "seen_at": "2026-09-03T20:58:46+00:00"
     },
+    "workday:micron:JR104050": {
+      "seen_at": "2026-10-09T06:59:56+00:00"
+    },
     "workday:micron:JR104054": {
       "seen_at": "2026-10-02T02:45:38+00:00"
     },
@@ -184942,6 +184945,9 @@
     },
     "workday:micron:JR104133": {
       "seen_at": "2026-08-19T02:50:13+00:00"
+    },
+    "workday:micron:JR104160": {
+      "seen_at": "2026-10-09T06:59:56+00:00"
     },
     "workday:micron:JR104181": {
       "seen_at": "2026-08-24T16:23:21+00:00"
@@ -184993,6 +184999,9 @@
     },
     "workday:micron:JR104623": {
       "seen_at": "2026-10-09T06:49:07+00:00"
+    },
+    "workday:micron:JR104624": {
+      "seen_at": "2026-10-09T06:59:56+00:00"
     },
     "workday:micron:JR104626": {
       "seen_at": "2026-08-14T06:03:21+00:00"
@@ -205117,9 +205126,6 @@
     },
     "workday:paloaltonetworks:JR-020938": {
       "seen_at": "2026-08-26T19:25:47+00:00"
-    },
-    "workday:paloaltonetworks:JR-020940": {
-      "seen_at": "2026-08-10T06:56:08+00:00"
     },
     "workday:paloaltonetworks:JR-020941": {
       "seen_at": "2026-09-17T04:58:26+00:00"
