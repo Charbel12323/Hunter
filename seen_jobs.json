@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-09"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 2876,
+      "consecutive_failures": 2877,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 9297,
+      "consecutive_failures": 9298,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 6262,
+      "consecutive_failures": 6263,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 15299,
+      "consecutive_failures": 15300,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -16576,6 +16576,9 @@
     },
     "ashby:openai:68f7ef0f-97a4-47ce-ac0a-a442572ab7a7": {
       "seen_at": "2026-09-03T22:12:55+00:00"
+    },
+    "ashby:openai:6922ab5c-5b90-4da2-ab10-cbc46d4f4860": {
+      "seen_at": "2026-10-09T05:53:27+00:00"
     },
     "ashby:openai:69398837-5ceb-44d8-b95a-e53c2acf5230": {
       "seen_at": "2026-09-03T12:53:41+00:00"
@@ -133553,9 +133556,6 @@
     "workday:citi:26982550": {
       "seen_at": "2026-09-09T09:20:31+00:00"
     },
-    "workday:citi:26982570": {
-      "seen_at": "2026-08-10T05:52:43+00:00"
-    },
     "workday:citi:26982575": {
       "seen_at": "2026-08-17T19:25:56+00:00"
     },
@@ -185080,9 +185080,6 @@
     },
     "workday:micron:JR104926": {
       "seen_at": "2026-09-01T19:31:23+00:00"
-    },
-    "workday:micron:JR104931": {
-      "seen_at": "2026-08-10T05:52:43+00:00"
     },
     "workday:micron:JR104953": {
       "seen_at": "2026-08-18T04:32:20+00:00"
