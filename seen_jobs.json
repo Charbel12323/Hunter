@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-10"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 130,
+      "consecutive_failures": 131,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 3115,
+      "consecutive_failures": 3116,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 9536,
+      "consecutive_failures": 9537,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 6501,
+      "consecutive_failures": 6502,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 15538,
+      "consecutive_failures": 15539,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -10679,9 +10679,6 @@
     "ashby:harvey:4de85e3d-1810-4d93-b821-fcc442302e4f": {
       "seen_at": "2026-09-06T16:29:05+00:00"
     },
-    "ashby:harvey:4ee35126-b33d-4928-a2e7-11d28fc8dab5": {
-      "seen_at": "2026-08-11T00:09:42+00:00"
-    },
     "ashby:harvey:4ef44ab1-e402-4799-8d7c-e83f011b591b": {
       "seen_at": "2026-10-06T10:25:54+00:00"
     },
@@ -10714,9 +10711,6 @@
     },
     "ashby:harvey:53645e07-5a0e-4257-ba0d-f8b2fc676c44": {
       "seen_at": "2026-08-13T17:12:10+00:00"
-    },
-    "ashby:harvey:53ce64ab-8628-4832-b30e-dc17df696b15": {
-      "seen_at": "2026-08-11T00:09:42+00:00"
     },
     "ashby:harvey:56483928-e6b1-4e30-b5fa-2539494fe620": {
       "seen_at": "2026-09-30T18:18:16+00:00"
@@ -10811,9 +10805,6 @@
     "ashby:harvey:649c64f3-a67f-4029-a8ab-b2cc07fc0ddc": {
       "seen_at": "2026-09-06T16:29:05+00:00"
     },
-    "ashby:harvey:6541a2da-ab46-467b-8aaa-289a6a1d087b": {
-      "seen_at": "2026-08-11T00:09:42+00:00"
-    },
     "ashby:harvey:65f46384-53c0-46ab-b87a-ab228c562f55": {
       "seen_at": "2026-09-04T18:33:47+00:00"
     },
@@ -10858,9 +10849,6 @@
     },
     "ashby:harvey:6d2063e8-8152-41f4-90a7-72b864afc52d": {
       "seen_at": "2026-09-07T11:44:40+00:00"
-    },
-    "ashby:harvey:6ef4e19f-b414-4547-be73-a573c1de4949": {
-      "seen_at": "2026-08-11T00:09:42+00:00"
     },
     "ashby:harvey:6fc91ace-0467-4400-be50-b4d11f817b9e": {
       "seen_at": "2026-08-28T22:23:51+00:00"
@@ -11608,9 +11596,6 @@
     },
     "ashby:harvey:f336367a-fa7c-4515-88ce-6a1f5353c3b5": {
       "seen_at": "2026-09-06T16:29:05+00:00"
-    },
-    "ashby:harvey:f361b7ea-82c6-4061-ad24-1419b4ca3c7b": {
-      "seen_at": "2026-08-11T00:09:42+00:00"
     },
     "ashby:harvey:f3627435-2e0a-4c6b-bf66-967b52231a8c": {
       "seen_at": "2026-08-17T16:33:45+00:00"
@@ -59216,6 +59201,9 @@
     "greenhouse:coinbase:8267151": {
       "seen_at": "2026-10-09T19:31:52+00:00"
     },
+    "greenhouse:coinbase:8269081": {
+      "seen_at": "2026-10-10T00:11:01+00:00"
+    },
     "greenhouse:coreweave:4380852006": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
@@ -62518,9 +62506,6 @@
     },
     "greenhouse:databricks:8596447002": {
       "seen_at": "2026-09-03T22:12:55+00:00"
-    },
-    "greenhouse:databricks:8597642002": {
-      "seen_at": "2026-08-11T00:09:42+00:00"
     },
     "greenhouse:databricks:8598531002": {
       "seen_at": "2026-09-03T22:12:55+00:00"
@@ -150175,9 +150160,6 @@
     },
     "workday:ebay:R0071871": {
       "seen_at": "2026-08-14T03:06:55+00:00"
-    },
-    "workday:ebay:R0071943": {
-      "seen_at": "2026-08-11T00:09:42+00:00"
     },
     "workday:ebay:R0071980": {
       "seen_at": "2026-08-14T19:21:29+00:00"
