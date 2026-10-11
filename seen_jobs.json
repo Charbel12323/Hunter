@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-11"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 577,
+      "consecutive_failures": 578,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 3562,
+      "consecutive_failures": 3563,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 9983,
+      "consecutive_failures": 9984,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 6948,
+      "consecutive_failures": 6949,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 15985,
+      "consecutive_failures": 15986,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1267,12 +1267,6 @@
     },
     "amazon:amazon:10499495": {
       "seen_at": "2026-08-19T17:11:21+00:00"
-    },
-    "amazon:amazon:10499569": {
-      "seen_at": "2026-08-12T11:10:02+00:00"
-    },
-    "amazon:amazon:10499571": {
-      "seen_at": "2026-08-12T11:10:02+00:00"
     },
     "amazon:amazon:10499856": {
       "seen_at": "2026-08-12T16:07:13+00:00"
@@ -28960,9 +28954,6 @@
     },
     "github:SimplifyJobs/New-Grad-Positions:655d22b5-48d2-4cbf-8661-f6f5311a0a50": {
       "seen_at": "2026-09-03T10:39:43+00:00"
-    },
-    "github:SimplifyJobs/New-Grad-Positions:656014ab-4409-4e99-a202-5cf3956fd828": {
-      "seen_at": "2026-08-12T11:10:02+00:00"
     },
     "github:SimplifyJobs/New-Grad-Positions:65650b49-1680-440d-8f63-1cc74d0ba188": {
       "seen_at": "2026-09-04T23:03:55+00:00"
@@ -128684,9 +128675,6 @@
     "workday:citi:26969295": {
       "seen_at": "2026-08-18T17:38:49+00:00"
     },
-    "workday:citi:26969297": {
-      "seen_at": "2026-08-12T11:10:02+00:00"
-    },
     "workday:citi:26969301": {
       "seen_at": "2026-08-24T16:52:40+00:00"
     },
@@ -130597,9 +130585,6 @@
     },
     "workday:citi:26983378": {
       "seen_at": "2026-08-26T11:01:41+00:00"
-    },
-    "workday:citi:26983385": {
-      "seen_at": "2026-08-12T11:10:02+00:00"
     },
     "workday:citi:26983390": {
       "seen_at": "2026-08-13T09:32:57+00:00"
@@ -203243,6 +203228,9 @@
     "workday:paypal:R0138300": {
       "seen_at": "2026-10-09T21:17:59+00:00"
     },
+    "workday:paypal:R0138305": {
+      "seen_at": "2026-10-11T11:13:08+00:00"
+    },
     "workday:paypal:R0138310": {
       "seen_at": "2026-10-08T03:38:44+00:00"
     },
@@ -204526,9 +204514,6 @@
     },
     "workday:rbc:R-0000179497": {
       "seen_at": "2026-10-02T15:03:53+00:00"
-    },
-    "workday:rbc:R-0000179563": {
-      "seen_at": "2026-08-12T11:10:02+00:00"
     },
     "workday:rbc:R-0000179578": {
       "seen_at": "2026-10-09T07:32:54+00:00"
@@ -213004,9 +212989,6 @@
     },
     "workday:salesforce:JR355020": {
       "seen_at": "2026-08-19T04:08:17+00:00"
-    },
-    "workday:salesforce:JR355109": {
-      "seen_at": "2026-08-12T11:10:02+00:00"
     },
     "workday:salesforce:JR355117": {
       "seen_at": "2026-08-19T20:54:29+00:00"
