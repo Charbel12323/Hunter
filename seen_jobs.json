@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 951,
+      "consecutive_failures": 952,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 3936,
+      "consecutive_failures": 3937,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 10357,
+      "consecutive_failures": 10358,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 7322,
+      "consecutive_failures": 7323,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 16359,
+      "consecutive_failures": 16360,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -7886,9 +7886,6 @@
     "ashby:cursor:4bdc7a96-fa0c-4330-b4d8-c65333d09f7b": {
       "seen_at": "2026-09-29T08:13:29+00:00"
     },
-    "ashby:cursor:4eb9c1a5-0c02-4c35-abea-62a6fe704eeb": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "ashby:cursor:507a7108-74a0-4e15-aee3-3aad49ffb92c": {
       "seen_at": "2026-09-01T06:01:55+00:00"
     },
@@ -8935,6 +8932,9 @@
     },
     "ashby:docker:fcbea485-42fe-459a-b016-509686e6c7be": {
       "seen_at": "2026-09-06T16:29:05+00:00"
+    },
+    "ashby:docker:ffc42c1a-64d9-4754-b380-d2ac62052d09": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
     },
     "ashby:elevenlabs:03cefd49-972f-45b2-b6c7-9a42d133af0c": {
       "seen_at": "2026-09-06T16:29:05+00:00"
@@ -75488,6 +75488,9 @@
     "greenhouse:mongodb:7658084": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
+    "greenhouse:mongodb:7668289": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
+    },
     "greenhouse:mongodb:7672303": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
@@ -76714,6 +76717,9 @@
     },
     "greenhouse:mongodb:8268264": {
       "seen_at": "2026-10-12T17:55:40+00:00"
+    },
+    "greenhouse:mongodb:8274765": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
     },
     "greenhouse:okta:5168141": {
       "seen_at": "2026-09-26T05:14:22+00:00"
@@ -93368,6 +93374,9 @@
     "lever:spotify:c3f6ea23-97d0-4a9a-a9ad-04f1e745d916": {
       "seen_at": "2026-08-17T18:56:27+00:00"
     },
+    "lever:spotify:c73be71c-1a63-4906-9925-95f2115d1f1d": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
+    },
     "lever:spotify:c9058823-0996-43b3-ba78-9630621f93a0": {
       "seen_at": "2026-09-24T15:36:10+00:00"
     },
@@ -99866,29 +99875,14 @@
     "workday:autodesk:26WD94819": {
       "seen_at": "2026-09-09T21:28:01+00:00"
     },
-    "workday:autodesk:26WD94883": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:autodesk:26WD94925": {
       "seen_at": "2026-08-31T10:35:16+00:00"
-    },
-    "workday:autodesk:26WD95392": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
-    "workday:autodesk:26WD95687": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
-    "workday:autodesk:26WD95701": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD95847": {
       "seen_at": "2026-09-24T23:02:51+00:00"
     },
     "workday:autodesk:26WD95861": {
       "seen_at": "2026-08-21T13:21:08+00:00"
-    },
-    "workday:autodesk:26WD96063": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD96355": {
       "seen_at": "2026-10-11T23:24:25+00:00"
@@ -99902,14 +99896,8 @@
     "workday:autodesk:26WD96554": {
       "seen_at": "2026-08-28T02:18:06+00:00"
     },
-    "workday:autodesk:26WD96613": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:autodesk:26WD96740": {
       "seen_at": "2026-08-13T18:49:42+00:00"
-    },
-    "workday:autodesk:26WD96766": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD96776": {
       "seen_at": "2026-08-13T18:49:42+00:00"
@@ -99935,9 +99923,6 @@
     "workday:autodesk:26WD97399": {
       "seen_at": "2026-09-14T15:57:57+00:00"
     },
-    "workday:autodesk:26WD97403": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:autodesk:26WD97445": {
       "seen_at": "2026-09-07T11:16:03+00:00"
     },
@@ -99959,26 +99944,14 @@
     "workday:autodesk:26WD97683": {
       "seen_at": "2026-09-14T18:59:03+00:00"
     },
-    "workday:autodesk:26WD97697": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:autodesk:26WD97723": {
       "seen_at": "2026-08-30T14:45:20+00:00"
     },
     "workday:autodesk:26WD97732": {
       "seen_at": "2026-09-15T16:54:41+00:00"
     },
-    "workday:autodesk:26WD97759": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:autodesk:26WD97828": {
       "seen_at": "2026-08-21T14:45:42+00:00"
-    },
-    "workday:autodesk:26WD97887": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
-    "workday:autodesk:26WD97907": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD97909": {
       "seen_at": "2026-08-14T04:05:01+00:00"
@@ -99991,9 +99964,6 @@
     },
     "workday:autodesk:26WD97995": {
       "seen_at": "2026-09-01T16:30:52+00:00"
-    },
-    "workday:autodesk:26WD98040": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD98043": {
       "seen_at": "2026-10-05T23:41:36+00:00"
@@ -100015,9 +99985,6 @@
     },
     "workday:autodesk:26WD98255": {
       "seen_at": "2026-09-23T19:01:40+00:00"
-    },
-    "workday:autodesk:26WD98261": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD98292": {
       "seen_at": "2026-09-24T14:22:18+00:00"
@@ -100082,17 +100049,8 @@
     "workday:autodesk:26WD98709": {
       "seen_at": "2026-08-13T22:02:06+00:00"
     },
-    "workday:autodesk:26WD98738": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
-    "workday:autodesk:26WD98740": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:autodesk:26WD98745": {
       "seen_at": "2026-08-14T04:05:01+00:00"
-    },
-    "workday:autodesk:26WD98771": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD98794": {
       "seen_at": "2026-08-14T04:05:01+00:00"
@@ -100118,9 +100076,6 @@
     "workday:autodesk:26WD98844": {
       "seen_at": "2026-08-13T23:05:48+00:00"
     },
-    "workday:autodesk:26WD98850": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:autodesk:26WD98851": {
       "seen_at": "2026-09-15T15:56:45+00:00"
     },
@@ -100129,9 +100084,6 @@
     },
     "workday:autodesk:26WD98939": {
       "seen_at": "2026-08-19T22:22:25+00:00"
-    },
-    "workday:autodesk:26WD99106": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD99140": {
       "seen_at": "2026-09-14T17:16:31+00:00"
@@ -100148,14 +100100,8 @@
     "workday:autodesk:26WD99228": {
       "seen_at": "2026-08-14T16:33:34+00:00"
     },
-    "workday:autodesk:26WD99239": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:autodesk:26WD99252": {
       "seen_at": "2026-08-17T08:57:58+00:00"
-    },
-    "workday:autodesk:26WD99265": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD99273": {
       "seen_at": "2026-08-14T07:05:11+00:00"
@@ -100168,12 +100114,6 @@
     },
     "workday:autodesk:26WD99307": {
       "seen_at": "2026-08-14T07:05:11+00:00"
-    },
-    "workday:autodesk:26WD99311": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
-    "workday:autodesk:26WD99315": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD99326": {
       "seen_at": "2026-08-13T18:49:42+00:00"
@@ -100201,9 +100141,6 @@
     },
     "workday:autodesk:26WD99475": {
       "seen_at": "2026-08-13T23:05:48+00:00"
-    },
-    "workday:autodesk:26WD99477": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:autodesk:26WD99480": {
       "seen_at": "2026-08-14T04:05:01+00:00"
@@ -102896,9 +102833,6 @@
     "workday:bmo:R260023694": {
       "seen_at": "2026-08-14T17:30:38+00:00"
     },
-    "workday:bmo:R260023700": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:bmo:R260023702": {
       "seen_at": "2026-08-14T18:45:06+00:00"
     },
@@ -102928,9 +102862,6 @@
     },
     "workday:bmo:R260023735": {
       "seen_at": "2026-08-27T23:37:17+00:00"
-    },
-    "workday:bmo:R260023736": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:bmo:R260023752": {
       "seen_at": "2026-08-21T20:30:47+00:00"
@@ -144458,9 +144389,6 @@
     "workday:ebay:R0071419": {
       "seen_at": "2026-09-18T09:25:50+00:00"
     },
-    "workday:ebay:R0071563": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:ebay:R0071871": {
       "seen_at": "2026-08-14T03:06:55+00:00"
     },
@@ -145834,9 +145762,6 @@
     },
     "workday:fis:JR0307301": {
       "seen_at": "2026-08-13T19:45:39+00:00"
-    },
-    "workday:fis:JR0307306": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:fis:JR0307361": {
       "seen_at": "2026-09-18T14:14:22+00:00"
@@ -172340,9 +172265,6 @@
     "workday:mastercard:R-286370": {
       "seen_at": "2026-08-14T08:45:25+00:00"
     },
-    "workday:mastercard:R-286411": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:mastercard:R-286436": {
       "seen_at": "2026-09-03T09:52:02+00:00"
     },
@@ -176473,6 +176395,9 @@
     },
     "workday:mastercard:R-293430": {
       "seen_at": "2026-10-12T02:56:45+00:00"
+    },
+    "workday:mastercard:R-293452": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
     },
     "workday:micron:JR100021": {
       "seen_at": "2026-10-07T06:11:28+00:00"
@@ -190529,9 +190454,6 @@
     "workday:nvidia:JR2019694": {
       "seen_at": "2026-09-03T16:27:42+00:00"
     },
-    "workday:nvidia:JR2019709": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:nvidia:JR2019733": {
       "seen_at": "2026-08-18T06:24:04+00:00"
     },
@@ -191410,9 +191332,6 @@
     },
     "workday:nvidia:JR2023206": {
       "seen_at": "2026-08-27T16:53:05+00:00"
-    },
-    "workday:nvidia:JR2023211": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:nvidia:JR2023216": {
       "seen_at": "2026-08-23T16:07:03+00:00"
@@ -195125,6 +195044,9 @@
     "workday:nvidia:JR2027081": {
       "seen_at": "2026-10-01T22:51:50+00:00"
     },
+    "workday:nvidia:JR2027083": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
+    },
     "workday:nvidia:JR2027085": {
       "seen_at": "2026-10-02T22:44:07+00:00"
     },
@@ -198628,9 +198550,6 @@
     },
     "workday:paypal:R0134854": {
       "seen_at": "2026-09-15T07:37:43+00:00"
-    },
-    "workday:paypal:R0135018": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:paypal:R0135050": {
       "seen_at": "2026-08-26T05:08:29+00:00"
@@ -209432,9 +209351,6 @@
     "workday:salesforce:JR355132": {
       "seen_at": "2026-09-16T15:20:43+00:00"
     },
-    "workday:salesforce:JR355141": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:salesforce:JR355154": {
       "seen_at": "2026-08-13T22:38:32+00:00"
     },
@@ -209764,9 +209680,6 @@
     },
     "workday:salesforce:JR356079": {
       "seen_at": "2026-08-18T14:49:55+00:00"
-    },
-    "workday:salesforce:JR356080": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:salesforce:JR356109": {
       "seen_at": "2026-08-18T15:38:31+00:00"
@@ -218981,6 +218894,9 @@
     "workday:spgi:331911": {
       "seen_at": "2026-09-28T10:19:39+00:00"
     },
+    "workday:spgi:331915": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
+    },
     "workday:spgi:331925": {
       "seen_at": "2026-10-06T04:01:35+00:00"
     },
@@ -222614,9 +222530,6 @@
     "workday:statestreet:R-795202": {
       "seen_at": "2026-09-03T08:28:52+00:00"
     },
-    "workday:statestreet:R-795203": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:statestreet:R-795218": {
       "seen_at": "2026-08-19T15:15:00+00:00"
     },
@@ -222748,12 +222661,6 @@
     },
     "workday:statestreet:R-795662": {
       "seen_at": "2026-10-05T00:12:33+00:00"
-    },
-    "workday:statestreet:R-795664": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
-    "workday:statestreet:R-795665": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
     },
     "workday:statestreet:R-795666": {
       "seen_at": "2026-10-04T17:58:43+00:00"
@@ -226448,6 +226355,9 @@
     "workday:statestreet:R-798762": {
       "seen_at": "2026-09-29T08:47:17+00:00"
     },
+    "workday:statestreet:R-798772": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
+    },
     "workday:statestreet:R-798778": {
       "seen_at": "2026-09-29T11:26:33+00:00"
     },
@@ -226588,6 +226498,9 @@
     },
     "workday:statestreet:R-798889": {
       "seen_at": "2026-10-01T14:57:17+00:00"
+    },
+    "workday:statestreet:R-798890": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
     },
     "workday:statestreet:R-798894": {
       "seen_at": "2026-10-01T10:40:11+00:00"
@@ -226762,6 +226675,9 @@
     },
     "workday:statestreet:R-799036": {
       "seen_at": "2026-10-05T17:30:15+00:00"
+    },
+    "workday:statestreet:R-799038": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
     },
     "workday:statestreet:R-799040": {
       "seen_at": "2026-10-06T04:01:35+00:00"
@@ -235124,9 +235040,6 @@
     "workday:thomsonreuters:London": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
-    "workday:thomsonreuters:Los Angeles; Chicago; Dallas; Portland; Denver, Colorado; Eagan; Seattle": {
-      "seen_at": "2026-08-13T18:33:02+00:00"
-    },
     "workday:thomsonreuters:Los Angeles; Chicago; New York; Ann Arbor; Washington; Frisco; Eagan": {
       "seen_at": "2026-08-17T20:33:16+00:00"
     },
@@ -235891,6 +235804,9 @@
     },
     "workday:trendmicro:R0010293": {
       "seen_at": "2026-10-12T11:35:49+00:00"
+    },
+    "workday:trendmicro:R0010294": {
+      "seen_at": "2026-10-12T18:34:51+00:00"
     },
     "workday:tsys:R0062295": {
       "seen_at": "2026-09-03T09:40:21+00:00"
