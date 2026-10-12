@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-12"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 860,
+      "consecutive_failures": 861,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 3845,
+      "consecutive_failures": 3846,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 10266,
+      "consecutive_failures": 10267,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 7231,
+      "consecutive_failures": 7232,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 16268,
+      "consecutive_failures": 16269,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -96461,12 +96461,6 @@
     "workday:analogdevices:R264662": {
       "seen_at": "2026-08-20T06:01:25+00:00"
     },
-    "workday:analogdevices:R264681": {
-      "seen_at": "2026-08-13T11:18:53+00:00"
-    },
-    "workday:analogdevices:R264697": {
-      "seen_at": "2026-08-13T11:18:53+00:00"
-    },
     "workday:analogdevices:R264713": {
       "seen_at": "2026-09-09T08:36:16+00:00"
     },
@@ -100492,6 +100486,9 @@
     },
     "workday:blackrock:R260416": {
       "seen_at": "2026-08-24T09:09:50+00:00"
+    },
+    "workday:blackrock:R260560": {
+      "seen_at": "2026-10-12T11:19:42+00:00"
     },
     "workday:blackrock:R260598": {
       "seen_at": "2026-09-02T13:51:45+00:00"
@@ -149237,9 +149234,6 @@
     "workday:fiserv:R-10399151": {
       "seen_at": "2026-08-19T07:47:07+00:00"
     },
-    "workday:fiserv:R-10399152": {
-      "seen_at": "2026-08-13T11:18:53+00:00"
-    },
     "workday:fiserv:R-10399153": {
       "seen_at": "2026-08-20T14:00:37+00:00"
     },
@@ -159388,9 +159382,6 @@
     },
     "workday:hpe:1206809": {
       "seen_at": "2026-09-14T19:02:33+00:00"
-    },
-    "workday:hpe:1206819": {
-      "seen_at": "2026-08-13T11:18:53+00:00"
     },
     "workday:hpe:1206826": {
       "seen_at": "2026-10-07T19:54:42+00:00"
@@ -178184,9 +178175,6 @@
     "workday:micron:JR107398": {
       "seen_at": "2026-09-14T08:28:57+00:00"
     },
-    "workday:micron:JR107411": {
-      "seen_at": "2026-08-13T11:18:53+00:00"
-    },
     "workday:micron:JR107414": {
       "seen_at": "2026-10-09T01:21:19+00:00"
     },
@@ -178720,9 +178708,6 @@
     },
     "workday:micron:JR108668": {
       "seen_at": "2026-08-17T10:41:03+00:00"
-    },
-    "workday:micron:JR108671": {
-      "seen_at": "2026-08-13T11:18:53+00:00"
     },
     "workday:micron:JR108676": {
       "seen_at": "2026-08-14T01:01:00+00:00"
@@ -184855,9 +184840,6 @@
     },
     "workday:motorolasolutions:Los Angeles, Chile (ZCE06)": {
       "seen_at": "2026-09-23T19:36:17+00:00"
-    },
-    "workday:motorolasolutions:Madrid, Spain (ZES06)": {
-      "seen_at": "2026-08-13T11:18:53+00:00"
     },
     "workday:motorolasolutions:Manchester, NH (NH05)": {
       "seen_at": "2026-09-18T20:08:04+00:00"
@@ -222745,9 +222727,6 @@
     },
     "workday:statestreet:R-793409": {
       "seen_at": "2026-08-24T15:19:37+00:00"
-    },
-    "workday:statestreet:R-793449": {
-      "seen_at": "2026-08-13T11:18:53+00:00"
     },
     "workday:statestreet:R-793482": {
       "seen_at": "2026-09-28T01:56:53+00:00"
