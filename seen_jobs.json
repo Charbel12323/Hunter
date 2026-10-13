@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-13"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 1151,
+      "consecutive_failures": 1152,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 4136,
+      "consecutive_failures": 4137,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 10557,
+      "consecutive_failures": 10558,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 7522,
+      "consecutive_failures": 7523,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,8 +865,8 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 4,
-      "warned_failures": false,
+      "consecutive_failures": 5,
+      "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 16559,
+      "consecutive_failures": 16560,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -54632,6 +54632,9 @@
     "greenhouse:cloudflare:8164724": {
       "seen_at": "2026-09-02T00:28:28+00:00"
     },
+    "greenhouse:cloudflare:8166601": {
+      "seen_at": "2026-10-13T11:20:17+00:00"
+    },
     "greenhouse:cloudflare:8168623": {
       "seen_at": "2026-09-01T05:24:53+00:00"
     },
@@ -95789,9 +95792,6 @@
     "workday:analogdevices:R264734": {
       "seen_at": "2026-08-24T23:32:44+00:00"
     },
-    "workday:analogdevices:R264735": {
-      "seen_at": "2026-08-14T11:16:06+00:00"
-    },
     "workday:analogdevices:R264736": {
       "seen_at": "2026-08-14T18:24:31+00:00"
     },
@@ -99238,6 +99238,9 @@
     },
     "workday:autodesk:26WD101500": {
       "seen_at": "2026-10-06T14:42:46+00:00"
+    },
+    "workday:autodesk:26WD101501": {
+      "seen_at": "2026-10-13T11:20:17+00:00"
     },
     "workday:autodesk:26WD101509": {
       "seen_at": "2026-10-09T22:13:35+00:00"
@@ -158408,9 +158411,6 @@
     "workday:hpe:1209335": {
       "seen_at": "2026-08-14T11:32:23+00:00"
     },
-    "workday:hpe:1209340": {
-      "seen_at": "2026-08-14T11:16:06+00:00"
-    },
     "workday:hpe:1209345": {
       "seen_at": "2026-09-03T07:34:31+00:00"
     },
@@ -201362,9 +201362,6 @@
     "workday:rbc:R-0000184334": {
       "seen_at": "2026-10-05T02:30:39+00:00"
     },
-    "workday:rbc:R-0000184338": {
-      "seen_at": "2026-08-14T11:16:06+00:00"
-    },
     "workday:rbc:R-0000184341": {
       "seen_at": "2026-08-14T12:22:29+00:00"
     },
@@ -208645,9 +208642,6 @@
     },
     "workday:salesforce:JR355333": {
       "seen_at": "2026-09-08T11:43:20+00:00"
-    },
-    "workday:salesforce:JR355334": {
-      "seen_at": "2026-08-14T11:16:06+00:00"
     },
     "workday:salesforce:JR355335": {
       "seen_at": "2026-08-14T11:32:23+00:00"
@@ -226211,6 +226205,9 @@
     "workday:statestreet:R-799350": {
       "seen_at": "2026-10-13T07:01:11+00:00"
     },
+    "workday:statestreet:R-799361": {
+      "seen_at": "2026-10-13T11:20:17+00:00"
+    },
     "workday:statestreet:R-799368": {
       "seen_at": "2026-10-13T06:50:25+00:00"
     },
@@ -237139,6 +237136,9 @@
     },
     "workday:tsys:R0076082": {
       "seen_at": "2026-10-07T21:47:25+00:00"
+    },
+    "workday:tsys:R0076084": {
+      "seen_at": "2026-10-13T11:20:17+00:00"
     },
     "workday:tsys:R0076087": {
       "seen_at": "2026-10-13T08:59:37+00:00"
