@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-15"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 1678,
+      "consecutive_failures": 1679,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 4663,
+      "consecutive_failures": 4664,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 11084,
+      "consecutive_failures": 11085,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 8049,
+      "consecutive_failures": 8050,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,8 +865,8 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 4,
-      "warned_failures": false,
+      "consecutive_failures": 5,
+      "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 17086,
+      "consecutive_failures": 17087,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -168782,6 +168782,9 @@
     "workday:intel:JR0288159": {
       "seen_at": "2026-10-14T04:25:18+00:00"
     },
+    "workday:intel:JR0288217": {
+      "seen_at": "2026-10-15T03:45:27+00:00"
+    },
     "workday:intel:JR0288243": {
       "seen_at": "2026-10-15T01:43:33+00:00"
     },
@@ -186781,6 +186784,9 @@
     },
     "workday:motorolasolutions:R69178": {
       "seen_at": "2026-10-08T15:01:05+00:00"
+    },
+    "workday:motorolasolutions:R69232": {
+      "seen_at": "2026-10-15T03:45:27+00:00"
     },
     "workday:motorolasolutions:R69359": {
       "seen_at": "2026-10-08T21:31:53+00:00"
@@ -223834,6 +223840,9 @@
     },
     "workday:ssctech:R46622": {
       "seen_at": "2026-10-01T20:20:54+00:00"
+    },
+    "workday:ssctech:R46623": {
+      "seen_at": "2026-10-15T03:45:27+00:00"
     },
     "workday:ssctech:R46626": {
       "seen_at": "2026-10-14T01:25:14+00:00"
