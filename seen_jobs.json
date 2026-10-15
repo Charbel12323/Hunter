@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-15"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 1696,
+      "consecutive_failures": 1697,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 4681,
+      "consecutive_failures": 4682,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 11102,
+      "consecutive_failures": 11103,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 8067,
+      "consecutive_failures": 8068,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 2,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 17104,
+      "consecutive_failures": 17105,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1243,7 +1243,7 @@
       "zero_since": null
     },
     "workday/workday": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -210641,6 +210641,9 @@
     "workday:redhat:R-059799": {
       "seen_at": "2026-09-24T18:32:10+00:00"
     },
+    "workday:redhat:R-059822": {
+      "seen_at": "2026-10-15T05:05:05+00:00"
+    },
     "workday:redhat:R-059856": {
       "seen_at": "2026-10-07T04:29:59+00:00"
     },
@@ -221221,9 +221224,6 @@
     },
     "workday:spgi:330417": {
       "seen_at": "2026-10-06T08:00:39+00:00"
-    },
-    "workday:spgi:330421": {
-      "seen_at": "2026-08-16T05:03:06+00:00"
     },
     "workday:spgi:330439": {
       "seen_at": "2026-09-16T16:15:48+00:00"
