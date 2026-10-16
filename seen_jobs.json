@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-16"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 1992,
+      "consecutive_failures": 1993,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 4977,
+      "consecutive_failures": 4978,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 11398,
+      "consecutive_failures": 11399,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 8363,
+      "consecutive_failures": 8364,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 2,
+      "consecutive_failures": 3,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 17400,
+      "consecutive_failures": 17401,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -97256,9 +97256,6 @@
     "workday:analogdevices:R264375": {
       "seen_at": "2026-09-04T12:41:51+00:00"
     },
-    "workday:analogdevices:R264391": {
-      "seen_at": "2026-08-17T03:32:30+00:00"
-    },
     "workday:analogdevices:R264412": {
       "seen_at": "2026-08-17T03:43:28+00:00"
     },
@@ -143756,6 +143753,9 @@
     "workday:citi:26998604": {
       "seen_at": "2026-10-06T09:24:54+00:00"
     },
+    "workday:citi:26998607": {
+      "seen_at": "2026-10-16T03:37:16+00:00"
+    },
     "workday:citi:26998614": {
       "seen_at": "2026-09-29T07:01:54+00:00"
     },
@@ -171781,9 +171781,6 @@
     },
     "workday:manulife:JR26051487": {
       "seen_at": "2026-09-29T10:41:37+00:00"
-    },
-    "workday:manulife:JR26051538": {
-      "seen_at": "2026-08-17T03:32:30+00:00"
     },
     "workday:manulife:JR26051540": {
       "seen_at": "2026-10-07T00:56:26+00:00"
