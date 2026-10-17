@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-17"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 2328,
+      "consecutive_failures": 2329,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 5313,
+      "consecutive_failures": 5314,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 11734,
+      "consecutive_failures": 11735,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 8699,
+      "consecutive_failures": 8700,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -985,7 +985,7 @@
       "zero_since": null
     },
     "workday/capitalone": {
-      "consecutive_failures": 10,
+      "consecutive_failures": 11,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1153,7 +1153,7 @@
       "zero_since": null
     },
     "workday/salesforce": {
-      "consecutive_failures": 11,
+      "consecutive_failures": 12,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 17736,
+      "consecutive_failures": 17737,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1249,7 +1249,7 @@
       "zero_since": null
     },
     "workday/workiva": {
-      "consecutive_failures": 10,
+      "consecutive_failures": 11,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -144653,6 +144653,9 @@
     "workday:crowdstrike:R24950": {
       "seen_at": "2026-10-05T05:58:07+00:00"
     },
+    "workday:crowdstrike:R25100": {
+      "seen_at": "2026-10-17T04:53:51+00:00"
+    },
     "workday:crowdstrike:R25320": {
       "seen_at": "2026-09-02T05:06:46+00:00"
     },
@@ -171140,9 +171143,6 @@
     "workday:manulife:JR26042092": {
       "seen_at": "2026-08-24T06:29:03+00:00"
     },
-    "workday:manulife:JR26050212": {
-      "seen_at": "2026-08-18T04:52:05+00:00"
-    },
     "workday:manulife:JR26050214": {
       "seen_at": "2026-09-07T04:04:53+00:00"
     },
@@ -181346,9 +181346,6 @@
     "workday:micron:JR106658": {
       "seen_at": "2026-08-18T06:12:36+00:00"
     },
-    "workday:micron:JR106660": {
-      "seen_at": "2026-08-18T04:52:05+00:00"
-    },
     "workday:micron:JR106711": {
       "seen_at": "2026-09-11T21:10:07+00:00"
     },
@@ -181744,9 +181741,6 @@
     },
     "workday:micron:JR108272": {
       "seen_at": "2026-09-10T08:04:43+00:00"
-    },
-    "workday:micron:JR108273": {
-      "seen_at": "2026-08-18T04:52:05+00:00"
     },
     "workday:micron:JR108280": {
       "seen_at": "2026-08-26T02:40:12+00:00"
@@ -206540,9 +206534,6 @@
     "workday:rbc:R-0000183677": {
       "seen_at": "2026-09-24T23:25:08+00:00"
     },
-    "workday:rbc:R-0000183679": {
-      "seen_at": "2026-08-18T04:52:05+00:00"
-    },
     "workday:rbc:R-0000183688": {
       "seen_at": "2026-09-08T15:52:45+00:00"
     },
@@ -221792,9 +221783,6 @@
     "workday:snapchat:R0045495": {
       "seen_at": "2026-09-14T16:45:09+00:00"
     },
-    "workday:snapchat:R0045505": {
-      "seen_at": "2026-08-18T04:52:05+00:00"
-    },
     "workday:snapchat:R0045544": {
       "seen_at": "2026-10-05T13:22:29+00:00"
     },
@@ -221827,9 +221815,6 @@
     },
     "workday:snapchat:R0046055": {
       "seen_at": "2026-10-07T22:03:46+00:00"
-    },
-    "workday:snapchat:R0046060": {
-      "seen_at": "2026-08-18T04:52:05+00:00"
     },
     "workday:snapchat:R0046065": {
       "seen_at": "2026-08-18T05:00:19+00:00"
