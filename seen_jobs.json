@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-10-17"
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 2406,
+      "consecutive_failures": 2407,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 5391,
+      "consecutive_failures": 5392,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 11812,
+      "consecutive_failures": 11813,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 8777,
+      "consecutive_failures": 8778,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 17814,
+      "consecutive_failures": 17815,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1249,7 +1249,7 @@
       "zero_since": null
     },
     "workday/workiva": {
-      "consecutive_failures": 88,
+      "consecutive_failures": 89,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -30403,9 +30403,6 @@
     },
     "github:SimplifyJobs/New-Grad-Positions:945b5432-3cac-4f5a-ab66-b109f0305791": {
       "seen_at": "2026-08-28T21:57:34+00:00"
-    },
-    "github:SimplifyJobs/New-Grad-Positions:946bf1c8-b423-4c84-8be5-1ef8d82475ab": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
     },
     "github:SimplifyJobs/New-Grad-Positions:946d97b3-a782-4b11-a0f2-f8b032714d4d": {
       "seen_at": "2026-09-04T07:35:48+00:00"
@@ -65696,6 +65693,9 @@
     "greenhouse:elastic:8119450": {
       "seen_at": "2026-10-17T08:34:00+00:00"
     },
+    "greenhouse:elastic:8119454": {
+      "seen_at": "2026-10-17T10:37:53+00:00"
+    },
     "greenhouse:elastic:8119456": {
       "seen_at": "2026-09-02T12:10:34+00:00"
     },
@@ -65816,26 +65816,8 @@
     "greenhouse:elastic:8138632": {
       "seen_at": "2026-09-08T08:14:54+00:00"
     },
-    "greenhouse:elastic:8138683": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "greenhouse:elastic:8138687": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "greenhouse:elastic:8138690": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "greenhouse:elastic:8138692": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "greenhouse:elastic:8138694": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "greenhouse:elastic:8138696": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "greenhouse:elastic:8138699": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
+    "greenhouse:elastic:8138661": {
+      "seen_at": "2026-10-17T10:37:53+00:00"
     },
     "greenhouse:elastic:8140313": {
       "seen_at": "2026-08-26T14:23:44+00:00"
@@ -72688,9 +72670,6 @@
     },
     "greenhouse:intercom:8128393": {
       "seen_at": "2026-08-18T21:58:30+00:00"
-    },
-    "greenhouse:intercom:8132076": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
     },
     "greenhouse:intercom:8132573": {
       "seen_at": "2026-08-20T14:50:02+00:00"
@@ -96961,18 +96940,6 @@
     },
     "workday:analogdevices:R265183": {
       "seen_at": "2026-09-02T03:03:02+00:00"
-    },
-    "workday:analogdevices:R265185": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "workday:analogdevices:R265188": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "workday:analogdevices:R265190": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "workday:analogdevices:R265191": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
     },
     "workday:analogdevices:R265193": {
       "seen_at": "2026-08-18T10:48:28+00:00"
@@ -147130,9 +147097,6 @@
     },
     "workday:fis:JR0307892": {
       "seen_at": "2026-08-24T05:11:08+00:00"
-    },
-    "workday:fis:JR0307914": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
     },
     "workday:fis:JR0307922": {
       "seen_at": "2026-09-21T10:33:57+00:00"
@@ -227138,9 +227102,6 @@
     "workday:statestreet:R-794777": {
       "seen_at": "2026-09-22T09:01:40+00:00"
     },
-    "workday:statestreet:R-794778": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
     "workday:statestreet:R-794780": {
       "seen_at": "2026-09-09T10:05:49+00:00"
     },
@@ -241808,9 +241769,6 @@
     "workday:trendmicro:R0010092": {
       "seen_at": "2026-08-23T23:03:25+00:00"
     },
-    "workday:trendmicro:R0010104": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
     "workday:trendmicro:R0010106": {
       "seen_at": "2026-08-19T13:37:10+00:00"
     },
@@ -247943,9 +247901,6 @@
     "workday:workday:JR-0107491": {
       "seen_at": "2026-10-03T18:32:40+00:00"
     },
-    "workday:workday:JR-0107505": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
     "workday:workday:JR-0107516": {
       "seen_at": "2026-08-25T14:14:27+00:00"
     },
@@ -248443,12 +248398,6 @@
     },
     "workday:workday:JR-0109449": {
       "seen_at": "2026-08-18T10:48:28+00:00"
-    },
-    "workday:workday:JR-0109450": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
-    },
-    "workday:workday:JR-0109451": {
-      "seen_at": "2026-08-18T10:37:15+00:00"
     },
     "workday:workday:JR-0109453": {
       "seen_at": "2026-09-28T14:38:31+00:00"
