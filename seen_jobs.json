@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-10-17"
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -385,13 +385,13 @@
       "zero_since": null
     },
     "google/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 2447,
+      "consecutive_failures": 2448,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 5432,
+      "consecutive_failures": 5433,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 11853,
+      "consecutive_failures": 11854,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 8818,
+      "consecutive_failures": 8819,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 17855,
+      "consecutive_failures": 17856,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -7303,6 +7303,9 @@
     },
     "ashby:cohere:10306789-4fd5-4f1d-90aa-8132c2df2848": {
       "seen_at": "2026-09-19T18:01:48+00:00"
+    },
+    "ashby:cohere:14a286d9-e415-4198-8d3b-8e0a7882a5b6": {
+      "seen_at": "2026-10-17T13:41:11+00:00"
     },
     "ashby:cohere:14aef6d9-763e-4f56-a498-206fb31dd0c6": {
       "seen_at": "2026-10-15T14:12:29+00:00"
@@ -56333,6 +56336,9 @@
     "greenhouse:coreweave:4706027006": {
       "seen_at": "2026-08-18T23:02:42+00:00"
     },
+    "greenhouse:coreweave:4706072006": {
+      "seen_at": "2026-10-17T13:41:11+00:00"
+    },
     "greenhouse:coreweave:4706074006": {
       "seen_at": "2026-08-19T16:31:50+00:00"
     },
@@ -81167,6 +81173,9 @@
     "greenhouse:roblox:8269034": {
       "seen_at": "2026-10-13T22:04:22+00:00"
     },
+    "greenhouse:roblox:8269038": {
+      "seen_at": "2026-10-17T13:41:11+00:00"
+    },
     "greenhouse:roblox:8274205": {
       "seen_at": "2026-10-13T20:29:05+00:00"
     },
@@ -84250,6 +84259,9 @@
     },
     "greenhouse:stripe:8080240": {
       "seen_at": "2026-09-20T19:24:02+00:00"
+    },
+    "greenhouse:stripe:8080454": {
+      "seen_at": "2026-10-17T13:41:11+00:00"
     },
     "greenhouse:stripe:8080614": {
       "seen_at": "2026-09-20T21:59:53+00:00"
