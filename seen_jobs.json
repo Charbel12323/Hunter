@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-17"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 2403,
+      "consecutive_failures": 2404,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 5388,
+      "consecutive_failures": 5389,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 11809,
+      "consecutive_failures": 11810,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 8774,
+      "consecutive_failures": 8775,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 17811,
+      "consecutive_failures": 17812,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1249,7 +1249,7 @@
       "zero_since": null
     },
     "workday/workiva": {
-      "consecutive_failures": 85,
+      "consecutive_failures": 86,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -99074,9 +99074,6 @@
     "workday:autodesk:26WD100450": {
       "seen_at": "2026-08-21T15:11:10+00:00"
     },
-    "workday:autodesk:26WD100451": {
-      "seen_at": "2026-08-18T10:21:23+00:00"
-    },
     "workday:autodesk:26WD100466": {
       "seen_at": "2026-10-13T16:24:53+00:00"
     },
@@ -99136,9 +99133,6 @@
     },
     "workday:autodesk:26WD100590": {
       "seen_at": "2026-08-20T08:17:27+00:00"
-    },
-    "workday:autodesk:26WD100591": {
-      "seen_at": "2026-08-18T10:21:23+00:00"
     },
     "workday:autodesk:26WD100592": {
       "seen_at": "2026-08-26T13:16:58+00:00"
@@ -129788,9 +129782,6 @@
     "workday:citi:26983130": {
       "seen_at": "2026-08-25T11:09:21+00:00"
     },
-    "workday:citi:26983148": {
-      "seen_at": "2026-08-18T10:21:23+00:00"
-    },
     "workday:citi:26983165": {
       "seen_at": "2026-08-19T02:50:13+00:00"
     },
@@ -130195,9 +130186,6 @@
     },
     "workday:citi:26984874": {
       "seen_at": "2026-09-16T18:46:19+00:00"
-    },
-    "workday:citi:26984896": {
-      "seen_at": "2026-08-18T10:21:23+00:00"
     },
     "workday:citi:26984898": {
       "seen_at": "2026-08-20T09:38:33+00:00"
@@ -171206,9 +171194,6 @@
     "workday:manulife:JR26080163": {
       "seen_at": "2026-10-04T20:50:17+00:00"
     },
-    "workday:manulife:JR26080165": {
-      "seen_at": "2026-08-18T10:21:23+00:00"
-    },
     "workday:manulife:JR26080174": {
       "seen_at": "2026-08-31T16:54:48+00:00"
     },
@@ -174424,9 +174409,6 @@
     },
     "workday:mastercard:R-274530": {
       "seen_at": "2026-09-04T15:41:37+00:00"
-    },
-    "workday:mastercard:R-274542": {
-      "seen_at": "2026-08-18T10:21:23+00:00"
     },
     "workday:mastercard:R-274552": {
       "seen_at": "2026-10-13T13:22:52+00:00"
@@ -191005,9 +190987,6 @@
     },
     "workday:ms:PT-JR042402": {
       "seen_at": "2026-09-18T20:37:16+00:00"
-    },
-    "workday:ms:PT-JR042404": {
-      "seen_at": "2026-08-18T10:21:23+00:00"
     },
     "workday:ms:PT-JR042405": {
       "seen_at": "2026-08-28T19:40:14+00:00"
@@ -213998,9 +213977,6 @@
     "workday:salesforce:JR356510": {
       "seen_at": "2026-08-25T07:48:41+00:00"
     },
-    "workday:salesforce:JR356532": {
-      "seen_at": "2026-08-18T10:21:23+00:00"
-    },
     "workday:salesforce:JR356533": {
       "seen_at": "2026-08-25T09:37:49+00:00"
     },
@@ -227671,9 +227647,6 @@
     },
     "workday:statestreet:R-796185": {
       "seen_at": "2026-08-20T14:29:35+00:00"
-    },
-    "workday:statestreet:R-796190": {
-      "seen_at": "2026-08-18T10:21:23+00:00"
     },
     "workday:statestreet:R-796192": {
       "seen_at": "2026-08-20T12:10:51+00:00"
