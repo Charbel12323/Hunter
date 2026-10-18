@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-18"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 2727,
+      "consecutive_failures": 2728,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 5712,
+      "consecutive_failures": 5713,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 12133,
+      "consecutive_failures": 12134,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 9098,
+      "consecutive_failures": 9099,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 18135,
+      "consecutive_failures": 18136,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -3994,6 +3994,9 @@
     },
     "ashby:airwallex:396cd4cf-a1c6-47fa-829b-b7ee6c963206": {
       "seen_at": "2026-09-10T13:43:27+00:00"
+    },
+    "ashby:airwallex:39e463b9-d8db-410e-ae34-6b81fdea6f86": {
+      "seen_at": "2026-10-18T10:53:53+00:00"
     },
     "ashby:airwallex:39e8f3c4-ae3f-4605-9419-8f1b9178d298": {
       "seen_at": "2026-10-06T13:02:29+00:00"
@@ -94919,9 +94922,6 @@
     "workday:analogdevices:R258306": {
       "seen_at": "2026-10-10T00:16:23+00:00"
     },
-    "workday:analogdevices:R258532": {
-      "seen_at": "2026-08-19T10:53:33+00:00"
-    },
     "workday:analogdevices:R258731": {
       "seen_at": "2026-10-05T12:14:40+00:00"
     },
@@ -129169,9 +129169,6 @@
     },
     "workday:citi:26987481": {
       "seen_at": "2026-08-20T10:50:52+00:00"
-    },
-    "workday:citi:26987486": {
-      "seen_at": "2026-08-19T10:53:33+00:00"
     },
     "workday:citi:26987491": {
       "seen_at": "2026-08-20T01:15:52+00:00"
@@ -214894,9 +214891,6 @@
     },
     "workday:sec:R119618": {
       "seen_at": "2026-08-20T21:26:16+00:00"
-    },
-    "workday:sec:R119619": {
-      "seen_at": "2026-08-19T10:53:33+00:00"
     },
     "workday:sec:R119628": {
       "seen_at": "2026-08-25T22:39:11+00:00"
