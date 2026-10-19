@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 3008,
+      "consecutive_failures": 3009,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 5993,
+      "consecutive_failures": 5994,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 12414,
+      "consecutive_failures": 12415,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 9379,
+      "consecutive_failures": 9380,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1153,8 +1153,8 @@
       "zero_since": null
     },
     "workday/salesforce": {
-      "consecutive_failures": 121,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 18416,
+      "consecutive_failures": 18417,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -54746,6 +54746,9 @@
     "greenhouse:coreweave:4703808006": {
       "seen_at": "2026-10-10T12:13:35+00:00"
     },
+    "greenhouse:coreweave:4703842006": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
     "greenhouse:coreweave:4703844006": {
       "seen_at": "2026-08-21T20:38:56+00:00"
     },
@@ -69283,6 +69286,9 @@
     },
     "greenhouse:grafanalabs:6146605004": {
       "seen_at": "2026-10-17T19:54:53+00:00"
+    },
+    "greenhouse:grafanalabs:6147030004": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
     },
     "greenhouse:grafanalabs:6147032004": {
       "seen_at": "2026-09-21T09:21:46+00:00"
@@ -162332,9 +162338,6 @@
     "workday:intel:JR0286517": {
       "seen_at": "2026-08-21T23:09:00+00:00"
     },
-    "workday:intel:JR0286519": {
-      "seen_at": "2026-08-20T08:53:01+00:00"
-    },
     "workday:intel:JR0286520": {
       "seen_at": "2026-08-21T20:38:56+00:00"
     },
@@ -162344,14 +162347,8 @@
     "workday:intel:JR0286522": {
       "seen_at": "2026-08-25T21:00:19+00:00"
     },
-    "workday:intel:JR0286523": {
-      "seen_at": "2026-08-20T08:53:01+00:00"
-    },
     "workday:intel:JR0286524": {
       "seen_at": "2026-08-21T20:30:47+00:00"
-    },
-    "workday:intel:JR0286525": {
-      "seen_at": "2026-08-20T08:53:01+00:00"
     },
     "workday:intel:JR0286526": {
       "seen_at": "2026-08-24T08:41:33+00:00"
@@ -205697,6 +205694,9 @@
     "workday:salesforce:JR273144": {
       "seen_at": "2026-10-09T00:36:33+00:00"
     },
+    "workday:salesforce:JR273146": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
     "workday:salesforce:JR273152": {
       "seen_at": "2026-10-09T00:41:56+00:00"
     },
@@ -205841,6 +205841,9 @@
     "workday:salesforce:JR321301": {
       "seen_at": "2026-09-24T13:26:07+00:00"
     },
+    "workday:salesforce:JR321330": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
     "workday:salesforce:JR321396": {
       "seen_at": "2026-08-24T14:57:16+00:00"
     },
@@ -205868,8 +205871,20 @@
     "workday:salesforce:JR325045": {
       "seen_at": "2026-08-20T09:09:47+00:00"
     },
+    "workday:salesforce:JR325046": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
+    "workday:salesforce:JR325052": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
+    "workday:salesforce:JR325247": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
     "workday:salesforce:JR325478": {
       "seen_at": "2026-10-14T08:26:39+00:00"
+    },
+    "workday:salesforce:JR325655": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
     },
     "workday:salesforce:JR325976": {
       "seen_at": "2026-09-05T06:49:30+00:00"
@@ -205894,6 +205909,9 @@
     },
     "workday:salesforce:JR327919": {
       "seen_at": "2026-09-01T20:44:23+00:00"
+    },
+    "workday:salesforce:JR328426": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
     },
     "workday:salesforce:JR328549": {
       "seen_at": "2026-09-22T22:03:58+00:00"
@@ -206039,6 +206057,9 @@
     "workday:salesforce:JR336715": {
       "seen_at": "2026-08-26T05:34:52+00:00"
     },
+    "workday:salesforce:JR336862": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
     "workday:salesforce:JR337145": {
       "seen_at": "2026-09-17T15:50:17+00:00"
     },
@@ -206107,6 +206128,9 @@
     },
     "workday:salesforce:JR338886": {
       "seen_at": "2026-08-24T20:07:15+00:00"
+    },
+    "workday:salesforce:JR338925": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
     },
     "workday:salesforce:JR339239": {
       "seen_at": "2026-10-08T21:09:29+00:00"
@@ -206986,6 +207010,9 @@
     },
     "workday:salesforce:JR353944": {
       "seen_at": "2026-10-01T07:06:09+00:00"
+    },
+    "workday:salesforce:JR353970": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
     },
     "workday:salesforce:JR353984": {
       "seen_at": "2026-09-09T08:36:16+00:00"
@@ -208642,6 +208669,9 @@
     },
     "workday:salesforce:JR358785": {
       "seen_at": "2026-09-03T10:08:24+00:00"
+    },
+    "workday:salesforce:JR358801": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
     },
     "workday:salesforce:JR358834": {
       "seen_at": "2026-09-03T14:51:10+00:00"
@@ -211484,6 +211514,9 @@
     "workday:salesforce:JR363502": {
       "seen_at": "2026-10-08T21:54:10+00:00"
     },
+    "workday:salesforce:JR363519": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
     "workday:salesforce:JR363530": {
       "seen_at": "2026-10-15T23:35:09+00:00"
     },
@@ -211640,6 +211673,9 @@
     "workday:salesforce:JR363994": {
       "seen_at": "2026-10-15T08:39:18+00:00"
     },
+    "workday:salesforce:JR364000": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
     "workday:salesforce:JR364013": {
       "seen_at": "2026-10-16T09:28:37+00:00"
     },
@@ -211721,6 +211757,9 @@
     "workday:salesforce:JR364295": {
       "seen_at": "2026-10-15T14:57:20+00:00"
     },
+    "workday:salesforce:JR364303": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
+    },
     "workday:salesforce:JR364335": {
       "seen_at": "2026-10-15T18:30:50+00:00"
     },
@@ -211732,6 +211771,9 @@
     },
     "workday:salesforce:JR364376": {
       "seen_at": "2026-10-15T07:43:02+00:00"
+    },
+    "workday:salesforce:JR364377": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
     },
     "workday:salesforce:JR364388": {
       "seen_at": "2026-10-15T10:48:17+00:00"
@@ -211810,6 +211852,9 @@
     },
     "workday:salesforce:JR364790": {
       "seen_at": "2026-10-18T18:47:29+00:00"
+    },
+    "workday:salesforce:JR364793": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
     },
     "workday:sec:R108031": {
       "seen_at": "2026-10-12T15:34:29+00:00"
@@ -218827,6 +218872,9 @@
     },
     "workday:ssctech:R46892": {
       "seen_at": "2026-10-13T19:27:13+00:00"
+    },
+    "workday:ssctech:R46898": {
+      "seen_at": "2026-10-19T08:53:16+00:00"
     },
     "workday:ssctech:R46900": {
       "seen_at": "2026-10-14T13:24:25+00:00"
