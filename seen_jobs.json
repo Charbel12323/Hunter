@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-10-19"
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 3066,
+      "consecutive_failures": 3067,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 6051,
+      "consecutive_failures": 6052,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 12472,
+      "consecutive_failures": 12473,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 9437,
+      "consecutive_failures": 9438,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 3,
+      "consecutive_failures": 4,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1153,8 +1153,8 @@
       "zero_since": null
     },
     "workday/salesforce": {
-      "consecutive_failures": 4,
-      "warned_failures": false,
+      "consecutive_failures": 5,
+      "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 18474,
+      "consecutive_failures": 18475,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -32669,9 +32669,6 @@
     "github:SimplifyJobs/New-Grad-Positions:ebee222c-1071-46b0-848a-7f57af5a18e1": {
       "seen_at": "2026-08-27T23:37:17+00:00"
     },
-    "github:SimplifyJobs/New-Grad-Positions:ec000fcb-cee5-4443-994c-82b8da1f589e": {
-      "seen_at": "2026-08-20T13:07:15+00:00"
-    },
     "github:SimplifyJobs/New-Grad-Positions:ec0efca9-ba6b-47eb-9826-7864eb3520bc": {
       "seen_at": "2026-09-03T05:37:04+00:00"
     },
@@ -46901,9 +46898,6 @@
     "greenhouse:anthropic:5390735008": {
       "seen_at": "2026-10-19T05:47:31+00:00"
     },
-    "greenhouse:anthropic:5390754008": {
-      "seen_at": "2026-08-20T13:07:15+00:00"
-    },
     "greenhouse:anthropic:5390765008": {
       "seen_at": "2026-10-18T14:42:33+00:00"
     },
@@ -48664,6 +48658,9 @@
     },
     "greenhouse:asana:8275152": {
       "seen_at": "2026-10-14T01:36:43+00:00"
+    },
+    "greenhouse:asana:8279050": {
+      "seen_at": "2026-10-19T13:10:21+00:00"
     },
     "greenhouse:asana:8279085": {
       "seen_at": "2026-10-15T17:01:00+00:00"
@@ -75290,9 +75287,6 @@
     "greenhouse:okta:8142155": {
       "seen_at": "2026-10-18T20:22:41+00:00"
     },
-    "greenhouse:okta:8143749": {
-      "seen_at": "2026-08-20T13:07:15+00:00"
-    },
     "greenhouse:okta:8144827": {
       "seen_at": "2026-08-26T18:08:02+00:00"
     },
@@ -91909,6 +91903,9 @@
     },
     "lever:waabi:aaef65c7-d0c3-4155-8a02-505f7c594fa9": {
       "seen_at": "2026-08-24T19:50:29+00:00"
+    },
+    "lever:waabi:aeabecd5-4ab5-457d-949a-1f7766945cd1": {
+      "seen_at": "2026-10-19T13:10:21+00:00"
     },
     "lever:waabi:b8498714-0bac-43bc-9483-f2e280547ebe": {
       "seen_at": "2026-09-26T05:14:22+00:00"
@@ -108770,6 +108767,9 @@
     "workday:cae:124162": {
       "seen_at": "2026-10-09T16:49:31+00:00"
     },
+    "workday:cae:124200": {
+      "seen_at": "2026-10-19T13:10:21+00:00"
+    },
     "workday:cae:124201": {
       "seen_at": "2026-10-13T14:59:36+00:00"
     },
@@ -117622,9 +117622,6 @@
     },
     "workday:cibc:2610585": {
       "seen_at": "2026-09-23T21:23:47+00:00"
-    },
-    "workday:cibc:2610604": {
-      "seen_at": "2026-08-20T13:07:15+00:00"
     },
     "workday:cibc:2610612": {
       "seen_at": "2026-09-12T11:43:29+00:00"
@@ -152096,6 +152093,9 @@
     "workday:hp:3160367": {
       "seen_at": "2026-09-22T18:50:30+00:00"
     },
+    "workday:hp:3160377": {
+      "seen_at": "2026-10-19T13:10:21+00:00"
+    },
     "workday:hp:3160425": {
       "seen_at": "2026-10-08T11:38:32+00:00"
     },
@@ -155468,6 +155468,9 @@
     "workday:hp:UNI4155": {
       "seen_at": "2026-10-19T12:58:36+00:00"
     },
+    "workday:hp:UNI4190": {
+      "seen_at": "2026-10-19T13:10:21+00:00"
+    },
     "workday:hp:UNI4241": {
       "seen_at": "2026-09-03T21:53:16+00:00"
     },
@@ -156952,9 +156955,6 @@
     },
     "workday:hpe:1210451": {
       "seen_at": "2026-09-18T14:35:51+00:00"
-    },
-    "workday:hpe:1210453": {
-      "seen_at": "2026-08-20T13:07:15+00:00"
     },
     "workday:hpe:1210454": {
       "seen_at": "2026-10-06T02:13:36+00:00"
@@ -185048,9 +185048,6 @@
     "workday:ms:PT-JR027977": {
       "seen_at": "2026-09-09T11:47:22+00:00"
     },
-    "workday:ms:PT-JR028816": {
-      "seen_at": "2026-08-20T13:07:15+00:00"
-    },
     "workday:ms:PT-JR030124": {
       "seen_at": "2026-10-13T20:40:01+00:00"
     },
@@ -207128,9 +207125,6 @@
     "workday:salesforce:JR354838": {
       "seen_at": "2026-10-12T11:02:58+00:00"
     },
-    "workday:salesforce:JR354927": {
-      "seen_at": "2026-08-20T13:07:15+00:00"
-    },
     "workday:salesforce:JR354930": {
       "seen_at": "2026-08-25T22:12:09+00:00"
     },
@@ -214367,9 +214361,6 @@
     "workday:snapchat:R0045981": {
       "seen_at": "2026-09-16T20:49:36+00:00"
     },
-    "workday:snapchat:R0045982": {
-      "seen_at": "2026-08-20T13:07:15+00:00"
-    },
     "workday:snapchat:R0046055": {
       "seen_at": "2026-10-07T22:03:46+00:00"
     },
@@ -215377,6 +215368,9 @@
     },
     "workday:sonyglobal:JR-119737": {
       "seen_at": "2026-10-19T12:58:36+00:00"
+    },
+    "workday:sonyglobal:JR-119739": {
+      "seen_at": "2026-10-19T13:10:21+00:00"
     },
     "workday:sonyglobal:JR-119747": {
       "seen_at": "2026-10-14T11:48:04+00:00"
