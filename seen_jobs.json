@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-20"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 3366,
+      "consecutive_failures": 3367,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 6351,
+      "consecutive_failures": 6352,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 12772,
+      "consecutive_failures": 12773,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 9737,
+      "consecutive_failures": 9738,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 18774,
+      "consecutive_failures": 18775,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -58667,6 +58667,9 @@
     "greenhouse:databricks:8885041002": {
       "seen_at": "2026-10-15T15:42:57+00:00"
     },
+    "greenhouse:databricks:8885043002": {
+      "seen_at": "2026-10-20T12:05:13+00:00"
+    },
     "greenhouse:databricks:8885045002": {
       "seen_at": "2026-10-15T08:22:25+00:00"
     },
@@ -96790,6 +96793,9 @@
     },
     "workday:autodesk:26WD100714": {
       "seen_at": "2026-10-01T10:51:43+00:00"
+    },
+    "workday:autodesk:26WD100721": {
+      "seen_at": "2026-10-20T12:05:13+00:00"
     },
     "workday:autodesk:26WD100722": {
       "seen_at": "2026-09-02T18:31:04+00:00"
@@ -195943,6 +195949,9 @@
     },
     "workday:paloaltonetworks:JR-023108": {
       "seen_at": "2026-10-15T18:58:57+00:00"
+    },
+    "workday:paloaltonetworks:JR-023109": {
+      "seen_at": "2026-10-20T12:05:13+00:00"
     },
     "workday:paloaltonetworks:JR-023128": {
       "seen_at": "2026-10-15T07:21:19+00:00"
