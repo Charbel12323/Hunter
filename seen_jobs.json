@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-20"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 3279,
+      "consecutive_failures": 3280,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 6264,
+      "consecutive_failures": 6265,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 12685,
+      "consecutive_failures": 12686,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 9650,
+      "consecutive_failures": 9651,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 18687,
+      "consecutive_failures": 18688,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -73528,6 +73528,12 @@
     },
     "greenhouse:mongodb:8119799": {
       "seen_at": "2026-10-10T21:01:00+00:00"
+    },
+    "greenhouse:mongodb:8119841": {
+      "seen_at": "2026-10-20T05:34:37+00:00"
+    },
+    "greenhouse:mongodb:8119843": {
+      "seen_at": "2026-10-20T05:34:37+00:00"
     },
     "greenhouse:mongodb:8120181": {
       "seen_at": "2026-08-25T14:51:47+00:00"
