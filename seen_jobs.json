@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-10-21"
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 3606,
+      "consecutive_failures": 3607,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 6591,
+      "consecutive_failures": 6592,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 13012,
+      "consecutive_failures": 13013,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 9977,
+      "consecutive_failures": 9978,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,8 +865,8 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 4,
-      "warned_failures": false,
+      "consecutive_failures": 5,
+      "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 19014,
+      "consecutive_failures": 19015,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -161081,6 +161081,9 @@
     "workday:hpe:1217618": {
       "seen_at": "2026-10-15T07:02:53+00:00"
     },
+    "workday:hpe:1217786": {
+      "seen_at": "2026-10-21T06:15:32+00:00"
+    },
     "workday:hpe:1217809": {
       "seen_at": "2026-10-20T10:24:03+00:00"
     },
@@ -179287,6 +179290,12 @@
     },
     "workday:micron:JR112335": {
       "seen_at": "2026-09-16T06:49:00+00:00"
+    },
+    "workday:micron:JR112339": {
+      "seen_at": "2026-10-21T06:15:32+00:00"
+    },
+    "workday:micron:JR112341": {
+      "seen_at": "2026-10-21T06:15:32+00:00"
     },
     "workday:micron:JR112343": {
       "seen_at": "2026-09-24T02:14:52+00:00"
@@ -205963,6 +205972,9 @@
     },
     "workday:redhat:R-059913": {
       "seen_at": "2026-10-14T05:48:50+00:00"
+    },
+    "workday:redhat:R-059926": {
+      "seen_at": "2026-10-21T06:15:32+00:00"
     },
     "workday:redhat:R-059961": {
       "seen_at": "2026-10-14T18:50:42+00:00"
