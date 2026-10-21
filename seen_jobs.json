@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-21"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 3633,
+      "consecutive_failures": 3634,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 6618,
+      "consecutive_failures": 6619,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 13039,
+      "consecutive_failures": 13040,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 10004,
+      "consecutive_failures": 10005,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 3,
+      "consecutive_failures": 4,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 19041,
+      "consecutive_failures": 19042,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -169177,6 +169177,9 @@
     },
     "workday:manulife:JR26101090": {
       "seen_at": "2026-10-21T03:11:47+00:00"
+    },
+    "workday:manulife:JR26101123": {
+      "seen_at": "2026-10-21T08:33:03+00:00"
     },
     "workday:manulife:JR26101166": {
       "seen_at": "2026-10-20T16:31:34+00:00"
