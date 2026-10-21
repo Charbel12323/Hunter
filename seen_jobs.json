@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-21"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 3648,
+      "consecutive_failures": 3649,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 6633,
+      "consecutive_failures": 6634,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 13054,
+      "consecutive_failures": 13055,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 10019,
+      "consecutive_failures": 10020,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 19056,
+      "consecutive_failures": 19057,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -14318,6 +14318,9 @@
     "ashby:mistral.ai:9e468b6c-de66-4f34-8351-fed93bc29310": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
+    "ashby:mistral.ai:9fb51e64-9622-4ea2-8c88-6819071c1d30": {
+      "seen_at": "2026-10-21T09:40:39+00:00"
+    },
     "ashby:mistral.ai:9fc579c8-784c-4b91-bcd0-392f35d13100": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
@@ -25945,9 +25948,6 @@
     },
     "github:SimplifyJobs/New-Grad-Positions:1887b494-3e3f-431a-8c6f-2a8129764087": {
       "seen_at": "2026-08-25T18:34:46+00:00"
-    },
-    "github:SimplifyJobs/New-Grad-Positions:1888f966-2441-40eb-8202-4f8d3a248cc0": {
-      "seen_at": "2026-08-22T09:35:19+00:00"
     },
     "github:SimplifyJobs/New-Grad-Positions:18ba4a82-61a3-43d2-b095-4bc32de8bac1": {
       "seen_at": "2026-09-04T05:37:58+00:00"
@@ -106409,6 +106409,9 @@
     "workday:broadcom:R027459": {
       "seen_at": "2026-10-20T22:15:31+00:00"
     },
+    "workday:broadcom:R027466": {
+      "seen_at": "2026-10-21T09:40:39+00:00"
+    },
     "workday:broadcom:R027467": {
       "seen_at": "2026-10-20T01:06:23+00:00"
     },
@@ -124183,6 +124186,9 @@
     },
     "workday:citi:261002498": {
       "seen_at": "2026-10-16T18:57:16+00:00"
+    },
+    "workday:citi:261002528": {
+      "seen_at": "2026-10-21T09:40:39+00:00"
     },
     "workday:citi:261002532": {
       "seen_at": "2026-10-14T20:37:36+00:00"
@@ -165467,8 +165473,14 @@
     "workday:intel:JR0288281": {
       "seen_at": "2026-10-16T04:16:16+00:00"
     },
+    "workday:intel:JR0288282": {
+      "seen_at": "2026-10-21T09:40:39+00:00"
+    },
     "workday:intel:JR0288286": {
       "seen_at": "2026-10-16T04:27:06+00:00"
+    },
+    "workday:intel:JR0288288": {
+      "seen_at": "2026-10-21T09:40:39+00:00"
     },
     "workday:intel:JR0288289": {
       "seen_at": "2026-10-20T19:48:01+00:00"
@@ -173296,6 +173308,9 @@
     },
     "workday:mastercard:R-291285": {
       "seen_at": "2026-09-30T10:01:56+00:00"
+    },
+    "workday:mastercard:R-291286": {
+      "seen_at": "2026-10-21T09:40:39+00:00"
     },
     "workday:mastercard:R-291287": {
       "seen_at": "2026-09-28T17:39:22+00:00"
@@ -222595,6 +222610,9 @@
     },
     "workday:statestreet:R-797106": {
       "seen_at": "2026-09-03T01:23:52+00:00"
+    },
+    "workday:statestreet:R-797107": {
+      "seen_at": "2026-10-21T09:40:39+00:00"
     },
     "workday:statestreet:R-797110": {
       "seen_at": "2026-10-21T09:29:48+00:00"
