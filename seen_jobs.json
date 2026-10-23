@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 4235,
+      "consecutive_failures": 4236,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 7220,
+      "consecutive_failures": 7221,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 13641,
+      "consecutive_failures": 13642,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 10606,
+      "consecutive_failures": 10607,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 19643,
+      "consecutive_failures": 19644,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -11230,6 +11230,9 @@
     },
     "ashby:harvey:5d2e22a2-f9db-4baa-8398-38f3e52067fc": {
       "seen_at": "2026-10-09T16:32:33+00:00"
+    },
+    "ashby:harvey:5d596cb2-2fc9-4862-9fe8-55362cad90a2": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "ashby:harvey:5d8a05b8-d203-4e69-9e0c-8692433f3bc1": {
       "seen_at": "2026-10-16T09:28:37+00:00"
@@ -126509,6 +126512,9 @@
     "workday:citi:261000837": {
       "seen_at": "2026-10-16T09:23:13+00:00"
     },
+    "workday:citi:261000838": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:citi:261000839": {
       "seen_at": "2026-10-15T14:12:29+00:00"
     },
@@ -127300,6 +127306,9 @@
     },
     "workday:citi:261002144": {
       "seen_at": "2026-10-13T17:05:30+00:00"
+    },
+    "workday:citi:261002145": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:citi:261002146": {
       "seen_at": "2026-10-16T13:52:27+00:00"
@@ -128182,6 +128191,9 @@
     },
     "workday:citi:261004384": {
       "seen_at": "2026-10-22T19:01:57+00:00"
+    },
+    "workday:citi:261004496": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:citi:261004516": {
       "seen_at": "2026-10-23T05:08:53+00:00"
@@ -187871,6 +187883,9 @@
     "workday:micron:JR93302": {
       "seen_at": "2026-09-04T06:31:30+00:00"
     },
+    "workday:micron:JR93391": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR93489": {
       "seen_at": "2026-09-18T23:27:58+00:00"
     },
@@ -187880,8 +187895,14 @@
     "workday:micron:JR93795": {
       "seen_at": "2026-09-02T09:02:03+00:00"
     },
+    "workday:micron:JR93806": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR93862": {
       "seen_at": "2026-09-09T10:34:55+00:00"
+    },
+    "workday:micron:JR93911": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:micron:JR93929": {
       "seen_at": "2026-08-30T14:45:20+00:00"
@@ -187910,6 +187931,24 @@
     "workday:micron:JR94142": {
       "seen_at": "2026-09-07T03:45:23+00:00"
     },
+    "workday:micron:JR94187": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR94254": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR94299": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR94321": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR94501": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR94513": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR94615": {
       "seen_at": "2026-09-15T05:41:24+00:00"
     },
@@ -187937,23 +187976,53 @@
     "workday:micron:JR94993": {
       "seen_at": "2026-10-08T20:30:31+00:00"
     },
+    "workday:micron:JR95050": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR95054": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR95091": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR95250": {
       "seen_at": "2026-09-11T01:41:21+00:00"
     },
     "workday:micron:JR95484": {
       "seen_at": "2026-09-28T11:09:48+00:00"
     },
+    "workday:micron:JR95502": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR95525": {
       "seen_at": "2026-08-28T21:57:34+00:00"
     },
+    "workday:micron:JR95526": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR95537": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR95673": {
       "seen_at": "2026-09-30T17:55:18+00:00"
+    },
+    "workday:micron:JR95699": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:micron:JR95922": {
       "seen_at": "2026-10-13T01:54:47+00:00"
     },
     "workday:micron:JR95955": {
       "seen_at": "2026-10-07T07:28:29+00:00"
+    },
+    "workday:micron:JR96025": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR96063": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR96067": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:micron:JR96142": {
       "seen_at": "2026-09-07T03:45:23+00:00"
@@ -187967,8 +188036,35 @@
     "workday:micron:JR96303": {
       "seen_at": "2026-09-21T09:04:36+00:00"
     },
+    "workday:micron:JR96405": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR96406": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR96410": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR96419": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR96428": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR96429": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR96430": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR96462": {
       "seen_at": "2026-08-30T14:45:20+00:00"
+    },
+    "workday:micron:JR96470": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR96479": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:micron:JR96586": {
       "seen_at": "2026-09-25T00:52:30+00:00"
@@ -187988,8 +188084,14 @@
     "workday:micron:JR96973": {
       "seen_at": "2026-09-03T07:22:39+00:00"
     },
+    "workday:micron:JR97123": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR97269": {
       "seen_at": "2026-10-09T01:21:19+00:00"
+    },
+    "workday:micron:JR97349": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:micron:JR97354": {
       "seen_at": "2026-08-27T02:39:07+00:00"
@@ -188003,11 +188105,26 @@
     "workday:micron:JR97683": {
       "seen_at": "2026-09-24T03:04:53+00:00"
     },
+    "workday:micron:JR97772": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR97820": {
       "seen_at": "2026-09-01T05:50:03+00:00"
     },
     "workday:micron:JR97869": {
       "seen_at": "2026-08-31T01:04:59+00:00"
+    },
+    "workday:micron:JR97870": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR97871": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR97873": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR97874": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:micron:JR97923": {
       "seen_at": "2026-08-31T08:47:35+00:00"
@@ -188027,6 +188144,15 @@
     "workday:micron:JR98177": {
       "seen_at": "2026-09-21T05:04:11+00:00"
     },
+    "workday:micron:JR98201": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR98227": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR98240": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR98296": {
       "seen_at": "2026-09-25T00:57:54+00:00"
     },
@@ -188039,6 +188165,9 @@
     "workday:micron:JR98418": {
       "seen_at": "2026-10-05T05:20:06+00:00"
     },
+    "workday:micron:JR98458": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR98469": {
       "seen_at": "2026-10-09T06:54:31+00:00"
     },
@@ -188050,6 +188179,9 @@
     },
     "workday:micron:JR98591": {
       "seen_at": "2026-09-18T07:18:55+00:00"
+    },
+    "workday:micron:JR98711": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:micron:JR98974": {
       "seen_at": "2026-09-23T18:45:09+00:00"
@@ -188069,6 +188201,9 @@
     "workday:micron:JR99217": {
       "seen_at": "2026-09-23T01:03:17+00:00"
     },
+    "workday:micron:JR99258": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR99361": {
       "seen_at": "2026-08-31T11:42:18+00:00"
     },
@@ -188078,8 +188213,23 @@
     "workday:micron:JR99389": {
       "seen_at": "2026-10-05T11:46:58+00:00"
     },
+    "workday:micron:JR99392": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR99548": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR99579": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR99671": {
       "seen_at": "2026-10-22T20:03:35+00:00"
+    },
+    "workday:micron:JR99710": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
+    "workday:micron:JR99759": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:micron:JR99800": {
       "seen_at": "2026-10-07T23:17:19+00:00"
@@ -188090,8 +188240,14 @@
     "workday:micron:JR99901": {
       "seen_at": "2026-08-26T17:16:05+00:00"
     },
+    "workday:micron:JR99948": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:micron:JR99957": {
       "seen_at": "2026-08-26T07:29:58+00:00"
+    },
+    "workday:micron:JR99965": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:micron:JR99970": {
       "seen_at": "2026-09-29T03:11:04+00:00"
@@ -214559,6 +214715,9 @@
     "workday:salesforce:JR356839": {
       "seen_at": "2026-08-26T10:33:36+00:00"
     },
+    "workday:salesforce:JR356841": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
+    },
     "workday:salesforce:JR356845": {
       "seen_at": "2026-08-26T19:44:02+00:00"
     },
@@ -228425,9 +228584,6 @@
     "workday:statestreet:R-796472": {
       "seen_at": "2026-08-25T04:15:00+00:00"
     },
-    "workday:statestreet:R-796474": {
-      "seen_at": "2026-08-24T06:37:04+00:00"
-    },
     "workday:statestreet:R-796477": {
       "seen_at": "2026-09-04T03:07:53+00:00"
     },
@@ -233404,6 +233560,9 @@
     },
     "workday:statestreet:R-800180": {
       "seen_at": "2026-10-23T06:26:58+00:00"
+    },
+    "workday:statestreet:R-800182": {
+      "seen_at": "2026-10-23T06:40:20+00:00"
     },
     "workday:sunlife:JR00114378": {
       "seen_at": "2026-09-29T14:52:02+00:00"
