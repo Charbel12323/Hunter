@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-10-23"
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 4375,
+      "consecutive_failures": 4376,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 7360,
+      "consecutive_failures": 7361,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 13781,
+      "consecutive_failures": 13782,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 10746,
+      "consecutive_failures": 10747,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,13 +865,13 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "netflix/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 19783,
+      "consecutive_failures": 19784,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -12761,6 +12761,9 @@
     "ashby:lambda:904bd81c-7826-4728-a597-9138cd812c8f": {
       "seen_at": "2026-10-06T23:32:27+00:00"
     },
+    "ashby:lambda:91389f25-49c6-41e7-bcfc-747d4f5a25e9": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
     "ashby:lambda:938d8192-b8e3-432f-b0cb-924755a0ce4d": {
       "seen_at": "2026-09-23T19:30:49+00:00"
     },
@@ -22475,9 +22478,6 @@
     "ashby:sierra:bb4e7a94-5a6c-4dd0-8121-8c95a94c14b6": {
       "seen_at": "2026-10-14T18:17:20+00:00"
     },
-    "ashby:sierra:bb9153b1-ea92-44bd-b286-59675a043850": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "ashby:sierra:bbef339c-3365-40df-804b-ece245386b43": {
       "seen_at": "2026-09-06T16:29:05+00:00"
     },
@@ -22498,9 +22498,6 @@
     },
     "ashby:sierra:c25ca18c-dbe6-439d-9a40-ce23b40c323c": {
       "seen_at": "2026-09-06T16:29:05+00:00"
-    },
-    "ashby:sierra:c66b30fc-9588-4699-85c1-2166b23b8778": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "ashby:sierra:c729c633-0376-436e-8f2b-1501088b85b0": {
       "seen_at": "2026-09-23T17:08:14+00:00"
@@ -41926,9 +41923,6 @@
     },
     "greenhouse:7shifts:6136142004": {
       "seen_at": "2026-10-05T14:29:38+00:00"
-    },
-    "greenhouse:7shifts:6151758004": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "greenhouse:7shifts:6177720004": {
       "seen_at": "2026-09-01T15:42:35+00:00"
@@ -61505,9 +61499,6 @@
     "greenhouse:doordashusa:6375214": {
       "seen_at": "2026-10-02T14:41:25+00:00"
     },
-    "greenhouse:doordashusa:6385866": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "greenhouse:doordashusa:6394889": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
@@ -69494,9 +69485,6 @@
     "greenhouse:gleanwork:4723754005": {
       "seen_at": "2026-10-13T19:04:37+00:00"
     },
-    "greenhouse:gleanwork:4724189005": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "greenhouse:gleanwork:4724225005": {
       "seen_at": "2026-10-13T20:51:24+00:00"
     },
@@ -71089,9 +71077,6 @@
     },
     "greenhouse:instacart:8154308": {
       "seen_at": "2026-10-23T16:54:00+00:00"
-    },
-    "greenhouse:instacart:8154479": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "greenhouse:instacart:8155140": {
       "seen_at": "2026-08-24T20:51:47+00:00"
@@ -75913,9 +75898,6 @@
     },
     "greenhouse:okta:8073066": {
       "seen_at": "2026-09-26T05:14:22+00:00"
-    },
-    "greenhouse:okta:8073082": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "greenhouse:okta:8074824": {
       "seen_at": "2026-10-18T15:49:23+00:00"
@@ -94385,6 +94367,9 @@
     "shopify:shopify:13402618-643e-41b0-b866-d8748a1c130e": {
       "seen_at": "2026-09-19T19:07:12+00:00"
     },
+    "shopify:shopify:16115039-831f-4575-a2bb-1350fb831353": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
     "shopify:shopify:16f3bd11-ff27-441f-87a5-ac28315cfe5b": {
       "seen_at": "2026-09-19T19:07:12+00:00"
     },
@@ -94426,6 +94411,9 @@
     },
     "shopify:shopify:251eebe9-97e4-4fda-b7e7-236e2d04fc66": {
       "seen_at": "2026-09-19T19:07:12+00:00"
+    },
+    "shopify:shopify:2bb8bb11-eb59-4303-bea9-09391d06e72f": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
     },
     "shopify:shopify:2c62d9d7-3f52-42b3-a51d-3a7f3ed03679": {
       "seen_at": "2026-09-28T18:48:50+00:00"
@@ -94484,8 +94472,14 @@
     "shopify:shopify:42cccdf8-95a2-4fd1-bfb1-7205b277b9c8": {
       "seen_at": "2026-10-22T01:52:49+00:00"
     },
+    "shopify:shopify:44213c3b-68dc-448e-9fef-52815a93347a": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
     "shopify:shopify:44bd4c1c-6887-470f-90e0-b470f234fe49": {
       "seen_at": "2026-09-19T19:07:12+00:00"
+    },
+    "shopify:shopify:453ef67b-70fa-4029-a904-97e92df2a40a": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
     },
     "shopify:shopify:457042ce-a4b6-4769-a932-3c181f46470f": {
       "seen_at": "2026-09-30T18:24:19+00:00"
@@ -94541,6 +94535,9 @@
     "shopify:shopify:5f95adcc-b190-4729-8e41-e3486fcbfa1f": {
       "seen_at": "2026-09-19T19:07:12+00:00"
     },
+    "shopify:shopify:619bdbb7-04f9-4364-95c3-d73f6ee95cc4": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
     "shopify:shopify:61cd1a6d-9bd2-450e-9845-b3dc282f9288": {
       "seen_at": "2026-10-20T22:03:27+00:00"
     },
@@ -94552,6 +94549,9 @@
     },
     "shopify:shopify:6387b485-f57b-42b7-859a-702e56bfb12c": {
       "seen_at": "2026-09-19T19:07:12+00:00"
+    },
+    "shopify:shopify:6505dd5b-a464-44c2-8ffb-253cd1a34b54": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
     },
     "shopify:shopify:6574fadd-6c59-4b79-b5f7-1092dc00e78a": {
       "seen_at": "2026-10-16T19:09:31+00:00"
@@ -94582,6 +94582,9 @@
     },
     "shopify:shopify:731ad829-1800-4964-be1b-e4f44e1f109c": {
       "seen_at": "2026-09-19T19:07:12+00:00"
+    },
+    "shopify:shopify:741105f5-0820-4dad-9343-48cd80f0e7d2": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
     },
     "shopify:shopify:766cb969-1073-4f53-963d-92d0beccde9e": {
       "seen_at": "2026-09-19T19:07:12+00:00"
@@ -94640,6 +94643,12 @@
     "shopify:shopify:95eb987e-13ca-447b-9d19-0e42aa5ce40c": {
       "seen_at": "2026-09-19T19:07:12+00:00"
     },
+    "shopify:shopify:9a87f9c5-b7cc-47d4-8e45-08c4604f4118": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
+    "shopify:shopify:9b289b35-066b-4e4a-aa54-df2e002588f4": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
     "shopify:shopify:9c4c8701-666c-4015-9b40-7e1bd4e25348": {
       "seen_at": "2026-09-19T19:07:12+00:00"
     },
@@ -94679,6 +94688,9 @@
     "shopify:shopify:affebff3-f5c5-4283-b4d6-75befa11e7a1": {
       "seen_at": "2026-09-19T19:07:12+00:00"
     },
+    "shopify:shopify:b2d717e8-264c-4e06-8e3c-d9e341b20080": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
     "shopify:shopify:b464a8e4-bed0-47e9-bbd6-ee528610a0a5": {
       "seen_at": "2026-09-19T19:07:12+00:00"
     },
@@ -94693,6 +94705,12 @@
     },
     "shopify:shopify:bc82a976-cfef-48b5-8c2d-8a323f3114cf": {
       "seen_at": "2026-09-21T21:02:24+00:00"
+    },
+    "shopify:shopify:bcd9e565-c7d4-4a1e-a447-70b49d0ad9d2": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
+    "shopify:shopify:bcde7f89-1d9f-4582-942b-c983ac1c9448": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
     },
     "shopify:shopify:be6a45e8-5c08-43b0-8d23-8549cc1d7197": {
       "seen_at": "2026-09-19T19:07:12+00:00"
@@ -94757,6 +94775,9 @@
     "shopify:shopify:d9993b7d-d973-409c-9da3-0c8d48cff776": {
       "seen_at": "2026-09-19T19:07:12+00:00"
     },
+    "shopify:shopify:db9432e7-637b-442b-b5c6-8068be623426": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
     "shopify:shopify:e097982e-842a-46c0-8593-db41c80f2224": {
       "seen_at": "2026-09-19T19:07:12+00:00"
     },
@@ -94789,6 +94810,9 @@
     },
     "shopify:shopify:ed446689-e031-4f41-aa1d-e0de6a5940c8": {
       "seen_at": "2026-09-19T19:07:12+00:00"
+    },
+    "shopify:shopify:ee6c7782-e250-4c40-9e43-661536ae72d4": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
     },
     "shopify:shopify:ef12f6c3-34f8-4e9e-9d92-c549f16a3848": {
       "seen_at": "2026-09-21T21:02:24+00:00"
@@ -98416,6 +98440,9 @@
     },
     "workday:analogdevices:R267263": {
       "seen_at": "2026-10-23T12:22:37+00:00"
+    },
+    "workday:analogdevices:R267269": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
     },
     "workday:analogdevices:R267291": {
       "seen_at": "2026-10-22T07:02:38+00:00"
@@ -111305,9 +111332,6 @@
     "workday:canadiantirecorporation:JR164169": {
       "seen_at": "2026-08-24T20:07:15+00:00"
     },
-    "workday:canadiantirecorporation:JR164188": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "workday:canadiantirecorporation:JR164199": {
       "seen_at": "2026-08-26T19:12:25+00:00"
     },
@@ -118711,9 +118735,6 @@
     },
     "workday:capitalone:R999012": {
       "seen_at": "2026-08-24T19:30:22+00:00"
-    },
-    "workday:capitalone:R999015": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "workday:capitalone:R999016": {
       "seen_at": "2026-08-24T18:13:49+00:00"
@@ -128333,6 +128354,9 @@
     "workday:citi:261004816": {
       "seen_at": "2026-10-23T16:59:29+00:00"
     },
+    "workday:citi:261004838": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
     "workday:citi:26930832": {
       "seen_at": "2026-10-14T07:25:43+00:00"
     },
@@ -131201,9 +131225,6 @@
     "workday:citi:26986807": {
       "seen_at": "2026-08-24T18:51:25+00:00"
     },
-    "workday:citi:26986815": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "workday:citi:26986821": {
       "seen_at": "2026-09-08T14:07:14+00:00"
     },
@@ -132517,9 +132538,6 @@
     },
     "workday:citi:26989198": {
       "seen_at": "2026-09-10T06:58:32+00:00"
-    },
-    "workday:citi:26989200": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "workday:citi:26989201": {
       "seen_at": "2026-09-01T12:07:53+00:00"
@@ -153205,9 +153223,6 @@
     },
     "workday:fmr:2133378": {
       "seen_at": "2026-10-13T14:59:36+00:00"
-    },
-    "workday:fmr:2133380": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "workday:fmr:2133381": {
       "seen_at": "2026-09-29T04:01:51+00:00"
@@ -200879,9 +200894,6 @@
     "workday:paloaltonetworks:JR-019021": {
       "seen_at": "2026-09-22T17:02:44+00:00"
     },
-    "workday:paloaltonetworks:JR-019023": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "workday:paloaltonetworks:JR-019026": {
       "seen_at": "2026-10-11T08:54:42+00:00"
     },
@@ -207254,9 +207266,6 @@
     "workday:rbc:R-0000185594": {
       "seen_at": "2026-08-25T21:34:45+00:00"
     },
-    "workday:rbc:R-0000185595": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "workday:rbc:R-0000185601": {
       "seen_at": "2026-09-01T20:44:23+00:00"
     },
@@ -212131,9 +212140,6 @@
     },
     "workday:redhat:R-058905": {
       "seen_at": "2026-09-17T18:33:40+00:00"
-    },
-    "workday:redhat:R-058912": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "workday:redhat:R-058913": {
       "seen_at": "2026-09-16T05:36:21+00:00"
@@ -222431,9 +222437,6 @@
     "workday:snyk:JR100794": {
       "seen_at": "2026-08-24T18:51:25+00:00"
     },
-    "workday:snyk:JR100795": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "workday:snyk:JR100808": {
       "seen_at": "2026-09-02T16:27:36+00:00"
     },
@@ -227078,9 +227081,6 @@
     "workday:statestreet:R-791331": {
       "seen_at": "2026-10-23T09:40:08+00:00"
     },
-    "workday:statestreet:R-791339": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "workday:statestreet:R-791347": {
       "seen_at": "2026-10-16T08:09:49+00:00"
     },
@@ -228301,9 +228301,6 @@
     },
     "workday:statestreet:R-796097": {
       "seen_at": "2026-10-05T18:38:18+00:00"
-    },
-    "workday:statestreet:R-796104": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "workday:statestreet:R-796149": {
       "seen_at": "2026-09-08T09:55:54+00:00"
@@ -235187,6 +235184,9 @@
     "workday:sunlife:JR00129041": {
       "seen_at": "2026-10-21T09:57:37+00:00"
     },
+    "workday:sunlife:JR00129058": {
+      "seen_at": "2026-10-23T18:07:49+00:00"
+    },
     "workday:sunlife:JR00129062": {
       "seen_at": "2026-10-22T17:36:28+00:00"
     },
@@ -236354,9 +236354,6 @@
     "workday:td:R_1504245": {
       "seen_at": "2026-09-08T15:22:42+00:00"
     },
-    "workday:td:R_1504258": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "workday:td:R_1504266": {
       "seen_at": "2026-08-24T20:15:51+00:00"
     },
@@ -236870,9 +236867,6 @@
     "workday:td:R_1506456": {
       "seen_at": "2026-08-25T16:34:16+00:00"
     },
-    "workday:td:R_1506476": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "workday:td:R_1506477": {
       "seen_at": "2026-08-26T21:08:24+00:00"
     },
@@ -236881,9 +236875,6 @@
     },
     "workday:td:R_1506489": {
       "seen_at": "2026-08-27T16:53:05+00:00"
-    },
-    "workday:td:R_1506511": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "workday:td:R_1506513": {
       "seen_at": "2026-09-04T22:17:12+00:00"
@@ -236981,9 +236972,6 @@
     "workday:td:R_1506729": {
       "seen_at": "2026-08-25T23:58:23+00:00"
     },
-    "workday:td:R_1506730": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
-    },
     "workday:td:R_1506735": {
       "seen_at": "2026-08-31T22:20:02+00:00"
     },
@@ -237016,9 +237004,6 @@
     },
     "workday:td:R_1506814": {
       "seen_at": "2026-08-25T17:07:58+00:00"
-    },
-    "workday:td:R_1506819": {
-      "seen_at": "2026-08-24T18:04:37+00:00"
     },
     "workday:td:R_1506829": {
       "seen_at": "2026-09-01T17:57:27+00:00"
