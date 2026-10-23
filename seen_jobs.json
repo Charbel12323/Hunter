@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-23"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 4161,
+      "consecutive_failures": 4162,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 7146,
+      "consecutive_failures": 7147,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 13567,
+      "consecutive_failures": 13568,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 10532,
+      "consecutive_failures": 10533,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,13 +865,13 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 3,
+      "consecutive_failures": 4,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "netflix/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 19569,
+      "consecutive_failures": 19570,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -187523,6 +187523,9 @@
     "workday:micron:JR115686": {
       "seen_at": "2026-10-21T19:22:19+00:00"
     },
+    "workday:micron:JR115878": {
+      "seen_at": "2026-10-23T01:03:06+00:00"
+    },
     "workday:micron:JR43741": {
       "seen_at": "2026-09-24T21:49:54+00:00"
     },
@@ -212770,6 +212773,9 @@
     },
     "workday:salesforce:JR324607": {
       "seen_at": "2026-10-14T19:41:49+00:00"
+    },
+    "workday:salesforce:JR325032": {
+      "seen_at": "2026-10-23T01:03:06+00:00"
     },
     "workday:salesforce:JR325037": {
       "seen_at": "2026-10-14T08:21:15+00:00"
