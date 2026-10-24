@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-24"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 4761,
+      "consecutive_failures": 4762,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 7746,
+      "consecutive_failures": 7747,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 14167,
+      "consecutive_failures": 14168,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 11132,
+      "consecutive_failures": 11133,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 20169,
+      "consecutive_failures": 20170,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -12514,9 +12514,6 @@
     },
     "ashby:lambda:045aa6ea-bd2b-421e-be1c-ff60fe806ae3": {
       "seen_at": "2026-10-15T01:15:54+00:00"
-    },
-    "ashby:lambda:04b3e06c-6403-48c6-84b2-c7b849248afc": {
-      "seen_at": "2026-08-25T23:14:48+00:00"
     },
     "ashby:lambda:061cf79b-0e95-4082-8805-5822499441f1": {
       "seen_at": "2026-10-02T22:49:32+00:00"
@@ -54889,9 +54886,6 @@
     },
     "greenhouse:databricks:7795026002": {
       "seen_at": "2026-10-08T20:02:45+00:00"
-    },
-    "greenhouse:databricks:7803651002": {
-      "seen_at": "2026-08-25T23:14:48+00:00"
     },
     "greenhouse:databricks:7807722002": {
       "seen_at": "2026-09-03T22:12:55+00:00"
@@ -126656,9 +126650,6 @@
     "workday:citi:26951853": {
       "seen_at": "2026-08-28T15:39:48+00:00"
     },
-    "workday:citi:26951954": {
-      "seen_at": "2026-08-25T23:14:48+00:00"
-    },
     "workday:citi:26952118": {
       "seen_at": "2026-09-01T14:08:20+00:00"
     },
@@ -131110,9 +131101,6 @@
     },
     "workday:citi:26990210": {
       "seen_at": "2026-08-27T20:37:34+00:00"
-    },
-    "workday:citi:26990218": {
-      "seen_at": "2026-08-25T23:14:48+00:00"
     },
     "workday:citi:26990230": {
       "seen_at": "2026-08-26T14:40:19+00:00"
@@ -179147,9 +179135,6 @@
     "workday:micron:JR109585": {
       "seen_at": "2026-08-26T19:12:25+00:00"
     },
-    "workday:micron:JR109593": {
-      "seen_at": "2026-08-25T23:14:48+00:00"
-    },
     "workday:micron:JR109595": {
       "seen_at": "2026-08-27T00:27:25+00:00"
     },
@@ -203498,9 +203483,6 @@
     "workday:rbc:R-0000185751": {
       "seen_at": "2026-08-26T12:05:39+00:00"
     },
-    "workday:rbc:R-0000185752": {
-      "seen_at": "2026-08-25T23:14:48+00:00"
-    },
     "workday:rbc:R-0000185758": {
       "seen_at": "2026-09-02T18:34:30+00:00"
     },
@@ -210727,9 +210709,6 @@
     },
     "workday:salesforce:JR357445": {
       "seen_at": "2026-08-27T16:53:05+00:00"
-    },
-    "workday:salesforce:JR357449": {
-      "seen_at": "2026-08-25T23:14:48+00:00"
     },
     "workday:salesforce:JR357453": {
       "seen_at": "2026-09-16T15:29:15+00:00"
@@ -224212,9 +224191,6 @@
     },
     "workday:statestreet:R-796408": {
       "seen_at": "2026-10-02T23:56:03+00:00"
-    },
-    "workday:statestreet:R-796450": {
-      "seen_at": "2026-08-25T23:14:48+00:00"
     },
     "workday:statestreet:R-796462": {
       "seen_at": "2026-08-28T15:39:48+00:00"
@@ -238801,9 +238777,6 @@
     },
     "workday:trendmicro:R0010124": {
       "seen_at": "2026-09-13T21:02:05+00:00"
-    },
-    "workday:trendmicro:R0010138": {
-      "seen_at": "2026-08-25T23:14:48+00:00"
     },
     "workday:trendmicro:R0010139": {
       "seen_at": "2026-08-26T04:41:50+00:00"
