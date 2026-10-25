@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-25"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 4926,
+      "consecutive_failures": 4927,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 7911,
+      "consecutive_failures": 7912,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 14332,
+      "consecutive_failures": 14333,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 11297,
+      "consecutive_failures": 11298,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 20334,
+      "consecutive_failures": 20335,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -8908,6 +8908,9 @@
     },
     "ashby:decagon:c7e99d26-0b12-4379-a36e-194e282f86d4": {
       "seen_at": "2026-10-10T22:07:33+00:00"
+    },
+    "ashby:decagon:c96c51ac-7acb-4ced-ab1c-86f458be5fbd": {
+      "seen_at": "2026-10-25T11:55:05+00:00"
     },
     "ashby:decagon:c9d15c3c-e5e8-4b5b-8b28-dbeb6d5da2c0": {
       "seen_at": "2026-09-17T09:49:53+00:00"
@@ -44912,9 +44915,6 @@
     "greenhouse:anthropic:5358114008": {
       "seen_at": "2026-08-31T15:49:17+00:00"
     },
-    "greenhouse:anthropic:5358116008": {
-      "seen_at": "2026-08-26T11:49:51+00:00"
-    },
     "greenhouse:anthropic:5358118008": {
       "seen_at": "2026-10-09T16:37:59+00:00"
     },
@@ -56809,9 +56809,6 @@
     },
     "greenhouse:databricks:8720999002": {
       "seen_at": "2026-08-28T19:40:14+00:00"
-    },
-    "greenhouse:databricks:8721001002": {
-      "seen_at": "2026-08-26T11:49:51+00:00"
     },
     "greenhouse:databricks:8721003002": {
       "seen_at": "2026-09-01T14:55:31+00:00"
