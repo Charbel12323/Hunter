@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-25"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 4813,
+      "consecutive_failures": 4814,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 7798,
+      "consecutive_failures": 7799,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 14219,
+      "consecutive_failures": 14220,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 11184,
+      "consecutive_failures": 11185,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 20221,
+      "consecutive_failures": 20222,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -84299,6 +84299,12 @@
     "greenhouse:tailscale:4744879005": {
       "seen_at": "2026-10-17T03:02:37+00:00"
     },
+    "greenhouse:tailscale:4746913005": {
+      "seen_at": "2026-10-25T03:35:27+00:00"
+    },
+    "greenhouse:tailscale:4746917005": {
+      "seen_at": "2026-10-25T03:35:27+00:00"
+    },
     "greenhouse:tenstorrent:4118635007": {
       "seen_at": "2026-09-29T13:09:44+00:00"
     },
@@ -108521,9 +108527,6 @@
     "workday:cae:123436": {
       "seen_at": "2026-10-24T19:58:49+00:00"
     },
-    "workday:cae:123439": {
-      "seen_at": "2026-08-26T03:31:16+00:00"
-    },
     "workday:cae:123448": {
       "seen_at": "2026-10-08T19:28:28+00:00"
     },
@@ -130819,9 +130822,6 @@
     },
     "workday:citi:26990268": {
       "seen_at": "2026-09-02T14:00:06+00:00"
-    },
-    "workday:citi:26990269": {
-      "seen_at": "2026-08-26T03:34:40+00:00"
     },
     "workday:citi:26990271": {
       "seen_at": "2026-09-15T07:01:08+00:00"
