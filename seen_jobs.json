@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 4783,
+      "consecutive_failures": 4784,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 7768,
+      "consecutive_failures": 7769,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 14189,
+      "consecutive_failures": 14190,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 11154,
+      "consecutive_failures": 11155,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,8 +865,8 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 4,
-      "warned_failures": false,
+      "consecutive_failures": 5,
+      "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 20191,
+      "consecutive_failures": 20192,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -82547,6 +82547,9 @@
     "greenhouse:stripe:8157838": {
       "seen_at": "2026-08-31T23:26:50+00:00"
     },
+    "greenhouse:stripe:8158082": {
+      "seen_at": "2026-10-25T01:18:05+00:00"
+    },
     "greenhouse:stripe:8158086": {
       "seen_at": "2026-10-06T21:46:51+00:00"
     },
@@ -105964,12 +105967,6 @@
     },
     "workday:broadcom:R026941": {
       "seen_at": "2026-08-26T01:29:23+00:00"
-    },
-    "workday:broadcom:R026942": {
-      "seen_at": "2026-08-26T01:13:06+00:00"
-    },
-    "workday:broadcom:R026943": {
-      "seen_at": "2026-08-26T01:13:06+00:00"
     },
     "workday:broadcom:R026947": {
       "seen_at": "2026-08-28T19:40:14+00:00"
@@ -202855,9 +202852,6 @@
     },
     "workday:rbc:R-0000185164": {
       "seen_at": "2026-09-01T21:14:20+00:00"
-    },
-    "workday:rbc:R-0000185168": {
-      "seen_at": "2026-08-26T01:13:06+00:00"
     },
     "workday:rbc:R-0000185186": {
       "seen_at": "2026-08-26T19:52:24+00:00"
