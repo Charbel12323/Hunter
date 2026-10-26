@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-26"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 5337,
+      "consecutive_failures": 5338,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 8322,
+      "consecutive_failures": 8323,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 14743,
+      "consecutive_failures": 14744,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 11708,
+      "consecutive_failures": 11709,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 2,
+      "consecutive_failures": 3,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 20745,
+      "consecutive_failures": 20746,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -14573,6 +14573,9 @@
     "ashby:mistral.ai:98a9db0b-7606-4c42-abdf-b972aa157ff3": {
       "seen_at": "2026-09-04T19:33:51+00:00"
     },
+    "ashby:mistral.ai:98e96edd-e91f-4558-a248-4e0a2765845b": {
+      "seen_at": "2026-10-26T22:19:41+00:00"
+    },
     "ashby:mistral.ai:994971b0-a0bb-431f-81de-c8c7568ff681": {
       "seen_at": "2026-09-23T07:55:47+00:00"
     },
@@ -16420,6 +16423,9 @@
     },
     "ashby:openai:2bdd1b8b-2883-40fb-b006-583959ad4c5f": {
       "seen_at": "2026-10-13T19:32:39+00:00"
+    },
+    "ashby:openai:2c646ef9-6f93-4124-9d51-964d2c5aa783": {
+      "seen_at": "2026-10-26T22:19:41+00:00"
     },
     "ashby:openai:2c6a5737-aef9-4fe3-802c-295a4097e007": {
       "seen_at": "2026-10-15T20:12:59+00:00"
@@ -104444,6 +104450,9 @@
     "workday:bmo:R260029713": {
       "seen_at": "2026-10-22T21:24:10+00:00"
     },
+    "workday:bmo:R260029729": {
+      "seen_at": "2026-10-26T22:19:41+00:00"
+    },
     "workday:bmo:R260029739": {
       "seen_at": "2026-10-23T20:39:45+00:00"
     },
@@ -146506,6 +146515,9 @@
     },
     "workday:fiserv:R-10403878": {
       "seen_at": "2026-10-06T05:00:04+00:00"
+    },
+    "workday:fiserv:R-10403879": {
+      "seen_at": "2026-10-26T22:19:41+00:00"
     },
     "workday:fiserv:R-10403880": {
       "seen_at": "2026-10-13T21:24:54+00:00"
@@ -193724,8 +193736,14 @@
     "workday:nvidia:JR2028680": {
       "seen_at": "2026-10-25T21:51:22+00:00"
     },
+    "workday:nvidia:JR2028696": {
+      "seen_at": "2026-10-26T22:19:41+00:00"
+    },
     "workday:nvidia:JR2028706": {
       "seen_at": "2026-10-26T16:33:34+00:00"
+    },
+    "workday:nvidia:JR2028848": {
+      "seen_at": "2026-10-26T22:19:41+00:00"
     },
     "workday:paloaltonetworks:JR-008267": {
       "seen_at": "2026-09-21T11:53:16+00:00"
