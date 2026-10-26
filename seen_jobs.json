@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-26"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 5162,
+      "consecutive_failures": 5163,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 8147,
+      "consecutive_failures": 8148,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 14568,
+      "consecutive_failures": 14569,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 11533,
+      "consecutive_failures": 11534,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 20570,
+      "consecutive_failures": 20571,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -18415,6 +18415,9 @@
     },
     "ashby:openai:c8d3feee-2b6a-4ef7-b8c0-90bbd1381c1f": {
       "seen_at": "2026-09-02T21:10:23+00:00"
+    },
+    "ashby:openai:c8eda1e9-10f9-4fc8-b88a-042ea6751d5b": {
+      "seen_at": "2026-10-26T06:07:06+00:00"
     },
     "ashby:openai:c955617d-f465-4f7a-b57c-98284fd14777": {
       "seen_at": "2026-10-22T18:50:22+00:00"
@@ -144715,6 +144718,9 @@
     },
     "workday:fiserv:R-10399044": {
       "seen_at": "2026-10-13T17:56:12+00:00"
+    },
+    "workday:fiserv:R-10399045": {
+      "seen_at": "2026-10-26T06:07:06+00:00"
     },
     "workday:fiserv:R-10399047": {
       "seen_at": "2026-09-28T15:23:05+00:00"
