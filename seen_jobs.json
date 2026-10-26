@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": null
+      "zero_since": "2026-10-26"
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 5201,
+      "consecutive_failures": 5202,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 8186,
+      "consecutive_failures": 8187,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 14607,
+      "consecutive_failures": 14608,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 11572,
+      "consecutive_failures": 11573,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 20609,
+      "consecutive_failures": 20610,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -14402,6 +14402,9 @@
     "ashby:mistral.ai:7a95bd55-84fc-40c6-ba0f-d2b0426ad3f1": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
+    "ashby:mistral.ai:7b7f4718-a517-4a2f-8e6e-ef8b0508c84c": {
+      "seen_at": "2026-10-26T09:40:16+00:00"
+    },
     "ashby:mistral.ai:8085c274-0b90-46a2-a676-d67a9cb93795": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
@@ -24083,6 +24086,9 @@
     "ashby:supabase:6c9de03c-e289-4612-9045-492985d0274b": {
       "seen_at": "2026-09-14T13:32:07+00:00"
     },
+    "ashby:supabase:6f7656fc-9983-48be-bbd3-8b40e0e3027a": {
+      "seen_at": "2026-10-26T09:40:16+00:00"
+    },
     "ashby:supabase:715ba1ea-bd0b-4960-9d5a-defca99f2e24": {
       "seen_at": "2026-09-15T15:10:56+00:00"
     },
@@ -28082,9 +28088,6 @@
     "github:SimplifyJobs/New-Grad-Positions:5a3c434e-df72-4477-be45-8c8362897674": {
       "seen_at": "2026-09-04T05:37:58+00:00"
     },
-    "github:SimplifyJobs/New-Grad-Positions:5a57537d-9e34-437b-b912-d582e9641b85": {
-      "seen_at": "2026-08-27T09:38:03+00:00"
-    },
     "github:SimplifyJobs/New-Grad-Positions:5a8c2ad6-24ca-439a-bee5-659a55c1f9a7": {
       "seen_at": "2026-08-27T16:53:05+00:00"
     },
@@ -28277,9 +28280,6 @@
     "github:SimplifyJobs/New-Grad-Positions:6297a930-5110-49fa-b28f-b55e8b3af43e": {
       "seen_at": "2026-09-03T18:36:07+00:00"
     },
-    "github:SimplifyJobs/New-Grad-Positions:629aa3b3-db84-4aee-bb4d-ac8e399aaf08": {
-      "seen_at": "2026-08-27T09:38:03+00:00"
-    },
     "github:SimplifyJobs/New-Grad-Positions:62b8c02d-ce43-4230-86fa-eda7032e1a3e": {
       "seen_at": "2026-09-03T10:39:43+00:00"
     },
@@ -28390,9 +28390,6 @@
     },
     "github:SimplifyJobs/New-Grad-Positions:65a2cf79-2211-4774-94a9-b1124201de35": {
       "seen_at": "2026-09-01T16:34:52+00:00"
-    },
-    "github:SimplifyJobs/New-Grad-Positions:65afd4db-ae95-4d18-b645-d412a7259056": {
-      "seen_at": "2026-08-27T09:38:03+00:00"
     },
     "github:SimplifyJobs/New-Grad-Positions:65b3f57a-acd4-4c2a-b15f-4e58dc9de499": {
       "seen_at": "2026-08-28T23:11:52+00:00"
@@ -31816,9 +31813,6 @@
     },
     "github:SimplifyJobs/New-Grad-Positions:eb972e99-55bb-4019-9689-55a6b98d6bec": {
       "seen_at": "2026-09-03T10:39:43+00:00"
-    },
-    "github:SimplifyJobs/New-Grad-Positions:eba0dcb3-15c0-454b-8598-e3ad330b7bb8": {
-      "seen_at": "2026-08-27T09:38:03+00:00"
     },
     "github:SimplifyJobs/New-Grad-Positions:ebc85430-6db3-4aec-b94c-f1a42c8f21e8": {
       "seen_at": "2026-09-03T21:19:50+00:00"
@@ -50014,6 +50008,9 @@
     },
     "greenhouse:cloudflare:8155946": {
       "seen_at": "2026-10-24T13:08:39+00:00"
+    },
+    "greenhouse:cloudflare:8155990": {
+      "seen_at": "2026-10-26T09:40:16+00:00"
     },
     "greenhouse:cloudflare:8157281": {
       "seen_at": "2026-09-21T16:02:06+00:00"
@@ -76387,6 +76384,9 @@
     },
     "greenhouse:robinhood:8142963": {
       "seen_at": "2026-09-14T12:05:45+00:00"
+    },
+    "greenhouse:robinhood:8144996": {
+      "seen_at": "2026-10-26T09:40:16+00:00"
     },
     "greenhouse:robinhood:8156916": {
       "seen_at": "2026-09-09T17:02:15+00:00"
@@ -127835,9 +127835,6 @@
     "workday:citi:26988805": {
       "seen_at": "2026-09-07T07:41:49+00:00"
     },
-    "workday:citi:26988807": {
-      "seen_at": "2026-08-27T09:38:03+00:00"
-    },
     "workday:citi:26988815": {
       "seen_at": "2026-08-27T13:05:00+00:00"
     },
@@ -128230,9 +128227,6 @@
     },
     "workday:citi:26989447": {
       "seen_at": "2026-08-28T11:33:33+00:00"
-    },
-    "workday:citi:26989450": {
-      "seen_at": "2026-08-27T09:38:03+00:00"
     },
     "workday:citi:26989454": {
       "seen_at": "2026-09-01T09:39:08+00:00"
@@ -147800,6 +147794,9 @@
     "workday:fmr:2132298": {
       "seen_at": "2026-10-09T16:15:27+00:00"
     },
+    "workday:fmr:2132317": {
+      "seen_at": "2026-10-26T09:40:16+00:00"
+    },
     "workday:fmr:2132318": {
       "seen_at": "2026-10-16T16:01:57+00:00"
     },
@@ -154366,9 +154363,6 @@
     },
     "workday:hp:HPHS068": {
       "seen_at": "2026-09-01T00:21:42+00:00"
-    },
-    "workday:hp:HPOC3157296": {
-      "seen_at": "2026-08-27T09:38:03+00:00"
     },
     "workday:hp:HPOC3157323": {
       "seen_at": "2026-09-10T12:23:32+00:00"
@@ -182072,6 +182066,9 @@
     "workday:motorolasolutions:Connecticut, US Offsite (CT999)": {
       "seen_at": "2026-09-22T18:56:00+00:00"
     },
+    "workday:motorolasolutions:Copenhagen, Denmark (ZDK23)": {
+      "seen_at": "2026-10-26T09:40:16+00:00"
+    },
     "workday:motorolasolutions:Coquimbo, Chile (ZCE21)": {
       "seen_at": "2026-10-10T20:22:41+00:00"
     },
@@ -182467,9 +182464,6 @@
     },
     "workday:motorolasolutions:R68128": {
       "seen_at": "2026-08-31T18:08:44+00:00"
-    },
-    "workday:motorolasolutions:R68140": {
-      "seen_at": "2026-08-27T09:38:03+00:00"
     },
     "workday:motorolasolutions:R68147": {
       "seen_at": "2026-10-09T17:06:25+00:00"
