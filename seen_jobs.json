@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-27"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 5429,
+      "consecutive_failures": 5430,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 8414,
+      "consecutive_failures": 8415,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 14835,
+      "consecutive_failures": 14836,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 11800,
+      "consecutive_failures": 11801,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 20837,
+      "consecutive_failures": 20838,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -6910,6 +6910,9 @@
     },
     "ashby:cerebras:d65f2d36-998d-4384-8cff-36835a403ce6": {
       "seen_at": "2026-09-26T05:14:22+00:00"
+    },
+    "ashby:cerebras:d67609c3-6604-487e-8482-2ceffdb3f288": {
+      "seen_at": "2026-10-27T05:41:07+00:00"
     },
     "ashby:cerebras:d6df4a44-a05f-4fac-b012-6d2e8bb981f6": {
       "seen_at": "2026-09-28T17:33:55+00:00"
@@ -18643,6 +18646,9 @@
     },
     "ashby:openai:d1a1ab49-399f-42a4-b12c-bb7047b7cdd9": {
       "seen_at": "2026-09-29T00:23:06+00:00"
+    },
+    "ashby:openai:d1abed60-d3d1-4c8d-a58b-3a96139fbf4e": {
+      "seen_at": "2026-10-27T05:41:07+00:00"
     },
     "ashby:openai:d1bfd2f2-5e8d-45ea-9d3d-6e327071a94d": {
       "seen_at": "2026-10-09T11:43:44+00:00"
@@ -57637,6 +57643,9 @@
     },
     "greenhouse:datadog:8113116": {
       "seen_at": "2026-10-19T14:47:07+00:00"
+    },
+    "greenhouse:datadog:8113520": {
+      "seen_at": "2026-10-27T05:41:07+00:00"
     },
     "greenhouse:datadog:8113562": {
       "seen_at": "2026-10-06T07:02:15+00:00"
