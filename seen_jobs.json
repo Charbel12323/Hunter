@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-27"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 5384,
+      "consecutive_failures": 5385,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 8369,
+      "consecutive_failures": 8370,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 14790,
+      "consecutive_failures": 14791,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 11755,
+      "consecutive_failures": 11756,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 20792,
+      "consecutive_failures": 20793,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -8320,6 +8320,9 @@
     },
     "ashby:cursor:8d5c5ae1-3e59-4ab5-a0fa-514a392cce80": {
       "seen_at": "2026-10-01T14:29:12+00:00"
+    },
+    "ashby:cursor:8dc2a190-cde2-4c81-a1a8-bd1bc264a8fb": {
+      "seen_at": "2026-10-27T02:21:11+00:00"
     },
     "ashby:cursor:8e0f46f3-a02e-4fa7-8c26-c3cc93065877": {
       "seen_at": "2026-09-15T18:43:30+00:00"
@@ -24146,6 +24149,9 @@
     "ashby:supabase:2e718684-4f75-4a99-8d6b-3b6bd44e4228": {
       "seen_at": "2026-09-06T16:29:05+00:00"
     },
+    "ashby:supabase:344787f2-d115-4056-87ca-7668fc14be3d": {
+      "seen_at": "2026-10-27T02:21:11+00:00"
+    },
     "ashby:supabase:3889002e-536e-4046-a330-70e942b0cc96": {
       "seen_at": "2026-09-06T16:29:05+00:00"
     },
@@ -24467,6 +24473,9 @@
     "ashby:temporal:73279908-77f8-4488-8151-4c40f49a230d": {
       "seen_at": "2026-09-17T01:33:36+00:00"
     },
+    "ashby:temporal:7365a59d-554e-41f4-9163-2fdd528a42ca": {
+      "seen_at": "2026-10-27T02:21:11+00:00"
+    },
     "ashby:temporal:756726af-0461-4c08-98cc-6f83909e0fe1": {
       "seen_at": "2026-09-01T00:51:26+00:00"
     },
@@ -24562,6 +24571,9 @@
     },
     "ashby:temporal:b4817f72-9afc-431b-919d-aea70f6cbf4c": {
       "seen_at": "2026-09-27T22:15:41+00:00"
+    },
+    "ashby:temporal:b656400a-bc30-4fc3-a117-b803ef42634f": {
+      "seen_at": "2026-10-27T02:21:11+00:00"
     },
     "ashby:temporal:b8e8ea05-cb08-4d30-9c5e-63339611719c": {
       "seen_at": "2026-10-21T20:07:23+00:00"
@@ -39905,6 +39917,9 @@
     "greenhouse:adyen:8075050": {
       "seen_at": "2026-09-03T16:36:21+00:00"
     },
+    "greenhouse:adyen:8078192": {
+      "seen_at": "2026-10-27T02:21:11+00:00"
+    },
     "greenhouse:adyen:8080994": {
       "seen_at": "2026-09-27T09:16:02+00:00"
     },
@@ -41842,6 +41857,9 @@
     },
     "greenhouse:airbnb:8163100": {
       "seen_at": "2026-09-01T22:48:28+00:00"
+    },
+    "greenhouse:airbnb:8163221": {
+      "seen_at": "2026-10-27T02:21:11+00:00"
     },
     "greenhouse:airbnb:8163965": {
       "seen_at": "2026-08-28T11:33:33+00:00"
@@ -51094,6 +51112,9 @@
     },
     "greenhouse:coinbase:8162911": {
       "seen_at": "2026-10-27T00:10:58+00:00"
+    },
+    "greenhouse:coinbase:8162914": {
+      "seen_at": "2026-10-27T02:21:11+00:00"
     },
     "greenhouse:coinbase:8164730": {
       "seen_at": "2026-08-28T19:58:35+00:00"
