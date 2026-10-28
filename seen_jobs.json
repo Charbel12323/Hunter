@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-28"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 5895,
+      "consecutive_failures": 5896,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 8880,
+      "consecutive_failures": 8881,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 15301,
+      "consecutive_failures": 15302,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 12266,
+      "consecutive_failures": 12267,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 21303,
+      "consecutive_failures": 21304,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -26870,9 +26870,6 @@
     "github:SimplifyJobs/New-Grad-Positions:1eaa74d7-37e2-43bf-8dd7-2532b39fd848": {
       "seen_at": "2026-09-04T03:37:48+00:00"
     },
-    "github:SimplifyJobs/New-Grad-Positions:1eabfd94-8044-45d0-b6af-00df94bccac9": {
-      "seen_at": "2026-08-29T17:05:42+00:00"
-    },
     "github:SimplifyJobs/New-Grad-Positions:1ebe7702-9e46-46d9-990b-a90edb1af05d": {
       "seen_at": "2026-08-31T19:38:48+00:00"
     },
@@ -32849,9 +32846,6 @@
     "github:SimplifyJobs/Summer2026-Internships:1dc349f9-4dd5-46ad-b0d9-57845ebd6d0e": {
       "seen_at": "2026-09-04T03:07:53+00:00"
     },
-    "github:SimplifyJobs/Summer2026-Internships:1de737c5-bccf-4549-af82-84d6fcf7cb26": {
-      "seen_at": "2026-08-29T17:05:42+00:00"
-    },
     "github:SimplifyJobs/Summer2026-Internships:1e00cd9c-b8ce-439d-a207-03c14e2ac528": {
       "seen_at": "2026-09-03T15:09:04+00:00"
     },
@@ -34925,9 +34919,6 @@
     "github:SimplifyJobs/Summer2026-Internships:6def32a2-38d9-47cf-8a10-2e7a23785b01": {
       "seen_at": "2026-08-31T21:07:19+00:00"
     },
-    "github:SimplifyJobs/Summer2026-Internships:6dff04f5-449d-4564-b9e7-0d27f6293f2f": {
-      "seen_at": "2026-08-29T17:05:42+00:00"
-    },
     "github:SimplifyJobs/Summer2026-Internships:6e078f21-cd89-48b1-8782-532d1868bc93": {
       "seen_at": "2026-09-03T22:41:32+00:00"
     },
@@ -36383,9 +36374,6 @@
     "github:SimplifyJobs/Summer2026-Internships:a4885be4-c0d8-4714-bec6-11f1d0d763de": {
       "seen_at": "2026-09-03T08:03:31+00:00"
     },
-    "github:SimplifyJobs/Summer2026-Internships:a48d6518-7010-47dc-bf82-ae4f02277bf1": {
-      "seen_at": "2026-08-29T17:05:42+00:00"
-    },
     "github:SimplifyJobs/Summer2026-Internships:a4bb4181-58ef-45f8-8194-7e00cc47ab86": {
       "seen_at": "2026-09-04T03:07:53+00:00"
     },
@@ -37561,9 +37549,6 @@
     },
     "github:SimplifyJobs/Summer2026-Internships:d49edaed-a9b3-4cd6-84d0-0c0cccecba31": {
       "seen_at": "2026-09-03T04:56:29+00:00"
-    },
-    "github:SimplifyJobs/Summer2026-Internships:d4a5fe5f-ec96-49d4-995d-0f69e68ca450": {
-      "seen_at": "2026-08-29T17:05:42+00:00"
     },
     "github:SimplifyJobs/Summer2026-Internships:d4dc379c-1e13-4b2c-a752-0420dca7c8c6": {
       "seen_at": "2026-09-03T22:12:55+00:00"
@@ -78088,6 +78073,9 @@
     },
     "greenhouse:samsara:8095469": {
       "seen_at": "2026-10-02T22:50:11+00:00"
+    },
+    "greenhouse:samsara:8097345": {
+      "seen_at": "2026-10-28T17:08:53+00:00"
     },
     "greenhouse:samsara:8099250": {
       "seen_at": "2026-10-15T13:27:30+00:00"
@@ -145331,6 +145319,12 @@
     "workday:fis:JR0310376": {
       "seen_at": "2026-10-14T17:48:37+00:00"
     },
+    "workday:fis:JR0310379": {
+      "seen_at": "2026-10-28T17:08:53+00:00"
+    },
+    "workday:fis:JR0310380": {
+      "seen_at": "2026-10-28T17:08:53+00:00"
+    },
     "workday:fis:JR0310383": {
       "seen_at": "2026-10-16T12:38:51+00:00"
     },
@@ -187522,6 +187516,9 @@
     },
     "workday:ms:JR045861": {
       "seen_at": "2026-10-27T07:37:57+00:00"
+    },
+    "workday:ms:JR045872": {
+      "seen_at": "2026-10-28T17:08:53+00:00"
     },
     "workday:ms:JR045874": {
       "seen_at": "2026-10-21T19:33:17+00:00"
@@ -235913,6 +235910,9 @@
     "workday:td:R_1516876": {
       "seen_at": "2026-10-22T01:42:00+00:00"
     },
+    "workday:td:R_1516879": {
+      "seen_at": "2026-10-28T17:08:53+00:00"
+    },
     "workday:td:R_1516882": {
       "seen_at": "2026-10-16T18:46:20+00:00"
     },
@@ -236711,6 +236711,9 @@
     "workday:td:R_1518036": {
       "seen_at": "2026-10-21T17:12:40+00:00"
     },
+    "workday:td:R_1518040": {
+      "seen_at": "2026-10-28T17:08:53+00:00"
+    },
     "workday:td:R_1518050": {
       "seen_at": "2026-10-27T17:34:22+00:00"
     },
@@ -237166,6 +237169,9 @@
     },
     "workday:td:R_1518771": {
       "seen_at": "2026-10-23T20:39:45+00:00"
+    },
+    "workday:td:R_1518780": {
+      "seen_at": "2026-10-28T17:08:53+00:00"
     },
     "workday:td:R_1518788": {
       "seen_at": "2026-10-27T20:08:11+00:00"
@@ -240781,6 +240787,9 @@
     },
     "workday:tsys:R0076723": {
       "seen_at": "2026-10-16T13:24:11+00:00"
+    },
+    "workday:tsys:R0076734": {
+      "seen_at": "2026-10-28T17:08:53+00:00"
     },
     "workday:tsys:R0076735": {
       "seen_at": "2026-10-28T16:40:07+00:00"
