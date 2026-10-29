@@ -10,7 +10,7 @@
       "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
-      "zero_since": "2026-10-29"
+      "zero_since": null
     },
     "ashby/1password": {
       "consecutive_failures": 0,
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 6096,
+      "consecutive_failures": 6097,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 9081,
+      "consecutive_failures": 9082,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 15502,
+      "consecutive_failures": 15503,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 12467,
+      "consecutive_failures": 12468,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 21504,
+      "consecutive_failures": 21505,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -178841,6 +178841,9 @@
     "workday:micron:JR105478": {
       "seen_at": "2026-08-31T11:21:03+00:00"
     },
+    "workday:micron:JR105484": {
+      "seen_at": "2026-10-29T08:09:21+00:00"
+    },
     "workday:micron:JR105487": {
       "seen_at": "2026-09-11T00:32:24+00:00"
     },
@@ -243106,6 +243109,9 @@
     },
     "workday:tsys:R0077308": {
       "seen_at": "2026-10-28T16:29:13+00:00"
+    },
+    "workday:tsys:R0077313": {
+      "seen_at": "2026-10-29T08:09:21+00:00"
     },
     "workday:tsys:R0077338": {
       "seen_at": "2026-10-28T17:19:56+00:00"
