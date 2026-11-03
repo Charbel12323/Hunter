@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 7776,
+      "consecutive_failures": 7777,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 10761,
+      "consecutive_failures": 10762,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 17182,
+      "consecutive_failures": 17183,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 14147,
+      "consecutive_failures": 14148,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 23184,
+      "consecutive_failures": 23185,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -68933,6 +68933,9 @@
     "greenhouse:stripe:8154531": {
       "seen_at": "2026-10-25T19:32:28+00:00"
     },
+    "greenhouse:stripe:8155002": {
+      "seen_at": "2026-11-03T13:22:16+00:00"
+    },
     "greenhouse:stripe:8155381": {
       "seen_at": "2026-09-09T18:41:35+00:00"
     },
@@ -86527,9 +86530,6 @@
     },
     "workday:bmo:R260012448": {
       "seen_at": "2026-09-08T17:44:13+00:00"
-    },
-    "workday:bmo:R260012507": {
-      "seen_at": "2026-09-04T13:20:03+00:00"
     },
     "workday:bmo:R260012690": {
       "seen_at": "2026-10-06T12:51:06+00:00"
@@ -105034,9 +105034,6 @@
     },
     "workday:cibc:2617905": {
       "seen_at": "2026-09-29T19:30:32+00:00"
-    },
-    "workday:cibc:2617960": {
-      "seen_at": "2026-09-04T13:20:03+00:00"
     },
     "workday:cibc:2617970": {
       "seen_at": "2026-09-08T20:24:30+00:00"
@@ -135707,8 +135704,17 @@
     "workday:fiserv:R-10405658": {
       "seen_at": "2026-10-30T19:46:44+00:00"
     },
+    "workday:fiserv:R-10405661": {
+      "seen_at": "2026-11-03T13:22:16+00:00"
+    },
+    "workday:fiserv:R-10405664": {
+      "seen_at": "2026-11-03T13:22:16+00:00"
+    },
     "workday:fiserv:R-10405665": {
       "seen_at": "2026-11-03T13:11:22+00:00"
+    },
+    "workday:fiserv:R-10405667": {
+      "seen_at": "2026-11-03T13:22:16+00:00"
     },
     "workday:fiserv:R-10406026": {
       "seen_at": "2026-11-02T17:11:01+00:00"
@@ -136861,9 +136867,6 @@
     },
     "workday:fmr:2132885": {
       "seen_at": "2026-09-08T03:54:49+00:00"
-    },
-    "workday:fmr:2132910": {
-      "seen_at": "2026-09-04T13:20:03+00:00"
     },
     "workday:fmr:2132917": {
       "seen_at": "2026-10-27T13:07:47+00:00"
@@ -159436,9 +159439,6 @@
     },
     "workday:mastercard:R-289268": {
       "seen_at": "2026-09-16T13:32:38+00:00"
-    },
-    "workday:mastercard:R-289271": {
-      "seen_at": "2026-09-04T13:20:03+00:00"
     },
     "workday:mastercard:R-289275": {
       "seen_at": "2026-09-16T18:46:19+00:00"
@@ -195701,9 +195701,6 @@
     "workday:salesforce:JR358320": {
       "seen_at": "2026-10-06T07:13:40+00:00"
     },
-    "workday:salesforce:JR358324": {
-      "seen_at": "2026-09-04T13:20:03+00:00"
-    },
     "workday:salesforce:JR358348": {
       "seen_at": "2026-09-08T17:02:44+00:00"
     },
@@ -200320,6 +200317,9 @@
     },
     "workday:salesforce:JR366421": {
       "seen_at": "2026-11-03T06:23:10+00:00"
+    },
+    "workday:salesforce:JR366422": {
+      "seen_at": "2026-11-03T13:22:16+00:00"
     },
     "workday:salesforce:JR366423": {
       "seen_at": "2026-10-30T15:18:32+00:00"
@@ -217246,9 +217246,6 @@
     },
     "workday:td:R_1504887": {
       "seen_at": "2026-09-04T14:45:26+00:00"
-    },
-    "workday:td:R_1504889": {
-      "seen_at": "2026-09-04T13:20:03+00:00"
     },
     "workday:td:R_1504946": {
       "seen_at": "2026-09-09T15:41:17+00:00"
