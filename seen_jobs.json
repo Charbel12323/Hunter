@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 7665,
+      "consecutive_failures": 7666,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 10650,
+      "consecutive_failures": 10651,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 17071,
+      "consecutive_failures": 17072,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 14036,
+      "consecutive_failures": 14037,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -871,7 +871,7 @@
       "zero_since": null
     },
     "netflix/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 23073,
+      "consecutive_failures": 23074,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -127988,9 +127988,6 @@
     "workday:crowdstrike:R26362": {
       "seen_at": "2026-09-06T16:29:05+00:00"
     },
-    "workday:crowdstrike:R26451": {
-      "seen_at": "2026-09-04T05:02:13+00:00"
-    },
     "workday:crowdstrike:R26526": {
       "seen_at": "2026-09-29T11:49:38+00:00"
     },
@@ -163826,6 +163823,9 @@
     "workday:micron:JR100037": {
       "seen_at": "2026-09-08T01:59:33+00:00"
     },
+    "workday:micron:JR100105": {
+      "seen_at": "2026-11-03T05:05:26+00:00"
+    },
     "workday:micron:JR100224": {
       "seen_at": "2026-09-21T14:53:41+00:00"
     },
@@ -183443,9 +183443,6 @@
     "workday:paloaltonetworks:JR-017568": {
       "seen_at": "2026-09-25T15:35:45+00:00"
     },
-    "workday:paloaltonetworks:JR-017596": {
-      "seen_at": "2026-09-04T05:02:13+00:00"
-    },
     "workday:paloaltonetworks:JR-017649": {
       "seen_at": "2026-09-18T15:10:07+00:00"
     },
@@ -188231,9 +188228,6 @@
     "workday:rbc:R-0000172282": {
       "seen_at": "2026-09-06T16:29:05+00:00"
     },
-    "workday:rbc:R-0000172291": {
-      "seen_at": "2026-09-04T05:02:13+00:00"
-    },
     "workday:rbc:R-0000172304": {
       "seen_at": "2026-09-14T13:49:40+00:00"
     },
@@ -188989,9 +188983,6 @@
     },
     "workday:rbc:R-0000184981": {
       "seen_at": "2026-10-23T16:24:23+00:00"
-    },
-    "workday:rbc:R-0000185072": {
-      "seen_at": "2026-09-04T05:02:13+00:00"
     },
     "workday:rbc:R-0000185110": {
       "seen_at": "2026-09-21T14:25:35+00:00"
@@ -193169,8 +193160,14 @@
     "workday:rbc:R-0000191541": {
       "seen_at": "2026-10-29T15:25:23+00:00"
     },
+    "workday:rbc:R-0000191542": {
+      "seen_at": "2026-11-03T05:05:26+00:00"
+    },
     "workday:rbc:R-0000191545": {
       "seen_at": "2026-11-02T21:31:45+00:00"
+    },
+    "workday:rbc:R-0000191548": {
+      "seen_at": "2026-11-03T05:05:26+00:00"
     },
     "workday:rbc:R-0000191555": {
       "seen_at": "2026-11-03T04:03:58+00:00"
@@ -206261,6 +206258,9 @@
     "workday:spgi:332381": {
       "seen_at": "2026-10-20T17:56:27+00:00"
     },
+    "workday:spgi:332385": {
+      "seen_at": "2026-11-03T05:05:26+00:00"
+    },
     "workday:spgi:332392": {
       "seen_at": "2026-10-25T04:03:46+00:00"
     },
@@ -206420,6 +206420,9 @@
     "workday:spgi:332531": {
       "seen_at": "2026-10-28T13:36:36+00:00"
     },
+    "workday:spgi:332539": {
+      "seen_at": "2026-11-03T05:05:26+00:00"
+    },
     "workday:spgi:332541": {
       "seen_at": "2026-11-02T05:02:21+00:00"
     },
@@ -206443,6 +206446,9 @@
     },
     "workday:spgi:332566": {
       "seen_at": "2026-10-29T10:56:13+00:00"
+    },
+    "workday:spgi:332572": {
+      "seen_at": "2026-11-03T05:05:26+00:00"
     },
     "workday:spgi:332577": {
       "seen_at": "2026-10-29T15:54:26+00:00"
