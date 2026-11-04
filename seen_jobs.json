@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 8135,
+      "consecutive_failures": 8136,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 11120,
+      "consecutive_failures": 11121,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 17541,
+      "consecutive_failures": 17542,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 14506,
+      "consecutive_failures": 14507,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 23543,
+      "consecutive_failures": 23544,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -20975,9 +20975,6 @@
     "ashby:ramp:8fa367de-71ba-409e-befd-175a163acb1b": {
       "seen_at": "2026-11-02T21:26:20+00:00"
     },
-    "ashby:ramp:9226150c-47df-42f4-8626-7a0aea6b9991": {
-      "seen_at": "2026-09-05T16:27:50+00:00"
-    },
     "ashby:ramp:925fce22-61af-4d26-8f20-90696a3b6704": {
       "seen_at": "2026-09-18T18:02:59+00:00"
     },
@@ -33134,6 +33131,9 @@
     "greenhouse:anthropic:5469367008": {
       "seen_at": "2026-11-02T14:08:56+00:00"
     },
+    "greenhouse:anthropic:5469482008": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
+    },
     "greenhouse:anthropic:5469530008": {
       "seen_at": "2026-11-02T10:08:23+00:00"
     },
@@ -33142,6 +33142,9 @@
     },
     "greenhouse:anthropic:5470906008": {
       "seen_at": "2026-11-03T11:41:28+00:00"
+    },
+    "greenhouse:anthropic:5471100008": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
     },
     "greenhouse:anthropic:5471361008": {
       "seen_at": "2026-11-03T20:55:06+00:00"
@@ -36037,9 +36040,6 @@
     },
     "greenhouse:chime:8618419002": {
       "seen_at": "2026-09-12T18:05:24+00:00"
-    },
-    "greenhouse:chime:8622631002": {
-      "seen_at": "2026-09-05T16:27:50+00:00"
     },
     "greenhouse:chime:8623009002": {
       "seen_at": "2026-09-12T18:33:06+00:00"
@@ -53819,8 +53819,20 @@
     "greenhouse:gitlab:8926435002": {
       "seen_at": "2026-11-02T22:16:44+00:00"
     },
+    "greenhouse:gitlab:8927560002": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
+    },
     "greenhouse:gitlab:8928675002": {
       "seen_at": "2026-11-04T06:47:25+00:00"
+    },
+    "greenhouse:gitlab:8929004002": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
+    },
+    "greenhouse:gitlab:8929477002": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
+    },
+    "greenhouse:gitlab:8929514002": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
     },
     "greenhouse:gleanwork:4006731005": {
       "seen_at": "2026-09-26T05:14:22+00:00"
@@ -54937,6 +54949,12 @@
     },
     "greenhouse:grafanalabs:6226523004": {
       "seen_at": "2026-10-29T15:09:03+00:00"
+    },
+    "greenhouse:grafanalabs:6226998004": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
+    },
+    "greenhouse:grafanalabs:6226999004": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
     },
     "greenhouse:grafanalabs:6227872004": {
       "seen_at": "2026-10-18T11:43:49+00:00"
@@ -73550,9 +73568,6 @@
     "greenhouse:vercel:5179639004": {
       "seen_at": "2026-11-02T22:17:46+00:00"
     },
-    "greenhouse:vercel:5428982004": {
-      "seen_at": "2026-09-05T16:27:50+00:00"
-    },
     "greenhouse:vercel:5430088004": {
       "seen_at": "2026-11-02T22:17:46+00:00"
     },
@@ -73651,9 +73666,6 @@
     },
     "greenhouse:vercel:6102654004": {
       "seen_at": "2026-11-02T22:17:46+00:00"
-    },
-    "greenhouse:vercel:6105394004": {
-      "seen_at": "2026-09-05T16:27:50+00:00"
     },
     "greenhouse:vercel:6111005004": {
       "seen_at": "2026-09-15T03:15:34+00:00"
@@ -137441,6 +137453,9 @@
     "workday:fmr:2132038": {
       "seen_at": "2026-10-19T20:37:01+00:00"
     },
+    "workday:fmr:2132039": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
+    },
     "workday:fmr:2132042": {
       "seen_at": "2026-09-18T16:24:48+00:00"
     },
@@ -174985,6 +175000,9 @@
     },
     "workday:ms:JR046268": {
       "seen_at": "2026-11-04T15:14:49+00:00"
+    },
+    "workday:ms:JR046269": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
     },
     "workday:ms:PT-JR017495": {
       "seen_at": "2026-10-29T16:22:18+00:00"
@@ -216155,6 +216173,9 @@
     "workday:statestreet:R-800756": {
       "seen_at": "2026-11-04T14:29:36+00:00"
     },
+    "workday:statestreet:R-800758": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
+    },
     "workday:statestreet:R-800759": {
       "seen_at": "2026-11-04T15:49:11+00:00"
     },
@@ -217778,6 +217799,9 @@
     "workday:sunlife:JR00129227": {
       "seen_at": "2026-11-03T14:02:03+00:00"
     },
+    "workday:sunlife:JR00129228": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
+    },
     "workday:sunlife:JR00129229": {
       "seen_at": "2026-10-28T18:55:37+00:00"
     },
@@ -217828,6 +217852,9 @@
     },
     "workday:sunlife:JR00129351": {
       "seen_at": "2026-11-03T13:50:16+00:00"
+    },
+    "workday:sunlife:JR00129359": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
     },
     "workday:sunlife:JR00129383": {
       "seen_at": "2026-11-02T10:30:28+00:00"
@@ -232318,6 +232345,9 @@
     },
     "workday:visa:REF089996W": {
       "seen_at": "2026-11-02T15:39:32+00:00"
+    },
+    "workday:visa:REF090000W": {
+      "seen_at": "2026-11-04T16:28:41+00:00"
     },
     "workday:visa:REF090002W": {
       "seen_at": "2026-11-02T16:07:59+00:00"
