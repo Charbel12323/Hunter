@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 8187,
+      "consecutive_failures": 8188,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 11172,
+      "consecutive_failures": 11173,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 17593,
+      "consecutive_failures": 17594,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 14558,
+      "consecutive_failures": 14559,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,7 +865,7 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 2,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 23595,
+      "consecutive_failures": 23596,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -77231,6 +77231,9 @@
     "greenhouse:xai:5285000007": {
       "seen_at": "2026-11-04T19:35:00+00:00"
     },
+    "greenhouse:xai:5285161007": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
+    },
     "lever:palantir:00c2c97b-8514-4617-9883-e53e486b6dcd": {
       "seen_at": "2026-11-02T21:26:20+00:00"
     },
@@ -92735,8 +92738,14 @@
     "workday:bmo:R260030723": {
       "seen_at": "2026-11-03T22:37:15+00:00"
     },
+    "workday:bmo:R260030725": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
+    },
     "workday:bmo:R260030727": {
       "seen_at": "2026-11-03T23:05:05+00:00"
+    },
+    "workday:bmo:R260030734": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:bmo:R260030747": {
       "seen_at": "2026-11-03T23:10:34+00:00"
@@ -92752,6 +92761,9 @@
     },
     "workday:bmo:R260030778": {
       "seen_at": "2026-11-03T21:12:11+00:00"
+    },
+    "workday:bmo:R260030780": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:bmo:R260030782": {
       "seen_at": "2026-11-03T21:29:48+00:00"
@@ -92779,6 +92791,9 @@
     },
     "workday:bmo:R260030869": {
       "seen_at": "2026-11-04T18:27:23+00:00"
+    },
+    "workday:bmo:R260030896": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:broadcom:R020961": {
       "seen_at": "2026-11-02T17:22:37+00:00"
@@ -110956,6 +110971,9 @@
     },
     "workday:ciena:R031991": {
       "seen_at": "2026-10-27T20:13:47+00:00"
+    },
+    "workday:ciena:R031997": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:ciena:R031998": {
       "seen_at": "2026-11-04T20:19:00+00:00"
@@ -147218,9 +147236,6 @@
     "workday:hpe:1212269": {
       "seen_at": "2026-10-15T19:05:13+00:00"
     },
-    "workday:hpe:1212272": {
-      "seen_at": "2026-09-05T20:20:53+00:00"
-    },
     "workday:hpe:1212274": {
       "seen_at": "2026-09-22T07:43:10+00:00"
     },
@@ -155734,6 +155749,9 @@
     },
     "workday:intel:JR0288543": {
       "seen_at": "2026-10-29T04:26:19+00:00"
+    },
+    "workday:intel:JR0288546": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:intel:JR0288548": {
       "seen_at": "2026-11-03T21:01:22+00:00"
@@ -175808,6 +175826,9 @@
     "workday:ms:JR046151": {
       "seen_at": "2026-10-30T19:40:23+00:00"
     },
+    "workday:ms:JR046160": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
+    },
     "workday:ms:JR046162": {
       "seen_at": "2026-11-03T15:26:27+00:00"
     },
@@ -188071,6 +188092,9 @@
     },
     "workday:paloaltonetworks:JR-024448": {
       "seen_at": "2026-11-04T19:18:11+00:00"
+    },
+    "workday:paloaltonetworks:JR-024497": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:paypal:R0134048": {
       "seen_at": "2026-09-06T16:29:05+00:00"
@@ -202240,6 +202264,9 @@
     },
     "workday:salesforce:JR365454": {
       "seen_at": "2026-10-26T20:11:41+00:00"
+    },
+    "workday:salesforce:JR365455": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:salesforce:JR365458": {
       "seen_at": "2026-10-28T19:46:34+00:00"
@@ -227183,6 +227210,9 @@
     "workday:thomsonreuters:Los Angeles; Ottawa; Toronto; Chicago; Montreal; North Hollywood; Washington; Frisco; Eagan; San Francisco; Houston; New York; McLean; Brooklyn; Rochester; Ann Arbor; Richmond": {
       "seen_at": "2026-10-26T13:59:28+00:00"
     },
+    "workday:thomsonreuters:Los Angeles; Sacramento, California; McLean; Portland; Las Vegas; San Francisco; Seattle; Honolulu, Hawaii; San Diego": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
+    },
     "workday:thomsonreuters:Luxembourg": {
       "seen_at": "2026-10-14T00:51:39+00:00"
     },
@@ -227218,6 +227248,9 @@
     },
     "workday:thomsonreuters:Nairobi; Lagos": {
       "seen_at": "2026-10-15T08:27:51+00:00"
+    },
+    "workday:thomsonreuters:Nashville, Tennessee; Atlanta, Georgia; Baltimore; San Juan; Jacksonville; New Orleans; Charlotte; Orlando; Tampa; Miami; Raleigh, North Carolina; Boston, Massachusetts; Jackson, Mississippi; Washington, DC, District of Columbia; Newark; McLean; Buffalo; Philadelphia; Charleston; Queens": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:thomsonreuters:Nashville, Tennessee; Los Angeles; Atlanta, Georgia; Boston, Massachusetts; Chicago; Washington, DC, District of Columbia; Houston; Kansas City; Ann Arbor; St. Louis; Frisco; Seattle": {
       "seen_at": "2026-09-08T13:36:47+00:00"
@@ -227263,6 +227296,9 @@
     },
     "workday:thomsonreuters:Rochester": {
       "seen_at": "2026-09-10T20:00:25+00:00"
+    },
+    "workday:thomsonreuters:San Antonio; Mobile; Chicago; St. Paul, Minnesota; Kansas City; Laredo; Tucson; Jackson, Mississippi; Tyler; Detroit; El Paso; Houston; McLean; Corpus Christi; Oklahoma City, Oklahoma; Dallas; Louisville; Scottsdale": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:thomsonreuters:San Francisco; New York": {
       "seen_at": "2026-09-26T19:56:58+00:00"
@@ -230371,6 +230407,9 @@
     },
     "workday:tsys:R0077112": {
       "seen_at": "2026-10-23T13:01:22+00:00"
+    },
+    "workday:tsys:R0077123": {
+      "seen_at": "2026-11-04T20:24:27+00:00"
     },
     "workday:tsys:R0077125": {
       "seen_at": "2026-11-04T20:19:00+00:00"
