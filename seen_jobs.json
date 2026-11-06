@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 8563,
+      "consecutive_failures": 8564,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 11548,
+      "consecutive_failures": 11549,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 17969,
+      "consecutive_failures": 17970,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 14934,
+      "consecutive_failures": 14935,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -885,7 +885,7 @@
     "shopify/canada": {
       "consecutive_failures": 0,
       "warned_failures": false,
-      "warned_zero": false,
+      "warned_zero": true,
       "zero_since": "2026-10-30"
     },
     "uber/canada": {
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 23971,
+      "consecutive_failures": 23972,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -24685,6 +24685,9 @@
     },
     "ashby:vanta:362c9919-80c9-4c54-8f38-205b48000840": {
       "seen_at": "2026-11-05T16:36:01+00:00"
+    },
+    "ashby:vanta:3680f3ab-b470-46dd-b192-86ae69d54a31": {
+      "seen_at": "2026-11-06T00:01:56+00:00"
     },
     "ashby:vanta:38123211-8982-45af-a733-7c81eab67e84": {
       "seen_at": "2026-11-02T15:17:10+00:00"
@@ -70349,6 +70352,12 @@
     "greenhouse:stripe:8332676": {
       "seen_at": "2026-10-28T23:41:57+00:00"
     },
+    "greenhouse:stripe:8332681": {
+      "seen_at": "2026-11-06T00:01:56+00:00"
+    },
+    "greenhouse:stripe:8332683": {
+      "seen_at": "2026-11-06T00:01:55+00:00"
+    },
     "greenhouse:stripe:8332718": {
       "seen_at": "2026-10-29T00:04:10+00:00"
     },
@@ -86785,6 +86794,9 @@
     },
     "workday:bmo:R260008501": {
       "seen_at": "2026-10-01T03:30:46+00:00"
+    },
+    "workday:bmo:R260008914": {
+      "seen_at": "2026-11-06T00:01:56+00:00"
     },
     "workday:bmo:R260008957": {
       "seen_at": "2026-10-05T17:35:42+00:00"
@@ -205421,6 +205433,9 @@
     "workday:salesforce:JR366779": {
       "seen_at": "2026-11-05T17:42:45+00:00"
     },
+    "workday:salesforce:JR366792": {
+      "seen_at": "2026-11-06T00:01:56+00:00"
+    },
     "workday:salesforce:JR366800": {
       "seen_at": "2026-11-02T19:48:24+00:00"
     },
@@ -207826,6 +207841,9 @@
     },
     "workday:sec:R121795": {
       "seen_at": "2026-11-02T18:23:51+00:00"
+    },
+    "workday:sec:R121796": {
+      "seen_at": "2026-11-06T00:01:56+00:00"
     },
     "workday:sec:R121801": {
       "seen_at": "2026-11-02T13:51:35+00:00"
@@ -230129,6 +230147,9 @@
     "workday:td:R_1521154": {
       "seen_at": "2026-11-05T23:39:59+00:00"
     },
+    "workday:td:R_1521157": {
+      "seen_at": "2026-11-06T00:01:56+00:00"
+    },
     "workday:thomsonreuters:Aichi; Nagoya; Tokyo": {
       "seen_at": "2026-10-14T00:35:22+00:00"
     },
@@ -239389,6 +239410,9 @@
     },
     "workday:workiva:R12768": {
       "seen_at": "2026-11-02T18:01:36+00:00"
+    },
+    "workday:workiva:R12769": {
+      "seen_at": "2026-11-06T00:01:56+00:00"
     },
     "workday:workiva:R12772": {
       "seen_at": "2026-11-03T15:50:02+00:00"
