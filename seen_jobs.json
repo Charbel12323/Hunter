@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 10811,
+      "consecutive_failures": 10812,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 13796,
+      "consecutive_failures": 13797,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 20217,
+      "consecutive_failures": 20218,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 17182,
+      "consecutive_failures": 17183,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 26219,
+      "consecutive_failures": 26220,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -10958,6 +10958,9 @@
     "ashby:fireworks:fc3845e6-e8ba-4756-a03e-654f14ce605b": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
+    "ashby:fireworks:fcf437ef-c3ca-459c-b620-e616480fd1f2": {
+      "seen_at": "2026-11-12T21:46:10+00:00"
+    },
     "ashby:fireworks:fe0e6fc9-45de-4f65-ba4a-2516f914c2ba": {
       "seen_at": "2026-09-16T21:41:06+00:00"
     },
@@ -12992,9 +12995,6 @@
     "ashby:lambda:20599b39-8482-4852-a955-f279bbb5463f": {
       "seen_at": "2026-11-05T16:36:01+00:00"
     },
-    "ashby:lambda:20738542-164f-45b6-a822-f54c11b5fc60": {
-      "seen_at": "2026-09-13T21:44:29+00:00"
-    },
     "ashby:lambda:22067697-90e0-4a9a-bc08-954ce6796537": {
       "seen_at": "2026-09-19T00:09:08+00:00"
     },
@@ -13165,9 +13165,6 @@
     },
     "ashby:lambda:a5dbc5ea-ac15-4e2f-8882-fa52a97d283b": {
       "seen_at": "2026-09-14T17:34:15+00:00"
-    },
-    "ashby:lambda:a7643768-bb94-4441-9295-64fefe233811": {
-      "seen_at": "2026-09-13T21:44:29+00:00"
     },
     "ashby:lambda:a7c76884-b814-4027-b2f3-df86f6341ccf": {
       "seen_at": "2026-10-22T22:42:20+00:00"
@@ -23111,6 +23108,9 @@
     "ashby:snowflake:1bad12df-f443-426f-9d09-e96fc780d698": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
+    "ashby:snowflake:1c8dbe2c-60b3-4d66-a73f-95dffe416626": {
+      "seen_at": "2026-11-12T21:46:10+00:00"
+    },
     "ashby:snowflake:1c90dd70-ffa8-4a50-844d-00a3e8726bd3": {
       "seen_at": "2026-11-10T16:22:56+00:00"
     },
@@ -31072,9 +31072,6 @@
     },
     "greenhouse:anthropic:5342935008": {
       "seen_at": "2026-11-10T17:19:36+00:00"
-    },
-    "greenhouse:anthropic:5344577008": {
-      "seen_at": "2026-09-13T21:44:29+00:00"
     },
     "greenhouse:anthropic:5350448008": {
       "seen_at": "2026-11-11T22:32:29+00:00"
@@ -40697,6 +40694,9 @@
     "greenhouse:coreweave:4729244006": {
       "seen_at": "2026-11-12T20:40:50+00:00"
     },
+    "greenhouse:coreweave:4729275006": {
+      "seen_at": "2026-11-12T21:46:10+00:00"
+    },
     "greenhouse:coveoen:5877048002": {
       "seen_at": "2026-09-26T05:14:22+00:00"
     },
@@ -44398,6 +44398,9 @@
     },
     "greenhouse:databricks:8937118002": {
       "seen_at": "2026-11-12T21:07:58+00:00"
+    },
+    "greenhouse:databricks:8940421002": {
+      "seen_at": "2026-11-12T21:46:10+00:00"
     },
     "greenhouse:datadog:1497543": {
       "seen_at": "2026-09-26T05:14:22+00:00"
@@ -139544,6 +139547,9 @@
     "workday:fiserv:R-10406954": {
       "seen_at": "2026-11-09T23:09:19+00:00"
     },
+    "workday:fiserv:R-10406956": {
+      "seen_at": "2026-11-12T21:46:10+00:00"
+    },
     "workday:fiserv:R-10406957": {
       "seen_at": "2026-11-12T19:39:50+00:00"
     },
@@ -174893,6 +174899,12 @@
     "workday:micron:JR117664": {
       "seen_at": "2026-11-12T21:40:53+00:00"
     },
+    "workday:micron:JR117666": {
+      "seen_at": "2026-11-12T21:46:10+00:00"
+    },
+    "workday:micron:JR117667": {
+      "seen_at": "2026-11-12T21:46:10+00:00"
+    },
     "workday:micron:JR117684": {
       "seen_at": "2026-11-12T08:50:42+00:00"
     },
@@ -199655,9 +199667,6 @@
     "workday:salesforce:JR349777": {
       "seen_at": "2026-10-15T09:24:09+00:00"
     },
-    "workday:salesforce:JR349826": {
-      "seen_at": "2026-09-13T21:44:29+00:00"
-    },
     "workday:salesforce:JR349958": {
       "seen_at": "2026-09-21T13:06:13+00:00"
     },
@@ -220178,6 +220187,9 @@
     "workday:statestreet:R-801088": {
       "seen_at": "2026-11-12T20:57:18+00:00"
     },
+    "workday:statestreet:R-801089": {
+      "seen_at": "2026-11-12T21:46:10+00:00"
+    },
     "workday:sunlife:JR00114378": {
       "seen_at": "2026-09-29T14:52:02+00:00"
     },
@@ -230986,6 +230998,9 @@
     },
     "workday:thomsonreuters:Los Angeles; Chicago; Houston; McLean; New York; Brooklyn; Ann Arbor; Washington; Frisco; Richmond; Eagan; San Francisco": {
       "seen_at": "2026-11-12T21:35:02+00:00"
+    },
+    "workday:thomsonreuters:Los Angeles; Chicago; Houston; McLean; New York; Rochester; Brooklyn; Ann Arbor; Washington; Frisco; Richmond; Eagan; San Francisco": {
+      "seen_at": "2026-11-12T21:46:10+00:00"
     },
     "workday:thomsonreuters:Los Angeles; Chicago; North Hollywood; Washington; Frisco; Eagan; San Francisco; Houston; McLean; New York; Rochester; Brooklyn; Ann Arbor; Richmond": {
       "seen_at": "2026-10-13T17:05:30+00:00"
