@@ -7,7 +7,7 @@
       "zero_since": null
     },
     "apple/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 10877,
+      "consecutive_failures": 10878,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 13862,
+      "consecutive_failures": 13863,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 20283,
+      "consecutive_failures": 20284,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 17248,
+      "consecutive_failures": 17249,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,13 +865,13 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 2,
+      "consecutive_failures": 3,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "netflix/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 26285,
+      "consecutive_failures": 26286,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -71926,6 +71926,9 @@
     },
     "greenhouse:stripe:8282169": {
       "seen_at": "2026-10-20T07:20:04+00:00"
+    },
+    "greenhouse:stripe:8282171": {
+      "seen_at": "2026-11-13T02:48:15+00:00"
     },
     "greenhouse:stripe:8282390": {
       "seen_at": "2026-10-14T19:58:11+00:00"
@@ -198964,6 +198967,9 @@
     },
     "workday:redhat:R-060336": {
       "seen_at": "2026-11-11T04:09:55+00:00"
+    },
+    "workday:redhat:R-060362": {
+      "seen_at": "2026-11-13T02:48:15+00:00"
     },
     "workday:redhat:R-060381": {
       "seen_at": "2026-11-06T19:30:26+00:00"
