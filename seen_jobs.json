@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 11114,
+      "consecutive_failures": 11115,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 14099,
+      "consecutive_failures": 14100,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 20520,
+      "consecutive_failures": 20521,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 17485,
+      "consecutive_failures": 17486,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,8 +865,8 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 5,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1123,7 +1123,7 @@
       "zero_since": null
     },
     "workday/nvidia": {
-      "consecutive_failures": 2,
+      "consecutive_failures": 3,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 26522,
+      "consecutive_failures": 26523,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1237,7 +1237,7 @@
       "zero_since": null
     },
     "workday/visa": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -21754,6 +21754,9 @@
     },
     "ashby:render:af5b6699-2e4a-47de-99f7-664baa738190": {
       "seen_at": "2026-11-05T16:36:01+00:00"
+    },
+    "ashby:render:b011a0c1-eed8-4afd-ab8b-3b4f974df199": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
     },
     "ashby:render:b4a86799-59d4-4bf3-9681-23264550f1ea": {
       "seen_at": "2026-10-06T17:43:52+00:00"
@@ -58877,6 +58880,12 @@
     "greenhouse:lyft:8806570002": {
       "seen_at": "2026-09-18T22:49:36+00:00"
     },
+    "greenhouse:lyft:8806580002": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
+    },
+    "greenhouse:lyft:8806969002": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
+    },
     "greenhouse:lyft:8811733002": {
       "seen_at": "2026-09-16T17:48:20+00:00"
     },
@@ -72605,6 +72614,9 @@
     "greenhouse:stripe:8381041": {
       "seen_at": "2026-11-11T21:05:30+00:00"
     },
+    "greenhouse:stripe:8382000": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
+    },
     "greenhouse:stripe:8382002": {
       "seen_at": "2026-11-13T20:43:59+00:00"
     },
@@ -78799,6 +78811,9 @@
     },
     "greenhouse:xai:5235772007": {
       "seen_at": "2026-11-13T14:08:13+00:00"
+    },
+    "greenhouse:xai:5237965007": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
     },
     "greenhouse:xai:5238756007": {
       "seen_at": "2026-09-15T17:04:05+00:00"
@@ -85970,6 +85985,12 @@
     "workday:analogdevices:R267654": {
       "seen_at": "2026-10-29T06:34:26+00:00"
     },
+    "workday:analogdevices:R267661": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
+    },
+    "workday:analogdevices:R267664": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
+    },
     "workday:analogdevices:R267671": {
       "seen_at": "2026-11-06T12:43:47+00:00"
     },
@@ -88819,6 +88840,9 @@
     },
     "workday:blackrock:R267195": {
       "seen_at": "2026-11-10T19:36:46+00:00"
+    },
+    "workday:blackrock:R267211": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
     },
     "workday:blackrock:R267228": {
       "seen_at": "2026-11-13T17:30:33+00:00"
@@ -120191,6 +120215,9 @@
     "workday:citi:261008102": {
       "seen_at": "2026-11-09T06:02:32+00:00"
     },
+    "workday:citi:261008107": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
+    },
     "workday:citi:261008114": {
       "seen_at": "2026-11-09T23:09:19+00:00"
     },
@@ -120802,6 +120829,9 @@
     },
     "workday:citi:261009803": {
       "seen_at": "2026-11-12T22:30:06+00:00"
+    },
+    "workday:citi:261009811": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
     },
     "workday:citi:261009840": {
       "seen_at": "2026-11-13T07:10:43+00:00"
@@ -239725,6 +239755,9 @@
     },
     "workday:workiva:R12514": {
       "seen_at": "2026-09-18T15:22:26+00:00"
+    },
+    "workday:workiva:R12516": {
+      "seen_at": "2026-11-13T21:18:10+00:00"
     },
     "workday:workiva:R12526": {
       "seen_at": "2026-09-18T19:59:15+00:00"
