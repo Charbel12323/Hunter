@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 10880,
+      "consecutive_failures": 10881,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 13865,
+      "consecutive_failures": 13866,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 20286,
+      "consecutive_failures": 20287,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 17251,
+      "consecutive_failures": 17252,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,13 +865,13 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 1,
+      "consecutive_failures": 0,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
     "netflix/canada": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 26288,
+      "consecutive_failures": 26289,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -20078,6 +20078,9 @@
     "ashby:perplexity:849874fd-ccb4-4d7e-8551-29c5a418e2c7": {
       "seen_at": "2026-11-09T15:56:29+00:00"
     },
+    "ashby:perplexity:859604e1-9ada-4833-97b3-51fe185b6ff7": {
+      "seen_at": "2026-11-13T03:00:03+00:00"
+    },
     "ashby:perplexity:883bd78f-c9cd-4ae5-afbf-b21f16f06a6f": {
       "seen_at": "2026-10-01T17:30:53+00:00"
     },
@@ -23602,6 +23605,9 @@
     },
     "ashby:snowflake:570cbac3-875a-4ce4-83b4-3c19e4b279db": {
       "seen_at": "2026-10-14T20:26:45+00:00"
+    },
+    "ashby:snowflake:57131f28-cdf8-4776-aa87-8f9339e494ab": {
+      "seen_at": "2026-11-13T03:00:03+00:00"
     },
     "ashby:snowflake:577b516f-af2c-40fb-80c2-9371015b6908": {
       "seen_at": "2026-10-12T03:02:09+00:00"
@@ -132986,6 +132992,9 @@
     "workday:crowdstrike:R30744": {
       "seen_at": "2026-11-09T13:23:49+00:00"
     },
+    "workday:crowdstrike:R30745": {
+      "seen_at": "2026-11-13T03:00:03+00:00"
+    },
     "workday:crowdstrike:R30747": {
       "seen_at": "2026-11-02T04:29:26+00:00"
     },
@@ -133000,6 +133009,9 @@
     },
     "workday:crowdstrike:R30754": {
       "seen_at": "2026-11-09T12:30:58+00:00"
+    },
+    "workday:crowdstrike:R30755": {
+      "seen_at": "2026-11-13T03:00:03+00:00"
     },
     "workday:crowdstrike:R30756": {
       "seen_at": "2026-11-09T10:08:29+00:00"
@@ -133030,6 +133042,9 @@
     },
     "workday:crowdstrike:R30789": {
       "seen_at": "2026-11-05T01:49:48+00:00"
+    },
+    "workday:crowdstrike:R30795": {
+      "seen_at": "2026-11-13T03:00:03+00:00"
     },
     "workday:crowdstrike:R30799": {
       "seen_at": "2026-11-05T01:49:48+00:00"
@@ -160474,9 +160489,6 @@
     },
     "workday:manulife:JR26081856": {
       "seen_at": "2026-09-23T13:20:45+00:00"
-    },
-    "workday:manulife:JR26081872": {
-      "seen_at": "2026-09-14T02:59:11+00:00"
     },
     "workday:manulife:JR26081929": {
       "seen_at": "2026-11-09T17:18:20+00:00"
@@ -198095,6 +198107,9 @@
     "workday:rbc:R-0000192413": {
       "seen_at": "2026-11-10T18:58:12+00:00"
     },
+    "workday:rbc:R-0000192415": {
+      "seen_at": "2026-11-13T03:00:03+00:00"
+    },
     "workday:rbc:R-0000192427": {
       "seen_at": "2026-11-10T16:00:42+00:00"
     },
@@ -199396,6 +199411,9 @@
     },
     "workday:salesforce:JR336657": {
       "seen_at": "2026-10-13T15:39:17+00:00"
+    },
+    "workday:salesforce:JR336674": {
+      "seen_at": "2026-11-13T03:00:03+00:00"
     },
     "workday:salesforce:JR336862": {
       "seen_at": "2026-10-19T08:53:16+00:00"
