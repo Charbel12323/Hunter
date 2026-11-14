@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 11371,
+      "consecutive_failures": 11372,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 14356,
+      "consecutive_failures": 14357,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 20777,
+      "consecutive_failures": 20778,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 17742,
+      "consecutive_failures": 17743,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -865,8 +865,8 @@
       "zero_since": null
     },
     "microsoft/canada": {
-      "consecutive_failures": 4,
-      "warned_failures": false,
+      "consecutive_failures": 5,
+      "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1045,13 +1045,13 @@
       "zero_since": null
     },
     "workday/hp": {
-      "consecutive_failures": 242,
+      "consecutive_failures": 243,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
     },
     "workday/hpe": {
-      "consecutive_failures": 242,
+      "consecutive_failures": 243,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1063,7 +1063,7 @@
       "zero_since": null
     },
     "workday/intel": {
-      "consecutive_failures": 215,
+      "consecutive_failures": 216,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1123,7 +1123,7 @@
       "zero_since": null
     },
     "workday/nvidia": {
-      "consecutive_failures": 259,
+      "consecutive_failures": 260,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1135,8 +1135,8 @@
       "zero_since": null
     },
     "workday/paypal": {
-      "consecutive_failures": 207,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 26779,
+      "consecutive_failures": 26780,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -14174,6 +14174,9 @@
     "ashby:lightspeedhq:9b18556a-be19-4c19-8d95-b607a008171f": {
       "seen_at": "2026-11-09T02:26:26+00:00"
     },
+    "ashby:lightspeedhq:9b1c9899-2ebc-46e3-b44e-75babdcfdd3a": {
+      "seen_at": "2026-11-14T17:25:52+00:00"
+    },
     "ashby:lightspeedhq:9c2e26b1-14b4-43c2-9962-31d18aa1ce10": {
       "seen_at": "2026-09-25T10:54:17+00:00"
     },
@@ -18109,6 +18112,9 @@
     },
     "ashby:openai:78a49da9-b768-427e-ad01-3e61d80cfea8": {
       "seen_at": "2026-11-01T19:56:01+00:00"
+    },
+    "ashby:openai:78c2a68b-cc77-4c62-8891-96afb603650a": {
+      "seen_at": "2026-11-14T17:25:52+00:00"
     },
     "ashby:openai:793964ae-d40b-45e3-9798-84f4b6da48c5": {
       "seen_at": "2026-11-02T22:17:46+00:00"
@@ -38951,6 +38957,9 @@
     "greenhouse:coinbase:8204243": {
       "seen_at": "2026-09-25T22:27:03+00:00"
     },
+    "greenhouse:coinbase:8204571": {
+      "seen_at": "2026-11-14T17:25:52+00:00"
+    },
     "greenhouse:coinbase:8206668": {
       "seen_at": "2026-09-16T23:48:28+00:00"
     },
@@ -55702,6 +55711,9 @@
     },
     "greenhouse:grafanalabs:6191319004": {
       "seen_at": "2026-09-17T17:07:38+00:00"
+    },
+    "greenhouse:grafanalabs:6191954004": {
+      "seen_at": "2026-11-14T17:25:52+00:00"
     },
     "greenhouse:grafanalabs:6191976004": {
       "seen_at": "2026-09-18T22:01:14+00:00"
@@ -74242,6 +74254,9 @@
     },
     "greenhouse:tripactions:8188569": {
       "seen_at": "2026-11-09T08:18:50+00:00"
+    },
+    "greenhouse:tripactions:8189657": {
+      "seen_at": "2026-11-14T17:25:52+00:00"
     },
     "greenhouse:tripactions:8189824": {
       "seen_at": "2026-11-08T22:05:54+00:00"
@@ -189190,6 +189205,9 @@
     },
     "workday:paypal:R0137533": {
       "seen_at": "2026-10-05T16:28:06+00:00"
+    },
+    "workday:paypal:R0137536": {
+      "seen_at": "2026-11-14T17:25:52+00:00"
     },
     "workday:paypal:R0137540": {
       "seen_at": "2026-09-24T14:45:02+00:00"
