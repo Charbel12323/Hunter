@@ -391,7 +391,7 @@
       "zero_since": null
     },
     "greenhouse/7shifts": {
-      "consecutive_failures": 11860,
+      "consecutive_failures": 11861,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -433,7 +433,7 @@
       "zero_since": null
     },
     "greenhouse/amplitude": {
-      "consecutive_failures": 14845,
+      "consecutive_failures": 14846,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -661,7 +661,7 @@
       "zero_since": null
     },
     "greenhouse/marqeta": {
-      "consecutive_failures": 21266,
+      "consecutive_failures": 21267,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -703,7 +703,7 @@
       "zero_since": null
     },
     "greenhouse/postman": {
-      "consecutive_failures": 18231,
+      "consecutive_failures": 18232,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": "2026-09-16"
@@ -985,8 +985,8 @@
       "zero_since": null
     },
     "workday/capitalone": {
-      "consecutive_failures": 10,
-      "warned_failures": true,
+      "consecutive_failures": 0,
+      "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
     },
@@ -1153,7 +1153,7 @@
       "zero_since": null
     },
     "workday/salesforce": {
-      "consecutive_failures": 15,
+      "consecutive_failures": 16,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -1171,7 +1171,7 @@
       "zero_since": null
     },
     "workday/snyk": {
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "warned_failures": false,
       "warned_zero": false,
       "zero_since": null
@@ -1213,7 +1213,7 @@
       "zero_since": null
     },
     "workday/telusinternational": {
-      "consecutive_failures": 27268,
+      "consecutive_failures": 27269,
       "warned_failures": true,
       "warned_zero": false,
       "zero_since": null
@@ -118868,6 +118868,9 @@
     "workday:citi:26938684": {
       "seen_at": "2026-10-14T14:42:49+00:00"
     },
+    "workday:citi:26938938": {
+      "seen_at": "2026-11-16T04:58:37+00:00"
+    },
     "workday:citi:26939256": {
       "seen_at": "2026-10-20T17:39:23+00:00"
     },
@@ -121700,6 +121703,9 @@
     "workday:citi:26993127": {
       "seen_at": "2026-09-21T17:15:19+00:00"
     },
+    "workday:citi:26993144": {
+      "seen_at": "2026-11-16T04:58:37+00:00"
+    },
     "workday:citi:26993147": {
       "seen_at": "2026-09-18T08:56:58+00:00"
     },
@@ -122428,6 +122434,9 @@
     },
     "workday:citi:26994517": {
       "seen_at": "2026-10-16T16:02:40+00:00"
+    },
+    "workday:citi:26994522": {
+      "seen_at": "2026-11-16T04:58:37+00:00"
     },
     "workday:citi:26994536": {
       "seen_at": "2026-09-21T06:16:47+00:00"
@@ -156383,9 +156392,6 @@
     "workday:manulife:JR26090606": {
       "seen_at": "2026-09-18T03:12:54+00:00"
     },
-    "workday:manulife:JR26090609": {
-      "seen_at": "2026-09-17T04:58:26+00:00"
-    },
     "workday:manulife:JR26090623": {
       "seen_at": "2026-09-25T13:20:43+00:00"
     },
@@ -156421,12 +156427,6 @@
     },
     "workday:manulife:JR26090683": {
       "seen_at": "2026-09-21T02:52:46+00:00"
-    },
-    "workday:manulife:JR26090702": {
-      "seen_at": "2026-09-17T04:58:26+00:00"
-    },
-    "workday:manulife:JR26090703": {
-      "seen_at": "2026-09-17T04:58:26+00:00"
     },
     "workday:manulife:JR26090705": {
       "seen_at": "2026-09-18T10:21:20+00:00"
@@ -165532,15 +165532,6 @@
     },
     "workday:micron:JR112447": {
       "seen_at": "2026-09-22T05:55:25+00:00"
-    },
-    "workday:micron:JR112453": {
-      "seen_at": "2026-09-17T04:54:55+00:00"
-    },
-    "workday:micron:JR112454": {
-      "seen_at": "2026-09-17T04:54:55+00:00"
-    },
-    "workday:micron:JR112455": {
-      "seen_at": "2026-09-17T04:54:55+00:00"
     },
     "workday:micron:JR112457": {
       "seen_at": "2026-10-06T02:33:00+00:00"
@@ -182749,9 +182740,6 @@
     },
     "workday:paloaltonetworks:JR-020926": {
       "seen_at": "2026-10-26T08:53:51+00:00"
-    },
-    "workday:paloaltonetworks:JR-020941": {
-      "seen_at": "2026-09-17T04:58:26+00:00"
     },
     "workday:paloaltonetworks:JR-020945": {
       "seen_at": "2026-10-07T19:48:23+00:00"
